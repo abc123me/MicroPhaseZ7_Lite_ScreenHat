@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Wed Mar  4 01:06:09 2026
+| Date         : Fri Mar 20 02:37:37 2026
 | Host         : npc running 64-bit Arch Linux
 | Command      : report_drc -file minimal_wrapper_drc_routed.rpt -pb minimal_wrapper_drc_routed.pb -rpx minimal_wrapper_drc_routed.rpx
 | Design       : minimal_wrapper
@@ -47,12 +47,12 @@ Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-323 net(s) have no routable loads. The problem bus(es) and/or net(s) are SPI_0_sck_iobuf/O, SPI_0_ss_iobuf_0/O, SPI_1_io0_iobuf/O,
-SPI_1_sck_iobuf/O, SPI_1_ss_iobuf_0/O, SPI_2_sck_iobuf/O,
-SPI_3_io0_iobuf/O, SPI_3_sck_iobuf/O, SPI_3_ss_iobuf_0/O,
-SPI_4_io0_iobuf/O, SPI_6_io0_iobuf/O, SPI_6_sck_iobuf/O, SPI_7_io0_iobuf/O,
-SPI_7_sck_iobuf/O, SPI_7_ss_iobuf_0/O
- (the first 15 of 191 listed nets/buses).
+349 net(s) have no routable loads. The problem bus(es) and/or net(s) are SPI_0_io0_iobuf/O, SPI_1_sck_iobuf/O, SPI_1_ss_iobuf_0/O,
+SPI_2_io0_iobuf/O, SPI_2_sck_iobuf/O, SPI_3_sck_iobuf/O,
+SPI_3_ss_iobuf_0/O, SPI_4_io0_iobuf/O, SPI_595_ss_iobuf_0/O,
+SPI_5_io0_iobuf/O, SPI_5_ss_iobuf_0/O, SPI_6_io0_iobuf/O,
+SPI_6_ss_iobuf_0/O, SPI_7_io0_iobuf/O, SPI_7_sck_iobuf/O
+ (the first 15 of 209 listed nets/buses).
 Related violations: <none>
 
 

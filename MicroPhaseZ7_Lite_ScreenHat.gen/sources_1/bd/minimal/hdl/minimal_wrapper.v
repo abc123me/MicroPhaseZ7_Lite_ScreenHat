@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Tue Mar  3 01:10:50 2026
+//Date        : Fri Mar 20 02:34:03 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal_wrapper.bd
 //Design      : minimal_wrapper
@@ -68,6 +68,10 @@ module minimal_wrapper
     SPI_4_io1_io,
     SPI_4_sck_io,
     SPI_4_ss_io,
+    SPI_595_io0_io,
+    SPI_595_io1_io,
+    SPI_595_sck_io,
+    SPI_595_ss_io,
     SPI_5_io0_io,
     SPI_5_io1_io,
     SPI_5_sck_io,
@@ -113,7 +117,7 @@ module minimal_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  output [23:0]GPIO_0_tri_o;
+  output [7:0]GPIO_0_tri_o;
   input PL_CLK_50M;
   output [0:0]PL_LED_1;
   output [0:0]PL_LED_2;
@@ -137,6 +141,10 @@ module minimal_wrapper
   inout SPI_4_io1_io;
   inout SPI_4_sck_io;
   inout [0:0]SPI_4_ss_io;
+  inout SPI_595_io0_io;
+  inout SPI_595_io1_io;
+  inout SPI_595_sck_io;
+  inout [0:0]SPI_595_ss_io;
   inout SPI_5_io0_io;
   inout SPI_5_io1_io;
   inout SPI_5_sck_io;
@@ -186,7 +194,7 @@ module minimal_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire [23:0]GPIO_0_tri_o;
+  wire [7:0]GPIO_0_tri_o;
   wire PL_CLK_50M;
   wire [0:0]PL_LED_1;
   wire [0:0]PL_LED_2;
@@ -270,6 +278,22 @@ module minimal_wrapper
   wire [0:0]SPI_4_ss_io_0;
   wire [0:0]SPI_4_ss_o_0;
   wire SPI_4_ss_t;
+  wire SPI_595_io0_i;
+  wire SPI_595_io0_io;
+  wire SPI_595_io0_o;
+  wire SPI_595_io0_t;
+  wire SPI_595_io1_i;
+  wire SPI_595_io1_io;
+  wire SPI_595_io1_o;
+  wire SPI_595_io1_t;
+  wire SPI_595_sck_i;
+  wire SPI_595_sck_io;
+  wire SPI_595_sck_o;
+  wire SPI_595_sck_t;
+  wire [0:0]SPI_595_ss_i_0;
+  wire [0:0]SPI_595_ss_io_0;
+  wire [0:0]SPI_595_ss_o_0;
+  wire SPI_595_ss_t;
   wire SPI_5_io0_i;
   wire SPI_5_io0_io;
   wire SPI_5_io0_o;
@@ -424,6 +448,26 @@ module minimal_wrapper
         .IO(SPI_4_ss_io[0]),
         .O(SPI_4_ss_i_0),
         .T(SPI_4_ss_t));
+  IOBUF SPI_595_io0_iobuf
+       (.I(SPI_595_io0_o),
+        .IO(SPI_595_io0_io),
+        .O(SPI_595_io0_i),
+        .T(SPI_595_io0_t));
+  IOBUF SPI_595_io1_iobuf
+       (.I(SPI_595_io1_o),
+        .IO(SPI_595_io1_io),
+        .O(SPI_595_io1_i),
+        .T(SPI_595_io1_t));
+  IOBUF SPI_595_sck_iobuf
+       (.I(SPI_595_sck_o),
+        .IO(SPI_595_sck_io),
+        .O(SPI_595_sck_i),
+        .T(SPI_595_sck_t));
+  IOBUF SPI_595_ss_iobuf_0
+       (.I(SPI_595_ss_o_0),
+        .IO(SPI_595_ss_io[0]),
+        .O(SPI_595_ss_i_0),
+        .T(SPI_595_ss_t));
   IOBUF SPI_5_io0_iobuf
        (.I(SPI_5_io0_o),
         .IO(SPI_5_io0_io),
@@ -584,6 +628,18 @@ module minimal_wrapper
         .SPI_4_ss_i(SPI_4_ss_i_0),
         .SPI_4_ss_o(SPI_4_ss_o_0),
         .SPI_4_ss_t(SPI_4_ss_t),
+        .SPI_595_io0_i(SPI_595_io0_i),
+        .SPI_595_io0_o(SPI_595_io0_o),
+        .SPI_595_io0_t(SPI_595_io0_t),
+        .SPI_595_io1_i(SPI_595_io1_i),
+        .SPI_595_io1_o(SPI_595_io1_o),
+        .SPI_595_io1_t(SPI_595_io1_t),
+        .SPI_595_sck_i(SPI_595_sck_i),
+        .SPI_595_sck_o(SPI_595_sck_o),
+        .SPI_595_sck_t(SPI_595_sck_t),
+        .SPI_595_ss_i(SPI_595_ss_i_0),
+        .SPI_595_ss_o(SPI_595_ss_o_0),
+        .SPI_595_ss_t(SPI_595_ss_t),
         .SPI_5_io0_i(SPI_5_io0_i),
         .SPI_5_io0_o(SPI_5_io0_o),
         .SPI_5_io0_t(SPI_5_io0_t),

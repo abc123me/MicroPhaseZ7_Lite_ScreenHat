@@ -303,6 +303,27 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi
 # IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_95/bd_1c4e_m09e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_96/bd_1c4e_m10s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_97/bd_1c4e_m10arn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_98/bd_1c4e_m10rn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_99/bd_1c4e_m10awn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_100/bd_1c4e_m10wn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_101/bd_1c4e_m10bn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_102/bd_1c4e_m10e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
 # IP: bd/minimal/ip/minimal_rst_ps7_0_50M_0/minimal_rst_ps7_0_50M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_rst_ps7_0_50M_0 || ORIG_REF_NAME==minimal_rst_ps7_0_50M_0} -quiet] -quiet
 
@@ -338,6 +359,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi
 
 # IP: bd/minimal/ip/minimal_axi_quad_spi_6_0/minimal_axi_quad_spi_6_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_quad_spi_6_0 || ORIG_REF_NAME==minimal_axi_quad_spi_6_0} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_axi_quad_spi_0_2/minimal_axi_quad_spi_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_quad_spi_0_2 || ORIG_REF_NAME==minimal_axi_quad_spi_0_2} -quiet] -quiet
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_processing_system7_0_0 || ORIG_REF_NAME==minimal_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
@@ -518,6 +542,18 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_94/bd_1c4e_m09bn_0_ooc.xdc
 
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_96/bd_1c4e_m10s2a_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_97/bd_1c4e_m10arn_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_98/bd_1c4e_m10rn_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_99/bd_1c4e_m10awn_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_100/bd_1c4e_m10wn_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_101/bd_1c4e_m10bn_0_ooc.xdc
+
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/ooc.xdc
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/smartconnect.xdc
@@ -618,5 +654,16 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_quad_spi_6_0/minimal_axi_quad_spi_6_0_clocks.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_axi_quad_spi_6_0 || ORIG_REF_NAME==minimal_axi_quad_spi_6_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_quad_spi_0_2/minimal_axi_quad_spi_0_2_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_axi_quad_spi_0_2 || ORIG_REF_NAME==minimal_axi_quad_spi_0_2} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_quad_spi_0_2/minimal_axi_quad_spi_0_2.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_axi_quad_spi_0_2 || ORIG_REF_NAME==minimal_axi_quad_spi_0_2} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_quad_spi_0_2/minimal_axi_quad_spi_0_2_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_quad_spi_0_2/minimal_axi_quad_spi_0_2_clocks.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_axi_quad_spi_0_2 || ORIG_REF_NAME==minimal_axi_quad_spi_0_2} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/minimal_ooc.xdc

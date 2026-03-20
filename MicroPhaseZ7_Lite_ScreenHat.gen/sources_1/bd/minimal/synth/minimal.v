@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Tue Mar  3 01:10:50 2026
+//Date        : Fri Mar 20 02:34:03 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal.bd
 //Design      : minimal
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "minimal,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=minimal,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=19,numReposBlks=19,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_ps7_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "minimal.hwdef" *) 
+(* CORE_GENERATION_INFO = "minimal,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=minimal,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=20,numReposBlks=20,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_ps7_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "minimal.hwdef" *) 
 module minimal
    (DDR_addr,
     DDR_ba,
@@ -111,6 +111,18 @@ module minimal
     SPI_4_ss_i,
     SPI_4_ss_o,
     SPI_4_ss_t,
+    SPI_595_io0_i,
+    SPI_595_io0_o,
+    SPI_595_io0_t,
+    SPI_595_io1_i,
+    SPI_595_io1_o,
+    SPI_595_io1_t,
+    SPI_595_sck_i,
+    SPI_595_sck_o,
+    SPI_595_sck_t,
+    SPI_595_ss_i,
+    SPI_595_ss_o,
+    SPI_595_ss_t,
     SPI_5_io0_i,
     SPI_5_io0_o,
     SPI_5_io0_t,
@@ -182,7 +194,7 @@ module minimal
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O" *) (* X_INTERFACE_MODE = "Master" *) output [23:0]GPIO_0_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O" *) (* X_INTERFACE_MODE = "Master" *) output [7:0]GPIO_0_tri_o;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.PL_CLK_50M CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.PL_CLK_50M, CLK_DOMAIN minimal_PL_CLK_50M, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0, PortWidth 1" *) input PL_CLK_50M;
   (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 INTR.PL_LED_1 INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME INTR.PL_LED_1, PortWidth 1, SENSITIVITY LEVEL_HIGH" *) output [0:0]PL_LED_1;
   output [0:0]PL_LED_2;
@@ -246,6 +258,18 @@ module minimal
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 SS_I" *) input [0:0]SPI_4_ss_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 SS_O" *) output [0:0]SPI_4_ss_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 SS_T" *) output SPI_4_ss_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 IO0_I" *) (* X_INTERFACE_MODE = "Master" *) input SPI_595_io0_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 IO0_O" *) output SPI_595_io0_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 IO0_T" *) output SPI_595_io0_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 IO1_I" *) input SPI_595_io1_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 IO1_O" *) output SPI_595_io1_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 IO1_T" *) output SPI_595_io1_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 SCK_I" *) input SPI_595_sck_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 SCK_O" *) output SPI_595_sck_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 SCK_T" *) output SPI_595_sck_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 SS_I" *) input [0:0]SPI_595_ss_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 SS_O" *) output [0:0]SPI_595_ss_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 SS_T" *) output SPI_595_ss_t;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 IO0_I" *) (* X_INTERFACE_MODE = "Master" *) input SPI_5_io0_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 IO0_O" *) output SPI_5_io0_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 IO0_T" *) output SPI_5_io0_t;
@@ -318,7 +342,7 @@ module minimal
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire [23:0]GPIO_0_tri_o;
+  wire [7:0]GPIO_0_tri_o;
   wire PL_CLK_50M;
   wire [0:0]PL_LED_1;
   wire [0:0]PL_LED_2;
@@ -382,6 +406,18 @@ module minimal
   wire [0:0]SPI_4_ss_i;
   wire [0:0]SPI_4_ss_o;
   wire SPI_4_ss_t;
+  wire SPI_595_io0_i;
+  wire SPI_595_io0_o;
+  wire SPI_595_io0_t;
+  wire SPI_595_io1_i;
+  wire SPI_595_io1_o;
+  wire SPI_595_io1_t;
+  wire SPI_595_sck_i;
+  wire SPI_595_sck_o;
+  wire SPI_595_sck_t;
+  wire [0:0]SPI_595_ss_i;
+  wire [0:0]SPI_595_ss_o;
+  wire SPI_595_ss_t;
   wire SPI_5_io0_i;
   wire SPI_5_io0_o;
   wire SPI_5_io0_t;
@@ -427,6 +463,7 @@ module minimal
   wire axi_quad_spi_5_ip2intc_irpt;
   wire axi_quad_spi_6_ip2intc_irpt;
   wire axi_quad_spi_7_ip2intc_irpt;
+  wire axi_quad_spi_8_ip2intc_irpt;
   wire [12:0]axi_smc_M00_AXI_ARADDR;
   wire axi_smc_M00_AXI_ARREADY;
   wire axi_smc_M00_AXI_ARVALID;
@@ -597,9 +634,26 @@ module minimal
   wire axi_smc_M09_AXI_WREADY;
   wire [3:0]axi_smc_M09_AXI_WSTRB;
   wire axi_smc_M09_AXI_WVALID;
+  wire [6:0]axi_smc_M10_AXI_ARADDR;
+  wire axi_smc_M10_AXI_ARREADY;
+  wire axi_smc_M10_AXI_ARVALID;
+  wire [6:0]axi_smc_M10_AXI_AWADDR;
+  wire axi_smc_M10_AXI_AWREADY;
+  wire axi_smc_M10_AXI_AWVALID;
+  wire axi_smc_M10_AXI_BREADY;
+  wire [1:0]axi_smc_M10_AXI_BRESP;
+  wire axi_smc_M10_AXI_BVALID;
+  wire [31:0]axi_smc_M10_AXI_RDATA;
+  wire axi_smc_M10_AXI_RREADY;
+  wire [1:0]axi_smc_M10_AXI_RRESP;
+  wire axi_smc_M10_AXI_RVALID;
+  wire [31:0]axi_smc_M10_AXI_WDATA;
+  wire axi_smc_M10_AXI_WREADY;
+  wire [3:0]axi_smc_M10_AXI_WSTRB;
+  wire axi_smc_M10_AXI_WVALID;
   wire [31:0]c_counter_binary_0_Q;
   wire [31:0]c_counter_binary_1_Q;
-  wire [8:0]ilconcat_0_dout;
+  wire [9:0]ilconcat_0_dout;
   wire [7:0]ilconcat_1_dout;
   wire processing_system7_0_FCLK_CLK0;
   wire processing_system7_0_FCLK_RESET0_N;
@@ -971,6 +1025,40 @@ module minimal
         .ss_i(SPI_7_ss_i),
         .ss_o(SPI_7_ss_o),
         .ss_t(SPI_7_ss_t));
+  minimal_axi_quad_spi_0_2 axi_quad_spi_8
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(SPI_595_io0_i),
+        .io0_o(SPI_595_io0_o),
+        .io0_t(SPI_595_io0_t),
+        .io1_i(SPI_595_io1_i),
+        .io1_o(SPI_595_io1_o),
+        .io1_t(SPI_595_io1_t),
+        .ip2intc_irpt(axi_quad_spi_8_ip2intc_irpt),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M10_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M10_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M10_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M10_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M10_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M10_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M10_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M10_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M10_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M10_AXI_RDATA),
+        .s_axi_rready(axi_smc_M10_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M10_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M10_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M10_AXI_WDATA),
+        .s_axi_wready(axi_smc_M10_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M10_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M10_AXI_WVALID),
+        .sck_i(SPI_595_sck_i),
+        .sck_o(SPI_595_sck_o),
+        .sck_t(SPI_595_sck_t),
+        .ss_i(SPI_595_ss_i),
+        .ss_o(SPI_595_ss_o),
+        .ss_t(SPI_595_ss_t));
   minimal_axi_smc_0 axi_smc
        (.M00_AXI_araddr(axi_smc_M00_AXI_ARADDR),
         .M00_AXI_arready(axi_smc_M00_AXI_ARREADY),
@@ -1142,6 +1230,23 @@ module minimal
         .M09_AXI_wready(axi_smc_M09_AXI_WREADY),
         .M09_AXI_wstrb(axi_smc_M09_AXI_WSTRB),
         .M09_AXI_wvalid(axi_smc_M09_AXI_WVALID),
+        .M10_AXI_araddr(axi_smc_M10_AXI_ARADDR),
+        .M10_AXI_arready(axi_smc_M10_AXI_ARREADY),
+        .M10_AXI_arvalid(axi_smc_M10_AXI_ARVALID),
+        .M10_AXI_awaddr(axi_smc_M10_AXI_AWADDR),
+        .M10_AXI_awready(axi_smc_M10_AXI_AWREADY),
+        .M10_AXI_awvalid(axi_smc_M10_AXI_AWVALID),
+        .M10_AXI_bready(axi_smc_M10_AXI_BREADY),
+        .M10_AXI_bresp(axi_smc_M10_AXI_BRESP),
+        .M10_AXI_bvalid(axi_smc_M10_AXI_BVALID),
+        .M10_AXI_rdata(axi_smc_M10_AXI_RDATA),
+        .M10_AXI_rready(axi_smc_M10_AXI_RREADY),
+        .M10_AXI_rresp(axi_smc_M10_AXI_RRESP),
+        .M10_AXI_rvalid(axi_smc_M10_AXI_RVALID),
+        .M10_AXI_wdata(axi_smc_M10_AXI_WDATA),
+        .M10_AXI_wready(axi_smc_M10_AXI_WREADY),
+        .M10_AXI_wstrb(axi_smc_M10_AXI_WSTRB),
+        .M10_AXI_wvalid(axi_smc_M10_AXI_WVALID),
         .S00_AXI_araddr(processing_system7_0_M_AXI_GP0_ARADDR),
         .S00_AXI_arburst(processing_system7_0_M_AXI_GP0_ARBURST),
         .S00_AXI_arcache(processing_system7_0_M_AXI_GP0_ARCACHE),
@@ -1188,7 +1293,7 @@ module minimal
   minimal_c_counter_binary_0_1 c_counter_binary_1
        (.CLK(PL_CLK_50M),
         .Q(c_counter_binary_1_Q));
-  assign ilconcat_0_dout = {ilconcat_1_dout, axi_ethernetlite_0_ip2intc_irpt};
+  assign ilconcat_0_dout = {ilconcat_1_dout, axi_quad_spi_8_ip2intc_irpt, axi_ethernetlite_0_ip2intc_irpt};
   assign ilconcat_1_dout = {axi_quad_spi_7_ip2intc_irpt, axi_quad_spi_6_ip2intc_irpt, axi_quad_spi_5_ip2intc_irpt, axi_quad_spi_4_ip2intc_irpt, axi_quad_spi_3_ip2intc_irpt, axi_quad_spi_2_ip2intc_irpt, axi_quad_spi_1_ip2intc_irpt, axi_quad_spi_0_ip2intc_irpt};
   assign PL_LED_1 = c_counter_binary_0_Q[25:25];
   assign PL_LED_2 = c_counter_binary_1_Q[25:25];
