@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x9CACEF72D4869919",
+      "boundary_crc": "0x9CACEF729173340D",
       "design_src": "SBD",
       "device": "xc7z010clg400-1",
       "name": "bd_1c4e",
@@ -367,7 +367,7 @@
             "value_src": "auto_prop"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -514,7 +514,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -646,7 +646,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -778,7 +778,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -910,7 +910,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1042,7 +1042,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1174,7 +1174,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1306,7 +1306,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1438,7 +1438,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1570,7 +1570,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1702,7 +1702,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1834,7 +1834,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1966,7 +1966,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -2098,7 +2098,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -2230,7 +2230,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -2362,7 +2362,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -2494,7 +2494,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -2626,7 +2626,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -2746,7 +2746,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "FREQ_TOLERANCE_HZ": {

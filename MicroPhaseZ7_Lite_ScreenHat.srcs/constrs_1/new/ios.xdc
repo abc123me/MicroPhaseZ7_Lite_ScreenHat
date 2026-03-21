@@ -109,3 +109,20 @@ set_property -dict {PACKAGE_PIN G15 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o
 set_property -dict {PACKAGE_PIN H15 IOSTANDARD LVCMOS33} [get_ports SPI_595_ss_io[0]]
 set_property -dict {PACKAGE_PIN L17 IOSTANDARD LVCMOS33} [get_ports SPI_595_io0_io]
 set_property -dict {PACKAGE_PIN L16 IOSTANDARD LVCMOS33} [get_ports SPI_595_sck_io]
+
+# Fix some BS warnings
+###################################################################
+set_property IOB FALSE [get_ports axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
+set_property IOB FALSE [get_ports axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
+set_property IOB FALSE [get_ports axi_quad_spi_2/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
+set_property IOB FALSE [get_ports axi_quad_spi_3/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
+set_property IOB FALSE [get_ports axi_quad_spi_4/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
+set_property IOB FALSE [get_ports axi_quad_spi_5/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
+set_property IOB FALSE [get_ports axi_quad_spi_6/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
+set_property IOB FALSE [get_ports axi_quad_spi_7/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
+set_property IOB FALSE [get_ports axi_quad_spi_8/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
+set_property IOB FALSE [get_ports axi_quad_spi_9/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
+set_property IOB FALSE [get_ports axi_quad_spi_10/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
+set_property IOB FALSE [get_ports axi_quad_spi_11/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
+set_property IOB FALSE [get_ports axi_quad_spi_12/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
+set_property IOB FALSE [get_ports axi_quad_spi_13/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]

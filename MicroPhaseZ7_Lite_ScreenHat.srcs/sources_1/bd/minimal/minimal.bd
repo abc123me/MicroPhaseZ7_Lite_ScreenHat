@@ -843,7 +843,7 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "100.000000"
+            "value": "200.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -903,7 +903,7 @@
             "value": "0"
           },
           "PCW_CLK0_FREQ": {
-            "value": "100000000"
+            "value": "200000000"
           },
           "PCW_CLK1_FREQ": {
             "value": "10000000"
@@ -972,7 +972,7 @@
             "value": "ARM PLL"
           },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "100"
+            "value": "200"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "20"
@@ -1374,7 +1374,7 @@
         "has_run_ip_tcl": "true",
         "parameters": {
           "AXI_ACLK_FREQ_MHZ": {
-            "value": "100"
+            "value": "200"
           }
         }
       },

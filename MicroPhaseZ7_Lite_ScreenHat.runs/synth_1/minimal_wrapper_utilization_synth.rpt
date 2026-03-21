@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Sat Mar 21 02:48:15 2026
+| Date         : Sat Mar 21 03:08:26 2026
 | Host         : npc running 64-bit Arch Linux
 | Command      : report_utilization -file minimal_wrapper_utilization_synth.rpt -pb minimal_wrapper_utilization_synth.pb
 | Design       : minimal_wrapper
@@ -31,8 +31,8 @@ Table of Contents
 +----------------------------+-------+-------+------------+-----------+-------+
 |          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+-------+-------+------------+-----------+-------+
-| Slice LUTs*                | 12439 |     0 |          0 |     17600 | 70.68 |
-|   LUT as Logic             | 12409 |     0 |          0 |     17600 | 70.51 |
+| Slice LUTs*                | 12408 |     0 |          0 |     17600 | 70.50 |
+|   LUT as Logic             | 12378 |     0 |          0 |     17600 | 70.33 |
 |   LUT as Memory            |    30 |     0 |          0 |      6000 |  0.50 |
 |     LUT as Distributed RAM |    28 |     0 |            |           |       |
 |     LUT as Shift Register  |     2 |     0 |            |           |       |
@@ -41,7 +41,7 @@ Table of Contents
 |   Register as Latch        |     0 |     0 |          0 |     35200 |  0.00 |
 | F7 Muxes                   |    38 |     0 |          0 |      8800 |  0.43 |
 | F8 Muxes                   |     0 |     0 |          0 |      4400 |  0.00 |
-| Unique Control Sets        |  1007 |       |          0 |      4400 | 22.89 |
+| Unique Control Sets        |  1006 |       |          0 |      4400 | 22.86 |
 +----------------------------+-------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
@@ -155,11 +155,11 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | Ref Name |  Used |  Functional Category |
 +----------+-------+----------------------+
 | FDRE     | 15958 |         Flop & Latch |
-| LUT2     |  3625 |                  LUT |
-| LUT6     |  3451 |                  LUT |
-| LUT5     |  2666 |                  LUT |
-| LUT4     |  2307 |                  LUT |
-| LUT3     |  1972 |                  LUT |
+| LUT2     |  3629 |                  LUT |
+| LUT6     |  3452 |                  LUT |
+| LUT5     |  2649 |                  LUT |
+| LUT4     |  2300 |                  LUT |
+| LUT3     |  1979 |                  LUT |
 | LUT1     |  1267 |                  LUT |
 | FDCE     |   840 |         Flop & Latch |
 | FDSE     |   742 |         Flop & Latch |
