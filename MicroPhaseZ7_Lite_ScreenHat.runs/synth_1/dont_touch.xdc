@@ -363,6 +363,30 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi
 # IP: bd/minimal/ip/minimal_axi_quad_spi_0_2/minimal_axi_quad_spi_0_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_quad_spi_0_2 || ORIG_REF_NAME==minimal_axi_quad_spi_0_2} -quiet] -quiet
 
+# IP: bd/minimal/ip/minimal_spi2ili_0_5/minimal_spi2ili_0_5.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_spi2ili_0_5 || ORIG_REF_NAME==minimal_spi2ili_0_5} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_spi2ili_0_6/minimal_spi2ili_0_6.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_spi2ili_0_6 || ORIG_REF_NAME==minimal_spi2ili_0_6} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_spi2ili_1_0/minimal_spi2ili_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_spi2ili_1_0 || ORIG_REF_NAME==minimal_spi2ili_1_0} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_spi2ili_2_0/minimal_spi2ili_2_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_spi2ili_2_0 || ORIG_REF_NAME==minimal_spi2ili_2_0} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_spi2ili_3_0/minimal_spi2ili_3_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_spi2ili_3_0 || ORIG_REF_NAME==minimal_spi2ili_3_0} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_spi2ili_4_0/minimal_spi2ili_4_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_spi2ili_4_0 || ORIG_REF_NAME==minimal_spi2ili_4_0} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_spi2ili_5_0/minimal_spi2ili_5_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_spi2ili_5_0 || ORIG_REF_NAME==minimal_spi2ili_5_0} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_spi2ili_6_0/minimal_spi2ili_6_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_spi2ili_6_0 || ORIG_REF_NAME==minimal_spi2ili_6_0} -quiet] -quiet
+
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_processing_system7_0_0 || ORIG_REF_NAME==minimal_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 

@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Fri Mar 20 02:34:03 2026
+//Date        : Fri Mar 20 23:48:43 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal.bd
 //Design      : minimal
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "minimal,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=minimal,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=20,numReposBlks=20,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_ps7_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "minimal.hwdef" *) 
+(* CORE_GENERATION_INFO = "minimal,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=minimal,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=28,numReposBlks=28,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=8,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_ps7_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "minimal.hwdef" *) 
 module minimal
    (DDR_addr,
     DDR_ba,
@@ -48,69 +48,33 @@ module minimal
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
     GPIO_0_tri_o,
+    ILI_0_sck_o,
+    ILI_0_sda_o,
+    ILI_0_ss_o,
+    ILI_1_sck_o,
+    ILI_1_sda_o,
+    ILI_1_ss_o,
+    ILI_2_sck_o,
+    ILI_2_sda_o,
+    ILI_2_ss_o,
+    ILI_3_sck_o,
+    ILI_3_sda_o,
+    ILI_3_ss_o,
+    ILI_4_sck_o,
+    ILI_4_sda_o,
+    ILI_4_ss_o,
+    ILI_5_sck_o,
+    ILI_5_sda_o,
+    ILI_5_ss_o,
+    ILI_6_sck_o,
+    ILI_6_sda_o,
+    ILI_6_ss_o,
+    ILI_7_sck_o,
+    ILI_7_sda_o,
+    ILI_7_ss_o,
     PL_CLK_50M,
     PL_LED_1,
     PL_LED_2,
-    SPI_0_io0_i,
-    SPI_0_io0_o,
-    SPI_0_io0_t,
-    SPI_0_io1_i,
-    SPI_0_io1_o,
-    SPI_0_io1_t,
-    SPI_0_sck_i,
-    SPI_0_sck_o,
-    SPI_0_sck_t,
-    SPI_0_ss_i,
-    SPI_0_ss_o,
-    SPI_0_ss_t,
-    SPI_1_io0_i,
-    SPI_1_io0_o,
-    SPI_1_io0_t,
-    SPI_1_io1_i,
-    SPI_1_io1_o,
-    SPI_1_io1_t,
-    SPI_1_sck_i,
-    SPI_1_sck_o,
-    SPI_1_sck_t,
-    SPI_1_ss_i,
-    SPI_1_ss_o,
-    SPI_1_ss_t,
-    SPI_2_io0_i,
-    SPI_2_io0_o,
-    SPI_2_io0_t,
-    SPI_2_io1_i,
-    SPI_2_io1_o,
-    SPI_2_io1_t,
-    SPI_2_sck_i,
-    SPI_2_sck_o,
-    SPI_2_sck_t,
-    SPI_2_ss_i,
-    SPI_2_ss_o,
-    SPI_2_ss_t,
-    SPI_3_io0_i,
-    SPI_3_io0_o,
-    SPI_3_io0_t,
-    SPI_3_io1_i,
-    SPI_3_io1_o,
-    SPI_3_io1_t,
-    SPI_3_sck_i,
-    SPI_3_sck_o,
-    SPI_3_sck_t,
-    SPI_3_ss_i,
-    SPI_3_ss_o,
-    SPI_3_ss_t,
-    SPI_4_io0_i,
-    SPI_4_io0_o,
-    SPI_4_io0_t,
-    SPI_4_io1_i,
-    SPI_4_io1_o,
-    SPI_4_io1_t,
-    SPI_4_sck_i,
-    SPI_4_sck_o,
-    SPI_4_sck_t,
-    SPI_4_ss_i,
-    SPI_4_ss_o,
-    SPI_4_ss_t,
     SPI_595_io0_i,
     SPI_595_io0_o,
     SPI_595_io0_t,
@@ -122,43 +86,7 @@ module minimal
     SPI_595_sck_t,
     SPI_595_ss_i,
     SPI_595_ss_o,
-    SPI_595_ss_t,
-    SPI_5_io0_i,
-    SPI_5_io0_o,
-    SPI_5_io0_t,
-    SPI_5_io1_i,
-    SPI_5_io1_o,
-    SPI_5_io1_t,
-    SPI_5_sck_i,
-    SPI_5_sck_o,
-    SPI_5_sck_t,
-    SPI_5_ss_i,
-    SPI_5_ss_o,
-    SPI_5_ss_t,
-    SPI_6_io0_i,
-    SPI_6_io0_o,
-    SPI_6_io0_t,
-    SPI_6_io1_i,
-    SPI_6_io1_o,
-    SPI_6_io1_t,
-    SPI_6_sck_i,
-    SPI_6_sck_o,
-    SPI_6_sck_t,
-    SPI_6_ss_i,
-    SPI_6_ss_o,
-    SPI_6_ss_t,
-    SPI_7_io0_i,
-    SPI_7_io0_o,
-    SPI_7_io0_t,
-    SPI_7_io1_i,
-    SPI_7_io1_o,
-    SPI_7_io1_t,
-    SPI_7_sck_i,
-    SPI_7_sck_o,
-    SPI_7_sck_t,
-    SPI_7_ss_i,
-    SPI_7_ss_o,
-    SPI_7_ss_t);
+    SPI_595_ss_t);
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR ADDR" *) (* X_INTERFACE_MODE = "Master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) inout [14:0]DDR_addr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR BA" *) inout [2:0]DDR_ba;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CAS_N" *) inout DDR_cas_n;
@@ -195,69 +123,33 @@ module minimal
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O" *) (* X_INTERFACE_MODE = "Master" *) output [7:0]GPIO_0_tri_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_0 SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_0_sck_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_0 SDA_O" *) output ILI_0_sda_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_0 SS_O" *) output ILI_0_ss_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_1 SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_1_sck_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_1 SDA_O" *) output ILI_1_sda_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_1 SS_O" *) output ILI_1_ss_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_2 SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_2_sck_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_2 SDA_O" *) output ILI_2_sda_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_2 SS_O" *) output ILI_2_ss_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_3 SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_3_sck_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_3 SDA_O" *) output ILI_3_sda_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_3 SS_O" *) output ILI_3_ss_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_4 SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_4_sck_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_4 SDA_O" *) output ILI_4_sda_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_4 SS_O" *) output ILI_4_ss_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_5 SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_5_sck_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_5 SDA_O" *) output ILI_5_sda_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_5 SS_O" *) output ILI_5_ss_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_6 SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_6_sck_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_6 SDA_O" *) output ILI_6_sda_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_6 SS_O" *) output ILI_6_ss_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_7 SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_7_sck_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_7 SDA_O" *) output ILI_7_sda_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_7 SS_O" *) output ILI_7_ss_o;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.PL_CLK_50M CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.PL_CLK_50M, CLK_DOMAIN minimal_PL_CLK_50M, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0, PortWidth 1" *) input PL_CLK_50M;
   (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 INTR.PL_LED_1 INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME INTR.PL_LED_1, PortWidth 1, SENSITIVITY LEVEL_HIGH" *) output [0:0]PL_LED_1;
   output [0:0]PL_LED_2;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_I" *) (* X_INTERFACE_MODE = "Master" *) input SPI_0_io0_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_O" *) output SPI_0_io0_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_T" *) output SPI_0_io0_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_I" *) input SPI_0_io1_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_O" *) output SPI_0_io1_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_T" *) output SPI_0_io1_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_I" *) input SPI_0_sck_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_O" *) output SPI_0_sck_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_T" *) output SPI_0_sck_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_I" *) input [0:0]SPI_0_ss_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_O" *) output [0:0]SPI_0_ss_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_T" *) output SPI_0_ss_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1 IO0_I" *) (* X_INTERFACE_MODE = "Master" *) input SPI_1_io0_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1 IO0_O" *) output SPI_1_io0_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1 IO0_T" *) output SPI_1_io0_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1 IO1_I" *) input SPI_1_io1_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1 IO1_O" *) output SPI_1_io1_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1 IO1_T" *) output SPI_1_io1_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1 SCK_I" *) input SPI_1_sck_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1 SCK_O" *) output SPI_1_sck_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1 SCK_T" *) output SPI_1_sck_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1 SS_I" *) input [0:0]SPI_1_ss_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1 SS_O" *) output [0:0]SPI_1_ss_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_1 SS_T" *) output SPI_1_ss_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_2 IO0_I" *) (* X_INTERFACE_MODE = "Master" *) input SPI_2_io0_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_2 IO0_O" *) output SPI_2_io0_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_2 IO0_T" *) output SPI_2_io0_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_2 IO1_I" *) input SPI_2_io1_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_2 IO1_O" *) output SPI_2_io1_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_2 IO1_T" *) output SPI_2_io1_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_2 SCK_I" *) input SPI_2_sck_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_2 SCK_O" *) output SPI_2_sck_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_2 SCK_T" *) output SPI_2_sck_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_2 SS_I" *) input [0:0]SPI_2_ss_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_2 SS_O" *) output [0:0]SPI_2_ss_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_2 SS_T" *) output SPI_2_ss_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_3 IO0_I" *) (* X_INTERFACE_MODE = "Master" *) input SPI_3_io0_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_3 IO0_O" *) output SPI_3_io0_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_3 IO0_T" *) output SPI_3_io0_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_3 IO1_I" *) input SPI_3_io1_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_3 IO1_O" *) output SPI_3_io1_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_3 IO1_T" *) output SPI_3_io1_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_3 SCK_I" *) input SPI_3_sck_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_3 SCK_O" *) output SPI_3_sck_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_3 SCK_T" *) output SPI_3_sck_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_3 SS_I" *) input [0:0]SPI_3_ss_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_3 SS_O" *) output [0:0]SPI_3_ss_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_3 SS_T" *) output SPI_3_ss_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 IO0_I" *) (* X_INTERFACE_MODE = "Master" *) input SPI_4_io0_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 IO0_O" *) output SPI_4_io0_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 IO0_T" *) output SPI_4_io0_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 IO1_I" *) input SPI_4_io1_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 IO1_O" *) output SPI_4_io1_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 IO1_T" *) output SPI_4_io1_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 SCK_I" *) input SPI_4_sck_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 SCK_O" *) output SPI_4_sck_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 SCK_T" *) output SPI_4_sck_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 SS_I" *) input [0:0]SPI_4_ss_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 SS_O" *) output [0:0]SPI_4_ss_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_4 SS_T" *) output SPI_4_ss_t;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 IO0_I" *) (* X_INTERFACE_MODE = "Master" *) input SPI_595_io0_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 IO0_O" *) output SPI_595_io0_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 IO0_T" *) output SPI_595_io0_t;
@@ -270,42 +162,6 @@ module minimal
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 SS_I" *) input [0:0]SPI_595_ss_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 SS_O" *) output [0:0]SPI_595_ss_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_595 SS_T" *) output SPI_595_ss_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 IO0_I" *) (* X_INTERFACE_MODE = "Master" *) input SPI_5_io0_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 IO0_O" *) output SPI_5_io0_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 IO0_T" *) output SPI_5_io0_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 IO1_I" *) input SPI_5_io1_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 IO1_O" *) output SPI_5_io1_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 IO1_T" *) output SPI_5_io1_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 SCK_I" *) input SPI_5_sck_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 SCK_O" *) output SPI_5_sck_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 SCK_T" *) output SPI_5_sck_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 SS_I" *) input [0:0]SPI_5_ss_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 SS_O" *) output [0:0]SPI_5_ss_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_5 SS_T" *) output SPI_5_ss_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_6 IO0_I" *) (* X_INTERFACE_MODE = "Master" *) input SPI_6_io0_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_6 IO0_O" *) output SPI_6_io0_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_6 IO0_T" *) output SPI_6_io0_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_6 IO1_I" *) input SPI_6_io1_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_6 IO1_O" *) output SPI_6_io1_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_6 IO1_T" *) output SPI_6_io1_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_6 SCK_I" *) input SPI_6_sck_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_6 SCK_O" *) output SPI_6_sck_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_6 SCK_T" *) output SPI_6_sck_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_6 SS_I" *) input [0:0]SPI_6_ss_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_6 SS_O" *) output [0:0]SPI_6_ss_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_6 SS_T" *) output SPI_6_ss_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_7 IO0_I" *) (* X_INTERFACE_MODE = "Master" *) input SPI_7_io0_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_7 IO0_O" *) output SPI_7_io0_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_7 IO0_T" *) output SPI_7_io0_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_7 IO1_I" *) input SPI_7_io1_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_7 IO1_O" *) output SPI_7_io1_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_7 IO1_T" *) output SPI_7_io1_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_7 SCK_I" *) input SPI_7_sck_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_7 SCK_O" *) output SPI_7_sck_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_7 SCK_T" *) output SPI_7_sck_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_7 SS_I" *) input [0:0]SPI_7_ss_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_7 SS_O" *) output [0:0]SPI_7_ss_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_7 SS_T" *) output SPI_7_ss_t;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -343,69 +199,33 @@ module minimal
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
   wire [7:0]GPIO_0_tri_o;
+  wire ILI_0_sck_o;
+  wire ILI_0_sda_o;
+  wire ILI_0_ss_o;
+  wire ILI_1_sck_o;
+  wire ILI_1_sda_o;
+  wire ILI_1_ss_o;
+  wire ILI_2_sck_o;
+  wire ILI_2_sda_o;
+  wire ILI_2_ss_o;
+  wire ILI_3_sck_o;
+  wire ILI_3_sda_o;
+  wire ILI_3_ss_o;
+  wire ILI_4_sck_o;
+  wire ILI_4_sda_o;
+  wire ILI_4_ss_o;
+  wire ILI_5_sck_o;
+  wire ILI_5_sda_o;
+  wire ILI_5_ss_o;
+  wire ILI_6_sck_o;
+  wire ILI_6_sda_o;
+  wire ILI_6_ss_o;
+  wire ILI_7_sck_o;
+  wire ILI_7_sda_o;
+  wire ILI_7_ss_o;
   wire PL_CLK_50M;
   wire [0:0]PL_LED_1;
   wire [0:0]PL_LED_2;
-  wire SPI_0_io0_i;
-  wire SPI_0_io0_o;
-  wire SPI_0_io0_t;
-  wire SPI_0_io1_i;
-  wire SPI_0_io1_o;
-  wire SPI_0_io1_t;
-  wire SPI_0_sck_i;
-  wire SPI_0_sck_o;
-  wire SPI_0_sck_t;
-  wire [0:0]SPI_0_ss_i;
-  wire [0:0]SPI_0_ss_o;
-  wire SPI_0_ss_t;
-  wire SPI_1_io0_i;
-  wire SPI_1_io0_o;
-  wire SPI_1_io0_t;
-  wire SPI_1_io1_i;
-  wire SPI_1_io1_o;
-  wire SPI_1_io1_t;
-  wire SPI_1_sck_i;
-  wire SPI_1_sck_o;
-  wire SPI_1_sck_t;
-  wire [0:0]SPI_1_ss_i;
-  wire [0:0]SPI_1_ss_o;
-  wire SPI_1_ss_t;
-  wire SPI_2_io0_i;
-  wire SPI_2_io0_o;
-  wire SPI_2_io0_t;
-  wire SPI_2_io1_i;
-  wire SPI_2_io1_o;
-  wire SPI_2_io1_t;
-  wire SPI_2_sck_i;
-  wire SPI_2_sck_o;
-  wire SPI_2_sck_t;
-  wire [0:0]SPI_2_ss_i;
-  wire [0:0]SPI_2_ss_o;
-  wire SPI_2_ss_t;
-  wire SPI_3_io0_i;
-  wire SPI_3_io0_o;
-  wire SPI_3_io0_t;
-  wire SPI_3_io1_i;
-  wire SPI_3_io1_o;
-  wire SPI_3_io1_t;
-  wire SPI_3_sck_i;
-  wire SPI_3_sck_o;
-  wire SPI_3_sck_t;
-  wire [0:0]SPI_3_ss_i;
-  wire [0:0]SPI_3_ss_o;
-  wire SPI_3_ss_t;
-  wire SPI_4_io0_i;
-  wire SPI_4_io0_o;
-  wire SPI_4_io0_t;
-  wire SPI_4_io1_i;
-  wire SPI_4_io1_o;
-  wire SPI_4_io1_t;
-  wire SPI_4_sck_i;
-  wire SPI_4_sck_o;
-  wire SPI_4_sck_t;
-  wire [0:0]SPI_4_ss_i;
-  wire [0:0]SPI_4_ss_o;
-  wire SPI_4_ss_t;
   wire SPI_595_io0_i;
   wire SPI_595_io0_o;
   wire SPI_595_io0_t;
@@ -418,50 +238,110 @@ module minimal
   wire [0:0]SPI_595_ss_i;
   wire [0:0]SPI_595_ss_o;
   wire SPI_595_ss_t;
-  wire SPI_5_io0_i;
-  wire SPI_5_io0_o;
-  wire SPI_5_io0_t;
-  wire SPI_5_io1_i;
-  wire SPI_5_io1_o;
-  wire SPI_5_io1_t;
-  wire SPI_5_sck_i;
-  wire SPI_5_sck_o;
-  wire SPI_5_sck_t;
-  wire [0:0]SPI_5_ss_i;
-  wire [0:0]SPI_5_ss_o;
-  wire SPI_5_ss_t;
-  wire SPI_6_io0_i;
-  wire SPI_6_io0_o;
-  wire SPI_6_io0_t;
-  wire SPI_6_io1_i;
-  wire SPI_6_io1_o;
-  wire SPI_6_io1_t;
-  wire SPI_6_sck_i;
-  wire SPI_6_sck_o;
-  wire SPI_6_sck_t;
-  wire [0:0]SPI_6_ss_i;
-  wire [0:0]SPI_6_ss_o;
-  wire SPI_6_ss_t;
-  wire SPI_7_io0_i;
-  wire SPI_7_io0_o;
-  wire SPI_7_io0_t;
-  wire SPI_7_io1_i;
-  wire SPI_7_io1_o;
-  wire SPI_7_io1_t;
-  wire SPI_7_sck_i;
-  wire SPI_7_sck_o;
-  wire SPI_7_sck_t;
-  wire [0:0]SPI_7_ss_i;
-  wire [0:0]SPI_7_ss_o;
-  wire SPI_7_ss_t;
   wire axi_ethernetlite_0_ip2intc_irpt;
+  wire axi_quad_spi_0_SPI_0_IO0_I;
+  wire axi_quad_spi_0_SPI_0_IO0_O;
+  wire axi_quad_spi_0_SPI_0_IO0_T;
+  wire axi_quad_spi_0_SPI_0_IO1_I;
+  wire axi_quad_spi_0_SPI_0_IO1_O;
+  wire axi_quad_spi_0_SPI_0_IO1_T;
+  wire axi_quad_spi_0_SPI_0_SCK_I;
+  wire axi_quad_spi_0_SPI_0_SCK_O;
+  wire axi_quad_spi_0_SPI_0_SCK_T;
+  wire [0:0]axi_quad_spi_0_SPI_0_SS_I;
+  wire [0:0]axi_quad_spi_0_SPI_0_SS_O;
+  wire axi_quad_spi_0_SPI_0_SS_T;
   wire axi_quad_spi_0_ip2intc_irpt;
+  wire axi_quad_spi_1_SPI_0_IO0_I;
+  wire axi_quad_spi_1_SPI_0_IO0_O;
+  wire axi_quad_spi_1_SPI_0_IO0_T;
+  wire axi_quad_spi_1_SPI_0_IO1_I;
+  wire axi_quad_spi_1_SPI_0_IO1_O;
+  wire axi_quad_spi_1_SPI_0_IO1_T;
+  wire axi_quad_spi_1_SPI_0_SCK_I;
+  wire axi_quad_spi_1_SPI_0_SCK_O;
+  wire axi_quad_spi_1_SPI_0_SCK_T;
+  wire [0:0]axi_quad_spi_1_SPI_0_SS_I;
+  wire [0:0]axi_quad_spi_1_SPI_0_SS_O;
+  wire axi_quad_spi_1_SPI_0_SS_T;
   wire axi_quad_spi_1_ip2intc_irpt;
+  wire axi_quad_spi_2_SPI_0_IO0_I;
+  wire axi_quad_spi_2_SPI_0_IO0_O;
+  wire axi_quad_spi_2_SPI_0_IO0_T;
+  wire axi_quad_spi_2_SPI_0_IO1_I;
+  wire axi_quad_spi_2_SPI_0_IO1_O;
+  wire axi_quad_spi_2_SPI_0_IO1_T;
+  wire axi_quad_spi_2_SPI_0_SCK_I;
+  wire axi_quad_spi_2_SPI_0_SCK_O;
+  wire axi_quad_spi_2_SPI_0_SCK_T;
+  wire [0:0]axi_quad_spi_2_SPI_0_SS_I;
+  wire [0:0]axi_quad_spi_2_SPI_0_SS_O;
+  wire axi_quad_spi_2_SPI_0_SS_T;
   wire axi_quad_spi_2_ip2intc_irpt;
+  wire axi_quad_spi_3_SPI_0_IO0_I;
+  wire axi_quad_spi_3_SPI_0_IO0_O;
+  wire axi_quad_spi_3_SPI_0_IO0_T;
+  wire axi_quad_spi_3_SPI_0_IO1_I;
+  wire axi_quad_spi_3_SPI_0_IO1_O;
+  wire axi_quad_spi_3_SPI_0_IO1_T;
+  wire axi_quad_spi_3_SPI_0_SCK_I;
+  wire axi_quad_spi_3_SPI_0_SCK_O;
+  wire axi_quad_spi_3_SPI_0_SCK_T;
+  wire [0:0]axi_quad_spi_3_SPI_0_SS_I;
+  wire [0:0]axi_quad_spi_3_SPI_0_SS_O;
+  wire axi_quad_spi_3_SPI_0_SS_T;
   wire axi_quad_spi_3_ip2intc_irpt;
+  wire axi_quad_spi_4_SPI_0_IO0_I;
+  wire axi_quad_spi_4_SPI_0_IO0_O;
+  wire axi_quad_spi_4_SPI_0_IO0_T;
+  wire axi_quad_spi_4_SPI_0_IO1_I;
+  wire axi_quad_spi_4_SPI_0_IO1_O;
+  wire axi_quad_spi_4_SPI_0_IO1_T;
+  wire axi_quad_spi_4_SPI_0_SCK_I;
+  wire axi_quad_spi_4_SPI_0_SCK_O;
+  wire axi_quad_spi_4_SPI_0_SCK_T;
+  wire [0:0]axi_quad_spi_4_SPI_0_SS_I;
+  wire [0:0]axi_quad_spi_4_SPI_0_SS_O;
+  wire axi_quad_spi_4_SPI_0_SS_T;
   wire axi_quad_spi_4_ip2intc_irpt;
+  wire axi_quad_spi_5_SPI_0_IO0_I;
+  wire axi_quad_spi_5_SPI_0_IO0_O;
+  wire axi_quad_spi_5_SPI_0_IO0_T;
+  wire axi_quad_spi_5_SPI_0_IO1_I;
+  wire axi_quad_spi_5_SPI_0_IO1_O;
+  wire axi_quad_spi_5_SPI_0_IO1_T;
+  wire axi_quad_spi_5_SPI_0_SCK_I;
+  wire axi_quad_spi_5_SPI_0_SCK_O;
+  wire axi_quad_spi_5_SPI_0_SCK_T;
+  wire [0:0]axi_quad_spi_5_SPI_0_SS_I;
+  wire [0:0]axi_quad_spi_5_SPI_0_SS_O;
+  wire axi_quad_spi_5_SPI_0_SS_T;
   wire axi_quad_spi_5_ip2intc_irpt;
+  wire axi_quad_spi_6_SPI_0_IO0_I;
+  wire axi_quad_spi_6_SPI_0_IO0_O;
+  wire axi_quad_spi_6_SPI_0_IO0_T;
+  wire axi_quad_spi_6_SPI_0_IO1_I;
+  wire axi_quad_spi_6_SPI_0_IO1_O;
+  wire axi_quad_spi_6_SPI_0_IO1_T;
+  wire axi_quad_spi_6_SPI_0_SCK_I;
+  wire axi_quad_spi_6_SPI_0_SCK_O;
+  wire axi_quad_spi_6_SPI_0_SCK_T;
+  wire [0:0]axi_quad_spi_6_SPI_0_SS_I;
+  wire [0:0]axi_quad_spi_6_SPI_0_SS_O;
+  wire axi_quad_spi_6_SPI_0_SS_T;
   wire axi_quad_spi_6_ip2intc_irpt;
+  wire axi_quad_spi_7_SPI_0_IO0_I;
+  wire axi_quad_spi_7_SPI_0_IO0_O;
+  wire axi_quad_spi_7_SPI_0_IO0_T;
+  wire axi_quad_spi_7_SPI_0_IO1_I;
+  wire axi_quad_spi_7_SPI_0_IO1_O;
+  wire axi_quad_spi_7_SPI_0_IO1_T;
+  wire axi_quad_spi_7_SPI_0_SCK_I;
+  wire axi_quad_spi_7_SPI_0_SCK_O;
+  wire axi_quad_spi_7_SPI_0_SCK_T;
+  wire [0:0]axi_quad_spi_7_SPI_0_SS_I;
+  wire [0:0]axi_quad_spi_7_SPI_0_SS_O;
+  wire axi_quad_spi_7_SPI_0_SS_T;
   wire axi_quad_spi_7_ip2intc_irpt;
   wire axi_quad_spi_8_ip2intc_irpt;
   wire [12:0]axi_smc_M00_AXI_ARADDR;
@@ -755,12 +635,12 @@ module minimal
         .s_axi_wvalid(axi_smc_M01_AXI_WVALID));
   minimal_axi_quad_spi_0_0 axi_quad_spi_0
        (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(SPI_0_io0_i),
-        .io0_o(SPI_0_io0_o),
-        .io0_t(SPI_0_io0_t),
-        .io1_i(SPI_0_io1_i),
-        .io1_o(SPI_0_io1_o),
-        .io1_t(SPI_0_io1_t),
+        .io0_i(1'b0),
+        .io0_o(axi_quad_spi_0_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_0_SPI_0_IO0_T),
+        .io1_i(1'b0),
+        .io1_o(axi_quad_spi_0_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_0_SPI_0_IO1_T),
         .ip2intc_irpt(axi_quad_spi_0_ip2intc_irpt),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M02_AXI_ARADDR),
@@ -781,20 +661,20 @@ module minimal
         .s_axi_wready(axi_smc_M02_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M02_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M02_AXI_WVALID),
-        .sck_i(SPI_0_sck_i),
-        .sck_o(SPI_0_sck_o),
-        .sck_t(SPI_0_sck_t),
-        .ss_i(SPI_0_ss_i),
-        .ss_o(SPI_0_ss_o),
-        .ss_t(SPI_0_ss_t));
+        .sck_i(1'b0),
+        .sck_o(axi_quad_spi_0_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_0_SPI_0_SCK_T),
+        .ss_i(1'b0),
+        .ss_o(axi_quad_spi_0_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_0_SPI_0_SS_T));
   minimal_axi_quad_spi_0_1 axi_quad_spi_1
        (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(SPI_1_io0_i),
-        .io0_o(SPI_1_io0_o),
-        .io0_t(SPI_1_io0_t),
-        .io1_i(SPI_1_io1_i),
-        .io1_o(SPI_1_io1_o),
-        .io1_t(SPI_1_io1_t),
+        .io0_i(axi_quad_spi_1_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_1_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_1_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_1_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_1_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_1_SPI_0_IO1_T),
         .ip2intc_irpt(axi_quad_spi_1_ip2intc_irpt),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M03_AXI_ARADDR),
@@ -815,20 +695,20 @@ module minimal
         .s_axi_wready(axi_smc_M03_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M03_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M03_AXI_WVALID),
-        .sck_i(SPI_1_sck_i),
-        .sck_o(SPI_1_sck_o),
-        .sck_t(SPI_1_sck_t),
-        .ss_i(SPI_1_ss_i),
-        .ss_o(SPI_1_ss_o),
-        .ss_t(SPI_1_ss_t));
+        .sck_i(axi_quad_spi_1_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_1_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_1_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_1_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_1_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_1_SPI_0_SS_T));
   minimal_axi_quad_spi_1_0 axi_quad_spi_2
        (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(SPI_2_io0_i),
-        .io0_o(SPI_2_io0_o),
-        .io0_t(SPI_2_io0_t),
-        .io1_i(SPI_2_io1_i),
-        .io1_o(SPI_2_io1_o),
-        .io1_t(SPI_2_io1_t),
+        .io0_i(axi_quad_spi_2_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_2_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_2_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_2_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_2_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_2_SPI_0_IO1_T),
         .ip2intc_irpt(axi_quad_spi_2_ip2intc_irpt),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M04_AXI_ARADDR),
@@ -849,20 +729,20 @@ module minimal
         .s_axi_wready(axi_smc_M04_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M04_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M04_AXI_WVALID),
-        .sck_i(SPI_2_sck_i),
-        .sck_o(SPI_2_sck_o),
-        .sck_t(SPI_2_sck_t),
-        .ss_i(SPI_2_ss_i),
-        .ss_o(SPI_2_ss_o),
-        .ss_t(SPI_2_ss_t));
+        .sck_i(axi_quad_spi_2_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_2_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_2_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_2_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_2_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_2_SPI_0_SS_T));
   minimal_axi_quad_spi_2_0 axi_quad_spi_3
        (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(SPI_3_io0_i),
-        .io0_o(SPI_3_io0_o),
-        .io0_t(SPI_3_io0_t),
-        .io1_i(SPI_3_io1_i),
-        .io1_o(SPI_3_io1_o),
-        .io1_t(SPI_3_io1_t),
+        .io0_i(axi_quad_spi_3_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_3_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_3_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_3_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_3_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_3_SPI_0_IO1_T),
         .ip2intc_irpt(axi_quad_spi_3_ip2intc_irpt),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M05_AXI_ARADDR),
@@ -883,20 +763,20 @@ module minimal
         .s_axi_wready(axi_smc_M05_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M05_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M05_AXI_WVALID),
-        .sck_i(SPI_3_sck_i),
-        .sck_o(SPI_3_sck_o),
-        .sck_t(SPI_3_sck_t),
-        .ss_i(SPI_3_ss_i),
-        .ss_o(SPI_3_ss_o),
-        .ss_t(SPI_3_ss_t));
+        .sck_i(axi_quad_spi_3_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_3_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_3_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_3_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_3_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_3_SPI_0_SS_T));
   minimal_axi_quad_spi_3_0 axi_quad_spi_4
        (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(SPI_4_io0_i),
-        .io0_o(SPI_4_io0_o),
-        .io0_t(SPI_4_io0_t),
-        .io1_i(SPI_4_io1_i),
-        .io1_o(SPI_4_io1_o),
-        .io1_t(SPI_4_io1_t),
+        .io0_i(axi_quad_spi_4_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_4_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_4_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_4_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_4_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_4_SPI_0_IO1_T),
         .ip2intc_irpt(axi_quad_spi_4_ip2intc_irpt),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M06_AXI_ARADDR),
@@ -917,20 +797,20 @@ module minimal
         .s_axi_wready(axi_smc_M06_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M06_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M06_AXI_WVALID),
-        .sck_i(SPI_4_sck_i),
-        .sck_o(SPI_4_sck_o),
-        .sck_t(SPI_4_sck_t),
-        .ss_i(SPI_4_ss_i),
-        .ss_o(SPI_4_ss_o),
-        .ss_t(SPI_4_ss_t));
+        .sck_i(axi_quad_spi_4_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_4_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_4_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_4_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_4_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_4_SPI_0_SS_T));
   minimal_axi_quad_spi_4_0 axi_quad_spi_5
        (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(SPI_5_io0_i),
-        .io0_o(SPI_5_io0_o),
-        .io0_t(SPI_5_io0_t),
-        .io1_i(SPI_5_io1_i),
-        .io1_o(SPI_5_io1_o),
-        .io1_t(SPI_5_io1_t),
+        .io0_i(axi_quad_spi_5_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_5_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_5_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_5_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_5_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_5_SPI_0_IO1_T),
         .ip2intc_irpt(axi_quad_spi_5_ip2intc_irpt),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M07_AXI_ARADDR),
@@ -951,20 +831,20 @@ module minimal
         .s_axi_wready(axi_smc_M07_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M07_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M07_AXI_WVALID),
-        .sck_i(SPI_5_sck_i),
-        .sck_o(SPI_5_sck_o),
-        .sck_t(SPI_5_sck_t),
-        .ss_i(SPI_5_ss_i),
-        .ss_o(SPI_5_ss_o),
-        .ss_t(SPI_5_ss_t));
+        .sck_i(axi_quad_spi_5_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_5_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_5_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_5_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_5_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_5_SPI_0_SS_T));
   minimal_axi_quad_spi_5_0 axi_quad_spi_6
        (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(SPI_6_io0_i),
-        .io0_o(SPI_6_io0_o),
-        .io0_t(SPI_6_io0_t),
-        .io1_i(SPI_6_io1_i),
-        .io1_o(SPI_6_io1_o),
-        .io1_t(SPI_6_io1_t),
+        .io0_i(axi_quad_spi_6_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_6_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_6_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_6_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_6_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_6_SPI_0_IO1_T),
         .ip2intc_irpt(axi_quad_spi_6_ip2intc_irpt),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M08_AXI_ARADDR),
@@ -985,20 +865,20 @@ module minimal
         .s_axi_wready(axi_smc_M08_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M08_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M08_AXI_WVALID),
-        .sck_i(SPI_6_sck_i),
-        .sck_o(SPI_6_sck_o),
-        .sck_t(SPI_6_sck_t),
-        .ss_i(SPI_6_ss_i),
-        .ss_o(SPI_6_ss_o),
-        .ss_t(SPI_6_ss_t));
+        .sck_i(axi_quad_spi_6_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_6_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_6_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_6_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_6_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_6_SPI_0_SS_T));
   minimal_axi_quad_spi_6_0 axi_quad_spi_7
        (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(SPI_7_io0_i),
-        .io0_o(SPI_7_io0_o),
-        .io0_t(SPI_7_io0_t),
-        .io1_i(SPI_7_io1_i),
-        .io1_o(SPI_7_io1_o),
-        .io1_t(SPI_7_io1_t),
+        .io0_i(axi_quad_spi_7_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_7_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_7_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_7_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_7_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_7_SPI_0_IO1_T),
         .ip2intc_irpt(axi_quad_spi_7_ip2intc_irpt),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M09_AXI_ARADDR),
@@ -1019,12 +899,12 @@ module minimal
         .s_axi_wready(axi_smc_M09_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M09_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M09_AXI_WVALID),
-        .sck_i(SPI_7_sck_i),
-        .sck_o(SPI_7_sck_o),
-        .sck_t(SPI_7_sck_t),
-        .ss_i(SPI_7_ss_i),
-        .ss_o(SPI_7_ss_o),
-        .ss_t(SPI_7_ss_t));
+        .sck_i(axi_quad_spi_7_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_7_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_7_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_7_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_7_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_7_SPI_0_SS_T));
   minimal_axi_quad_spi_0_2 axi_quad_spi_8
        (.ext_spi_clk(PL_CLK_50M),
         .io0_i(SPI_595_io0_i),
@@ -1368,4 +1248,132 @@ module minimal
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
+  minimal_spi2ili_0_5 spi2ili_0
+       (.ILI_scl_o(ILI_0_sck_o),
+        .ILI_sda_o(ILI_0_sda_o),
+        .ILI_ss_o(ILI_0_ss_o),
+        .SPI_io0_i(axi_quad_spi_0_SPI_0_IO0_I),
+        .SPI_io0_o(axi_quad_spi_0_SPI_0_IO0_O),
+        .SPI_io0_t(axi_quad_spi_0_SPI_0_IO0_T),
+        .SPI_io1_i(axi_quad_spi_0_SPI_0_IO1_I),
+        .SPI_io1_o(axi_quad_spi_0_SPI_0_IO1_O),
+        .SPI_io1_t(axi_quad_spi_0_SPI_0_IO1_T),
+        .SPI_sck_i(axi_quad_spi_0_SPI_0_SCK_I),
+        .SPI_sck_o(axi_quad_spi_0_SPI_0_SCK_O),
+        .SPI_sck_t(axi_quad_spi_0_SPI_0_SCK_T),
+        .SPI_ss_i(axi_quad_spi_0_SPI_0_SS_I),
+        .SPI_ss_o(axi_quad_spi_0_SPI_0_SS_O),
+        .SPI_ss_t(axi_quad_spi_0_SPI_0_SS_T));
+  minimal_spi2ili_0_6 spi2ili_1
+       (.ILI_scl_o(ILI_1_sck_o),
+        .ILI_sda_o(ILI_1_sda_o),
+        .ILI_ss_o(ILI_1_ss_o),
+        .SPI_io0_i(1'b0),
+        .SPI_io0_o(axi_quad_spi_1_SPI_0_IO0_O),
+        .SPI_io0_t(axi_quad_spi_1_SPI_0_IO0_T),
+        .SPI_io1_i(1'b0),
+        .SPI_io1_o(axi_quad_spi_1_SPI_0_IO1_O),
+        .SPI_io1_t(axi_quad_spi_1_SPI_0_IO1_T),
+        .SPI_sck_i(1'b0),
+        .SPI_sck_o(axi_quad_spi_1_SPI_0_SCK_O),
+        .SPI_sck_t(axi_quad_spi_1_SPI_0_SCK_T),
+        .SPI_ss_i(1'b0),
+        .SPI_ss_o(axi_quad_spi_1_SPI_0_SS_O),
+        .SPI_ss_t(axi_quad_spi_1_SPI_0_SS_T));
+  minimal_spi2ili_1_0 spi2ili_2
+       (.ILI_scl_o(ILI_2_sck_o),
+        .ILI_sda_o(ILI_2_sda_o),
+        .ILI_ss_o(ILI_2_ss_o),
+        .SPI_io0_i(1'b0),
+        .SPI_io0_o(axi_quad_spi_2_SPI_0_IO0_O),
+        .SPI_io0_t(axi_quad_spi_2_SPI_0_IO0_T),
+        .SPI_io1_i(1'b0),
+        .SPI_io1_o(axi_quad_spi_2_SPI_0_IO1_O),
+        .SPI_io1_t(axi_quad_spi_2_SPI_0_IO1_T),
+        .SPI_sck_i(1'b0),
+        .SPI_sck_o(axi_quad_spi_2_SPI_0_SCK_O),
+        .SPI_sck_t(axi_quad_spi_2_SPI_0_SCK_T),
+        .SPI_ss_i(1'b0),
+        .SPI_ss_o(axi_quad_spi_2_SPI_0_SS_O),
+        .SPI_ss_t(axi_quad_spi_2_SPI_0_SS_T));
+  minimal_spi2ili_2_0 spi2ili_3
+       (.ILI_scl_o(ILI_3_sck_o),
+        .ILI_sda_o(ILI_3_sda_o),
+        .ILI_ss_o(ILI_3_ss_o),
+        .SPI_io0_i(1'b0),
+        .SPI_io0_o(axi_quad_spi_3_SPI_0_IO0_O),
+        .SPI_io0_t(axi_quad_spi_3_SPI_0_IO0_T),
+        .SPI_io1_i(1'b0),
+        .SPI_io1_o(axi_quad_spi_3_SPI_0_IO1_O),
+        .SPI_io1_t(axi_quad_spi_3_SPI_0_IO1_T),
+        .SPI_sck_i(1'b0),
+        .SPI_sck_o(axi_quad_spi_3_SPI_0_SCK_O),
+        .SPI_sck_t(axi_quad_spi_3_SPI_0_SCK_T),
+        .SPI_ss_i(1'b0),
+        .SPI_ss_o(axi_quad_spi_3_SPI_0_SS_O),
+        .SPI_ss_t(axi_quad_spi_3_SPI_0_SS_T));
+  minimal_spi2ili_3_0 spi2ili_4
+       (.ILI_scl_o(ILI_4_sck_o),
+        .ILI_sda_o(ILI_4_sda_o),
+        .ILI_ss_o(ILI_4_ss_o),
+        .SPI_io0_i(1'b0),
+        .SPI_io0_o(axi_quad_spi_4_SPI_0_IO0_O),
+        .SPI_io0_t(axi_quad_spi_4_SPI_0_IO0_T),
+        .SPI_io1_i(1'b0),
+        .SPI_io1_o(axi_quad_spi_4_SPI_0_IO1_O),
+        .SPI_io1_t(axi_quad_spi_4_SPI_0_IO1_T),
+        .SPI_sck_i(1'b0),
+        .SPI_sck_o(axi_quad_spi_4_SPI_0_SCK_O),
+        .SPI_sck_t(axi_quad_spi_4_SPI_0_SCK_T),
+        .SPI_ss_i(1'b0),
+        .SPI_ss_o(axi_quad_spi_4_SPI_0_SS_O),
+        .SPI_ss_t(axi_quad_spi_4_SPI_0_SS_T));
+  minimal_spi2ili_4_0 spi2ili_5
+       (.ILI_scl_o(ILI_5_sck_o),
+        .ILI_sda_o(ILI_5_sda_o),
+        .ILI_ss_o(ILI_5_ss_o),
+        .SPI_io0_i(1'b0),
+        .SPI_io0_o(axi_quad_spi_5_SPI_0_IO0_O),
+        .SPI_io0_t(axi_quad_spi_5_SPI_0_IO0_T),
+        .SPI_io1_i(1'b0),
+        .SPI_io1_o(axi_quad_spi_5_SPI_0_IO1_O),
+        .SPI_io1_t(axi_quad_spi_5_SPI_0_IO1_T),
+        .SPI_sck_i(1'b0),
+        .SPI_sck_o(axi_quad_spi_5_SPI_0_SCK_O),
+        .SPI_sck_t(axi_quad_spi_5_SPI_0_SCK_T),
+        .SPI_ss_i(1'b0),
+        .SPI_ss_o(axi_quad_spi_5_SPI_0_SS_O),
+        .SPI_ss_t(axi_quad_spi_5_SPI_0_SS_T));
+  minimal_spi2ili_5_0 spi2ili_6
+       (.ILI_scl_o(ILI_6_sck_o),
+        .ILI_sda_o(ILI_6_sda_o),
+        .ILI_ss_o(ILI_6_ss_o),
+        .SPI_io0_i(1'b0),
+        .SPI_io0_o(axi_quad_spi_6_SPI_0_IO0_O),
+        .SPI_io0_t(axi_quad_spi_6_SPI_0_IO0_T),
+        .SPI_io1_i(1'b0),
+        .SPI_io1_o(axi_quad_spi_6_SPI_0_IO1_O),
+        .SPI_io1_t(axi_quad_spi_6_SPI_0_IO1_T),
+        .SPI_sck_i(1'b0),
+        .SPI_sck_o(axi_quad_spi_6_SPI_0_SCK_O),
+        .SPI_sck_t(axi_quad_spi_6_SPI_0_SCK_T),
+        .SPI_ss_i(1'b0),
+        .SPI_ss_o(axi_quad_spi_6_SPI_0_SS_O),
+        .SPI_ss_t(axi_quad_spi_6_SPI_0_SS_T));
+  minimal_spi2ili_6_0 spi2ili_7
+       (.ILI_scl_o(ILI_7_sck_o),
+        .ILI_sda_o(ILI_7_sda_o),
+        .ILI_ss_o(ILI_7_ss_o),
+        .SPI_io0_i(1'b0),
+        .SPI_io0_o(axi_quad_spi_7_SPI_0_IO0_O),
+        .SPI_io0_t(axi_quad_spi_7_SPI_0_IO0_T),
+        .SPI_io1_i(1'b0),
+        .SPI_io1_o(axi_quad_spi_7_SPI_0_IO1_O),
+        .SPI_io1_t(axi_quad_spi_7_SPI_0_IO1_T),
+        .SPI_sck_i(1'b0),
+        .SPI_sck_o(axi_quad_spi_7_SPI_0_SCK_O),
+        .SPI_sck_t(axi_quad_spi_7_SPI_0_SCK_T),
+        .SPI_ss_i(1'b0),
+        .SPI_ss_o(axi_quad_spi_7_SPI_0_SS_O),
+        .SPI_ss_t(axi_quad_spi_7_SPI_0_SS_T));
 endmodule

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x1B5DE09A44925EB4",
+      "boundary_crc": "0x3F6E664394F72F1B",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal",
       "name": "minimal",
@@ -30,7 +30,15 @@
       "axi_quad_spi_5": "",
       "axi_quad_spi_6": "",
       "axi_quad_spi_7": "",
-      "axi_quad_spi_8": ""
+      "axi_quad_spi_8": "",
+      "spi2ili_0": "",
+      "spi2ili_1": "",
+      "spi2ili_2": "",
+      "spi2ili_3": "",
+      "spi2ili_4": "",
+      "spi2ili_5": "",
+      "spi2ili_6": "",
+      "spi2ili_7": ""
     },
     "interface_ports": {
       "DDR": {
@@ -305,71 +313,6 @@
           }
         }
       },
-      "SPI_0": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
-        "vlnv": "xilinx.com:interface:spi_rtl:1.0",
-        "hdl_attributes": {
-          "LOCKED": {
-            "value": "FALSE",
-            "value_src": "default"
-          }
-        },
-        "port_maps": {
-          "IO0_I": {
-            "physical_name": "SPI_0_io0_i",
-            "direction": "I"
-          },
-          "IO0_O": {
-            "physical_name": "SPI_0_io0_o",
-            "direction": "O"
-          },
-          "IO0_T": {
-            "physical_name": "SPI_0_io0_t",
-            "direction": "O"
-          },
-          "IO1_I": {
-            "physical_name": "SPI_0_io1_i",
-            "direction": "I"
-          },
-          "IO1_O": {
-            "physical_name": "SPI_0_io1_o",
-            "direction": "O"
-          },
-          "IO1_T": {
-            "physical_name": "SPI_0_io1_t",
-            "direction": "O"
-          },
-          "SS_I": {
-            "physical_name": "SPI_0_ss_i",
-            "direction": "I",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_O": {
-            "physical_name": "SPI_0_ss_o",
-            "direction": "O",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_T": {
-            "physical_name": "SPI_0_ss_t",
-            "direction": "O"
-          },
-          "SCK_I": {
-            "physical_name": "SPI_0_sck_i",
-            "direction": "I"
-          },
-          "SCK_O": {
-            "physical_name": "SPI_0_sck_o",
-            "direction": "O"
-          },
-          "SCK_T": {
-            "physical_name": "SPI_0_sck_t",
-            "direction": "O"
-          }
-        }
-      },
       "GPIO_0": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
@@ -386,461 +329,6 @@
             "direction": "O",
             "left": "7",
             "right": "0"
-          }
-        }
-      },
-      "SPI_1": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
-        "vlnv": "xilinx.com:interface:spi_rtl:1.0",
-        "hdl_attributes": {
-          "LOCKED": {
-            "value": "FALSE",
-            "value_src": "default"
-          }
-        },
-        "port_maps": {
-          "IO0_I": {
-            "physical_name": "SPI_1_io0_i",
-            "direction": "I"
-          },
-          "IO0_O": {
-            "physical_name": "SPI_1_io0_o",
-            "direction": "O"
-          },
-          "IO0_T": {
-            "physical_name": "SPI_1_io0_t",
-            "direction": "O"
-          },
-          "IO1_I": {
-            "physical_name": "SPI_1_io1_i",
-            "direction": "I"
-          },
-          "IO1_O": {
-            "physical_name": "SPI_1_io1_o",
-            "direction": "O"
-          },
-          "IO1_T": {
-            "physical_name": "SPI_1_io1_t",
-            "direction": "O"
-          },
-          "SCK_I": {
-            "physical_name": "SPI_1_sck_i",
-            "direction": "I"
-          },
-          "SCK_O": {
-            "physical_name": "SPI_1_sck_o",
-            "direction": "O"
-          },
-          "SCK_T": {
-            "physical_name": "SPI_1_sck_t",
-            "direction": "O"
-          },
-          "SS_I": {
-            "physical_name": "SPI_1_ss_i",
-            "direction": "I",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_O": {
-            "physical_name": "SPI_1_ss_o",
-            "direction": "O",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_T": {
-            "physical_name": "SPI_1_ss_t",
-            "direction": "O"
-          }
-        }
-      },
-      "SPI_2": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
-        "vlnv": "xilinx.com:interface:spi_rtl:1.0",
-        "hdl_attributes": {
-          "LOCKED": {
-            "value": "FALSE",
-            "value_src": "default"
-          }
-        },
-        "port_maps": {
-          "IO0_I": {
-            "physical_name": "SPI_2_io0_i",
-            "direction": "I"
-          },
-          "IO0_O": {
-            "physical_name": "SPI_2_io0_o",
-            "direction": "O"
-          },
-          "IO0_T": {
-            "physical_name": "SPI_2_io0_t",
-            "direction": "O"
-          },
-          "IO1_I": {
-            "physical_name": "SPI_2_io1_i",
-            "direction": "I"
-          },
-          "IO1_O": {
-            "physical_name": "SPI_2_io1_o",
-            "direction": "O"
-          },
-          "IO1_T": {
-            "physical_name": "SPI_2_io1_t",
-            "direction": "O"
-          },
-          "SCK_I": {
-            "physical_name": "SPI_2_sck_i",
-            "direction": "I"
-          },
-          "SCK_O": {
-            "physical_name": "SPI_2_sck_o",
-            "direction": "O"
-          },
-          "SCK_T": {
-            "physical_name": "SPI_2_sck_t",
-            "direction": "O"
-          },
-          "SS_I": {
-            "physical_name": "SPI_2_ss_i",
-            "direction": "I",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_O": {
-            "physical_name": "SPI_2_ss_o",
-            "direction": "O",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_T": {
-            "physical_name": "SPI_2_ss_t",
-            "direction": "O"
-          }
-        }
-      },
-      "SPI_3": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
-        "vlnv": "xilinx.com:interface:spi_rtl:1.0",
-        "hdl_attributes": {
-          "LOCKED": {
-            "value": "FALSE",
-            "value_src": "default"
-          }
-        },
-        "port_maps": {
-          "IO0_I": {
-            "physical_name": "SPI_3_io0_i",
-            "direction": "I"
-          },
-          "IO0_O": {
-            "physical_name": "SPI_3_io0_o",
-            "direction": "O"
-          },
-          "IO0_T": {
-            "physical_name": "SPI_3_io0_t",
-            "direction": "O"
-          },
-          "IO1_I": {
-            "physical_name": "SPI_3_io1_i",
-            "direction": "I"
-          },
-          "IO1_O": {
-            "physical_name": "SPI_3_io1_o",
-            "direction": "O"
-          },
-          "IO1_T": {
-            "physical_name": "SPI_3_io1_t",
-            "direction": "O"
-          },
-          "SCK_I": {
-            "physical_name": "SPI_3_sck_i",
-            "direction": "I"
-          },
-          "SCK_O": {
-            "physical_name": "SPI_3_sck_o",
-            "direction": "O"
-          },
-          "SCK_T": {
-            "physical_name": "SPI_3_sck_t",
-            "direction": "O"
-          },
-          "SS_I": {
-            "physical_name": "SPI_3_ss_i",
-            "direction": "I",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_O": {
-            "physical_name": "SPI_3_ss_o",
-            "direction": "O",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_T": {
-            "physical_name": "SPI_3_ss_t",
-            "direction": "O"
-          }
-        }
-      },
-      "SPI_4": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
-        "vlnv": "xilinx.com:interface:spi_rtl:1.0",
-        "hdl_attributes": {
-          "LOCKED": {
-            "value": "FALSE",
-            "value_src": "default"
-          }
-        },
-        "port_maps": {
-          "IO0_I": {
-            "physical_name": "SPI_4_io0_i",
-            "direction": "I"
-          },
-          "IO0_O": {
-            "physical_name": "SPI_4_io0_o",
-            "direction": "O"
-          },
-          "IO0_T": {
-            "physical_name": "SPI_4_io0_t",
-            "direction": "O"
-          },
-          "IO1_I": {
-            "physical_name": "SPI_4_io1_i",
-            "direction": "I"
-          },
-          "IO1_O": {
-            "physical_name": "SPI_4_io1_o",
-            "direction": "O"
-          },
-          "IO1_T": {
-            "physical_name": "SPI_4_io1_t",
-            "direction": "O"
-          },
-          "SCK_I": {
-            "physical_name": "SPI_4_sck_i",
-            "direction": "I"
-          },
-          "SCK_O": {
-            "physical_name": "SPI_4_sck_o",
-            "direction": "O"
-          },
-          "SCK_T": {
-            "physical_name": "SPI_4_sck_t",
-            "direction": "O"
-          },
-          "SS_I": {
-            "physical_name": "SPI_4_ss_i",
-            "direction": "I",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_O": {
-            "physical_name": "SPI_4_ss_o",
-            "direction": "O",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_T": {
-            "physical_name": "SPI_4_ss_t",
-            "direction": "O"
-          }
-        }
-      },
-      "SPI_5": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
-        "vlnv": "xilinx.com:interface:spi_rtl:1.0",
-        "hdl_attributes": {
-          "LOCKED": {
-            "value": "FALSE",
-            "value_src": "default"
-          }
-        },
-        "port_maps": {
-          "IO0_I": {
-            "physical_name": "SPI_5_io0_i",
-            "direction": "I"
-          },
-          "IO0_O": {
-            "physical_name": "SPI_5_io0_o",
-            "direction": "O"
-          },
-          "IO0_T": {
-            "physical_name": "SPI_5_io0_t",
-            "direction": "O"
-          },
-          "IO1_I": {
-            "physical_name": "SPI_5_io1_i",
-            "direction": "I"
-          },
-          "IO1_O": {
-            "physical_name": "SPI_5_io1_o",
-            "direction": "O"
-          },
-          "IO1_T": {
-            "physical_name": "SPI_5_io1_t",
-            "direction": "O"
-          },
-          "SCK_I": {
-            "physical_name": "SPI_5_sck_i",
-            "direction": "I"
-          },
-          "SCK_O": {
-            "physical_name": "SPI_5_sck_o",
-            "direction": "O"
-          },
-          "SCK_T": {
-            "physical_name": "SPI_5_sck_t",
-            "direction": "O"
-          },
-          "SS_I": {
-            "physical_name": "SPI_5_ss_i",
-            "direction": "I",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_O": {
-            "physical_name": "SPI_5_ss_o",
-            "direction": "O",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_T": {
-            "physical_name": "SPI_5_ss_t",
-            "direction": "O"
-          }
-        }
-      },
-      "SPI_6": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
-        "vlnv": "xilinx.com:interface:spi_rtl:1.0",
-        "hdl_attributes": {
-          "LOCKED": {
-            "value": "FALSE",
-            "value_src": "default"
-          }
-        },
-        "port_maps": {
-          "IO0_I": {
-            "physical_name": "SPI_6_io0_i",
-            "direction": "I"
-          },
-          "IO0_O": {
-            "physical_name": "SPI_6_io0_o",
-            "direction": "O"
-          },
-          "IO0_T": {
-            "physical_name": "SPI_6_io0_t",
-            "direction": "O"
-          },
-          "IO1_I": {
-            "physical_name": "SPI_6_io1_i",
-            "direction": "I"
-          },
-          "IO1_O": {
-            "physical_name": "SPI_6_io1_o",
-            "direction": "O"
-          },
-          "IO1_T": {
-            "physical_name": "SPI_6_io1_t",
-            "direction": "O"
-          },
-          "SCK_I": {
-            "physical_name": "SPI_6_sck_i",
-            "direction": "I"
-          },
-          "SCK_O": {
-            "physical_name": "SPI_6_sck_o",
-            "direction": "O"
-          },
-          "SCK_T": {
-            "physical_name": "SPI_6_sck_t",
-            "direction": "O"
-          },
-          "SS_I": {
-            "physical_name": "SPI_6_ss_i",
-            "direction": "I",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_O": {
-            "physical_name": "SPI_6_ss_o",
-            "direction": "O",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_T": {
-            "physical_name": "SPI_6_ss_t",
-            "direction": "O"
-          }
-        }
-      },
-      "SPI_7": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
-        "vlnv": "xilinx.com:interface:spi_rtl:1.0",
-        "hdl_attributes": {
-          "LOCKED": {
-            "value": "FALSE",
-            "value_src": "default"
-          }
-        },
-        "port_maps": {
-          "IO0_I": {
-            "physical_name": "SPI_7_io0_i",
-            "direction": "I"
-          },
-          "IO0_O": {
-            "physical_name": "SPI_7_io0_o",
-            "direction": "O"
-          },
-          "IO0_T": {
-            "physical_name": "SPI_7_io0_t",
-            "direction": "O"
-          },
-          "IO1_I": {
-            "physical_name": "SPI_7_io1_i",
-            "direction": "I"
-          },
-          "IO1_O": {
-            "physical_name": "SPI_7_io1_o",
-            "direction": "O"
-          },
-          "IO1_T": {
-            "physical_name": "SPI_7_io1_t",
-            "direction": "O"
-          },
-          "SCK_I": {
-            "physical_name": "SPI_7_sck_i",
-            "direction": "I"
-          },
-          "SCK_O": {
-            "physical_name": "SPI_7_sck_o",
-            "direction": "O"
-          },
-          "SCK_T": {
-            "physical_name": "SPI_7_sck_t",
-            "direction": "O"
-          },
-          "SS_I": {
-            "physical_name": "SPI_7_ss_i",
-            "direction": "I",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_O": {
-            "physical_name": "SPI_7_ss_o",
-            "direction": "O",
-            "left": "0",
-            "right": "0"
-          },
-          "SS_T": {
-            "physical_name": "SPI_7_ss_t",
-            "direction": "O"
           }
         }
       },
@@ -908,6 +396,206 @@
             "direction": "O"
           }
         }
+      },
+      "ILI_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+        "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+        "hdl_attributes": {
+          "LOCKED": {
+            "value": "FALSE",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "SS_O": {
+            "physical_name": "ILI_0_ss_o",
+            "direction": "O"
+          },
+          "SCK_O": {
+            "physical_name": "ILI_0_sck_o",
+            "direction": "O"
+          },
+          "SDA_O": {
+            "physical_name": "ILI_0_sda_o",
+            "direction": "O"
+          }
+        }
+      },
+      "ILI_1": {
+        "mode": "Master",
+        "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+        "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+        "hdl_attributes": {
+          "LOCKED": {
+            "value": "FALSE",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "SS_O": {
+            "physical_name": "ILI_1_ss_o",
+            "direction": "O"
+          },
+          "SCK_O": {
+            "physical_name": "ILI_1_sck_o",
+            "direction": "O"
+          },
+          "SDA_O": {
+            "physical_name": "ILI_1_sda_o",
+            "direction": "O"
+          }
+        }
+      },
+      "ILI_2": {
+        "mode": "Master",
+        "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+        "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+        "hdl_attributes": {
+          "LOCKED": {
+            "value": "FALSE",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "SS_O": {
+            "physical_name": "ILI_2_ss_o",
+            "direction": "O"
+          },
+          "SCK_O": {
+            "physical_name": "ILI_2_sck_o",
+            "direction": "O"
+          },
+          "SDA_O": {
+            "physical_name": "ILI_2_sda_o",
+            "direction": "O"
+          }
+        }
+      },
+      "ILI_3": {
+        "mode": "Master",
+        "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+        "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+        "hdl_attributes": {
+          "LOCKED": {
+            "value": "FALSE",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "SS_O": {
+            "physical_name": "ILI_3_ss_o",
+            "direction": "O"
+          },
+          "SCK_O": {
+            "physical_name": "ILI_3_sck_o",
+            "direction": "O"
+          },
+          "SDA_O": {
+            "physical_name": "ILI_3_sda_o",
+            "direction": "O"
+          }
+        }
+      },
+      "ILI_4": {
+        "mode": "Master",
+        "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+        "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+        "hdl_attributes": {
+          "LOCKED": {
+            "value": "FALSE",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "SS_O": {
+            "physical_name": "ILI_4_ss_o",
+            "direction": "O"
+          },
+          "SCK_O": {
+            "physical_name": "ILI_4_sck_o",
+            "direction": "O"
+          },
+          "SDA_O": {
+            "physical_name": "ILI_4_sda_o",
+            "direction": "O"
+          }
+        }
+      },
+      "ILI_5": {
+        "mode": "Master",
+        "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+        "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+        "hdl_attributes": {
+          "LOCKED": {
+            "value": "FALSE",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "SS_O": {
+            "physical_name": "ILI_5_ss_o",
+            "direction": "O"
+          },
+          "SCK_O": {
+            "physical_name": "ILI_5_sck_o",
+            "direction": "O"
+          },
+          "SDA_O": {
+            "physical_name": "ILI_5_sda_o",
+            "direction": "O"
+          }
+        }
+      },
+      "ILI_6": {
+        "mode": "Master",
+        "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+        "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+        "hdl_attributes": {
+          "LOCKED": {
+            "value": "FALSE",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "SS_O": {
+            "physical_name": "ILI_6_ss_o",
+            "direction": "O"
+          },
+          "SCK_O": {
+            "physical_name": "ILI_6_sck_o",
+            "direction": "O"
+          },
+          "SDA_O": {
+            "physical_name": "ILI_6_sda_o",
+            "direction": "O"
+          }
+        }
+      },
+      "ILI_7": {
+        "mode": "Master",
+        "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+        "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+        "hdl_attributes": {
+          "LOCKED": {
+            "value": "FALSE",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "SS_O": {
+            "physical_name": "ILI_7_ss_o",
+            "direction": "O"
+          },
+          "SCK_O": {
+            "physical_name": "ILI_7_sck_o",
+            "direction": "O"
+          },
+          "SDA_O": {
+            "physical_name": "ILI_7_sda_o",
+            "direction": "O"
+          }
+        }
       }
     },
     "ports": {
@@ -930,7 +618,7 @@
         "parameters": {
           "PortWidth": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "user_prop"
           },
           "SENSITIVITY": {
             "value": "LEVEL_HIGH",
@@ -1570,6 +1258,10 @@
               "M10_AXI"
             ],
             "bd_attributes": {
+              "BRIDGES": {
+                "value": "M00_AXI:M01_AXI:M02_AXI:M03_AXI:M04_AXI:M05_AXI:M06_AXI:M07_AXI:M08_AXI:M09_AXI:M10_AXI",
+                "value_src": "auto"
+              },
               "TYPE": {
                 "value": "interior",
                 "value_src": "default"
@@ -2412,6 +2104,750 @@
             "value": "1"
           }
         }
+      },
+      "spi2ili_0": {
+        "vlnv": "xilinx.com:module_ref:spi2ili:1.0",
+        "ip_revision": "1",
+        "xci_name": "minimal_spi2ili_0_5",
+        "xci_path": "ip/minimal_spi2ili_0_5/minimal_spi2ili_0_5.xci",
+        "inst_hier_path": "spi2ili_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi2ili",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "SPI": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
+            "vlnv": "xilinx.com:interface:spi_rtl:1.0",
+            "port_maps": {
+              "SS_I": {
+                "physical_name": "SPI_ss_i",
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_O": {
+                "physical_name": "SPI_ss_o",
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_T": {
+                "physical_name": "SPI_ss_t",
+                "direction": "O"
+              },
+              "SCK_I": {
+                "physical_name": "SPI_sck_i",
+                "direction": "I"
+              },
+              "SCK_O": {
+                "physical_name": "SPI_sck_o",
+                "direction": "O"
+              },
+              "SCK_T": {
+                "physical_name": "SPI_sck_t",
+                "direction": "O"
+              },
+              "IO0_I": {
+                "physical_name": "SPI_io0_i",
+                "direction": "I"
+              },
+              "IO0_O": {
+                "physical_name": "SPI_io0_o",
+                "direction": "O"
+              },
+              "IO0_T": {
+                "physical_name": "SPI_io0_t",
+                "direction": "O"
+              },
+              "IO1_I": {
+                "physical_name": "SPI_io1_i",
+                "direction": "I"
+              },
+              "IO1_O": {
+                "physical_name": "SPI_io1_o",
+                "direction": "O"
+              },
+              "IO1_T": {
+                "physical_name": "SPI_io1_t",
+                "direction": "O"
+              }
+            }
+          },
+          "ILI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+            "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+            "port_maps": {
+              "SS_O": {
+                "physical_name": "ILI_ss_o",
+                "direction": "O"
+              },
+              "SCK_O": {
+                "physical_name": "ILI_scl_o",
+                "direction": "O"
+              },
+              "SDA_O": {
+                "physical_name": "ILI_sda_o",
+                "direction": "O"
+              }
+            }
+          }
+        }
+      },
+      "spi2ili_1": {
+        "vlnv": "xilinx.com:module_ref:spi2ili:1.0",
+        "ip_revision": "1",
+        "xci_name": "minimal_spi2ili_0_6",
+        "xci_path": "ip/minimal_spi2ili_0_6/minimal_spi2ili_0_6.xci",
+        "inst_hier_path": "spi2ili_1",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi2ili",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "SPI": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
+            "vlnv": "xilinx.com:interface:spi_rtl:1.0",
+            "port_maps": {
+              "SS_I": {
+                "physical_name": "SPI_ss_i",
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_O": {
+                "physical_name": "SPI_ss_o",
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_T": {
+                "physical_name": "SPI_ss_t",
+                "direction": "O"
+              },
+              "SCK_I": {
+                "physical_name": "SPI_sck_i",
+                "direction": "I"
+              },
+              "SCK_O": {
+                "physical_name": "SPI_sck_o",
+                "direction": "O"
+              },
+              "SCK_T": {
+                "physical_name": "SPI_sck_t",
+                "direction": "O"
+              },
+              "IO0_I": {
+                "physical_name": "SPI_io0_i",
+                "direction": "I"
+              },
+              "IO0_O": {
+                "physical_name": "SPI_io0_o",
+                "direction": "O"
+              },
+              "IO0_T": {
+                "physical_name": "SPI_io0_t",
+                "direction": "O"
+              },
+              "IO1_I": {
+                "physical_name": "SPI_io1_i",
+                "direction": "I"
+              },
+              "IO1_O": {
+                "physical_name": "SPI_io1_o",
+                "direction": "O"
+              },
+              "IO1_T": {
+                "physical_name": "SPI_io1_t",
+                "direction": "O"
+              }
+            }
+          },
+          "ILI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+            "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+            "port_maps": {
+              "SS_O": {
+                "physical_name": "ILI_ss_o",
+                "direction": "O"
+              },
+              "SCK_O": {
+                "physical_name": "ILI_scl_o",
+                "direction": "O"
+              },
+              "SDA_O": {
+                "physical_name": "ILI_sda_o",
+                "direction": "O"
+              }
+            }
+          }
+        }
+      },
+      "spi2ili_2": {
+        "vlnv": "xilinx.com:module_ref:spi2ili:1.0",
+        "ip_revision": "1",
+        "xci_name": "minimal_spi2ili_1_0",
+        "xci_path": "ip/minimal_spi2ili_1_0/minimal_spi2ili_1_0.xci",
+        "inst_hier_path": "spi2ili_2",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi2ili",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "SPI": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
+            "vlnv": "xilinx.com:interface:spi_rtl:1.0",
+            "port_maps": {
+              "SS_I": {
+                "physical_name": "SPI_ss_i",
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_O": {
+                "physical_name": "SPI_ss_o",
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_T": {
+                "physical_name": "SPI_ss_t",
+                "direction": "O"
+              },
+              "SCK_I": {
+                "physical_name": "SPI_sck_i",
+                "direction": "I"
+              },
+              "SCK_O": {
+                "physical_name": "SPI_sck_o",
+                "direction": "O"
+              },
+              "SCK_T": {
+                "physical_name": "SPI_sck_t",
+                "direction": "O"
+              },
+              "IO0_I": {
+                "physical_name": "SPI_io0_i",
+                "direction": "I"
+              },
+              "IO0_O": {
+                "physical_name": "SPI_io0_o",
+                "direction": "O"
+              },
+              "IO0_T": {
+                "physical_name": "SPI_io0_t",
+                "direction": "O"
+              },
+              "IO1_I": {
+                "physical_name": "SPI_io1_i",
+                "direction": "I"
+              },
+              "IO1_O": {
+                "physical_name": "SPI_io1_o",
+                "direction": "O"
+              },
+              "IO1_T": {
+                "physical_name": "SPI_io1_t",
+                "direction": "O"
+              }
+            }
+          },
+          "ILI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+            "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+            "port_maps": {
+              "SS_O": {
+                "physical_name": "ILI_ss_o",
+                "direction": "O"
+              },
+              "SCK_O": {
+                "physical_name": "ILI_scl_o",
+                "direction": "O"
+              },
+              "SDA_O": {
+                "physical_name": "ILI_sda_o",
+                "direction": "O"
+              }
+            }
+          }
+        }
+      },
+      "spi2ili_3": {
+        "vlnv": "xilinx.com:module_ref:spi2ili:1.0",
+        "ip_revision": "1",
+        "xci_name": "minimal_spi2ili_2_0",
+        "xci_path": "ip/minimal_spi2ili_2_0/minimal_spi2ili_2_0.xci",
+        "inst_hier_path": "spi2ili_3",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi2ili",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "SPI": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
+            "vlnv": "xilinx.com:interface:spi_rtl:1.0",
+            "port_maps": {
+              "SS_I": {
+                "physical_name": "SPI_ss_i",
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_O": {
+                "physical_name": "SPI_ss_o",
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_T": {
+                "physical_name": "SPI_ss_t",
+                "direction": "O"
+              },
+              "SCK_I": {
+                "physical_name": "SPI_sck_i",
+                "direction": "I"
+              },
+              "SCK_O": {
+                "physical_name": "SPI_sck_o",
+                "direction": "O"
+              },
+              "SCK_T": {
+                "physical_name": "SPI_sck_t",
+                "direction": "O"
+              },
+              "IO0_I": {
+                "physical_name": "SPI_io0_i",
+                "direction": "I"
+              },
+              "IO0_O": {
+                "physical_name": "SPI_io0_o",
+                "direction": "O"
+              },
+              "IO0_T": {
+                "physical_name": "SPI_io0_t",
+                "direction": "O"
+              },
+              "IO1_I": {
+                "physical_name": "SPI_io1_i",
+                "direction": "I"
+              },
+              "IO1_O": {
+                "physical_name": "SPI_io1_o",
+                "direction": "O"
+              },
+              "IO1_T": {
+                "physical_name": "SPI_io1_t",
+                "direction": "O"
+              }
+            }
+          },
+          "ILI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+            "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+            "port_maps": {
+              "SS_O": {
+                "physical_name": "ILI_ss_o",
+                "direction": "O"
+              },
+              "SCK_O": {
+                "physical_name": "ILI_scl_o",
+                "direction": "O"
+              },
+              "SDA_O": {
+                "physical_name": "ILI_sda_o",
+                "direction": "O"
+              }
+            }
+          }
+        }
+      },
+      "spi2ili_4": {
+        "vlnv": "xilinx.com:module_ref:spi2ili:1.0",
+        "ip_revision": "1",
+        "xci_name": "minimal_spi2ili_3_0",
+        "xci_path": "ip/minimal_spi2ili_3_0/minimal_spi2ili_3_0.xci",
+        "inst_hier_path": "spi2ili_4",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi2ili",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "SPI": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
+            "vlnv": "xilinx.com:interface:spi_rtl:1.0",
+            "port_maps": {
+              "SS_I": {
+                "physical_name": "SPI_ss_i",
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_O": {
+                "physical_name": "SPI_ss_o",
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_T": {
+                "physical_name": "SPI_ss_t",
+                "direction": "O"
+              },
+              "SCK_I": {
+                "physical_name": "SPI_sck_i",
+                "direction": "I"
+              },
+              "SCK_O": {
+                "physical_name": "SPI_sck_o",
+                "direction": "O"
+              },
+              "SCK_T": {
+                "physical_name": "SPI_sck_t",
+                "direction": "O"
+              },
+              "IO0_I": {
+                "physical_name": "SPI_io0_i",
+                "direction": "I"
+              },
+              "IO0_O": {
+                "physical_name": "SPI_io0_o",
+                "direction": "O"
+              },
+              "IO0_T": {
+                "physical_name": "SPI_io0_t",
+                "direction": "O"
+              },
+              "IO1_I": {
+                "physical_name": "SPI_io1_i",
+                "direction": "I"
+              },
+              "IO1_O": {
+                "physical_name": "SPI_io1_o",
+                "direction": "O"
+              },
+              "IO1_T": {
+                "physical_name": "SPI_io1_t",
+                "direction": "O"
+              }
+            }
+          },
+          "ILI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+            "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+            "port_maps": {
+              "SS_O": {
+                "physical_name": "ILI_ss_o",
+                "direction": "O"
+              },
+              "SCK_O": {
+                "physical_name": "ILI_scl_o",
+                "direction": "O"
+              },
+              "SDA_O": {
+                "physical_name": "ILI_sda_o",
+                "direction": "O"
+              }
+            }
+          }
+        }
+      },
+      "spi2ili_5": {
+        "vlnv": "xilinx.com:module_ref:spi2ili:1.0",
+        "ip_revision": "1",
+        "xci_name": "minimal_spi2ili_4_0",
+        "xci_path": "ip/minimal_spi2ili_4_0/minimal_spi2ili_4_0.xci",
+        "inst_hier_path": "spi2ili_5",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi2ili",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "SPI": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
+            "vlnv": "xilinx.com:interface:spi_rtl:1.0",
+            "port_maps": {
+              "SS_I": {
+                "physical_name": "SPI_ss_i",
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_O": {
+                "physical_name": "SPI_ss_o",
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_T": {
+                "physical_name": "SPI_ss_t",
+                "direction": "O"
+              },
+              "SCK_I": {
+                "physical_name": "SPI_sck_i",
+                "direction": "I"
+              },
+              "SCK_O": {
+                "physical_name": "SPI_sck_o",
+                "direction": "O"
+              },
+              "SCK_T": {
+                "physical_name": "SPI_sck_t",
+                "direction": "O"
+              },
+              "IO0_I": {
+                "physical_name": "SPI_io0_i",
+                "direction": "I"
+              },
+              "IO0_O": {
+                "physical_name": "SPI_io0_o",
+                "direction": "O"
+              },
+              "IO0_T": {
+                "physical_name": "SPI_io0_t",
+                "direction": "O"
+              },
+              "IO1_I": {
+                "physical_name": "SPI_io1_i",
+                "direction": "I"
+              },
+              "IO1_O": {
+                "physical_name": "SPI_io1_o",
+                "direction": "O"
+              },
+              "IO1_T": {
+                "physical_name": "SPI_io1_t",
+                "direction": "O"
+              }
+            }
+          },
+          "ILI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+            "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+            "port_maps": {
+              "SS_O": {
+                "physical_name": "ILI_ss_o",
+                "direction": "O"
+              },
+              "SCK_O": {
+                "physical_name": "ILI_scl_o",
+                "direction": "O"
+              },
+              "SDA_O": {
+                "physical_name": "ILI_sda_o",
+                "direction": "O"
+              }
+            }
+          }
+        }
+      },
+      "spi2ili_6": {
+        "vlnv": "xilinx.com:module_ref:spi2ili:1.0",
+        "ip_revision": "1",
+        "xci_name": "minimal_spi2ili_5_0",
+        "xci_path": "ip/minimal_spi2ili_5_0/minimal_spi2ili_5_0.xci",
+        "inst_hier_path": "spi2ili_6",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi2ili",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "SPI": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
+            "vlnv": "xilinx.com:interface:spi_rtl:1.0",
+            "port_maps": {
+              "SS_I": {
+                "physical_name": "SPI_ss_i",
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_O": {
+                "physical_name": "SPI_ss_o",
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_T": {
+                "physical_name": "SPI_ss_t",
+                "direction": "O"
+              },
+              "SCK_I": {
+                "physical_name": "SPI_sck_i",
+                "direction": "I"
+              },
+              "SCK_O": {
+                "physical_name": "SPI_sck_o",
+                "direction": "O"
+              },
+              "SCK_T": {
+                "physical_name": "SPI_sck_t",
+                "direction": "O"
+              },
+              "IO0_I": {
+                "physical_name": "SPI_io0_i",
+                "direction": "I"
+              },
+              "IO0_O": {
+                "physical_name": "SPI_io0_o",
+                "direction": "O"
+              },
+              "IO0_T": {
+                "physical_name": "SPI_io0_t",
+                "direction": "O"
+              },
+              "IO1_I": {
+                "physical_name": "SPI_io1_i",
+                "direction": "I"
+              },
+              "IO1_O": {
+                "physical_name": "SPI_io1_o",
+                "direction": "O"
+              },
+              "IO1_T": {
+                "physical_name": "SPI_io1_t",
+                "direction": "O"
+              }
+            }
+          },
+          "ILI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+            "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+            "port_maps": {
+              "SS_O": {
+                "physical_name": "ILI_ss_o",
+                "direction": "O"
+              },
+              "SCK_O": {
+                "physical_name": "ILI_scl_o",
+                "direction": "O"
+              },
+              "SDA_O": {
+                "physical_name": "ILI_sda_o",
+                "direction": "O"
+              }
+            }
+          }
+        }
+      },
+      "spi2ili_7": {
+        "vlnv": "xilinx.com:module_ref:spi2ili:1.0",
+        "ip_revision": "1",
+        "xci_name": "minimal_spi2ili_6_0",
+        "xci_path": "ip/minimal_spi2ili_6_0/minimal_spi2ili_6_0.xci",
+        "inst_hier_path": "spi2ili_7",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi2ili",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "SPI": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:spi:1.0",
+            "vlnv": "xilinx.com:interface:spi_rtl:1.0",
+            "port_maps": {
+              "SS_I": {
+                "physical_name": "SPI_ss_i",
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_O": {
+                "physical_name": "SPI_ss_o",
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              },
+              "SS_T": {
+                "physical_name": "SPI_ss_t",
+                "direction": "O"
+              },
+              "SCK_I": {
+                "physical_name": "SPI_sck_i",
+                "direction": "I"
+              },
+              "SCK_O": {
+                "physical_name": "SPI_sck_o",
+                "direction": "O"
+              },
+              "SCK_T": {
+                "physical_name": "SPI_sck_t",
+                "direction": "O"
+              },
+              "IO0_I": {
+                "physical_name": "SPI_io0_i",
+                "direction": "I"
+              },
+              "IO0_O": {
+                "physical_name": "SPI_io0_o",
+                "direction": "O"
+              },
+              "IO0_T": {
+                "physical_name": "SPI_io0_t",
+                "direction": "O"
+              },
+              "IO1_I": {
+                "physical_name": "SPI_io1_i",
+                "direction": "I"
+              },
+              "IO1_O": {
+                "physical_name": "SPI_io1_o",
+                "direction": "O"
+              },
+              "IO1_T": {
+                "physical_name": "SPI_io1_t",
+                "direction": "O"
+              }
+            }
+          },
+          "ILI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "kn4hji.ddns.net:user:ilispi:1.0",
+            "vlnv": "kn4hji.ddns.net:user:ilispi_rtl:1.0",
+            "port_maps": {
+              "SS_O": {
+                "physical_name": "ILI_ss_o",
+                "direction": "O"
+              },
+              "SCK_O": {
+                "physical_name": "ILI_scl_o",
+                "direction": "O"
+              },
+              "SDA_O": {
+                "physical_name": "ILI_sda_o",
+                "direction": "O"
+              }
+            }
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2435,50 +2871,50 @@
       },
       "axi_quad_spi_0_SPI_0": {
         "interface_ports": [
-          "SPI_0",
+          "spi2ili_0/SPI",
           "axi_quad_spi_0/SPI_0"
         ]
       },
       "axi_quad_spi_1_SPI_0": {
         "interface_ports": [
-          "SPI_1",
-          "axi_quad_spi_1/SPI_0"
+          "axi_quad_spi_1/SPI_0",
+          "spi2ili_1/SPI"
         ]
       },
       "axi_quad_spi_2_SPI_0": {
         "interface_ports": [
-          "SPI_2",
-          "axi_quad_spi_2/SPI_0"
+          "axi_quad_spi_2/SPI_0",
+          "spi2ili_2/SPI"
         ]
       },
       "axi_quad_spi_3_SPI_0": {
         "interface_ports": [
-          "SPI_3",
-          "axi_quad_spi_3/SPI_0"
+          "axi_quad_spi_3/SPI_0",
+          "spi2ili_3/SPI"
         ]
       },
       "axi_quad_spi_4_SPI_0": {
         "interface_ports": [
-          "SPI_4",
-          "axi_quad_spi_4/SPI_0"
+          "axi_quad_spi_4/SPI_0",
+          "spi2ili_4/SPI"
         ]
       },
       "axi_quad_spi_5_SPI_0": {
         "interface_ports": [
-          "SPI_5",
-          "axi_quad_spi_5/SPI_0"
+          "axi_quad_spi_5/SPI_0",
+          "spi2ili_5/SPI"
         ]
       },
       "axi_quad_spi_6_SPI_0": {
         "interface_ports": [
-          "SPI_6",
-          "axi_quad_spi_6/SPI_0"
+          "axi_quad_spi_6/SPI_0",
+          "spi2ili_6/SPI"
         ]
       },
       "axi_quad_spi_7_SPI_0": {
         "interface_ports": [
-          "SPI_7",
-          "axi_quad_spi_7/SPI_0"
+          "axi_quad_spi_7/SPI_0",
+          "spi2ili_7/SPI"
         ]
       },
       "axi_quad_spi_8_SPI_0": {
@@ -2569,6 +3005,54 @@
         "interface_ports": [
           "axi_smc/S00_AXI",
           "processing_system7_0/M_AXI_GP0"
+        ]
+      },
+      "spi2ili_0_ILI": {
+        "interface_ports": [
+          "ILI_0",
+          "spi2ili_0/ILI"
+        ]
+      },
+      "spi2ili_1_ILI": {
+        "interface_ports": [
+          "ILI_1",
+          "spi2ili_1/ILI"
+        ]
+      },
+      "spi2ili_2_ILI": {
+        "interface_ports": [
+          "ILI_2",
+          "spi2ili_2/ILI"
+        ]
+      },
+      "spi2ili_3_ILI": {
+        "interface_ports": [
+          "ILI_3",
+          "spi2ili_3/ILI"
+        ]
+      },
+      "spi2ili_4_ILI": {
+        "interface_ports": [
+          "ILI_4",
+          "spi2ili_4/ILI"
+        ]
+      },
+      "spi2ili_5_ILI": {
+        "interface_ports": [
+          "ILI_5",
+          "spi2ili_5/ILI"
+        ]
+      },
+      "spi2ili_6_ILI": {
+        "interface_ports": [
+          "ILI_6",
+          "spi2ili_6/ILI"
+        ]
+      },
+      "spi2ili_7_ILI": {
+        "interface_ports": [
+          "ILI_7",
+          "spi2ili_7/ILI"
         ]
       }
     },

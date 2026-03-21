@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xE8B0EF5249EBC3E2",
+      "boundary_crc": "0xE8B0EF526FA997A3",
       "design_src": "SBD",
       "device": "xc7z010clg400-1",
       "name": "bd_1c4e",
@@ -201,7 +201,7 @@
             "value_src": "auto_prop"
           },
           "FREQ_HZ": {
-            "value": "1.5e+08",
+            "value": "150000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -348,7 +348,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "1.5e+08",
+            "value": "150000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -397,7 +397,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -480,7 +480,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "1.5e+08",
+            "value": "150000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -529,7 +529,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -612,7 +612,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "1.5e+08",
+            "value": "150000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -661,7 +661,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -744,7 +744,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "1.5e+08",
+            "value": "150000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -793,7 +793,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -876,7 +876,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "1.5e+08",
+            "value": "150000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -925,7 +925,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -1008,7 +1008,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "1.5e+08",
+            "value": "150000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1057,7 +1057,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -1140,7 +1140,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "1.5e+08",
+            "value": "150000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1189,7 +1189,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -1272,7 +1272,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "1.5e+08",
+            "value": "150000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1321,7 +1321,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -1404,7 +1404,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "1.5e+08",
+            "value": "150000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1453,7 +1453,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -1536,7 +1536,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "1.5e+08",
+            "value": "150000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1585,7 +1585,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -1668,7 +1668,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "1.5e+08",
+            "value": "150000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1717,7 +1717,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -1788,7 +1788,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "1.5e+08",
+            "value": "150000000",
             "value_src": "user_prop"
           },
           "FREQ_TOLERANCE_HZ": {

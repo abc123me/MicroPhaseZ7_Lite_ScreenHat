@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Fri Mar 20 02:34:03 2026
+//Date        : Fri Mar 20 23:48:43 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal_wrapper.bd
 //Design      : minimal_wrapper
@@ -45,45 +45,37 @@ module minimal_wrapper
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
     GPIO_0_tri_o,
+    ILI_0_sck_o,
+    ILI_0_sda_o,
+    ILI_0_ss_o,
+    ILI_1_sck_o,
+    ILI_1_sda_o,
+    ILI_1_ss_o,
+    ILI_2_sck_o,
+    ILI_2_sda_o,
+    ILI_2_ss_o,
+    ILI_3_sck_o,
+    ILI_3_sda_o,
+    ILI_3_ss_o,
+    ILI_4_sck_o,
+    ILI_4_sda_o,
+    ILI_4_ss_o,
+    ILI_5_sck_o,
+    ILI_5_sda_o,
+    ILI_5_ss_o,
+    ILI_6_sck_o,
+    ILI_6_sda_o,
+    ILI_6_ss_o,
+    ILI_7_sck_o,
+    ILI_7_sda_o,
+    ILI_7_ss_o,
     PL_CLK_50M,
     PL_LED_1,
     PL_LED_2,
-    SPI_0_io0_io,
-    SPI_0_io1_io,
-    SPI_0_sck_io,
-    SPI_0_ss_io,
-    SPI_1_io0_io,
-    SPI_1_io1_io,
-    SPI_1_sck_io,
-    SPI_1_ss_io,
-    SPI_2_io0_io,
-    SPI_2_io1_io,
-    SPI_2_sck_io,
-    SPI_2_ss_io,
-    SPI_3_io0_io,
-    SPI_3_io1_io,
-    SPI_3_sck_io,
-    SPI_3_ss_io,
-    SPI_4_io0_io,
-    SPI_4_io1_io,
-    SPI_4_sck_io,
-    SPI_4_ss_io,
     SPI_595_io0_io,
     SPI_595_io1_io,
     SPI_595_sck_io,
-    SPI_595_ss_io,
-    SPI_5_io0_io,
-    SPI_5_io1_io,
-    SPI_5_sck_io,
-    SPI_5_ss_io,
-    SPI_6_io0_io,
-    SPI_6_io1_io,
-    SPI_6_sck_io,
-    SPI_6_ss_io,
-    SPI_7_io0_io,
-    SPI_7_io1_io,
-    SPI_7_sck_io,
-    SPI_7_ss_io);
+    SPI_595_ss_io);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -118,45 +110,37 @@ module minimal_wrapper
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
   output [7:0]GPIO_0_tri_o;
+  output ILI_0_sck_o;
+  output ILI_0_sda_o;
+  output ILI_0_ss_o;
+  output ILI_1_sck_o;
+  output ILI_1_sda_o;
+  output ILI_1_ss_o;
+  output ILI_2_sck_o;
+  output ILI_2_sda_o;
+  output ILI_2_ss_o;
+  output ILI_3_sck_o;
+  output ILI_3_sda_o;
+  output ILI_3_ss_o;
+  output ILI_4_sck_o;
+  output ILI_4_sda_o;
+  output ILI_4_ss_o;
+  output ILI_5_sck_o;
+  output ILI_5_sda_o;
+  output ILI_5_ss_o;
+  output ILI_6_sck_o;
+  output ILI_6_sda_o;
+  output ILI_6_ss_o;
+  output ILI_7_sck_o;
+  output ILI_7_sda_o;
+  output ILI_7_ss_o;
   input PL_CLK_50M;
   output [0:0]PL_LED_1;
   output [0:0]PL_LED_2;
-  inout SPI_0_io0_io;
-  inout SPI_0_io1_io;
-  inout SPI_0_sck_io;
-  inout [0:0]SPI_0_ss_io;
-  inout SPI_1_io0_io;
-  inout SPI_1_io1_io;
-  inout SPI_1_sck_io;
-  inout [0:0]SPI_1_ss_io;
-  inout SPI_2_io0_io;
-  inout SPI_2_io1_io;
-  inout SPI_2_sck_io;
-  inout [0:0]SPI_2_ss_io;
-  inout SPI_3_io0_io;
-  inout SPI_3_io1_io;
-  inout SPI_3_sck_io;
-  inout [0:0]SPI_3_ss_io;
-  inout SPI_4_io0_io;
-  inout SPI_4_io1_io;
-  inout SPI_4_sck_io;
-  inout [0:0]SPI_4_ss_io;
   inout SPI_595_io0_io;
   inout SPI_595_io1_io;
   inout SPI_595_sck_io;
   inout [0:0]SPI_595_ss_io;
-  inout SPI_5_io0_io;
-  inout SPI_5_io1_io;
-  inout SPI_5_sck_io;
-  inout [0:0]SPI_5_ss_io;
-  inout SPI_6_io0_io;
-  inout SPI_6_io1_io;
-  inout SPI_6_sck_io;
-  inout [0:0]SPI_6_ss_io;
-  inout SPI_7_io0_io;
-  inout SPI_7_io1_io;
-  inout SPI_7_sck_io;
-  inout [0:0]SPI_7_ss_io;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -195,89 +179,33 @@ module minimal_wrapper
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
   wire [7:0]GPIO_0_tri_o;
+  wire ILI_0_sck_o;
+  wire ILI_0_sda_o;
+  wire ILI_0_ss_o;
+  wire ILI_1_sck_o;
+  wire ILI_1_sda_o;
+  wire ILI_1_ss_o;
+  wire ILI_2_sck_o;
+  wire ILI_2_sda_o;
+  wire ILI_2_ss_o;
+  wire ILI_3_sck_o;
+  wire ILI_3_sda_o;
+  wire ILI_3_ss_o;
+  wire ILI_4_sck_o;
+  wire ILI_4_sda_o;
+  wire ILI_4_ss_o;
+  wire ILI_5_sck_o;
+  wire ILI_5_sda_o;
+  wire ILI_5_ss_o;
+  wire ILI_6_sck_o;
+  wire ILI_6_sda_o;
+  wire ILI_6_ss_o;
+  wire ILI_7_sck_o;
+  wire ILI_7_sda_o;
+  wire ILI_7_ss_o;
   wire PL_CLK_50M;
   wire [0:0]PL_LED_1;
   wire [0:0]PL_LED_2;
-  wire SPI_0_io0_i;
-  wire SPI_0_io0_io;
-  wire SPI_0_io0_o;
-  wire SPI_0_io0_t;
-  wire SPI_0_io1_i;
-  wire SPI_0_io1_io;
-  wire SPI_0_io1_o;
-  wire SPI_0_io1_t;
-  wire SPI_0_sck_i;
-  wire SPI_0_sck_io;
-  wire SPI_0_sck_o;
-  wire SPI_0_sck_t;
-  wire [0:0]SPI_0_ss_i_0;
-  wire [0:0]SPI_0_ss_io_0;
-  wire [0:0]SPI_0_ss_o_0;
-  wire SPI_0_ss_t;
-  wire SPI_1_io0_i;
-  wire SPI_1_io0_io;
-  wire SPI_1_io0_o;
-  wire SPI_1_io0_t;
-  wire SPI_1_io1_i;
-  wire SPI_1_io1_io;
-  wire SPI_1_io1_o;
-  wire SPI_1_io1_t;
-  wire SPI_1_sck_i;
-  wire SPI_1_sck_io;
-  wire SPI_1_sck_o;
-  wire SPI_1_sck_t;
-  wire [0:0]SPI_1_ss_i_0;
-  wire [0:0]SPI_1_ss_io_0;
-  wire [0:0]SPI_1_ss_o_0;
-  wire SPI_1_ss_t;
-  wire SPI_2_io0_i;
-  wire SPI_2_io0_io;
-  wire SPI_2_io0_o;
-  wire SPI_2_io0_t;
-  wire SPI_2_io1_i;
-  wire SPI_2_io1_io;
-  wire SPI_2_io1_o;
-  wire SPI_2_io1_t;
-  wire SPI_2_sck_i;
-  wire SPI_2_sck_io;
-  wire SPI_2_sck_o;
-  wire SPI_2_sck_t;
-  wire [0:0]SPI_2_ss_i_0;
-  wire [0:0]SPI_2_ss_io_0;
-  wire [0:0]SPI_2_ss_o_0;
-  wire SPI_2_ss_t;
-  wire SPI_3_io0_i;
-  wire SPI_3_io0_io;
-  wire SPI_3_io0_o;
-  wire SPI_3_io0_t;
-  wire SPI_3_io1_i;
-  wire SPI_3_io1_io;
-  wire SPI_3_io1_o;
-  wire SPI_3_io1_t;
-  wire SPI_3_sck_i;
-  wire SPI_3_sck_io;
-  wire SPI_3_sck_o;
-  wire SPI_3_sck_t;
-  wire [0:0]SPI_3_ss_i_0;
-  wire [0:0]SPI_3_ss_io_0;
-  wire [0:0]SPI_3_ss_o_0;
-  wire SPI_3_ss_t;
-  wire SPI_4_io0_i;
-  wire SPI_4_io0_io;
-  wire SPI_4_io0_o;
-  wire SPI_4_io0_t;
-  wire SPI_4_io1_i;
-  wire SPI_4_io1_io;
-  wire SPI_4_io1_o;
-  wire SPI_4_io1_t;
-  wire SPI_4_sck_i;
-  wire SPI_4_sck_io;
-  wire SPI_4_sck_o;
-  wire SPI_4_sck_t;
-  wire [0:0]SPI_4_ss_i_0;
-  wire [0:0]SPI_4_ss_io_0;
-  wire [0:0]SPI_4_ss_o_0;
-  wire SPI_4_ss_t;
   wire SPI_595_io0_i;
   wire SPI_595_io0_io;
   wire SPI_595_io0_o;
@@ -294,160 +222,12 @@ module minimal_wrapper
   wire [0:0]SPI_595_ss_io_0;
   wire [0:0]SPI_595_ss_o_0;
   wire SPI_595_ss_t;
-  wire SPI_5_io0_i;
-  wire SPI_5_io0_io;
-  wire SPI_5_io0_o;
-  wire SPI_5_io0_t;
-  wire SPI_5_io1_i;
-  wire SPI_5_io1_io;
-  wire SPI_5_io1_o;
-  wire SPI_5_io1_t;
-  wire SPI_5_sck_i;
-  wire SPI_5_sck_io;
-  wire SPI_5_sck_o;
-  wire SPI_5_sck_t;
-  wire [0:0]SPI_5_ss_i_0;
-  wire [0:0]SPI_5_ss_io_0;
-  wire [0:0]SPI_5_ss_o_0;
-  wire SPI_5_ss_t;
-  wire SPI_6_io0_i;
-  wire SPI_6_io0_io;
-  wire SPI_6_io0_o;
-  wire SPI_6_io0_t;
-  wire SPI_6_io1_i;
-  wire SPI_6_io1_io;
-  wire SPI_6_io1_o;
-  wire SPI_6_io1_t;
-  wire SPI_6_sck_i;
-  wire SPI_6_sck_io;
-  wire SPI_6_sck_o;
-  wire SPI_6_sck_t;
-  wire [0:0]SPI_6_ss_i_0;
-  wire [0:0]SPI_6_ss_io_0;
-  wire [0:0]SPI_6_ss_o_0;
-  wire SPI_6_ss_t;
-  wire SPI_7_io0_i;
-  wire SPI_7_io0_io;
-  wire SPI_7_io0_o;
-  wire SPI_7_io0_t;
-  wire SPI_7_io1_i;
-  wire SPI_7_io1_io;
-  wire SPI_7_io1_o;
-  wire SPI_7_io1_t;
-  wire SPI_7_sck_i;
-  wire SPI_7_sck_io;
-  wire SPI_7_sck_o;
-  wire SPI_7_sck_t;
-  wire [0:0]SPI_7_ss_i_0;
-  wire [0:0]SPI_7_ss_io_0;
-  wire [0:0]SPI_7_ss_o_0;
-  wire SPI_7_ss_t;
 
   IOBUF ETH_MDIO_mdio_iobuf
        (.I(ETH_MDIO_mdio_o),
         .IO(ETH_MDIO_mdio_io),
         .O(ETH_MDIO_mdio_i),
         .T(ETH_MDIO_mdio_t));
-  IOBUF SPI_0_io0_iobuf
-       (.I(SPI_0_io0_o),
-        .IO(SPI_0_io0_io),
-        .O(SPI_0_io0_i),
-        .T(SPI_0_io0_t));
-  IOBUF SPI_0_io1_iobuf
-       (.I(SPI_0_io1_o),
-        .IO(SPI_0_io1_io),
-        .O(SPI_0_io1_i),
-        .T(SPI_0_io1_t));
-  IOBUF SPI_0_sck_iobuf
-       (.I(SPI_0_sck_o),
-        .IO(SPI_0_sck_io),
-        .O(SPI_0_sck_i),
-        .T(SPI_0_sck_t));
-  IOBUF SPI_0_ss_iobuf_0
-       (.I(SPI_0_ss_o_0),
-        .IO(SPI_0_ss_io[0]),
-        .O(SPI_0_ss_i_0),
-        .T(SPI_0_ss_t));
-  IOBUF SPI_1_io0_iobuf
-       (.I(SPI_1_io0_o),
-        .IO(SPI_1_io0_io),
-        .O(SPI_1_io0_i),
-        .T(SPI_1_io0_t));
-  IOBUF SPI_1_io1_iobuf
-       (.I(SPI_1_io1_o),
-        .IO(SPI_1_io1_io),
-        .O(SPI_1_io1_i),
-        .T(SPI_1_io1_t));
-  IOBUF SPI_1_sck_iobuf
-       (.I(SPI_1_sck_o),
-        .IO(SPI_1_sck_io),
-        .O(SPI_1_sck_i),
-        .T(SPI_1_sck_t));
-  IOBUF SPI_1_ss_iobuf_0
-       (.I(SPI_1_ss_o_0),
-        .IO(SPI_1_ss_io[0]),
-        .O(SPI_1_ss_i_0),
-        .T(SPI_1_ss_t));
-  IOBUF SPI_2_io0_iobuf
-       (.I(SPI_2_io0_o),
-        .IO(SPI_2_io0_io),
-        .O(SPI_2_io0_i),
-        .T(SPI_2_io0_t));
-  IOBUF SPI_2_io1_iobuf
-       (.I(SPI_2_io1_o),
-        .IO(SPI_2_io1_io),
-        .O(SPI_2_io1_i),
-        .T(SPI_2_io1_t));
-  IOBUF SPI_2_sck_iobuf
-       (.I(SPI_2_sck_o),
-        .IO(SPI_2_sck_io),
-        .O(SPI_2_sck_i),
-        .T(SPI_2_sck_t));
-  IOBUF SPI_2_ss_iobuf_0
-       (.I(SPI_2_ss_o_0),
-        .IO(SPI_2_ss_io[0]),
-        .O(SPI_2_ss_i_0),
-        .T(SPI_2_ss_t));
-  IOBUF SPI_3_io0_iobuf
-       (.I(SPI_3_io0_o),
-        .IO(SPI_3_io0_io),
-        .O(SPI_3_io0_i),
-        .T(SPI_3_io0_t));
-  IOBUF SPI_3_io1_iobuf
-       (.I(SPI_3_io1_o),
-        .IO(SPI_3_io1_io),
-        .O(SPI_3_io1_i),
-        .T(SPI_3_io1_t));
-  IOBUF SPI_3_sck_iobuf
-       (.I(SPI_3_sck_o),
-        .IO(SPI_3_sck_io),
-        .O(SPI_3_sck_i),
-        .T(SPI_3_sck_t));
-  IOBUF SPI_3_ss_iobuf_0
-       (.I(SPI_3_ss_o_0),
-        .IO(SPI_3_ss_io[0]),
-        .O(SPI_3_ss_i_0),
-        .T(SPI_3_ss_t));
-  IOBUF SPI_4_io0_iobuf
-       (.I(SPI_4_io0_o),
-        .IO(SPI_4_io0_io),
-        .O(SPI_4_io0_i),
-        .T(SPI_4_io0_t));
-  IOBUF SPI_4_io1_iobuf
-       (.I(SPI_4_io1_o),
-        .IO(SPI_4_io1_io),
-        .O(SPI_4_io1_i),
-        .T(SPI_4_io1_t));
-  IOBUF SPI_4_sck_iobuf
-       (.I(SPI_4_sck_o),
-        .IO(SPI_4_sck_io),
-        .O(SPI_4_sck_i),
-        .T(SPI_4_sck_t));
-  IOBUF SPI_4_ss_iobuf_0
-       (.I(SPI_4_ss_o_0),
-        .IO(SPI_4_ss_io[0]),
-        .O(SPI_4_ss_i_0),
-        .T(SPI_4_ss_t));
   IOBUF SPI_595_io0_iobuf
        (.I(SPI_595_io0_o),
         .IO(SPI_595_io0_io),
@@ -468,66 +248,6 @@ module minimal_wrapper
         .IO(SPI_595_ss_io[0]),
         .O(SPI_595_ss_i_0),
         .T(SPI_595_ss_t));
-  IOBUF SPI_5_io0_iobuf
-       (.I(SPI_5_io0_o),
-        .IO(SPI_5_io0_io),
-        .O(SPI_5_io0_i),
-        .T(SPI_5_io0_t));
-  IOBUF SPI_5_io1_iobuf
-       (.I(SPI_5_io1_o),
-        .IO(SPI_5_io1_io),
-        .O(SPI_5_io1_i),
-        .T(SPI_5_io1_t));
-  IOBUF SPI_5_sck_iobuf
-       (.I(SPI_5_sck_o),
-        .IO(SPI_5_sck_io),
-        .O(SPI_5_sck_i),
-        .T(SPI_5_sck_t));
-  IOBUF SPI_5_ss_iobuf_0
-       (.I(SPI_5_ss_o_0),
-        .IO(SPI_5_ss_io[0]),
-        .O(SPI_5_ss_i_0),
-        .T(SPI_5_ss_t));
-  IOBUF SPI_6_io0_iobuf
-       (.I(SPI_6_io0_o),
-        .IO(SPI_6_io0_io),
-        .O(SPI_6_io0_i),
-        .T(SPI_6_io0_t));
-  IOBUF SPI_6_io1_iobuf
-       (.I(SPI_6_io1_o),
-        .IO(SPI_6_io1_io),
-        .O(SPI_6_io1_i),
-        .T(SPI_6_io1_t));
-  IOBUF SPI_6_sck_iobuf
-       (.I(SPI_6_sck_o),
-        .IO(SPI_6_sck_io),
-        .O(SPI_6_sck_i),
-        .T(SPI_6_sck_t));
-  IOBUF SPI_6_ss_iobuf_0
-       (.I(SPI_6_ss_o_0),
-        .IO(SPI_6_ss_io[0]),
-        .O(SPI_6_ss_i_0),
-        .T(SPI_6_ss_t));
-  IOBUF SPI_7_io0_iobuf
-       (.I(SPI_7_io0_o),
-        .IO(SPI_7_io0_io),
-        .O(SPI_7_io0_i),
-        .T(SPI_7_io0_t));
-  IOBUF SPI_7_io1_iobuf
-       (.I(SPI_7_io1_o),
-        .IO(SPI_7_io1_io),
-        .O(SPI_7_io1_i),
-        .T(SPI_7_io1_t));
-  IOBUF SPI_7_sck_iobuf
-       (.I(SPI_7_sck_o),
-        .IO(SPI_7_sck_io),
-        .O(SPI_7_sck_i),
-        .T(SPI_7_sck_t));
-  IOBUF SPI_7_ss_iobuf_0
-       (.I(SPI_7_ss_o_0),
-        .IO(SPI_7_ss_io[0]),
-        .O(SPI_7_ss_i_0),
-        .T(SPI_7_ss_t));
   minimal minimal_i
        (.DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
@@ -565,69 +285,33 @@ module minimal_wrapper
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
         .GPIO_0_tri_o(GPIO_0_tri_o),
+        .ILI_0_sck_o(ILI_0_sck_o),
+        .ILI_0_sda_o(ILI_0_sda_o),
+        .ILI_0_ss_o(ILI_0_ss_o),
+        .ILI_1_sck_o(ILI_1_sck_o),
+        .ILI_1_sda_o(ILI_1_sda_o),
+        .ILI_1_ss_o(ILI_1_ss_o),
+        .ILI_2_sck_o(ILI_2_sck_o),
+        .ILI_2_sda_o(ILI_2_sda_o),
+        .ILI_2_ss_o(ILI_2_ss_o),
+        .ILI_3_sck_o(ILI_3_sck_o),
+        .ILI_3_sda_o(ILI_3_sda_o),
+        .ILI_3_ss_o(ILI_3_ss_o),
+        .ILI_4_sck_o(ILI_4_sck_o),
+        .ILI_4_sda_o(ILI_4_sda_o),
+        .ILI_4_ss_o(ILI_4_ss_o),
+        .ILI_5_sck_o(ILI_5_sck_o),
+        .ILI_5_sda_o(ILI_5_sda_o),
+        .ILI_5_ss_o(ILI_5_ss_o),
+        .ILI_6_sck_o(ILI_6_sck_o),
+        .ILI_6_sda_o(ILI_6_sda_o),
+        .ILI_6_ss_o(ILI_6_ss_o),
+        .ILI_7_sck_o(ILI_7_sck_o),
+        .ILI_7_sda_o(ILI_7_sda_o),
+        .ILI_7_ss_o(ILI_7_ss_o),
         .PL_CLK_50M(PL_CLK_50M),
         .PL_LED_1(PL_LED_1),
         .PL_LED_2(PL_LED_2),
-        .SPI_0_io0_i(SPI_0_io0_i),
-        .SPI_0_io0_o(SPI_0_io0_o),
-        .SPI_0_io0_t(SPI_0_io0_t),
-        .SPI_0_io1_i(SPI_0_io1_i),
-        .SPI_0_io1_o(SPI_0_io1_o),
-        .SPI_0_io1_t(SPI_0_io1_t),
-        .SPI_0_sck_i(SPI_0_sck_i),
-        .SPI_0_sck_o(SPI_0_sck_o),
-        .SPI_0_sck_t(SPI_0_sck_t),
-        .SPI_0_ss_i(SPI_0_ss_i_0),
-        .SPI_0_ss_o(SPI_0_ss_o_0),
-        .SPI_0_ss_t(SPI_0_ss_t),
-        .SPI_1_io0_i(SPI_1_io0_i),
-        .SPI_1_io0_o(SPI_1_io0_o),
-        .SPI_1_io0_t(SPI_1_io0_t),
-        .SPI_1_io1_i(SPI_1_io1_i),
-        .SPI_1_io1_o(SPI_1_io1_o),
-        .SPI_1_io1_t(SPI_1_io1_t),
-        .SPI_1_sck_i(SPI_1_sck_i),
-        .SPI_1_sck_o(SPI_1_sck_o),
-        .SPI_1_sck_t(SPI_1_sck_t),
-        .SPI_1_ss_i(SPI_1_ss_i_0),
-        .SPI_1_ss_o(SPI_1_ss_o_0),
-        .SPI_1_ss_t(SPI_1_ss_t),
-        .SPI_2_io0_i(SPI_2_io0_i),
-        .SPI_2_io0_o(SPI_2_io0_o),
-        .SPI_2_io0_t(SPI_2_io0_t),
-        .SPI_2_io1_i(SPI_2_io1_i),
-        .SPI_2_io1_o(SPI_2_io1_o),
-        .SPI_2_io1_t(SPI_2_io1_t),
-        .SPI_2_sck_i(SPI_2_sck_i),
-        .SPI_2_sck_o(SPI_2_sck_o),
-        .SPI_2_sck_t(SPI_2_sck_t),
-        .SPI_2_ss_i(SPI_2_ss_i_0),
-        .SPI_2_ss_o(SPI_2_ss_o_0),
-        .SPI_2_ss_t(SPI_2_ss_t),
-        .SPI_3_io0_i(SPI_3_io0_i),
-        .SPI_3_io0_o(SPI_3_io0_o),
-        .SPI_3_io0_t(SPI_3_io0_t),
-        .SPI_3_io1_i(SPI_3_io1_i),
-        .SPI_3_io1_o(SPI_3_io1_o),
-        .SPI_3_io1_t(SPI_3_io1_t),
-        .SPI_3_sck_i(SPI_3_sck_i),
-        .SPI_3_sck_o(SPI_3_sck_o),
-        .SPI_3_sck_t(SPI_3_sck_t),
-        .SPI_3_ss_i(SPI_3_ss_i_0),
-        .SPI_3_ss_o(SPI_3_ss_o_0),
-        .SPI_3_ss_t(SPI_3_ss_t),
-        .SPI_4_io0_i(SPI_4_io0_i),
-        .SPI_4_io0_o(SPI_4_io0_o),
-        .SPI_4_io0_t(SPI_4_io0_t),
-        .SPI_4_io1_i(SPI_4_io1_i),
-        .SPI_4_io1_o(SPI_4_io1_o),
-        .SPI_4_io1_t(SPI_4_io1_t),
-        .SPI_4_sck_i(SPI_4_sck_i),
-        .SPI_4_sck_o(SPI_4_sck_o),
-        .SPI_4_sck_t(SPI_4_sck_t),
-        .SPI_4_ss_i(SPI_4_ss_i_0),
-        .SPI_4_ss_o(SPI_4_ss_o_0),
-        .SPI_4_ss_t(SPI_4_ss_t),
         .SPI_595_io0_i(SPI_595_io0_i),
         .SPI_595_io0_o(SPI_595_io0_o),
         .SPI_595_io0_t(SPI_595_io0_t),
@@ -639,41 +323,5 @@ module minimal_wrapper
         .SPI_595_sck_t(SPI_595_sck_t),
         .SPI_595_ss_i(SPI_595_ss_i_0),
         .SPI_595_ss_o(SPI_595_ss_o_0),
-        .SPI_595_ss_t(SPI_595_ss_t),
-        .SPI_5_io0_i(SPI_5_io0_i),
-        .SPI_5_io0_o(SPI_5_io0_o),
-        .SPI_5_io0_t(SPI_5_io0_t),
-        .SPI_5_io1_i(SPI_5_io1_i),
-        .SPI_5_io1_o(SPI_5_io1_o),
-        .SPI_5_io1_t(SPI_5_io1_t),
-        .SPI_5_sck_i(SPI_5_sck_i),
-        .SPI_5_sck_o(SPI_5_sck_o),
-        .SPI_5_sck_t(SPI_5_sck_t),
-        .SPI_5_ss_i(SPI_5_ss_i_0),
-        .SPI_5_ss_o(SPI_5_ss_o_0),
-        .SPI_5_ss_t(SPI_5_ss_t),
-        .SPI_6_io0_i(SPI_6_io0_i),
-        .SPI_6_io0_o(SPI_6_io0_o),
-        .SPI_6_io0_t(SPI_6_io0_t),
-        .SPI_6_io1_i(SPI_6_io1_i),
-        .SPI_6_io1_o(SPI_6_io1_o),
-        .SPI_6_io1_t(SPI_6_io1_t),
-        .SPI_6_sck_i(SPI_6_sck_i),
-        .SPI_6_sck_o(SPI_6_sck_o),
-        .SPI_6_sck_t(SPI_6_sck_t),
-        .SPI_6_ss_i(SPI_6_ss_i_0),
-        .SPI_6_ss_o(SPI_6_ss_o_0),
-        .SPI_6_ss_t(SPI_6_ss_t),
-        .SPI_7_io0_i(SPI_7_io0_i),
-        .SPI_7_io0_o(SPI_7_io0_o),
-        .SPI_7_io0_t(SPI_7_io0_t),
-        .SPI_7_io1_i(SPI_7_io1_i),
-        .SPI_7_io1_o(SPI_7_io1_o),
-        .SPI_7_io1_t(SPI_7_io1_t),
-        .SPI_7_sck_i(SPI_7_sck_i),
-        .SPI_7_sck_o(SPI_7_sck_o),
-        .SPI_7_sck_t(SPI_7_sck_t),
-        .SPI_7_ss_i(SPI_7_ss_i_0),
-        .SPI_7_ss_o(SPI_7_ss_o_0),
-        .SPI_7_ss_t(SPI_7_ss_t));
+        .SPI_595_ss_t(SPI_595_ss_t));
 endmodule
