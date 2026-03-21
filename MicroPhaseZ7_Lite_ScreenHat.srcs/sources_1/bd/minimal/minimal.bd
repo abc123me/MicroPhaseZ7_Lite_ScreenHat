@@ -4523,6 +4523,18 @@
                 "range": "64K",
                 "offset_high_param": "C_HIGHADDR"
               },
+              "SEG_axi_quad_spi_12_Reg": {
+                "address_block": "/axi_quad_spi_12/AXI_LITE/Reg",
+                "offset": "0x41EC0000",
+                "range": "64K",
+                "offset_high_param": "C_HIGHADDR"
+              },
+              "SEG_axi_quad_spi_13_Reg": {
+                "address_block": "/axi_quad_spi_13/AXI_LITE/Reg",
+                "offset": "0x41ED0000",
+                "range": "64K",
+                "offset_high_param": "C_HIGHADDR"
+              },
               "SEG_axi_quad_spi_1_Reg": {
                 "address_block": "/axi_quad_spi_1/AXI_LITE/Reg",
                 "offset": "0x41E10000",

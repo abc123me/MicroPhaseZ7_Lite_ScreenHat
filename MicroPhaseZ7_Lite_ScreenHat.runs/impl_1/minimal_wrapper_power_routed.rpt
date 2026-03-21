@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date             : Sat Mar 21 02:42:17 2026
+| Date             : Sat Mar 21 02:49:29 2026
 | Host             : npc running 64-bit Arch Linux
 | Command          : report_power -file minimal_wrapper_power_routed.rpt -pb minimal_wrapper_power_summary_routed.pb -rpx minimal_wrapper_power_routed.rpx
 | Design           : minimal_wrapper
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.432        |
+| Total On-Chip Power (W)  | 1.433        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 1.313        |
@@ -53,8 +53,8 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.041 |        5 |       --- |             --- |
-| Slice Logic              |     0.036 |    35516 |       --- |             --- |
-|   LUT as Logic           |     0.031 |    11884 |     17600 |           67.52 |
+| Slice Logic              |     0.036 |    35511 |       --- |             --- |
+|   LUT as Logic           |     0.031 |    11876 |     17600 |           67.48 |
 |   Register               |     0.003 |    16606 |     35200 |           47.18 |
 |   CARRY4                 |     0.001 |      351 |      4400 |            7.98 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      6000 |            0.40 |
@@ -62,12 +62,12 @@ Table of Contents
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   Others                 |     0.000 |     3400 |       --- |             --- |
 |   LUT as Shift Register  |     0.000 |        2 |      6000 |            0.03 |
-| Signals                  |     0.033 |    22474 |       --- |             --- |
+| Signals                  |     0.034 |    22451 |       --- |             --- |
 | Block RAM                |     0.004 |       18 |        60 |           30.00 |
 | I/O                      |     0.019 |       78 |       100 |           78.00 |
 | PS7                      |     1.181 |        1 |       --- |             --- |
 | Static Power             |     0.119 |          |           |                 |
-| Total                    |     1.432 |          |           |                 |
+| Total                    |     1.433 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -161,18 +161,18 @@ Table of Contents
 |       U0                 |     0.008 |
 |     axi_quad_spi_0       |     0.005 |
 |       U0                 |     0.005 |
-|     axi_quad_spi_1       |     0.005 |
-|       U0                 |     0.005 |
+|     axi_quad_spi_1       |     0.006 |
+|       U0                 |     0.006 |
 |     axi_quad_spi_10      |     0.006 |
 |       U0                 |     0.006 |
-|     axi_quad_spi_11      |     0.005 |
-|       U0                 |     0.005 |
+|     axi_quad_spi_11      |     0.006 |
+|       U0                 |     0.006 |
 |     axi_quad_spi_12      |     0.006 |
 |       U0                 |     0.006 |
-|     axi_quad_spi_13      |     0.005 |
-|       U0                 |     0.005 |
-|     axi_quad_spi_2       |     0.005 |
-|       U0                 |     0.005 |
+|     axi_quad_spi_13      |     0.006 |
+|       U0                 |     0.006 |
+|     axi_quad_spi_2       |     0.006 |
+|       U0                 |     0.006 |
 |     axi_quad_spi_3       |     0.006 |
 |       U0                 |     0.006 |
 |     axi_quad_spi_4       |     0.006 |
@@ -189,8 +189,8 @@ Table of Contents
 |       U0                 |     0.006 |
 |     axi_quad_spi_9       |     0.006 |
 |       U0                 |     0.006 |
-|     axi_smc              |     0.021 |
-|       inst               |     0.021 |
+|     axi_smc              |     0.022 |
+|       inst               |     0.022 |
 |     processing_system7_0 |     1.181 |
 |       inst               |     1.181 |
 +--------------------------+-----------+
