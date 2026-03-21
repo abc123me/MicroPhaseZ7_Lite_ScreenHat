@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Fri Mar 20 23:48:43 2026
+//Date        : Sat Mar 21 01:50:22 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal_wrapper.bd
 //Design      : minimal_wrapper
@@ -69,6 +69,24 @@ module minimal_wrapper
     ILI_7_sck_o,
     ILI_7_sda_o,
     ILI_7_ss_o,
+    ILI_8_sck_o,
+    ILI_8_sda_o,
+    ILI_8_ss_o,
+    ILI_9_sck_o,
+    ILI_9_sda_o,
+    ILI_9_ss_o,
+    ILI_A_sck_o,
+    ILI_A_sda_o,
+    ILI_A_ss_o,
+    ILI_B_sck_o,
+    ILI_B_sda_o,
+    ILI_B_ss_o,
+    ILI_C_sck_o,
+    ILI_C_sda_o,
+    ILI_C_ss_o,
+    ILI_D_sck_o,
+    ILI_D_sda_o,
+    ILI_D_ss_o,
     PL_CLK_50M,
     PL_LED_1,
     PL_LED_2,
@@ -109,7 +127,7 @@ module minimal_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  output [7:0]GPIO_0_tri_o;
+  output [11:0]GPIO_0_tri_o;
   output ILI_0_sck_o;
   output ILI_0_sda_o;
   output ILI_0_ss_o;
@@ -134,6 +152,24 @@ module minimal_wrapper
   output ILI_7_sck_o;
   output ILI_7_sda_o;
   output ILI_7_ss_o;
+  output ILI_8_sck_o;
+  output ILI_8_sda_o;
+  output ILI_8_ss_o;
+  output ILI_9_sck_o;
+  output ILI_9_sda_o;
+  output ILI_9_ss_o;
+  output ILI_A_sck_o;
+  output ILI_A_sda_o;
+  output ILI_A_ss_o;
+  output ILI_B_sck_o;
+  output ILI_B_sda_o;
+  output ILI_B_ss_o;
+  output ILI_C_sck_o;
+  output ILI_C_sda_o;
+  output ILI_C_ss_o;
+  output ILI_D_sck_o;
+  output ILI_D_sda_o;
+  output ILI_D_ss_o;
   input PL_CLK_50M;
   output [0:0]PL_LED_1;
   output [0:0]PL_LED_2;
@@ -178,7 +214,7 @@ module minimal_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire [7:0]GPIO_0_tri_o;
+  wire [11:0]GPIO_0_tri_o;
   wire ILI_0_sck_o;
   wire ILI_0_sda_o;
   wire ILI_0_ss_o;
@@ -203,6 +239,24 @@ module minimal_wrapper
   wire ILI_7_sck_o;
   wire ILI_7_sda_o;
   wire ILI_7_ss_o;
+  wire ILI_8_sck_o;
+  wire ILI_8_sda_o;
+  wire ILI_8_ss_o;
+  wire ILI_9_sck_o;
+  wire ILI_9_sda_o;
+  wire ILI_9_ss_o;
+  wire ILI_A_sck_o;
+  wire ILI_A_sda_o;
+  wire ILI_A_ss_o;
+  wire ILI_B_sck_o;
+  wire ILI_B_sda_o;
+  wire ILI_B_ss_o;
+  wire ILI_C_sck_o;
+  wire ILI_C_sda_o;
+  wire ILI_C_ss_o;
+  wire ILI_D_sck_o;
+  wire ILI_D_sda_o;
+  wire ILI_D_ss_o;
   wire PL_CLK_50M;
   wire [0:0]PL_LED_1;
   wire [0:0]PL_LED_2;
@@ -309,6 +363,24 @@ module minimal_wrapper
         .ILI_7_sck_o(ILI_7_sck_o),
         .ILI_7_sda_o(ILI_7_sda_o),
         .ILI_7_ss_o(ILI_7_ss_o),
+        .ILI_8_sck_o(ILI_8_sck_o),
+        .ILI_8_sda_o(ILI_8_sda_o),
+        .ILI_8_ss_o(ILI_8_ss_o),
+        .ILI_9_sck_o(ILI_9_sck_o),
+        .ILI_9_sda_o(ILI_9_sda_o),
+        .ILI_9_ss_o(ILI_9_ss_o),
+        .ILI_A_sck_o(ILI_A_sck_o),
+        .ILI_A_sda_o(ILI_A_sda_o),
+        .ILI_A_ss_o(ILI_A_ss_o),
+        .ILI_B_sck_o(ILI_B_sck_o),
+        .ILI_B_sda_o(ILI_B_sda_o),
+        .ILI_B_ss_o(ILI_B_ss_o),
+        .ILI_C_sck_o(ILI_C_sck_o),
+        .ILI_C_sda_o(ILI_C_sda_o),
+        .ILI_C_ss_o(ILI_C_ss_o),
+        .ILI_D_sck_o(ILI_D_sck_o),
+        .ILI_D_sda_o(ILI_D_sda_o),
+        .ILI_D_ss_o(ILI_D_ss_o),
         .PL_CLK_50M(PL_CLK_50M),
         .PL_LED_1(PL_LED_1),
         .PL_LED_2(PL_LED_2),

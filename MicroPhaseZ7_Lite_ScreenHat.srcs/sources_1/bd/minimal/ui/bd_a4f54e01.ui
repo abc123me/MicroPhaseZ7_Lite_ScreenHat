@@ -1,111 +1,153 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.274463",
-   "Default View_TopLeft":"-2437,4",
+   "Default View_ScaleFactor":"0.530553",
+   "Default View_TopLeft":"520,1446",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 7 -x 1940 -y 890 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 7 -x 1940 -y 920 -defaultsOSRD
-preplace port ETH_MDIO -pg 1 -lvl 7 -x 1940 -y 1020 -defaultsOSRD
-preplace port ETH_MII -pg 1 -lvl 7 -x 1940 -y 990 -defaultsOSRD
-preplace port GPIO_0 -pg 1 -lvl 7 -x 1940 -y 1150 -defaultsOSRD
-preplace port SPI_595 -pg 1 -lvl 7 -x 1940 -y 1310 -defaultsOSRD
-preplace port ILI_0 -pg 1 -lvl 7 -x 1940 -y 80 -defaultsOSRD
-preplace port ILI_1 -pg 1 -lvl 7 -x 1940 -y 260 -defaultsOSRD
-preplace port ILI_2 -pg 1 -lvl 7 -x 1940 -y 440 -defaultsOSRD
-preplace port ILI_3 -pg 1 -lvl 7 -x 1940 -y 630 -defaultsOSRD
-preplace port ILI_4 -pg 1 -lvl 7 -x 1940 -y 840 -defaultsOSRD
-preplace port ILI_5 -pg 1 -lvl 7 -x 1940 -y 1460 -defaultsOSRD
-preplace port ILI_6 -pg 1 -lvl 7 -x 1940 -y 1570 -defaultsOSRD
-preplace port ILI_7 -pg 1 -lvl 7 -x 1940 -y 1750 -defaultsOSRD
-preplace port port-id_PL_CLK_50M -pg 1 -lvl 0 -x -10 -y 1380 -defaultsOSRD
-preplace portBus PL_LED_2 -pg 1 -lvl 7 -x 1940 -y 1930 -defaultsOSRD
-preplace portBus PL_LED_1 -pg 1 -lvl 7 -x 1940 -y 2040 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 3 -x 680 -y 1060 -defaultsOSRD
-preplace inst axi_ethernetlite_0 -pg 1 -lvl 6 -x 1790 -y 1010 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 4 -x 1060 -y 850 -defaultsOSRD
-preplace inst rst_ps7_0_50M -pg 1 -lvl 3 -x 680 -y 1270 -defaultsOSRD
-preplace inst axi_quad_spi_0 -pg 1 -lvl 5 -x 1460 -y 90 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 6 -x 1790 -y 1150 -defaultsOSRD
-preplace inst ilconcat_0 -pg 1 -lvl 2 -x 380 -y 1240 -defaultsOSRD
-preplace inst ilslice_0 -pg 1 -lvl 6 -x 1790 -y 2040 -defaultsOSRD
-preplace inst c_counter_binary_0 -pg 1 -lvl 5 -x 1460 -y 2040 -defaultsOSRD
-preplace inst axi_quad_spi_1 -pg 1 -lvl 5 -x 1460 -y 270 -defaultsOSRD -resize 200 136
-preplace inst axi_quad_spi_2 -pg 1 -lvl 5 -x 1460 -y 450 -defaultsOSRD -resize 200 136
-preplace inst axi_quad_spi_3 -pg 1 -lvl 5 -x 1460 -y 640 -defaultsOSRD -resize 200 153
-preplace inst ilconcat_1 -pg 1 -lvl 1 -x 160 -y 780 -defaultsOSRD -resize 160 153
-preplace inst ilslice_1 -pg 1 -lvl 6 -x 1790 -y 1930 -defaultsOSRD -resize 160 88
-preplace inst c_counter_binary_1 -pg 1 -lvl 5 -x 1460 -y 1930 -defaultsOSRD -resize 120 88
-preplace inst axi_quad_spi_4 -pg 1 -lvl 5 -x 1460 -y 850 -defaultsOSRD -resize 200 153
-preplace inst axi_quad_spi_5 -pg 1 -lvl 5 -x 1460 -y 1150 -defaultsOSRD -resize 200 153
-preplace inst axi_quad_spi_6 -pg 1 -lvl 5 -x 1460 -y 1580 -defaultsOSRD -resize 200 153
-preplace inst axi_quad_spi_7 -pg 1 -lvl 5 -x 1460 -y 1760 -defaultsOSRD -resize 200 153
-preplace inst axi_quad_spi_8 -pg 1 -lvl 6 -x 1790 -y 1320 -defaultsOSRD -resize 200 136
-preplace inst spi2ili_0 -pg 1 -lvl 6 -x 1790 -y 80 -defaultsOSRD
-preplace inst spi2ili_1 -pg 1 -lvl 6 -x 1790 -y 260 -defaultsOSRD -resize 160 88
-preplace inst spi2ili_2 -pg 1 -lvl 6 -x 1790 -y 440 -defaultsOSRD -resize 160 88
-preplace inst spi2ili_3 -pg 1 -lvl 6 -x 1790 -y 630 -defaultsOSRD -resize 160 88
-preplace inst spi2ili_4 -pg 1 -lvl 6 -x 1790 -y 840 -defaultsOSRD -resize 160 88
-preplace inst spi2ili_5 -pg 1 -lvl 6 -x 1790 -y 1460 -defaultsOSRD -resize 160 88
-preplace inst spi2ili_6 -pg 1 -lvl 6 -x 1790 -y 1570 -defaultsOSRD -resize 160 88
-preplace inst spi2ili_7 -pg 1 -lvl 6 -x 1790 -y 1750 -defaultsOSRD -resize 160 88
-preplace netloc axi_ethernetlite_0_ip2intc_irpt 1 1 6 280 660 NJ 660 NJ 660 1340J 750 NJ 750 1910
-preplace netloc axi_quad_spi_0_ip2intc_irpt 1 0 6 60 180 NJ 180 NJ 180 NJ 180 NJ 180 1580
-preplace netloc axi_quad_spi_1_ip2intc_irpt 1 0 6 40 540 NJ 540 NJ 540 NJ 540 NJ 540 1640
-preplace netloc axi_quad_spi_2_ip2intc_irpt 1 0 6 20 360 NJ 360 NJ 360 NJ 360 NJ 360 1580
-preplace netloc axi_quad_spi_3_ip2intc_irpt 1 0 6 30 670 NJ 670 NJ 670 NJ 670 1250J 740 1580
-preplace netloc axi_quad_spi_4_ip2intc_irpt 1 0 6 50 680 NJ 680 NJ 680 NJ 680 1310J 950 1580
-preplace netloc axi_quad_spi_5_ip2intc_irpt 1 0 6 10 640 NJ 640 NJ 640 NJ 640 1330J 960 1590
-preplace netloc axi_quad_spi_6_ip2intc_irpt 1 0 6 60 950 NJ 950 NJ 950 920J 1010 NJ 1010 1580
-preplace netloc axi_quad_spi_7_ip2intc_irpt 1 0 6 40 960 NJ 960 NJ 960 890J 1020 NJ 1020 1600
-preplace netloc axi_quad_spi_8_ip2intc_irpt 1 1 6 270 1160 NJ 1160 920J 1050 NJ 1050 1630J 1230 1910
-preplace netloc c_counter_binary_0_Q 1 5 1 NJ 2040
-preplace netloc c_counter_binary_1_Q 1 5 1 NJ 1930
-preplace netloc ilconcat_0_dout 1 2 1 480 1070n
-preplace netloc ilconcat_1_dout 1 1 1 260 780n
-preplace netloc ilslice_0_Dout 1 6 1 NJ 2040
-preplace netloc ilslice_1_Dout 1 6 1 NJ 1930
-preplace netloc processing_system7_0_FCLK_CLK0 1 2 4 490 1170 910 690 1280 1000 1620
-preplace netloc processing_system7_0_FCLK_CLK1 1 0 6 NJ 1380 NJ 1380 NJ 1380 NJ 1380 1270 1310 NJ
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 2 490 1370 870
-preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 3 3 900 650 1260 1250 1670
-preplace netloc axi_ethernetlite_0_MDIO 1 6 1 1920J 1010n
-preplace netloc axi_ethernetlite_0_MII 1 6 1 NJ 990
-preplace netloc axi_gpio_0_GPIO 1 6 1 NJ 1150
-preplace netloc axi_quad_spi_0_SPI_0 1 5 1 NJ 80
-preplace netloc axi_quad_spi_8_SPI_0 1 6 1 NJ 1310
-preplace netloc axi_smc_M00_AXI 1 4 2 1250J 990 N
-preplace netloc axi_smc_M01_AXI 1 4 2 1240J 980 1660
-preplace netloc axi_smc_M02_AXI 1 4 1 1200 60n
-preplace netloc axi_smc_M03_AXI 1 4 1 1210 240n
-preplace netloc axi_smc_M04_AXI 1 4 1 1290 420n
-preplace netloc axi_smc_M05_AXI 1 4 1 1300 610n
-preplace netloc axi_smc_M06_AXI 1 4 1 1320 820n
-preplace netloc axi_smc_M07_AXI 1 4 1 1230 890n
-preplace netloc axi_smc_M08_AXI 1 4 1 1210 910n
-preplace netloc axi_smc_M09_AXI 1 4 1 1200 930n
-preplace netloc axi_smc_M10_AXI 1 4 2 1220J 970 1650
-preplace netloc processing_system7_0_DDR 1 3 4 870J 1030 NJ 1030 1640J 930 1920J
-preplace netloc processing_system7_0_FIXED_IO 1 3 4 NJ 1040 NJ 1040 1630J 920 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 880 830n
-preplace netloc spi2ili_0_ILI 1 6 1 NJ 80
-preplace netloc axi_quad_spi_1_SPI_0 1 5 1 NJ 260
-preplace netloc axi_quad_spi_2_SPI_0 1 5 1 NJ 440
-preplace netloc axi_quad_spi_3_SPI_0 1 5 1 NJ 630
-preplace netloc spi2ili_1_ILI 1 6 1 NJ 260
-preplace netloc spi2ili_2_ILI 1 6 1 NJ 440
-preplace netloc spi2ili_3_ILI 1 6 1 NJ 630
-preplace netloc axi_quad_spi_7_SPI_0 1 5 1 NJ 1750
-preplace netloc axi_quad_spi_6_SPI_0 1 5 1 NJ 1570
-preplace netloc axi_quad_spi_5_SPI_0 1 5 1 1610J 1140n
-preplace netloc axi_quad_spi_4_SPI_0 1 5 1 NJ 840
-preplace netloc spi2ili_4_ILI 1 6 1 NJ 840
-preplace netloc spi2ili_5_ILI 1 6 1 NJ 1460
-preplace netloc spi2ili_6_ILI 1 6 1 NJ 1570
-preplace netloc spi2ili_7_ILI 1 6 1 NJ 1750
-levelinfo -pg 1 -10 160 380 680 1060 1460 1790 1940
-pagesize -pg 1 -db -bbox -sgen -150 0 2090 2100
+preplace port DDR -pg 1 -lvl 7 -x 2070 -y 1580 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 2070 -y 1610 -defaultsOSRD
+preplace port ETH_MDIO -pg 1 -lvl 7 -x 2070 -y 1700 -defaultsOSRD
+preplace port ETH_MII -pg 1 -lvl 7 -x 2070 -y 1670 -defaultsOSRD
+preplace port GPIO_0 -pg 1 -lvl 7 -x 2070 -y 1990 -defaultsOSRD
+preplace port SPI_595 -pg 1 -lvl 7 -x 2070 -y 1830 -defaultsOSRD
+preplace port ILI_1 -pg 1 -lvl 7 -x 2070 -y 660 -defaultsOSRD
+preplace port ILI_2 -pg 1 -lvl 7 -x 2070 -y 850 -defaultsOSRD
+preplace port ILI_3 -pg 1 -lvl 7 -x 2070 -y 1240 -defaultsOSRD
+preplace port ILI_4 -pg 1 -lvl 7 -x 2070 -y 2230 -defaultsOSRD
+preplace port ILI_5 -pg 1 -lvl 7 -x 2070 -y 2350 -defaultsOSRD
+preplace port ILI_6 -pg 1 -lvl 7 -x 2070 -y 2120 -defaultsOSRD
+preplace port ILI_7 -pg 1 -lvl 7 -x 2070 -y 2530 -defaultsOSRD
+preplace port ILI_8 -pg 1 -lvl 7 -x 2070 -y 2930 -defaultsOSRD
+preplace port ILI_9 -pg 1 -lvl 7 -x 2070 -y 2730 -defaultsOSRD
+preplace port ILI_A -pg 1 -lvl 7 -x 2070 -y 1040 -defaultsOSRD
+preplace port ILI_B -pg 1 -lvl 7 -x 2070 -y 280 -defaultsOSRD
+preplace port ILI_0 -pg 1 -lvl 7 -x 2070 -y 470 -defaultsOSRD
+preplace port ILI_C -pg 1 -lvl 7 -x 2070 -y 80 -defaultsOSRD
+preplace port ILI_D -pg 1 -lvl 7 -x 2070 -y 1470 -defaultsOSRD
+preplace port port-id_PL_CLK_50M -pg 1 -lvl 0 -x 0 -y 1160 -defaultsOSRD
+preplace portBus PL_LED_2 -pg 1 -lvl 7 -x 2070 -y 3090 -defaultsOSRD
+preplace portBus PL_LED_1 -pg 1 -lvl 7 -x 2070 -y 3200 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 790 -y 1640 -defaultsOSRD
+preplace inst axi_ethernetlite_0 -pg 1 -lvl 6 -x 1910 -y 1690 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -x 1140 -y 1830 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 3 -x 790 -y 1820 -defaultsOSRD
+preplace inst axi_quad_spi_0 -pg 1 -lvl 5 -x 1570 -y 480 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 6 -x 1910 -y 1990 -defaultsOSRD
+preplace inst ilconcat_0 -pg 1 -lvl 2 -x 470 -y 1620 -defaultsOSRD
+preplace inst ilslice_0 -pg 1 -lvl 6 -x 1910 -y 3200 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 5 -x 1570 -y 3200 -defaultsOSRD
+preplace inst axi_quad_spi_1 -pg 1 -lvl 5 -x 1570 -y 670 -defaultsOSRD -resize 200 153
+preplace inst axi_quad_spi_2 -pg 1 -lvl 5 -x 1570 -y 860 -defaultsOSRD -resize 200 136
+preplace inst axi_quad_spi_3 -pg 1 -lvl 5 -x 1570 -y 1250 -defaultsOSRD -resize 200 153
+preplace inst ilconcat_1 -pg 1 -lvl 1 -x 210 -y 1470 -defaultsOSRD -resize 160 153
+preplace inst ilslice_1 -pg 1 -lvl 6 -x 1910 -y 3090 -defaultsOSRD -resize 160 88
+preplace inst c_counter_binary_1 -pg 1 -lvl 5 -x 1570 -y 3090 -defaultsOSRD -resize 120 88
+preplace inst axi_quad_spi_4 -pg 1 -lvl 5 -x 1570 -y 2140 -defaultsOSRD -resize 200 188
+preplace inst axi_quad_spi_5 -pg 1 -lvl 5 -x 1570 -y 2360 -defaultsOSRD -resize 200 153
+preplace inst axi_quad_spi_6 -pg 1 -lvl 5 -x 1570 -y 1850 -defaultsOSRD -resize 200 153
+preplace inst axi_quad_spi_7 -pg 1 -lvl 5 -x 1570 -y 2540 -defaultsOSRD -resize 200 153
+preplace inst axi_quad_spi_595_0 -pg 1 -lvl 6 -x 1910 -y 1840 -defaultsOSRD -resize 200 136
+preplace inst spi2ili_1 -pg 1 -lvl 6 -x 1910 -y 660 -defaultsOSRD -resize 160 148
+preplace inst spi2ili_2 -pg 1 -lvl 6 -x 1910 -y 850 -defaultsOSRD -resize 160 88
+preplace inst spi2ili_3 -pg 1 -lvl 6 -x 1910 -y 1240 -defaultsOSRD -resize 160 88
+preplace inst spi2ili_4 -pg 1 -lvl 6 -x 1910 -y 2230 -defaultsOSRD -resize 160 88
+preplace inst spi2ili_5 -pg 1 -lvl 6 -x 1910 -y 2350 -defaultsOSRD -resize 160 88
+preplace inst spi2ili_6 -pg 1 -lvl 6 -x 1910 -y 2120 -defaultsOSRD -resize 160 88
+preplace inst spi2ili_7 -pg 1 -lvl 6 -x 1910 -y 2530 -defaultsOSRD -resize 160 88
+preplace inst axi_quad_spi_8 -pg 1 -lvl 5 -x 1570 -y 2940 -defaultsOSRD -resize 200 153
+preplace inst axi_quad_spi_9 -pg 1 -lvl 5 -x 1570 -y 2740 -defaultsOSRD -resize 200 153
+preplace inst axi_quad_spi_10 -pg 1 -lvl 5 -x 1570 -y 1050 -defaultsOSRD -resize 200 153
+preplace inst axi_quad_spi_11 -pg 1 -lvl 5 -x 1570 -y 290 -defaultsOSRD -resize 200 153
+preplace inst spi2ili_8 -pg 1 -lvl 6 -x 1910 -y 2930 -defaultsOSRD -resize 160 88
+preplace inst spi2ili_9 -pg 1 -lvl 6 -x 1910 -y 2730 -defaultsOSRD -resize 160 148
+preplace inst spi2ili_10 -pg 1 -lvl 6 -x 1910 -y 1040 -defaultsOSRD -resize 160 88
+preplace inst spi2ili_11 -pg 1 -lvl 6 -x 1910 -y 280 -defaultsOSRD -resize 160 88
+preplace inst spi2ili_0 -pg 1 -lvl 6 -x 1910 -y 470 -defaultsOSRD -resize 160 88
+preplace inst axi_quad_spi_12 -pg 1 -lvl 5 -x 1570 -y 90 -defaultsOSRD -resize 200 153
+preplace inst spi2ili_12 -pg 1 -lvl 6 -x 1910 -y 80 -defaultsOSRD -resize 160 88
+preplace inst axi_quad_spi_13 -pg 1 -lvl 5 -x 1570 -y 1480 -defaultsOSRD -resize 200 153
+preplace inst spi2ili_13 -pg 1 -lvl 6 -x 1910 -y 1470 -defaultsOSRD -resize 160 88
+preplace netloc axi_ethernetlite_0_ip2intc_irpt 1 1 6 350 2050 NJ 2050 NJ 2050 1450J 2020 1750J 2420 2030
+preplace netloc axi_quad_spi_0_ip2intc_irpt 1 0 6 100 570 NJ 570 NJ 570 NJ 570 NJ 570 1700
+preplace netloc axi_quad_spi_10_ip2intc_irpt 1 0 6 90 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 1730
+preplace netloc axi_quad_spi_11_ip2intc_irpt 1 0 6 20 390 NJ 390 NJ 390 NJ 390 NJ 390 1700
+preplace netloc axi_quad_spi_1_ip2intc_irpt 1 0 6 40 770 NJ 770 NJ 770 NJ 770 NJ 770 1700
+preplace netloc axi_quad_spi_2_ip2intc_irpt 1 0 6 60 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 1700
+preplace netloc axi_quad_spi_3_ip2intc_irpt 1 0 6 50 1340 NJ 1340 NJ 1340 NJ 1340 1440J 1350 1700
+preplace netloc axi_quad_spi_4_ip2intc_irpt 1 0 6 50 1570 310J 1520 NJ 1520 NJ 1520 1440J 1590 1700
+preplace netloc axi_quad_spi_5_ip2intc_irpt 1 0 6 100 1580 330J 1530 NJ 1530 NJ 1530 1430J 1600 1720
+preplace netloc axi_quad_spi_6_ip2intc_irpt 1 0 6 60 2060 NJ 2060 NJ 2060 NJ 2060 1440J 1960 1690
+preplace netloc axi_quad_spi_7_ip2intc_irpt 1 0 6 110 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 1730
+preplace netloc axi_quad_spi_8_ip2intc_irpt 1 1 6 360 190 NJ 190 NJ 190 NJ 190 NJ 190 2040
+preplace netloc axi_quad_spi_8_ip2intc_irpt1 1 0 6 80 1590 340J 1540 NJ 1540 NJ 1540 1400J 1620 1710
+preplace netloc axi_quad_spi_9_ip2intc_irpt 1 0 6 40 2260 NJ 2260 NJ 2260 NJ 2260 NJ 2260 1690
+preplace netloc c_counter_binary_0_Q 1 5 1 NJ 3200
+preplace netloc c_counter_binary_1_Q 1 5 1 NJ 3090
+preplace netloc ilconcat_0_dout 1 2 1 580 1620n
+preplace netloc ilconcat_1_dout 1 1 1 320 1470n
+preplace netloc ilslice_0_Dout 1 6 1 NJ 3200
+preplace netloc ilslice_1_Dout 1 6 1 NJ 3090
+preplace netloc processing_system7_0_FCLK_CLK0 1 2 4 590 1930 990 2070 1390 1730 1780
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 6 NJ 1160 NJ 1160 NJ 1160 NJ 1160 1380 1950 1770J
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 2 600 1920 980
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 3 3 1000 2080 1410 1740 1790
+preplace netloc axi_quad_spi_12_ip2intc_irpt 1 0 6 30 950 NJ 950 NJ 950 NJ 950 NJ 950 1730
+preplace netloc axi_quad_spi_13_ip2intc_irpt 1 0 6 70 1350 NJ 1350 NJ 1350 NJ 1350 1420J 1380 1700
+preplace netloc axi_ethernetlite_0_MDIO 1 6 1 2050J 1690n
+preplace netloc axi_ethernetlite_0_MII 1 6 1 NJ 1670
+preplace netloc axi_gpio_0_GPIO 1 6 1 NJ 1990
+preplace netloc axi_quad_spi_10_SPI_0 1 5 1 NJ 1040
+preplace netloc axi_quad_spi_11_SPI_0 1 5 1 NJ 280
+preplace netloc axi_quad_spi_1_SPI_0 1 5 1 NJ 660
+preplace netloc axi_quad_spi_2_SPI_0 1 5 1 NJ 850
+preplace netloc axi_quad_spi_3_SPI_0 1 5 1 NJ 1240
+preplace netloc axi_quad_spi_4_SPI_0 1 5 1 1740J 2110n
+preplace netloc axi_quad_spi_5_SPI_0 1 5 1 NJ 2350
+preplace netloc axi_quad_spi_6_SPI_0 1 5 1 1760J 1840n
+preplace netloc axi_quad_spi_7_SPI_0 1 5 1 NJ 2530
+preplace netloc axi_quad_spi_8_SPI_0 1 6 1 NJ 1830
+preplace netloc axi_quad_spi_8_SPI_1 1 5 1 NJ 2930
+preplace netloc axi_quad_spi_9_SPI_0 1 5 1 NJ 2730
+preplace netloc processing_system7_0_DDR 1 3 4 1000J 1580 NJ 1580 NJ 1580 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 3 4 1000J 1610 NJ 1610 NJ 1610 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 1000 1640n
+preplace netloc spi2ili_10_ILI 1 6 1 NJ 1040
+preplace netloc spi2ili_11_ILI 1 6 1 NJ 280
+preplace netloc spi2ili_1_ILI 1 6 1 NJ 660
+preplace netloc spi2ili_2_ILI 1 6 1 NJ 850
+preplace netloc spi2ili_3_ILI 1 6 1 NJ 1240
+preplace netloc spi2ili_4_ILI 1 6 1 NJ 2230
+preplace netloc spi2ili_5_ILI 1 6 1 NJ 2350
+preplace netloc spi2ili_6_ILI 1 6 1 NJ 2120
+preplace netloc spi2ili_7_ILI 1 6 1 NJ 2530
+preplace netloc spi2ili_8_ILI 1 6 1 NJ 2930
+preplace netloc spi2ili_9_ILI 1 6 1 NJ 2730
+preplace netloc axi_smc_M00_AXI 1 4 1 1290 450n
+preplace netloc axi_smc_M01_AXI 1 4 1 1320 640n
+preplace netloc axi_smc_M02_AXI 1 4 1 1340 830n
+preplace netloc axi_smc_M03_AXI 1 4 1 1360 1220n
+preplace netloc axi_smc_M04_AXI 1 4 1 1370 1750n
+preplace netloc axi_smc_M05_AXI 1 4 1 1340 1770n
+preplace netloc axi_smc_M06_AXI 1 4 1 1360 1790n
+preplace netloc axi_smc_M07_AXI 1 4 1 1320 1810n
+preplace netloc axi_smc_M08_AXI 1 4 1 1300 1830n
+preplace netloc axi_smc_M09_AXI 1 4 1 1280 1850n
+preplace netloc axi_smc_M10_AXI 1 4 1 1350 1020n
+preplace netloc axi_smc_M11_AXI 1 4 1 1330 260n
+preplace netloc spi2ili_12_ILI 1 6 1 NJ 470
+preplace netloc axi_quad_spi_0_SPI_0 1 5 1 NJ 470
+preplace netloc axi_quad_spi_12_SPI_0 1 5 1 NJ 80
+preplace netloc spi2ili_12_ILI1 1 6 1 NJ 80
+preplace netloc axi_quad_spi_13_SPI_0 1 5 1 NJ 1470
+preplace netloc spi2ili_13_ILI 1 6 1 NJ 1470
+preplace netloc axi_smc_M14_AXI 1 4 2 1310J 1970 N
+preplace netloc axi_smc_M15_AXI 1 4 2 1290J 1720 1770
+preplace netloc axi_smc_M16_AXI 1 4 2 1430J 1750 1770
+preplace netloc axi_smc_M12_AXI 1 4 1 1310 60n
+preplace netloc axi_smc_M13_AXI 1 4 1 1420 1450n
+levelinfo -pg 1 0 210 470 790 1140 1570 1910 2070
+pagesize -pg 1 -db -bbox -sgen -140 0 2220 3260
 "
 }
 {

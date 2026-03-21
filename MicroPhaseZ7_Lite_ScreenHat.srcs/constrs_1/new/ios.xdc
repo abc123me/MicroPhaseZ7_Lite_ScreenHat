@@ -31,15 +31,9 @@ set_property -dict {PACKAGE_PIN H20 IOSTANDARD LVCMOS33} [get_ports ETH_MII_rst_
 set_property -dict {PACKAGE_PIN J15 IOSTANDARD LVCMOS33} [get_ports ETH_MDIO_mdio_io]
 set_property -dict {PACKAGE_PIN G14 IOSTANDARD LVCMOS33} [get_ports ETH_MDIO_mdc]
 
-# ILI9341 Display MISO lines (unused, needed by AXI IP)
+# Stupid unused IO lines
 ###################################################################
 set_property -dict {PACKAGE_PIN J19 IOSTANDARD LVCMOS33} [get_ports SPI_595_io1_io]
-# set_property -dict {PACKAGE_PIN U15 IOSTANDARD LVCMOS33} [get_ports SPI_8_io1_io]
-# set_property -dict {PACKAGE_PIN V13 IOSTANDARD LVCMOS33} [get_ports SPI_9_io1_io]
-# set_property -dict {PACKAGE_PIN U12 IOSTANDARD LVCMOS33} [get_ports SPI_A_io1_io]
-# set_property -dict {PACKAGE_PIN K19 IOSTANDARD LVCMOS33} [get_ports SPI_B_io1_io]
-# set_property -dict {PACKAGE_PIN J19 IOSTANDARD LVCMOS33} [get_ports SPI_C_io1_io]
-# set_property -dict {PACKAGE_PIN J20 IOSTANDARD LVCMOS33} [get_ports SPI_D_io1_io]
 
 # ILI9341 Display SDA lines
 ###################################################################
@@ -51,12 +45,12 @@ set_property -dict {PACKAGE_PIN Y18 IOSTANDARD LVCMOS33} [get_ports ILI_4_sda_o]
 set_property -dict {PACKAGE_PIN Y16 IOSTANDARD LVCMOS33} [get_ports ILI_5_sda_o]
 set_property -dict {PACKAGE_PIN V17 IOSTANDARD LVCMOS33} [get_ports ILI_6_sda_o]
 set_property -dict {PACKAGE_PIN W14 IOSTANDARD LVCMOS33} [get_ports ILI_7_sda_o]
-# set_property -dict {PACKAGE_PIN V16 IOSTANDARD LVCMOS33} [get_ports SPI_8_io0_io]
-# set_property -dict {PACKAGE_PIN T17 IOSTANDARD LVCMOS33} [get_ports SPI_9_io0_io]
-# set_property -dict {PACKAGE_PIN V12 IOSTANDARD LVCMOS33} [get_ports SPI_A_io0_io]
-# set_property -dict {PACKAGE_PIN T14 IOSTANDARD LVCMOS33} [get_ports SPI_B_io0_io]
-# set_property -dict {PACKAGE_PIN T11 IOSTANDARD LVCMOS33} [get_ports SPI_C_io0_io]
-# set_property -dict {PACKAGE_PIN V15 IOSTANDARD LVCMOS33} [get_ports SPI_D_io0_io]
+set_property -dict {PACKAGE_PIN V16 IOSTANDARD LVCMOS33} [get_ports ILI_8_sda_o]
+set_property -dict {PACKAGE_PIN T17 IOSTANDARD LVCMOS33} [get_ports ILI_9_sda_o]
+set_property -dict {PACKAGE_PIN V12 IOSTANDARD LVCMOS33} [get_ports ILI_A_sda_o]
+set_property -dict {PACKAGE_PIN T14 IOSTANDARD LVCMOS33} [get_ports ILI_B_sda_o]
+set_property -dict {PACKAGE_PIN T11 IOSTANDARD LVCMOS33} [get_ports ILI_C_sda_o]
+set_property -dict {PACKAGE_PIN V15 IOSTANDARD LVCMOS33} [get_ports ILI_D_sda_o]
 
 # ILI9341 Display CLK lines
 ###################################################################
@@ -68,12 +62,12 @@ set_property -dict {PACKAGE_PIN Y19 IOSTANDARD LVCMOS33} [get_ports ILI_4_sck_o]
 set_property -dict {PACKAGE_PIN Y17 IOSTANDARD LVCMOS33} [get_ports ILI_5_sck_o]
 set_property -dict {PACKAGE_PIN V18 IOSTANDARD LVCMOS33} [get_ports ILI_6_sck_o]
 set_property -dict {PACKAGE_PIN Y14 IOSTANDARD LVCMOS33} [get_ports ILI_7_sck_o]
-# set_property -dict {PACKAGE_PIN W16 IOSTANDARD LVCMOS33} [get_ports SPI_8_sck_io]
-# set_property -dict {PACKAGE_PIN R18 IOSTANDARD LVCMOS33} [get_ports SPI_9_sck_io]
-# set_property -dict {PACKAGE_PIN W13 IOSTANDARD LVCMOS33} [get_ports SPI_A_sck_io]
-# set_property -dict {PACKAGE_PIN T15 IOSTANDARD LVCMOS33} [get_ports SPI_B_sck_io]
-# set_property -dict {PACKAGE_PIN T10 IOSTANDARD LVCMOS33} [get_ports SPI_C_sck_io]
-# set_property -dict {PACKAGE_PIN W15 IOSTANDARD LVCMOS33} [get_ports SPI_D_sck_io]
+set_property -dict {PACKAGE_PIN W16 IOSTANDARD LVCMOS33} [get_ports ILI_8_sck_o]
+set_property -dict {PACKAGE_PIN R18 IOSTANDARD LVCMOS33} [get_ports ILI_9_sck_o]
+set_property -dict {PACKAGE_PIN W13 IOSTANDARD LVCMOS33} [get_ports ILI_A_sck_o]
+set_property -dict {PACKAGE_PIN T15 IOSTANDARD LVCMOS33} [get_ports ILI_B_sck_o]
+set_property -dict {PACKAGE_PIN T10 IOSTANDARD LVCMOS33} [get_ports ILI_C_sck_o]
+set_property -dict {PACKAGE_PIN W15 IOSTANDARD LVCMOS33} [get_ports ILI_D_sck_o]
 
 # ILI9341 Display CS lines
 ###################################################################
@@ -85,12 +79,12 @@ set_property -dict {PACKAGE_PIN C20 IOSTANDARD LVCMOS33} [get_ports ILI_4_ss_o]
 set_property -dict {PACKAGE_PIN K16 IOSTANDARD LVCMOS33} [get_ports ILI_5_ss_o]
 set_property -dict {PACKAGE_PIN J18 IOSTANDARD LVCMOS33} [get_ports ILI_6_ss_o]
 set_property -dict {PACKAGE_PIN G19 IOSTANDARD LVCMOS33} [get_ports ILI_7_ss_o]
-# set_property -dict {PACKAGE_PIN H16 IOSTANDARD LVCMOS33} [get_ports SPI_8_ss_io[0]]
-# set_property -dict {PACKAGE_PIN E16 IOSTANDARD LVCMOS33} [get_ports SPI_9_ss_io[0]]
-# set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports SPI_A_ss_io[0]]
-# set_property -dict {PACKAGE_PIN B19 IOSTANDARD LVCMOS33} [get_ports SPI_B_ss_io[0]]
-# set_property -dict {PACKAGE_PIN E18 IOSTANDARD LVCMOS33} [get_ports SPI_C_ss_io[0]]
-# set_property -dict {PACKAGE_PIN F16 IOSTANDARD LVCMOS33} [get_ports SPI_D_ss_io[0]]
+set_property -dict {PACKAGE_PIN H16 IOSTANDARD LVCMOS33} [get_ports ILI_8_ss_o]
+set_property -dict {PACKAGE_PIN E17 IOSTANDARD LVCMOS33} [get_ports ILI_9_ss_o]
+set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports ILI_A_ss_o]
+set_property -dict {PACKAGE_PIN B19 IOSTANDARD LVCMOS33} [get_ports ILI_B_ss_o]
+set_property -dict {PACKAGE_PIN E18 IOSTANDARD LVCMOS33} [get_ports ILI_C_ss_o]
+set_property -dict {PACKAGE_PIN F16 IOSTANDARD LVCMOS33} [get_ports ILI_D_ss_o]
 
 # ILI9341 Display DC lines
 ###################################################################
@@ -102,16 +96,16 @@ set_property -dict {PACKAGE_PIN B20 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o
 set_property -dict {PACKAGE_PIN J16 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[5]]
 set_property -dict {PACKAGE_PIN H18 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[6]]
 set_property -dict {PACKAGE_PIN G20 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[7]]
-# set_property -dict {PACKAGE_PIN M20 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[8]]
-# set_property -dict {PACKAGE_PIN F20 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[9]]
-# set_property -dict {PACKAGE_PIN L20 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[10]]
-# set_property -dict {PACKAGE_PIN G18 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[11]]
-# set_property -dict {PACKAGE_PIN B20 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[12]]
-# set_property -dict {PACKAGE_PIN J16 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[13]]
+set_property -dict {PACKAGE_PIN H17 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[8]]
+set_property -dict {PACKAGE_PIN D18 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[9]]
+set_property -dict {PACKAGE_PIN D20 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[10]]
+set_property -dict {PACKAGE_PIN A20 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[11]]
+set_property -dict {PACKAGE_PIN E19 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[12]]
+set_property -dict {PACKAGE_PIN F17 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[13]]
 
 # 74HC595 shift register driver
 ###################################################################
-# set_property -dict {PACKAGE_PIN G15 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[10]]
+set_property -dict {PACKAGE_PIN G15 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[14]]
 set_property -dict {PACKAGE_PIN H15 IOSTANDARD LVCMOS33} [get_ports SPI_595_ss_io[0]]
 set_property -dict {PACKAGE_PIN L17 IOSTANDARD LVCMOS33} [get_ports SPI_595_io0_io]
 set_property -dict {PACKAGE_PIN L16 IOSTANDARD LVCMOS33} [get_ports SPI_595_sck_io]

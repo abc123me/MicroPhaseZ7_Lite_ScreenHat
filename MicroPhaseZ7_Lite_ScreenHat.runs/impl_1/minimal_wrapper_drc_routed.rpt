@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Fri Mar 20 23:54:13 2026
+| Date         : Sat Mar 21 01:57:21 2026
 | Host         : npc running 64-bit Arch Linux
 | Command      : report_drc -file minimal_wrapper_drc_routed.rpt -pb minimal_wrapper_drc_routed.pb -rpx minimal_wrapper_drc_routed.rpx
 | Design       : minimal_wrapper
@@ -24,13 +24,13 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 34
+             Checks found: 30
 +-----------+----------+------------------------------------------------+--------+
 | Rule      | Severity | Description                                    | Checks |
 +-----------+----------+------------------------------------------------+--------+
 | PLCK-12   | Warning  | Clock Placer Checks                            | 1      |
-| PLIO-6    | Warning  | Placement Constraints Check for IO constraints | 16     |
-| REQP-1617 | Warning  | use_IOB_register                               | 16     |
+| PLIO-6    | Warning  | Placement Constraints Check for IO constraints | 14     |
+| REQP-1617 | Warning  | use_IOB_register                               | 14     |
 | RTSTAT-10 | Warning  | No routable loads                              | 1      |
 +-----------+----------+------------------------------------------------+--------+
 
@@ -54,37 +54,37 @@ Related violations: <none>
 
 PLIO-6#2 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 PLIO-6#3 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_10/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 PLIO-6#4 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_11/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 PLIO-6#5 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_2/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_12/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 PLIO-6#6 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_2/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_13/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 PLIO-6#7 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_3/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_2/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 PLIO-6#8 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_3/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_3/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 PLIO-6#9 Warning
@@ -94,37 +94,27 @@ Related violations: <none>
 
 PLIO-6#10 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_4/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_5/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 PLIO-6#11 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_5/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_6/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 PLIO-6#12 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_5/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_7/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 PLIO-6#13 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_6/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_8/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 PLIO-6#14 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_6/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
-Related violations: <none>
-
-PLIO-6#15 Warning
-Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_7/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
-Related violations: <none>
-
-PLIO-6#16 Warning
-Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_7/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_9/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 REQP-1617#1 Warning
@@ -134,37 +124,37 @@ Related violations: <none>
 
 REQP-1617#2 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 REQP-1617#3 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_10/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 REQP-1617#4 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_11/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 REQP-1617#5 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_2/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_12/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 REQP-1617#6 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_2/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_13/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 REQP-1617#7 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_3/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_2/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 REQP-1617#8 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_3/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_3/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 REQP-1617#9 Warning
@@ -174,57 +164,47 @@ Related violations: <none>
 
 REQP-1617#10 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_4/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_5/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 REQP-1617#11 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_5/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_6/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 REQP-1617#12 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_5/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_7/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 REQP-1617#13 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_6/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_8/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 REQP-1617#14 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_6/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
-Related violations: <none>
-
-REQP-1617#15 Warning
-use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_7/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
-Related violations: <none>
-
-REQP-1617#16 Warning
-use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_7/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_9/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-373 net(s) have no routable loads. The problem bus(es) and/or net(s) are SPI_595_ss_iobuf_0/O,
-minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
-minimal_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
-minimal_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
+769 net(s) have no routable loads. The problem bus(es) and/or net(s) are SPI_595_ss_iobuf_0/O,
 minimal_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
+minimal_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
+minimal_i/axi_quad_spi_10/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
+minimal_i/axi_quad_spi_10/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
+minimal_i/axi_quad_spi_11/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
 minimal_i/axi_quad_spi_2/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
-minimal_i/axi_quad_spi_3/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
-minimal_i/axi_quad_spi_3/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
+minimal_i/axi_quad_spi_2/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
 minimal_i/axi_quad_spi_4/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
-minimal_i/axi_quad_spi_4/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
-minimal_i/axi_quad_spi_5/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
 minimal_i/axi_quad_spi_5/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
+minimal_i/axi_quad_spi_6/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
 minimal_i/axi_quad_spi_6/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
 minimal_i/axi_quad_spi_7/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
-minimal_i/axi_quad_spi_8/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid
- (the first 15 of 233 listed nets/buses).
+minimal_i/axi_quad_spi_8/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
+minimal_i/axi_quad_spi_9/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/data_valid
+ (the first 15 of 533 listed nets/buses).
 Related violations: <none>
 
 

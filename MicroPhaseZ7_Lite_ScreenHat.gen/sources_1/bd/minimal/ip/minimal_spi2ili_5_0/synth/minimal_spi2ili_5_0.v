@@ -75,29 +75,29 @@ module minimal_spi2ili_5_0 (
 
 (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI IO0_I" *)
 (* X_INTERFACE_MODE = "slave" *)
-input wire SPI_io0_i;
+output wire SPI_io0_i;
 (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI IO0_O" *)
-output wire SPI_io0_o;
+input wire SPI_io0_o;
 (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI IO0_T" *)
-output wire SPI_io0_t;
+input wire SPI_io0_t;
 (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI IO1_I" *)
-input wire SPI_io1_i;
+output wire SPI_io1_i;
 (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI IO1_O" *)
-output wire SPI_io1_o;
+input wire SPI_io1_o;
 (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI IO1_T" *)
-output wire SPI_io1_t;
+input wire SPI_io1_t;
 (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI SCK_I" *)
-input wire SPI_sck_i;
+output wire SPI_sck_i;
 (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI SCK_O" *)
-output wire SPI_sck_o;
+input wire SPI_sck_o;
 (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI SCK_T" *)
-output wire SPI_sck_t;
+input wire SPI_sck_t;
 (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI SS_I" *)
-input wire [0 : 0] SPI_ss_i;
+output wire [0 : 0] SPI_ss_i;
 (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI SS_O" *)
-output wire [0 : 0] SPI_ss_o;
+input wire [0 : 0] SPI_ss_o;
 (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI SS_T" *)
-output wire SPI_ss_t;
+input wire SPI_ss_t;
 (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI SS_O" *)
 (* X_INTERFACE_MODE = "master" *)
 output wire ILI_ss_o;

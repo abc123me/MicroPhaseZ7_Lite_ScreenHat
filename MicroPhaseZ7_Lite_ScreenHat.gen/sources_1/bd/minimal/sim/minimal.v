@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Fri Mar 20 23:48:43 2026
+//Date        : Sat Mar 21 01:50:22 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal.bd
 //Design      : minimal
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "minimal,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=minimal,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=28,numReposBlks=28,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=8,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_ps7_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "minimal.hwdef" *) 
+(* CORE_GENERATION_INFO = "minimal,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=minimal,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=40,numReposBlks=40,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=14,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_ps7_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "minimal.hwdef" *) 
 module minimal
    (DDR_addr,
     DDR_ba,
@@ -72,6 +72,24 @@ module minimal
     ILI_7_sck_o,
     ILI_7_sda_o,
     ILI_7_ss_o,
+    ILI_8_sck_o,
+    ILI_8_sda_o,
+    ILI_8_ss_o,
+    ILI_9_sck_o,
+    ILI_9_sda_o,
+    ILI_9_ss_o,
+    ILI_A_sck_o,
+    ILI_A_sda_o,
+    ILI_A_ss_o,
+    ILI_B_sck_o,
+    ILI_B_sda_o,
+    ILI_B_ss_o,
+    ILI_C_sck_o,
+    ILI_C_sda_o,
+    ILI_C_ss_o,
+    ILI_D_sck_o,
+    ILI_D_sda_o,
+    ILI_D_ss_o,
     PL_CLK_50M,
     PL_LED_1,
     PL_LED_2,
@@ -122,7 +140,7 @@ module minimal
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O" *) (* X_INTERFACE_MODE = "Master" *) output [7:0]GPIO_0_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O" *) (* X_INTERFACE_MODE = "Master" *) output [11:0]GPIO_0_tri_o;
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_0 SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_0_sck_o;
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_0 SDA_O" *) output ILI_0_sda_o;
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_0 SS_O" *) output ILI_0_ss_o;
@@ -147,6 +165,24 @@ module minimal
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_7 SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_7_sck_o;
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_7 SDA_O" *) output ILI_7_sda_o;
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_7 SS_O" *) output ILI_7_ss_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_8 SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_8_sck_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_8 SDA_O" *) output ILI_8_sda_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_8 SS_O" *) output ILI_8_ss_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_9 SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_9_sck_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_9 SDA_O" *) output ILI_9_sda_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_9 SS_O" *) output ILI_9_ss_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_A SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_A_sck_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_A SDA_O" *) output ILI_A_sda_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_A SS_O" *) output ILI_A_ss_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_B SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_B_sck_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_B SDA_O" *) output ILI_B_sda_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_B SS_O" *) output ILI_B_ss_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_C SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_C_sck_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_C SDA_O" *) output ILI_C_sda_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_C SS_O" *) output ILI_C_ss_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_D SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_D_sck_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_D SDA_O" *) output ILI_D_sda_o;
+  (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_D SS_O" *) output ILI_D_ss_o;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.PL_CLK_50M CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.PL_CLK_50M, CLK_DOMAIN minimal_PL_CLK_50M, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0, PortWidth 1" *) input PL_CLK_50M;
   (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 INTR.PL_LED_1 INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME INTR.PL_LED_1, PortWidth 1, SENSITIVITY LEVEL_HIGH" *) output [0:0]PL_LED_1;
   output [0:0]PL_LED_2;
@@ -198,7 +234,7 @@ module minimal
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire [7:0]GPIO_0_tri_o;
+  wire [11:0]GPIO_0_tri_o;
   wire ILI_0_sck_o;
   wire ILI_0_sda_o;
   wire ILI_0_ss_o;
@@ -223,6 +259,24 @@ module minimal
   wire ILI_7_sck_o;
   wire ILI_7_sda_o;
   wire ILI_7_ss_o;
+  wire ILI_8_sck_o;
+  wire ILI_8_sda_o;
+  wire ILI_8_ss_o;
+  wire ILI_9_sck_o;
+  wire ILI_9_sda_o;
+  wire ILI_9_ss_o;
+  wire ILI_A_sck_o;
+  wire ILI_A_sda_o;
+  wire ILI_A_ss_o;
+  wire ILI_B_sck_o;
+  wire ILI_B_sda_o;
+  wire ILI_B_ss_o;
+  wire ILI_C_sck_o;
+  wire ILI_C_sda_o;
+  wire ILI_C_ss_o;
+  wire ILI_D_sck_o;
+  wire ILI_D_sda_o;
+  wire ILI_D_ss_o;
   wire PL_CLK_50M;
   wire [0:0]PL_LED_1;
   wire [0:0]PL_LED_2;
@@ -252,6 +306,58 @@ module minimal
   wire [0:0]axi_quad_spi_0_SPI_0_SS_O;
   wire axi_quad_spi_0_SPI_0_SS_T;
   wire axi_quad_spi_0_ip2intc_irpt;
+  wire axi_quad_spi_10_SPI_0_IO0_I;
+  wire axi_quad_spi_10_SPI_0_IO0_O;
+  wire axi_quad_spi_10_SPI_0_IO0_T;
+  wire axi_quad_spi_10_SPI_0_IO1_I;
+  wire axi_quad_spi_10_SPI_0_IO1_O;
+  wire axi_quad_spi_10_SPI_0_IO1_T;
+  wire axi_quad_spi_10_SPI_0_SCK_I;
+  wire axi_quad_spi_10_SPI_0_SCK_O;
+  wire axi_quad_spi_10_SPI_0_SCK_T;
+  wire [0:0]axi_quad_spi_10_SPI_0_SS_I;
+  wire [0:0]axi_quad_spi_10_SPI_0_SS_O;
+  wire axi_quad_spi_10_SPI_0_SS_T;
+  wire axi_quad_spi_10_ip2intc_irpt;
+  wire axi_quad_spi_11_SPI_0_IO0_I;
+  wire axi_quad_spi_11_SPI_0_IO0_O;
+  wire axi_quad_spi_11_SPI_0_IO0_T;
+  wire axi_quad_spi_11_SPI_0_IO1_I;
+  wire axi_quad_spi_11_SPI_0_IO1_O;
+  wire axi_quad_spi_11_SPI_0_IO1_T;
+  wire axi_quad_spi_11_SPI_0_SCK_I;
+  wire axi_quad_spi_11_SPI_0_SCK_O;
+  wire axi_quad_spi_11_SPI_0_SCK_T;
+  wire [0:0]axi_quad_spi_11_SPI_0_SS_I;
+  wire [0:0]axi_quad_spi_11_SPI_0_SS_O;
+  wire axi_quad_spi_11_SPI_0_SS_T;
+  wire axi_quad_spi_11_ip2intc_irpt;
+  wire axi_quad_spi_12_SPI_0_IO0_I;
+  wire axi_quad_spi_12_SPI_0_IO0_O;
+  wire axi_quad_spi_12_SPI_0_IO0_T;
+  wire axi_quad_spi_12_SPI_0_IO1_I;
+  wire axi_quad_spi_12_SPI_0_IO1_O;
+  wire axi_quad_spi_12_SPI_0_IO1_T;
+  wire axi_quad_spi_12_SPI_0_SCK_I;
+  wire axi_quad_spi_12_SPI_0_SCK_O;
+  wire axi_quad_spi_12_SPI_0_SCK_T;
+  wire [0:0]axi_quad_spi_12_SPI_0_SS_I;
+  wire [0:0]axi_quad_spi_12_SPI_0_SS_O;
+  wire axi_quad_spi_12_SPI_0_SS_T;
+  wire axi_quad_spi_12_ip2intc_irpt;
+  wire axi_quad_spi_13_SPI_0_IO0_I;
+  wire axi_quad_spi_13_SPI_0_IO0_O;
+  wire axi_quad_spi_13_SPI_0_IO0_T;
+  wire axi_quad_spi_13_SPI_0_IO1_I;
+  wire axi_quad_spi_13_SPI_0_IO1_O;
+  wire axi_quad_spi_13_SPI_0_IO1_T;
+  wire axi_quad_spi_13_SPI_0_SCK_I;
+  wire axi_quad_spi_13_SPI_0_SCK_O;
+  wire axi_quad_spi_13_SPI_0_SCK_T;
+  wire [0:0]axi_quad_spi_13_SPI_0_SS_I;
+  wire [0:0]axi_quad_spi_13_SPI_0_SS_O;
+  wire axi_quad_spi_13_SPI_0_SS_T;
+  wire axi_quad_spi_13_ip2intc_irpt;
   wire axi_quad_spi_1_SPI_0_IO0_I;
   wire axi_quad_spi_1_SPI_0_IO0_O;
   wire axi_quad_spi_1_SPI_0_IO0_T;
@@ -343,11 +449,37 @@ module minimal
   wire [0:0]axi_quad_spi_7_SPI_0_SS_O;
   wire axi_quad_spi_7_SPI_0_SS_T;
   wire axi_quad_spi_7_ip2intc_irpt;
+  wire axi_quad_spi_8_SPI_1_IO0_I;
+  wire axi_quad_spi_8_SPI_1_IO0_O;
+  wire axi_quad_spi_8_SPI_1_IO0_T;
+  wire axi_quad_spi_8_SPI_1_IO1_I;
+  wire axi_quad_spi_8_SPI_1_IO1_O;
+  wire axi_quad_spi_8_SPI_1_IO1_T;
+  wire axi_quad_spi_8_SPI_1_SCK_I;
+  wire axi_quad_spi_8_SPI_1_SCK_O;
+  wire axi_quad_spi_8_SPI_1_SCK_T;
+  wire [0:0]axi_quad_spi_8_SPI_1_SS_I;
+  wire [0:0]axi_quad_spi_8_SPI_1_SS_O;
+  wire axi_quad_spi_8_SPI_1_SS_T;
   wire axi_quad_spi_8_ip2intc_irpt;
-  wire [12:0]axi_smc_M00_AXI_ARADDR;
+  wire axi_quad_spi_8_ip2intc_irpt1;
+  wire axi_quad_spi_9_SPI_0_IO0_I;
+  wire axi_quad_spi_9_SPI_0_IO0_O;
+  wire axi_quad_spi_9_SPI_0_IO0_T;
+  wire axi_quad_spi_9_SPI_0_IO1_I;
+  wire axi_quad_spi_9_SPI_0_IO1_O;
+  wire axi_quad_spi_9_SPI_0_IO1_T;
+  wire axi_quad_spi_9_SPI_0_SCK_I;
+  wire axi_quad_spi_9_SPI_0_SCK_O;
+  wire axi_quad_spi_9_SPI_0_SCK_T;
+  wire [0:0]axi_quad_spi_9_SPI_0_SS_I;
+  wire [0:0]axi_quad_spi_9_SPI_0_SS_O;
+  wire axi_quad_spi_9_SPI_0_SS_T;
+  wire axi_quad_spi_9_ip2intc_irpt;
+  wire [6:0]axi_smc_M00_AXI_ARADDR;
   wire axi_smc_M00_AXI_ARREADY;
   wire axi_smc_M00_AXI_ARVALID;
-  wire [12:0]axi_smc_M00_AXI_AWADDR;
+  wire [6:0]axi_smc_M00_AXI_AWADDR;
   wire axi_smc_M00_AXI_AWREADY;
   wire axi_smc_M00_AXI_AWVALID;
   wire axi_smc_M00_AXI_BREADY;
@@ -361,10 +493,10 @@ module minimal
   wire axi_smc_M00_AXI_WREADY;
   wire [3:0]axi_smc_M00_AXI_WSTRB;
   wire axi_smc_M00_AXI_WVALID;
-  wire [8:0]axi_smc_M01_AXI_ARADDR;
+  wire [6:0]axi_smc_M01_AXI_ARADDR;
   wire axi_smc_M01_AXI_ARREADY;
   wire axi_smc_M01_AXI_ARVALID;
-  wire [8:0]axi_smc_M01_AXI_AWADDR;
+  wire [6:0]axi_smc_M01_AXI_AWADDR;
   wire axi_smc_M01_AXI_AWREADY;
   wire axi_smc_M01_AXI_AWVALID;
   wire axi_smc_M01_AXI_BREADY;
@@ -531,10 +663,112 @@ module minimal
   wire axi_smc_M10_AXI_WREADY;
   wire [3:0]axi_smc_M10_AXI_WSTRB;
   wire axi_smc_M10_AXI_WVALID;
+  wire [6:0]axi_smc_M11_AXI_ARADDR;
+  wire axi_smc_M11_AXI_ARREADY;
+  wire axi_smc_M11_AXI_ARVALID;
+  wire [6:0]axi_smc_M11_AXI_AWADDR;
+  wire axi_smc_M11_AXI_AWREADY;
+  wire axi_smc_M11_AXI_AWVALID;
+  wire axi_smc_M11_AXI_BREADY;
+  wire [1:0]axi_smc_M11_AXI_BRESP;
+  wire axi_smc_M11_AXI_BVALID;
+  wire [31:0]axi_smc_M11_AXI_RDATA;
+  wire axi_smc_M11_AXI_RREADY;
+  wire [1:0]axi_smc_M11_AXI_RRESP;
+  wire axi_smc_M11_AXI_RVALID;
+  wire [31:0]axi_smc_M11_AXI_WDATA;
+  wire axi_smc_M11_AXI_WREADY;
+  wire [3:0]axi_smc_M11_AXI_WSTRB;
+  wire axi_smc_M11_AXI_WVALID;
+  wire [6:0]axi_smc_M12_AXI_ARADDR;
+  wire axi_smc_M12_AXI_ARREADY;
+  wire axi_smc_M12_AXI_ARVALID;
+  wire [6:0]axi_smc_M12_AXI_AWADDR;
+  wire axi_smc_M12_AXI_AWREADY;
+  wire axi_smc_M12_AXI_AWVALID;
+  wire axi_smc_M12_AXI_BREADY;
+  wire [1:0]axi_smc_M12_AXI_BRESP;
+  wire axi_smc_M12_AXI_BVALID;
+  wire [31:0]axi_smc_M12_AXI_RDATA;
+  wire axi_smc_M12_AXI_RREADY;
+  wire [1:0]axi_smc_M12_AXI_RRESP;
+  wire axi_smc_M12_AXI_RVALID;
+  wire [31:0]axi_smc_M12_AXI_WDATA;
+  wire axi_smc_M12_AXI_WREADY;
+  wire [3:0]axi_smc_M12_AXI_WSTRB;
+  wire axi_smc_M12_AXI_WVALID;
+  wire [6:0]axi_smc_M13_AXI_ARADDR;
+  wire axi_smc_M13_AXI_ARREADY;
+  wire axi_smc_M13_AXI_ARVALID;
+  wire [6:0]axi_smc_M13_AXI_AWADDR;
+  wire axi_smc_M13_AXI_AWREADY;
+  wire axi_smc_M13_AXI_AWVALID;
+  wire axi_smc_M13_AXI_BREADY;
+  wire [1:0]axi_smc_M13_AXI_BRESP;
+  wire axi_smc_M13_AXI_BVALID;
+  wire [31:0]axi_smc_M13_AXI_RDATA;
+  wire axi_smc_M13_AXI_RREADY;
+  wire [1:0]axi_smc_M13_AXI_RRESP;
+  wire axi_smc_M13_AXI_RVALID;
+  wire [31:0]axi_smc_M13_AXI_WDATA;
+  wire axi_smc_M13_AXI_WREADY;
+  wire [3:0]axi_smc_M13_AXI_WSTRB;
+  wire axi_smc_M13_AXI_WVALID;
+  wire [8:0]axi_smc_M14_AXI_ARADDR;
+  wire axi_smc_M14_AXI_ARREADY;
+  wire axi_smc_M14_AXI_ARVALID;
+  wire [8:0]axi_smc_M14_AXI_AWADDR;
+  wire axi_smc_M14_AXI_AWREADY;
+  wire axi_smc_M14_AXI_AWVALID;
+  wire axi_smc_M14_AXI_BREADY;
+  wire [1:0]axi_smc_M14_AXI_BRESP;
+  wire axi_smc_M14_AXI_BVALID;
+  wire [31:0]axi_smc_M14_AXI_RDATA;
+  wire axi_smc_M14_AXI_RREADY;
+  wire [1:0]axi_smc_M14_AXI_RRESP;
+  wire axi_smc_M14_AXI_RVALID;
+  wire [31:0]axi_smc_M14_AXI_WDATA;
+  wire axi_smc_M14_AXI_WREADY;
+  wire [3:0]axi_smc_M14_AXI_WSTRB;
+  wire axi_smc_M14_AXI_WVALID;
+  wire [12:0]axi_smc_M15_AXI_ARADDR;
+  wire axi_smc_M15_AXI_ARREADY;
+  wire axi_smc_M15_AXI_ARVALID;
+  wire [12:0]axi_smc_M15_AXI_AWADDR;
+  wire axi_smc_M15_AXI_AWREADY;
+  wire axi_smc_M15_AXI_AWVALID;
+  wire axi_smc_M15_AXI_BREADY;
+  wire [1:0]axi_smc_M15_AXI_BRESP;
+  wire axi_smc_M15_AXI_BVALID;
+  wire [31:0]axi_smc_M15_AXI_RDATA;
+  wire axi_smc_M15_AXI_RREADY;
+  wire [1:0]axi_smc_M15_AXI_RRESP;
+  wire axi_smc_M15_AXI_RVALID;
+  wire [31:0]axi_smc_M15_AXI_WDATA;
+  wire axi_smc_M15_AXI_WREADY;
+  wire [3:0]axi_smc_M15_AXI_WSTRB;
+  wire axi_smc_M15_AXI_WVALID;
+  wire [6:0]axi_smc_M16_AXI_ARADDR;
+  wire axi_smc_M16_AXI_ARREADY;
+  wire axi_smc_M16_AXI_ARVALID;
+  wire [6:0]axi_smc_M16_AXI_AWADDR;
+  wire axi_smc_M16_AXI_AWREADY;
+  wire axi_smc_M16_AXI_AWVALID;
+  wire axi_smc_M16_AXI_BREADY;
+  wire [1:0]axi_smc_M16_AXI_BRESP;
+  wire axi_smc_M16_AXI_BVALID;
+  wire [31:0]axi_smc_M16_AXI_RDATA;
+  wire axi_smc_M16_AXI_RREADY;
+  wire [1:0]axi_smc_M16_AXI_RRESP;
+  wire axi_smc_M16_AXI_RVALID;
+  wire [31:0]axi_smc_M16_AXI_WDATA;
+  wire axi_smc_M16_AXI_WREADY;
+  wire [3:0]axi_smc_M16_AXI_WSTRB;
+  wire axi_smc_M16_AXI_WVALID;
   wire [31:0]c_counter_binary_0_Q;
   wire [31:0]c_counter_binary_1_Q;
-  wire [9:0]ilconcat_0_dout;
-  wire [7:0]ilconcat_1_dout;
+  wire [15:0]ilconcat_0_dout;
+  wire [13:0]ilconcat_1_dout;
   wire processing_system7_0_FCLK_CLK0;
   wire processing_system7_0_FCLK_RESET0_N;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
@@ -594,6 +828,55 @@ module minimal
         .phy_tx_data(ETH_MII_txd),
         .phy_tx_en(ETH_MII_tx_en),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M15_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M15_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M15_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M15_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M15_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M15_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M15_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M15_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M15_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M15_AXI_RDATA),
+        .s_axi_rready(axi_smc_M15_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M15_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M15_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M15_AXI_WDATA),
+        .s_axi_wready(axi_smc_M15_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M15_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M15_AXI_WVALID));
+  minimal_axi_gpio_0_0 axi_gpio_0
+       (.gpio_io_o(GPIO_0_tri_o),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M14_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M14_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M14_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M14_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M14_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M14_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M14_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M14_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M14_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M14_AXI_RDATA),
+        .s_axi_rready(axi_smc_M14_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M14_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M14_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M14_AXI_WDATA),
+        .s_axi_wready(axi_smc_M14_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M14_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M14_AXI_WVALID));
+  minimal_axi_quad_spi_0_0 axi_quad_spi_0
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(axi_quad_spi_0_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_0_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_0_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_0_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_0_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_0_SPI_0_IO1_T),
+        .ip2intc_irpt(axi_quad_spi_0_ip2intc_irpt),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M00_AXI_ARADDR),
         .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .s_axi_arready(axi_smc_M00_AXI_ARREADY),
@@ -611,9 +894,22 @@ module minimal
         .s_axi_wdata(axi_smc_M00_AXI_WDATA),
         .s_axi_wready(axi_smc_M00_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M00_AXI_WSTRB),
-        .s_axi_wvalid(axi_smc_M00_AXI_WVALID));
-  minimal_axi_gpio_0_0 axi_gpio_0
-       (.gpio_io_o(GPIO_0_tri_o),
+        .s_axi_wvalid(axi_smc_M00_AXI_WVALID),
+        .sck_i(axi_quad_spi_0_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_0_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_0_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_0_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_0_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_0_SPI_0_SS_T));
+  minimal_axi_quad_spi_0_1 axi_quad_spi_1
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(axi_quad_spi_1_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_1_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_1_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_1_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_1_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_1_SPI_0_IO1_T),
+        .ip2intc_irpt(axi_quad_spi_1_ip2intc_irpt),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M01_AXI_ARADDR),
         .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
@@ -632,288 +928,22 @@ module minimal
         .s_axi_wdata(axi_smc_M01_AXI_WDATA),
         .s_axi_wready(axi_smc_M01_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M01_AXI_WSTRB),
-        .s_axi_wvalid(axi_smc_M01_AXI_WVALID));
-  minimal_axi_quad_spi_0_0 axi_quad_spi_0
-       (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(1'b0),
-        .io0_o(axi_quad_spi_0_SPI_0_IO0_O),
-        .io0_t(axi_quad_spi_0_SPI_0_IO0_T),
-        .io1_i(1'b0),
-        .io1_o(axi_quad_spi_0_SPI_0_IO1_O),
-        .io1_t(axi_quad_spi_0_SPI_0_IO1_T),
-        .ip2intc_irpt(axi_quad_spi_0_ip2intc_irpt),
-        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_araddr(axi_smc_M02_AXI_ARADDR),
-        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .s_axi_arready(axi_smc_M02_AXI_ARREADY),
-        .s_axi_arvalid(axi_smc_M02_AXI_ARVALID),
-        .s_axi_awaddr(axi_smc_M02_AXI_AWADDR),
-        .s_axi_awready(axi_smc_M02_AXI_AWREADY),
-        .s_axi_awvalid(axi_smc_M02_AXI_AWVALID),
-        .s_axi_bready(axi_smc_M02_AXI_BREADY),
-        .s_axi_bresp(axi_smc_M02_AXI_BRESP),
-        .s_axi_bvalid(axi_smc_M02_AXI_BVALID),
-        .s_axi_rdata(axi_smc_M02_AXI_RDATA),
-        .s_axi_rready(axi_smc_M02_AXI_RREADY),
-        .s_axi_rresp(axi_smc_M02_AXI_RRESP),
-        .s_axi_rvalid(axi_smc_M02_AXI_RVALID),
-        .s_axi_wdata(axi_smc_M02_AXI_WDATA),
-        .s_axi_wready(axi_smc_M02_AXI_WREADY),
-        .s_axi_wstrb(axi_smc_M02_AXI_WSTRB),
-        .s_axi_wvalid(axi_smc_M02_AXI_WVALID),
-        .sck_i(1'b0),
-        .sck_o(axi_quad_spi_0_SPI_0_SCK_O),
-        .sck_t(axi_quad_spi_0_SPI_0_SCK_T),
-        .ss_i(1'b0),
-        .ss_o(axi_quad_spi_0_SPI_0_SS_O),
-        .ss_t(axi_quad_spi_0_SPI_0_SS_T));
-  minimal_axi_quad_spi_0_1 axi_quad_spi_1
-       (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(axi_quad_spi_1_SPI_0_IO0_I),
-        .io0_o(axi_quad_spi_1_SPI_0_IO0_O),
-        .io0_t(axi_quad_spi_1_SPI_0_IO0_T),
-        .io1_i(axi_quad_spi_1_SPI_0_IO1_I),
-        .io1_o(axi_quad_spi_1_SPI_0_IO1_O),
-        .io1_t(axi_quad_spi_1_SPI_0_IO1_T),
-        .ip2intc_irpt(axi_quad_spi_1_ip2intc_irpt),
-        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_araddr(axi_smc_M03_AXI_ARADDR),
-        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .s_axi_arready(axi_smc_M03_AXI_ARREADY),
-        .s_axi_arvalid(axi_smc_M03_AXI_ARVALID),
-        .s_axi_awaddr(axi_smc_M03_AXI_AWADDR),
-        .s_axi_awready(axi_smc_M03_AXI_AWREADY),
-        .s_axi_awvalid(axi_smc_M03_AXI_AWVALID),
-        .s_axi_bready(axi_smc_M03_AXI_BREADY),
-        .s_axi_bresp(axi_smc_M03_AXI_BRESP),
-        .s_axi_bvalid(axi_smc_M03_AXI_BVALID),
-        .s_axi_rdata(axi_smc_M03_AXI_RDATA),
-        .s_axi_rready(axi_smc_M03_AXI_RREADY),
-        .s_axi_rresp(axi_smc_M03_AXI_RRESP),
-        .s_axi_rvalid(axi_smc_M03_AXI_RVALID),
-        .s_axi_wdata(axi_smc_M03_AXI_WDATA),
-        .s_axi_wready(axi_smc_M03_AXI_WREADY),
-        .s_axi_wstrb(axi_smc_M03_AXI_WSTRB),
-        .s_axi_wvalid(axi_smc_M03_AXI_WVALID),
+        .s_axi_wvalid(axi_smc_M01_AXI_WVALID),
         .sck_i(axi_quad_spi_1_SPI_0_SCK_I),
         .sck_o(axi_quad_spi_1_SPI_0_SCK_O),
         .sck_t(axi_quad_spi_1_SPI_0_SCK_T),
         .ss_i(axi_quad_spi_1_SPI_0_SS_I),
         .ss_o(axi_quad_spi_1_SPI_0_SS_O),
         .ss_t(axi_quad_spi_1_SPI_0_SS_T));
-  minimal_axi_quad_spi_1_0 axi_quad_spi_2
+  minimal_axi_quad_spi_9_0 axi_quad_spi_10
        (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(axi_quad_spi_2_SPI_0_IO0_I),
-        .io0_o(axi_quad_spi_2_SPI_0_IO0_O),
-        .io0_t(axi_quad_spi_2_SPI_0_IO0_T),
-        .io1_i(axi_quad_spi_2_SPI_0_IO1_I),
-        .io1_o(axi_quad_spi_2_SPI_0_IO1_O),
-        .io1_t(axi_quad_spi_2_SPI_0_IO1_T),
-        .ip2intc_irpt(axi_quad_spi_2_ip2intc_irpt),
-        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_araddr(axi_smc_M04_AXI_ARADDR),
-        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .s_axi_arready(axi_smc_M04_AXI_ARREADY),
-        .s_axi_arvalid(axi_smc_M04_AXI_ARVALID),
-        .s_axi_awaddr(axi_smc_M04_AXI_AWADDR),
-        .s_axi_awready(axi_smc_M04_AXI_AWREADY),
-        .s_axi_awvalid(axi_smc_M04_AXI_AWVALID),
-        .s_axi_bready(axi_smc_M04_AXI_BREADY),
-        .s_axi_bresp(axi_smc_M04_AXI_BRESP),
-        .s_axi_bvalid(axi_smc_M04_AXI_BVALID),
-        .s_axi_rdata(axi_smc_M04_AXI_RDATA),
-        .s_axi_rready(axi_smc_M04_AXI_RREADY),
-        .s_axi_rresp(axi_smc_M04_AXI_RRESP),
-        .s_axi_rvalid(axi_smc_M04_AXI_RVALID),
-        .s_axi_wdata(axi_smc_M04_AXI_WDATA),
-        .s_axi_wready(axi_smc_M04_AXI_WREADY),
-        .s_axi_wstrb(axi_smc_M04_AXI_WSTRB),
-        .s_axi_wvalid(axi_smc_M04_AXI_WVALID),
-        .sck_i(axi_quad_spi_2_SPI_0_SCK_I),
-        .sck_o(axi_quad_spi_2_SPI_0_SCK_O),
-        .sck_t(axi_quad_spi_2_SPI_0_SCK_T),
-        .ss_i(axi_quad_spi_2_SPI_0_SS_I),
-        .ss_o(axi_quad_spi_2_SPI_0_SS_O),
-        .ss_t(axi_quad_spi_2_SPI_0_SS_T));
-  minimal_axi_quad_spi_2_0 axi_quad_spi_3
-       (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(axi_quad_spi_3_SPI_0_IO0_I),
-        .io0_o(axi_quad_spi_3_SPI_0_IO0_O),
-        .io0_t(axi_quad_spi_3_SPI_0_IO0_T),
-        .io1_i(axi_quad_spi_3_SPI_0_IO1_I),
-        .io1_o(axi_quad_spi_3_SPI_0_IO1_O),
-        .io1_t(axi_quad_spi_3_SPI_0_IO1_T),
-        .ip2intc_irpt(axi_quad_spi_3_ip2intc_irpt),
-        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_araddr(axi_smc_M05_AXI_ARADDR),
-        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .s_axi_arready(axi_smc_M05_AXI_ARREADY),
-        .s_axi_arvalid(axi_smc_M05_AXI_ARVALID),
-        .s_axi_awaddr(axi_smc_M05_AXI_AWADDR),
-        .s_axi_awready(axi_smc_M05_AXI_AWREADY),
-        .s_axi_awvalid(axi_smc_M05_AXI_AWVALID),
-        .s_axi_bready(axi_smc_M05_AXI_BREADY),
-        .s_axi_bresp(axi_smc_M05_AXI_BRESP),
-        .s_axi_bvalid(axi_smc_M05_AXI_BVALID),
-        .s_axi_rdata(axi_smc_M05_AXI_RDATA),
-        .s_axi_rready(axi_smc_M05_AXI_RREADY),
-        .s_axi_rresp(axi_smc_M05_AXI_RRESP),
-        .s_axi_rvalid(axi_smc_M05_AXI_RVALID),
-        .s_axi_wdata(axi_smc_M05_AXI_WDATA),
-        .s_axi_wready(axi_smc_M05_AXI_WREADY),
-        .s_axi_wstrb(axi_smc_M05_AXI_WSTRB),
-        .s_axi_wvalid(axi_smc_M05_AXI_WVALID),
-        .sck_i(axi_quad_spi_3_SPI_0_SCK_I),
-        .sck_o(axi_quad_spi_3_SPI_0_SCK_O),
-        .sck_t(axi_quad_spi_3_SPI_0_SCK_T),
-        .ss_i(axi_quad_spi_3_SPI_0_SS_I),
-        .ss_o(axi_quad_spi_3_SPI_0_SS_O),
-        .ss_t(axi_quad_spi_3_SPI_0_SS_T));
-  minimal_axi_quad_spi_3_0 axi_quad_spi_4
-       (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(axi_quad_spi_4_SPI_0_IO0_I),
-        .io0_o(axi_quad_spi_4_SPI_0_IO0_O),
-        .io0_t(axi_quad_spi_4_SPI_0_IO0_T),
-        .io1_i(axi_quad_spi_4_SPI_0_IO1_I),
-        .io1_o(axi_quad_spi_4_SPI_0_IO1_O),
-        .io1_t(axi_quad_spi_4_SPI_0_IO1_T),
-        .ip2intc_irpt(axi_quad_spi_4_ip2intc_irpt),
-        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_araddr(axi_smc_M06_AXI_ARADDR),
-        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .s_axi_arready(axi_smc_M06_AXI_ARREADY),
-        .s_axi_arvalid(axi_smc_M06_AXI_ARVALID),
-        .s_axi_awaddr(axi_smc_M06_AXI_AWADDR),
-        .s_axi_awready(axi_smc_M06_AXI_AWREADY),
-        .s_axi_awvalid(axi_smc_M06_AXI_AWVALID),
-        .s_axi_bready(axi_smc_M06_AXI_BREADY),
-        .s_axi_bresp(axi_smc_M06_AXI_BRESP),
-        .s_axi_bvalid(axi_smc_M06_AXI_BVALID),
-        .s_axi_rdata(axi_smc_M06_AXI_RDATA),
-        .s_axi_rready(axi_smc_M06_AXI_RREADY),
-        .s_axi_rresp(axi_smc_M06_AXI_RRESP),
-        .s_axi_rvalid(axi_smc_M06_AXI_RVALID),
-        .s_axi_wdata(axi_smc_M06_AXI_WDATA),
-        .s_axi_wready(axi_smc_M06_AXI_WREADY),
-        .s_axi_wstrb(axi_smc_M06_AXI_WSTRB),
-        .s_axi_wvalid(axi_smc_M06_AXI_WVALID),
-        .sck_i(axi_quad_spi_4_SPI_0_SCK_I),
-        .sck_o(axi_quad_spi_4_SPI_0_SCK_O),
-        .sck_t(axi_quad_spi_4_SPI_0_SCK_T),
-        .ss_i(axi_quad_spi_4_SPI_0_SS_I),
-        .ss_o(axi_quad_spi_4_SPI_0_SS_O),
-        .ss_t(axi_quad_spi_4_SPI_0_SS_T));
-  minimal_axi_quad_spi_4_0 axi_quad_spi_5
-       (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(axi_quad_spi_5_SPI_0_IO0_I),
-        .io0_o(axi_quad_spi_5_SPI_0_IO0_O),
-        .io0_t(axi_quad_spi_5_SPI_0_IO0_T),
-        .io1_i(axi_quad_spi_5_SPI_0_IO1_I),
-        .io1_o(axi_quad_spi_5_SPI_0_IO1_O),
-        .io1_t(axi_quad_spi_5_SPI_0_IO1_T),
-        .ip2intc_irpt(axi_quad_spi_5_ip2intc_irpt),
-        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_araddr(axi_smc_M07_AXI_ARADDR),
-        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .s_axi_arready(axi_smc_M07_AXI_ARREADY),
-        .s_axi_arvalid(axi_smc_M07_AXI_ARVALID),
-        .s_axi_awaddr(axi_smc_M07_AXI_AWADDR),
-        .s_axi_awready(axi_smc_M07_AXI_AWREADY),
-        .s_axi_awvalid(axi_smc_M07_AXI_AWVALID),
-        .s_axi_bready(axi_smc_M07_AXI_BREADY),
-        .s_axi_bresp(axi_smc_M07_AXI_BRESP),
-        .s_axi_bvalid(axi_smc_M07_AXI_BVALID),
-        .s_axi_rdata(axi_smc_M07_AXI_RDATA),
-        .s_axi_rready(axi_smc_M07_AXI_RREADY),
-        .s_axi_rresp(axi_smc_M07_AXI_RRESP),
-        .s_axi_rvalid(axi_smc_M07_AXI_RVALID),
-        .s_axi_wdata(axi_smc_M07_AXI_WDATA),
-        .s_axi_wready(axi_smc_M07_AXI_WREADY),
-        .s_axi_wstrb(axi_smc_M07_AXI_WSTRB),
-        .s_axi_wvalid(axi_smc_M07_AXI_WVALID),
-        .sck_i(axi_quad_spi_5_SPI_0_SCK_I),
-        .sck_o(axi_quad_spi_5_SPI_0_SCK_O),
-        .sck_t(axi_quad_spi_5_SPI_0_SCK_T),
-        .ss_i(axi_quad_spi_5_SPI_0_SS_I),
-        .ss_o(axi_quad_spi_5_SPI_0_SS_O),
-        .ss_t(axi_quad_spi_5_SPI_0_SS_T));
-  minimal_axi_quad_spi_5_0 axi_quad_spi_6
-       (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(axi_quad_spi_6_SPI_0_IO0_I),
-        .io0_o(axi_quad_spi_6_SPI_0_IO0_O),
-        .io0_t(axi_quad_spi_6_SPI_0_IO0_T),
-        .io1_i(axi_quad_spi_6_SPI_0_IO1_I),
-        .io1_o(axi_quad_spi_6_SPI_0_IO1_O),
-        .io1_t(axi_quad_spi_6_SPI_0_IO1_T),
-        .ip2intc_irpt(axi_quad_spi_6_ip2intc_irpt),
-        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_araddr(axi_smc_M08_AXI_ARADDR),
-        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .s_axi_arready(axi_smc_M08_AXI_ARREADY),
-        .s_axi_arvalid(axi_smc_M08_AXI_ARVALID),
-        .s_axi_awaddr(axi_smc_M08_AXI_AWADDR),
-        .s_axi_awready(axi_smc_M08_AXI_AWREADY),
-        .s_axi_awvalid(axi_smc_M08_AXI_AWVALID),
-        .s_axi_bready(axi_smc_M08_AXI_BREADY),
-        .s_axi_bresp(axi_smc_M08_AXI_BRESP),
-        .s_axi_bvalid(axi_smc_M08_AXI_BVALID),
-        .s_axi_rdata(axi_smc_M08_AXI_RDATA),
-        .s_axi_rready(axi_smc_M08_AXI_RREADY),
-        .s_axi_rresp(axi_smc_M08_AXI_RRESP),
-        .s_axi_rvalid(axi_smc_M08_AXI_RVALID),
-        .s_axi_wdata(axi_smc_M08_AXI_WDATA),
-        .s_axi_wready(axi_smc_M08_AXI_WREADY),
-        .s_axi_wstrb(axi_smc_M08_AXI_WSTRB),
-        .s_axi_wvalid(axi_smc_M08_AXI_WVALID),
-        .sck_i(axi_quad_spi_6_SPI_0_SCK_I),
-        .sck_o(axi_quad_spi_6_SPI_0_SCK_O),
-        .sck_t(axi_quad_spi_6_SPI_0_SCK_T),
-        .ss_i(axi_quad_spi_6_SPI_0_SS_I),
-        .ss_o(axi_quad_spi_6_SPI_0_SS_O),
-        .ss_t(axi_quad_spi_6_SPI_0_SS_T));
-  minimal_axi_quad_spi_6_0 axi_quad_spi_7
-       (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(axi_quad_spi_7_SPI_0_IO0_I),
-        .io0_o(axi_quad_spi_7_SPI_0_IO0_O),
-        .io0_t(axi_quad_spi_7_SPI_0_IO0_T),
-        .io1_i(axi_quad_spi_7_SPI_0_IO1_I),
-        .io1_o(axi_quad_spi_7_SPI_0_IO1_O),
-        .io1_t(axi_quad_spi_7_SPI_0_IO1_T),
-        .ip2intc_irpt(axi_quad_spi_7_ip2intc_irpt),
-        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_araddr(axi_smc_M09_AXI_ARADDR),
-        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .s_axi_arready(axi_smc_M09_AXI_ARREADY),
-        .s_axi_arvalid(axi_smc_M09_AXI_ARVALID),
-        .s_axi_awaddr(axi_smc_M09_AXI_AWADDR),
-        .s_axi_awready(axi_smc_M09_AXI_AWREADY),
-        .s_axi_awvalid(axi_smc_M09_AXI_AWVALID),
-        .s_axi_bready(axi_smc_M09_AXI_BREADY),
-        .s_axi_bresp(axi_smc_M09_AXI_BRESP),
-        .s_axi_bvalid(axi_smc_M09_AXI_BVALID),
-        .s_axi_rdata(axi_smc_M09_AXI_RDATA),
-        .s_axi_rready(axi_smc_M09_AXI_RREADY),
-        .s_axi_rresp(axi_smc_M09_AXI_RRESP),
-        .s_axi_rvalid(axi_smc_M09_AXI_RVALID),
-        .s_axi_wdata(axi_smc_M09_AXI_WDATA),
-        .s_axi_wready(axi_smc_M09_AXI_WREADY),
-        .s_axi_wstrb(axi_smc_M09_AXI_WSTRB),
-        .s_axi_wvalid(axi_smc_M09_AXI_WVALID),
-        .sck_i(axi_quad_spi_7_SPI_0_SCK_I),
-        .sck_o(axi_quad_spi_7_SPI_0_SCK_O),
-        .sck_t(axi_quad_spi_7_SPI_0_SCK_T),
-        .ss_i(axi_quad_spi_7_SPI_0_SS_I),
-        .ss_o(axi_quad_spi_7_SPI_0_SS_O),
-        .ss_t(axi_quad_spi_7_SPI_0_SS_T));
-  minimal_axi_quad_spi_0_2 axi_quad_spi_8
-       (.ext_spi_clk(PL_CLK_50M),
-        .io0_i(SPI_595_io0_i),
-        .io0_o(SPI_595_io0_o),
-        .io0_t(SPI_595_io0_t),
-        .io1_i(SPI_595_io1_i),
-        .io1_o(SPI_595_io1_o),
-        .io1_t(SPI_595_io1_t),
-        .ip2intc_irpt(axi_quad_spi_8_ip2intc_irpt),
+        .io0_i(axi_quad_spi_10_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_10_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_10_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_10_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_10_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_10_SPI_0_IO1_T),
+        .ip2intc_irpt(axi_quad_spi_10_ip2intc_irpt),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_araddr(axi_smc_M10_AXI_ARADDR),
         .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
@@ -933,12 +963,420 @@ module minimal
         .s_axi_wready(axi_smc_M10_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M10_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M10_AXI_WVALID),
+        .sck_i(axi_quad_spi_10_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_10_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_10_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_10_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_10_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_10_SPI_0_SS_T));
+  minimal_axi_quad_spi_10_0 axi_quad_spi_11
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(axi_quad_spi_11_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_11_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_11_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_11_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_11_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_11_SPI_0_IO1_T),
+        .ip2intc_irpt(axi_quad_spi_11_ip2intc_irpt),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M11_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M11_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M11_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M11_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M11_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M11_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M11_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M11_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M11_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M11_AXI_RDATA),
+        .s_axi_rready(axi_smc_M11_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M11_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M11_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M11_AXI_WDATA),
+        .s_axi_wready(axi_smc_M11_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M11_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M11_AXI_WVALID),
+        .sck_i(axi_quad_spi_11_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_11_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_11_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_11_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_11_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_11_SPI_0_SS_T));
+  minimal_axi_quad_spi_10_1 axi_quad_spi_12
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(axi_quad_spi_12_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_12_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_12_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_12_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_12_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_12_SPI_0_IO1_T),
+        .ip2intc_irpt(axi_quad_spi_12_ip2intc_irpt),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M12_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M12_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M12_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M12_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M12_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M12_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M12_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M12_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M12_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M12_AXI_RDATA),
+        .s_axi_rready(axi_smc_M12_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M12_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M12_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M12_AXI_WDATA),
+        .s_axi_wready(axi_smc_M12_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M12_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M12_AXI_WVALID),
+        .sck_i(axi_quad_spi_12_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_12_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_12_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_12_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_12_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_12_SPI_0_SS_T));
+  minimal_axi_quad_spi_12_0 axi_quad_spi_13
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(axi_quad_spi_13_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_13_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_13_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_13_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_13_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_13_SPI_0_IO1_T),
+        .ip2intc_irpt(axi_quad_spi_13_ip2intc_irpt),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M13_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M13_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M13_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M13_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M13_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M13_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M13_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M13_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M13_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M13_AXI_RDATA),
+        .s_axi_rready(axi_smc_M13_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M13_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M13_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M13_AXI_WDATA),
+        .s_axi_wready(axi_smc_M13_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M13_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M13_AXI_WVALID),
+        .sck_i(axi_quad_spi_13_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_13_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_13_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_13_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_13_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_13_SPI_0_SS_T));
+  minimal_axi_quad_spi_1_0 axi_quad_spi_2
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(axi_quad_spi_2_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_2_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_2_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_2_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_2_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_2_SPI_0_IO1_T),
+        .ip2intc_irpt(axi_quad_spi_2_ip2intc_irpt),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M02_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M02_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M02_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M02_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M02_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M02_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M02_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M02_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M02_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M02_AXI_RDATA),
+        .s_axi_rready(axi_smc_M02_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M02_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M02_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M02_AXI_WDATA),
+        .s_axi_wready(axi_smc_M02_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M02_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M02_AXI_WVALID),
+        .sck_i(axi_quad_spi_2_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_2_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_2_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_2_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_2_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_2_SPI_0_SS_T));
+  minimal_axi_quad_spi_2_0 axi_quad_spi_3
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(axi_quad_spi_3_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_3_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_3_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_3_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_3_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_3_SPI_0_IO1_T),
+        .ip2intc_irpt(axi_quad_spi_3_ip2intc_irpt),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M03_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M03_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M03_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M03_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M03_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M03_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M03_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M03_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M03_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M03_AXI_RDATA),
+        .s_axi_rready(axi_smc_M03_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M03_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M03_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M03_AXI_WDATA),
+        .s_axi_wready(axi_smc_M03_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M03_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M03_AXI_WVALID),
+        .sck_i(axi_quad_spi_3_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_3_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_3_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_3_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_3_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_3_SPI_0_SS_T));
+  minimal_axi_quad_spi_3_0 axi_quad_spi_4
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(axi_quad_spi_4_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_4_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_4_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_4_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_4_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_4_SPI_0_IO1_T),
+        .ip2intc_irpt(axi_quad_spi_4_ip2intc_irpt),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M04_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M04_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M04_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M04_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M04_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M04_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M04_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M04_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M04_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M04_AXI_RDATA),
+        .s_axi_rready(axi_smc_M04_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M04_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M04_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M04_AXI_WDATA),
+        .s_axi_wready(axi_smc_M04_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M04_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M04_AXI_WVALID),
+        .sck_i(axi_quad_spi_4_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_4_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_4_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_4_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_4_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_4_SPI_0_SS_T));
+  minimal_axi_quad_spi_4_0 axi_quad_spi_5
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(axi_quad_spi_5_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_5_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_5_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_5_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_5_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_5_SPI_0_IO1_T),
+        .ip2intc_irpt(axi_quad_spi_5_ip2intc_irpt),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M05_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M05_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M05_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M05_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M05_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M05_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M05_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M05_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M05_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M05_AXI_RDATA),
+        .s_axi_rready(axi_smc_M05_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M05_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M05_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M05_AXI_WDATA),
+        .s_axi_wready(axi_smc_M05_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M05_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M05_AXI_WVALID),
+        .sck_i(axi_quad_spi_5_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_5_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_5_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_5_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_5_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_5_SPI_0_SS_T));
+  minimal_axi_quad_spi_0_2 axi_quad_spi_595_0
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(SPI_595_io0_i),
+        .io0_o(SPI_595_io0_o),
+        .io0_t(SPI_595_io0_t),
+        .io1_i(SPI_595_io1_i),
+        .io1_o(SPI_595_io1_o),
+        .io1_t(SPI_595_io1_t),
+        .ip2intc_irpt(axi_quad_spi_8_ip2intc_irpt),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M16_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M16_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M16_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M16_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M16_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M16_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M16_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M16_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M16_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M16_AXI_RDATA),
+        .s_axi_rready(axi_smc_M16_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M16_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M16_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M16_AXI_WDATA),
+        .s_axi_wready(axi_smc_M16_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M16_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M16_AXI_WVALID),
         .sck_i(SPI_595_sck_i),
         .sck_o(SPI_595_sck_o),
         .sck_t(SPI_595_sck_t),
         .ss_i(SPI_595_ss_i),
         .ss_o(SPI_595_ss_o),
         .ss_t(SPI_595_ss_t));
+  minimal_axi_quad_spi_5_0 axi_quad_spi_6
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(axi_quad_spi_6_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_6_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_6_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_6_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_6_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_6_SPI_0_IO1_T),
+        .ip2intc_irpt(axi_quad_spi_6_ip2intc_irpt),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M06_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M06_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M06_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M06_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M06_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M06_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M06_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M06_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M06_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M06_AXI_RDATA),
+        .s_axi_rready(axi_smc_M06_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M06_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M06_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M06_AXI_WDATA),
+        .s_axi_wready(axi_smc_M06_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M06_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M06_AXI_WVALID),
+        .sck_i(axi_quad_spi_6_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_6_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_6_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_6_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_6_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_6_SPI_0_SS_T));
+  minimal_axi_quad_spi_6_0 axi_quad_spi_7
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(axi_quad_spi_7_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_7_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_7_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_7_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_7_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_7_SPI_0_IO1_T),
+        .ip2intc_irpt(axi_quad_spi_7_ip2intc_irpt),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M07_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M07_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M07_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M07_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M07_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M07_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M07_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M07_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M07_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M07_AXI_RDATA),
+        .s_axi_rready(axi_smc_M07_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M07_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M07_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M07_AXI_WDATA),
+        .s_axi_wready(axi_smc_M07_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M07_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M07_AXI_WVALID),
+        .sck_i(axi_quad_spi_7_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_7_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_7_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_7_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_7_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_7_SPI_0_SS_T));
+  minimal_axi_quad_spi_7_1 axi_quad_spi_8
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(axi_quad_spi_8_SPI_1_IO0_I),
+        .io0_o(axi_quad_spi_8_SPI_1_IO0_O),
+        .io0_t(axi_quad_spi_8_SPI_1_IO0_T),
+        .io1_i(axi_quad_spi_8_SPI_1_IO1_I),
+        .io1_o(axi_quad_spi_8_SPI_1_IO1_O),
+        .io1_t(axi_quad_spi_8_SPI_1_IO1_T),
+        .ip2intc_irpt(axi_quad_spi_8_ip2intc_irpt1),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M08_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M08_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M08_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M08_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M08_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M08_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M08_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M08_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M08_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M08_AXI_RDATA),
+        .s_axi_rready(axi_smc_M08_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M08_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M08_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M08_AXI_WDATA),
+        .s_axi_wready(axi_smc_M08_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M08_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M08_AXI_WVALID),
+        .sck_i(axi_quad_spi_8_SPI_1_SCK_I),
+        .sck_o(axi_quad_spi_8_SPI_1_SCK_O),
+        .sck_t(axi_quad_spi_8_SPI_1_SCK_T),
+        .ss_i(axi_quad_spi_8_SPI_1_SS_I),
+        .ss_o(axi_quad_spi_8_SPI_1_SS_O),
+        .ss_t(axi_quad_spi_8_SPI_1_SS_T));
+  minimal_axi_quad_spi_8_0 axi_quad_spi_9
+       (.ext_spi_clk(PL_CLK_50M),
+        .io0_i(axi_quad_spi_9_SPI_0_IO0_I),
+        .io0_o(axi_quad_spi_9_SPI_0_IO0_O),
+        .io0_t(axi_quad_spi_9_SPI_0_IO0_T),
+        .io1_i(axi_quad_spi_9_SPI_0_IO1_I),
+        .io1_o(axi_quad_spi_9_SPI_0_IO1_O),
+        .io1_t(axi_quad_spi_9_SPI_0_IO1_T),
+        .ip2intc_irpt(axi_quad_spi_9_ip2intc_irpt),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(axi_smc_M09_AXI_ARADDR),
+        .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axi_arready(axi_smc_M09_AXI_ARREADY),
+        .s_axi_arvalid(axi_smc_M09_AXI_ARVALID),
+        .s_axi_awaddr(axi_smc_M09_AXI_AWADDR),
+        .s_axi_awready(axi_smc_M09_AXI_AWREADY),
+        .s_axi_awvalid(axi_smc_M09_AXI_AWVALID),
+        .s_axi_bready(axi_smc_M09_AXI_BREADY),
+        .s_axi_bresp(axi_smc_M09_AXI_BRESP),
+        .s_axi_bvalid(axi_smc_M09_AXI_BVALID),
+        .s_axi_rdata(axi_smc_M09_AXI_RDATA),
+        .s_axi_rready(axi_smc_M09_AXI_RREADY),
+        .s_axi_rresp(axi_smc_M09_AXI_RRESP),
+        .s_axi_rvalid(axi_smc_M09_AXI_RVALID),
+        .s_axi_wdata(axi_smc_M09_AXI_WDATA),
+        .s_axi_wready(axi_smc_M09_AXI_WREADY),
+        .s_axi_wstrb(axi_smc_M09_AXI_WSTRB),
+        .s_axi_wvalid(axi_smc_M09_AXI_WVALID),
+        .sck_i(axi_quad_spi_9_SPI_0_SCK_I),
+        .sck_o(axi_quad_spi_9_SPI_0_SCK_O),
+        .sck_t(axi_quad_spi_9_SPI_0_SCK_T),
+        .ss_i(axi_quad_spi_9_SPI_0_SS_I),
+        .ss_o(axi_quad_spi_9_SPI_0_SS_O),
+        .ss_t(axi_quad_spi_9_SPI_0_SS_T));
   minimal_axi_smc_0 axi_smc
        (.M00_AXI_araddr(axi_smc_M00_AXI_ARADDR),
         .M00_AXI_arready(axi_smc_M00_AXI_ARREADY),
@@ -1127,6 +1565,108 @@ module minimal
         .M10_AXI_wready(axi_smc_M10_AXI_WREADY),
         .M10_AXI_wstrb(axi_smc_M10_AXI_WSTRB),
         .M10_AXI_wvalid(axi_smc_M10_AXI_WVALID),
+        .M11_AXI_araddr(axi_smc_M11_AXI_ARADDR),
+        .M11_AXI_arready(axi_smc_M11_AXI_ARREADY),
+        .M11_AXI_arvalid(axi_smc_M11_AXI_ARVALID),
+        .M11_AXI_awaddr(axi_smc_M11_AXI_AWADDR),
+        .M11_AXI_awready(axi_smc_M11_AXI_AWREADY),
+        .M11_AXI_awvalid(axi_smc_M11_AXI_AWVALID),
+        .M11_AXI_bready(axi_smc_M11_AXI_BREADY),
+        .M11_AXI_bresp(axi_smc_M11_AXI_BRESP),
+        .M11_AXI_bvalid(axi_smc_M11_AXI_BVALID),
+        .M11_AXI_rdata(axi_smc_M11_AXI_RDATA),
+        .M11_AXI_rready(axi_smc_M11_AXI_RREADY),
+        .M11_AXI_rresp(axi_smc_M11_AXI_RRESP),
+        .M11_AXI_rvalid(axi_smc_M11_AXI_RVALID),
+        .M11_AXI_wdata(axi_smc_M11_AXI_WDATA),
+        .M11_AXI_wready(axi_smc_M11_AXI_WREADY),
+        .M11_AXI_wstrb(axi_smc_M11_AXI_WSTRB),
+        .M11_AXI_wvalid(axi_smc_M11_AXI_WVALID),
+        .M12_AXI_araddr(axi_smc_M12_AXI_ARADDR),
+        .M12_AXI_arready(axi_smc_M12_AXI_ARREADY),
+        .M12_AXI_arvalid(axi_smc_M12_AXI_ARVALID),
+        .M12_AXI_awaddr(axi_smc_M12_AXI_AWADDR),
+        .M12_AXI_awready(axi_smc_M12_AXI_AWREADY),
+        .M12_AXI_awvalid(axi_smc_M12_AXI_AWVALID),
+        .M12_AXI_bready(axi_smc_M12_AXI_BREADY),
+        .M12_AXI_bresp(axi_smc_M12_AXI_BRESP),
+        .M12_AXI_bvalid(axi_smc_M12_AXI_BVALID),
+        .M12_AXI_rdata(axi_smc_M12_AXI_RDATA),
+        .M12_AXI_rready(axi_smc_M12_AXI_RREADY),
+        .M12_AXI_rresp(axi_smc_M12_AXI_RRESP),
+        .M12_AXI_rvalid(axi_smc_M12_AXI_RVALID),
+        .M12_AXI_wdata(axi_smc_M12_AXI_WDATA),
+        .M12_AXI_wready(axi_smc_M12_AXI_WREADY),
+        .M12_AXI_wstrb(axi_smc_M12_AXI_WSTRB),
+        .M12_AXI_wvalid(axi_smc_M12_AXI_WVALID),
+        .M13_AXI_araddr(axi_smc_M13_AXI_ARADDR),
+        .M13_AXI_arready(axi_smc_M13_AXI_ARREADY),
+        .M13_AXI_arvalid(axi_smc_M13_AXI_ARVALID),
+        .M13_AXI_awaddr(axi_smc_M13_AXI_AWADDR),
+        .M13_AXI_awready(axi_smc_M13_AXI_AWREADY),
+        .M13_AXI_awvalid(axi_smc_M13_AXI_AWVALID),
+        .M13_AXI_bready(axi_smc_M13_AXI_BREADY),
+        .M13_AXI_bresp(axi_smc_M13_AXI_BRESP),
+        .M13_AXI_bvalid(axi_smc_M13_AXI_BVALID),
+        .M13_AXI_rdata(axi_smc_M13_AXI_RDATA),
+        .M13_AXI_rready(axi_smc_M13_AXI_RREADY),
+        .M13_AXI_rresp(axi_smc_M13_AXI_RRESP),
+        .M13_AXI_rvalid(axi_smc_M13_AXI_RVALID),
+        .M13_AXI_wdata(axi_smc_M13_AXI_WDATA),
+        .M13_AXI_wready(axi_smc_M13_AXI_WREADY),
+        .M13_AXI_wstrb(axi_smc_M13_AXI_WSTRB),
+        .M13_AXI_wvalid(axi_smc_M13_AXI_WVALID),
+        .M14_AXI_araddr(axi_smc_M14_AXI_ARADDR),
+        .M14_AXI_arready(axi_smc_M14_AXI_ARREADY),
+        .M14_AXI_arvalid(axi_smc_M14_AXI_ARVALID),
+        .M14_AXI_awaddr(axi_smc_M14_AXI_AWADDR),
+        .M14_AXI_awready(axi_smc_M14_AXI_AWREADY),
+        .M14_AXI_awvalid(axi_smc_M14_AXI_AWVALID),
+        .M14_AXI_bready(axi_smc_M14_AXI_BREADY),
+        .M14_AXI_bresp(axi_smc_M14_AXI_BRESP),
+        .M14_AXI_bvalid(axi_smc_M14_AXI_BVALID),
+        .M14_AXI_rdata(axi_smc_M14_AXI_RDATA),
+        .M14_AXI_rready(axi_smc_M14_AXI_RREADY),
+        .M14_AXI_rresp(axi_smc_M14_AXI_RRESP),
+        .M14_AXI_rvalid(axi_smc_M14_AXI_RVALID),
+        .M14_AXI_wdata(axi_smc_M14_AXI_WDATA),
+        .M14_AXI_wready(axi_smc_M14_AXI_WREADY),
+        .M14_AXI_wstrb(axi_smc_M14_AXI_WSTRB),
+        .M14_AXI_wvalid(axi_smc_M14_AXI_WVALID),
+        .M15_AXI_araddr(axi_smc_M15_AXI_ARADDR),
+        .M15_AXI_arready(axi_smc_M15_AXI_ARREADY),
+        .M15_AXI_arvalid(axi_smc_M15_AXI_ARVALID),
+        .M15_AXI_awaddr(axi_smc_M15_AXI_AWADDR),
+        .M15_AXI_awready(axi_smc_M15_AXI_AWREADY),
+        .M15_AXI_awvalid(axi_smc_M15_AXI_AWVALID),
+        .M15_AXI_bready(axi_smc_M15_AXI_BREADY),
+        .M15_AXI_bresp(axi_smc_M15_AXI_BRESP),
+        .M15_AXI_bvalid(axi_smc_M15_AXI_BVALID),
+        .M15_AXI_rdata(axi_smc_M15_AXI_RDATA),
+        .M15_AXI_rready(axi_smc_M15_AXI_RREADY),
+        .M15_AXI_rresp(axi_smc_M15_AXI_RRESP),
+        .M15_AXI_rvalid(axi_smc_M15_AXI_RVALID),
+        .M15_AXI_wdata(axi_smc_M15_AXI_WDATA),
+        .M15_AXI_wready(axi_smc_M15_AXI_WREADY),
+        .M15_AXI_wstrb(axi_smc_M15_AXI_WSTRB),
+        .M15_AXI_wvalid(axi_smc_M15_AXI_WVALID),
+        .M16_AXI_araddr(axi_smc_M16_AXI_ARADDR),
+        .M16_AXI_arready(axi_smc_M16_AXI_ARREADY),
+        .M16_AXI_arvalid(axi_smc_M16_AXI_ARVALID),
+        .M16_AXI_awaddr(axi_smc_M16_AXI_AWADDR),
+        .M16_AXI_awready(axi_smc_M16_AXI_AWREADY),
+        .M16_AXI_awvalid(axi_smc_M16_AXI_AWVALID),
+        .M16_AXI_bready(axi_smc_M16_AXI_BREADY),
+        .M16_AXI_bresp(axi_smc_M16_AXI_BRESP),
+        .M16_AXI_bvalid(axi_smc_M16_AXI_BVALID),
+        .M16_AXI_rdata(axi_smc_M16_AXI_RDATA),
+        .M16_AXI_rready(axi_smc_M16_AXI_RREADY),
+        .M16_AXI_rresp(axi_smc_M16_AXI_RRESP),
+        .M16_AXI_rvalid(axi_smc_M16_AXI_RVALID),
+        .M16_AXI_wdata(axi_smc_M16_AXI_WDATA),
+        .M16_AXI_wready(axi_smc_M16_AXI_WREADY),
+        .M16_AXI_wstrb(axi_smc_M16_AXI_WSTRB),
+        .M16_AXI_wvalid(axi_smc_M16_AXI_WVALID),
         .S00_AXI_araddr(processing_system7_0_M_AXI_GP0_ARADDR),
         .S00_AXI_arburst(processing_system7_0_M_AXI_GP0_ARBURST),
         .S00_AXI_arcache(processing_system7_0_M_AXI_GP0_ARCACHE),
@@ -1174,7 +1714,7 @@ module minimal
        (.CLK(PL_CLK_50M),
         .Q(c_counter_binary_1_Q));
   assign ilconcat_0_dout = {ilconcat_1_dout, axi_quad_spi_8_ip2intc_irpt, axi_ethernetlite_0_ip2intc_irpt};
-  assign ilconcat_1_dout = {axi_quad_spi_7_ip2intc_irpt, axi_quad_spi_6_ip2intc_irpt, axi_quad_spi_5_ip2intc_irpt, axi_quad_spi_4_ip2intc_irpt, axi_quad_spi_3_ip2intc_irpt, axi_quad_spi_2_ip2intc_irpt, axi_quad_spi_1_ip2intc_irpt, axi_quad_spi_0_ip2intc_irpt};
+  assign ilconcat_1_dout = {axi_quad_spi_13_ip2intc_irpt, axi_quad_spi_12_ip2intc_irpt, axi_quad_spi_11_ip2intc_irpt, axi_quad_spi_10_ip2intc_irpt, axi_quad_spi_9_ip2intc_irpt, axi_quad_spi_8_ip2intc_irpt1, axi_quad_spi_7_ip2intc_irpt, axi_quad_spi_6_ip2intc_irpt, axi_quad_spi_5_ip2intc_irpt, axi_quad_spi_4_ip2intc_irpt, axi_quad_spi_3_ip2intc_irpt, axi_quad_spi_2_ip2intc_irpt, axi_quad_spi_1_ip2intc_irpt, axi_quad_spi_0_ip2intc_irpt};
   assign PL_LED_1 = c_counter_binary_0_Q[25:25];
   assign PL_LED_2 = c_counter_binary_1_Q[25:25];
   minimal_processing_system7_0_0 processing_system7_0
@@ -1248,7 +1788,7 @@ module minimal
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
-  minimal_spi2ili_0_5 spi2ili_0
+  minimal_spi2ili_5_1 spi2ili_0
        (.ILI_scl_o(ILI_0_sck_o),
         .ILI_sda_o(ILI_0_sda_o),
         .ILI_ss_o(ILI_0_ss_o),
@@ -1268,112 +1808,208 @@ module minimal
        (.ILI_scl_o(ILI_1_sck_o),
         .ILI_sda_o(ILI_1_sda_o),
         .ILI_ss_o(ILI_1_ss_o),
-        .SPI_io0_i(1'b0),
+        .SPI_io0_i(axi_quad_spi_1_SPI_0_IO0_I),
         .SPI_io0_o(axi_quad_spi_1_SPI_0_IO0_O),
         .SPI_io0_t(axi_quad_spi_1_SPI_0_IO0_T),
-        .SPI_io1_i(1'b0),
+        .SPI_io1_i(axi_quad_spi_1_SPI_0_IO1_I),
         .SPI_io1_o(axi_quad_spi_1_SPI_0_IO1_O),
         .SPI_io1_t(axi_quad_spi_1_SPI_0_IO1_T),
-        .SPI_sck_i(1'b0),
+        .SPI_sck_i(axi_quad_spi_1_SPI_0_SCK_I),
         .SPI_sck_o(axi_quad_spi_1_SPI_0_SCK_O),
         .SPI_sck_t(axi_quad_spi_1_SPI_0_SCK_T),
-        .SPI_ss_i(1'b0),
+        .SPI_ss_i(axi_quad_spi_1_SPI_0_SS_I),
         .SPI_ss_o(axi_quad_spi_1_SPI_0_SS_O),
         .SPI_ss_t(axi_quad_spi_1_SPI_0_SS_T));
+  minimal_spi2ili_9_0 spi2ili_10
+       (.ILI_scl_o(ILI_A_sck_o),
+        .ILI_sda_o(ILI_A_sda_o),
+        .ILI_ss_o(ILI_A_ss_o),
+        .SPI_io0_i(axi_quad_spi_10_SPI_0_IO0_I),
+        .SPI_io0_o(axi_quad_spi_10_SPI_0_IO0_O),
+        .SPI_io0_t(axi_quad_spi_10_SPI_0_IO0_T),
+        .SPI_io1_i(axi_quad_spi_10_SPI_0_IO1_I),
+        .SPI_io1_o(axi_quad_spi_10_SPI_0_IO1_O),
+        .SPI_io1_t(axi_quad_spi_10_SPI_0_IO1_T),
+        .SPI_sck_i(axi_quad_spi_10_SPI_0_SCK_I),
+        .SPI_sck_o(axi_quad_spi_10_SPI_0_SCK_O),
+        .SPI_sck_t(axi_quad_spi_10_SPI_0_SCK_T),
+        .SPI_ss_i(axi_quad_spi_10_SPI_0_SS_I),
+        .SPI_ss_o(axi_quad_spi_10_SPI_0_SS_O),
+        .SPI_ss_t(axi_quad_spi_10_SPI_0_SS_T));
+  minimal_spi2ili_10_0 spi2ili_11
+       (.ILI_scl_o(ILI_B_sck_o),
+        .ILI_sda_o(ILI_B_sda_o),
+        .ILI_ss_o(ILI_B_ss_o),
+        .SPI_io0_i(axi_quad_spi_11_SPI_0_IO0_I),
+        .SPI_io0_o(axi_quad_spi_11_SPI_0_IO0_O),
+        .SPI_io0_t(axi_quad_spi_11_SPI_0_IO0_T),
+        .SPI_io1_i(axi_quad_spi_11_SPI_0_IO1_I),
+        .SPI_io1_o(axi_quad_spi_11_SPI_0_IO1_O),
+        .SPI_io1_t(axi_quad_spi_11_SPI_0_IO1_T),
+        .SPI_sck_i(axi_quad_spi_11_SPI_0_SCK_I),
+        .SPI_sck_o(axi_quad_spi_11_SPI_0_SCK_O),
+        .SPI_sck_t(axi_quad_spi_11_SPI_0_SCK_T),
+        .SPI_ss_i(axi_quad_spi_11_SPI_0_SS_I),
+        .SPI_ss_o(axi_quad_spi_11_SPI_0_SS_O),
+        .SPI_ss_t(axi_quad_spi_11_SPI_0_SS_T));
+  minimal_spi2ili_0_7 spi2ili_12
+       (.ILI_scl_o(ILI_C_sck_o),
+        .ILI_sda_o(ILI_C_sda_o),
+        .ILI_ss_o(ILI_C_ss_o),
+        .SPI_io0_i(axi_quad_spi_12_SPI_0_IO0_I),
+        .SPI_io0_o(axi_quad_spi_12_SPI_0_IO0_O),
+        .SPI_io0_t(axi_quad_spi_12_SPI_0_IO0_T),
+        .SPI_io1_i(axi_quad_spi_12_SPI_0_IO1_I),
+        .SPI_io1_o(axi_quad_spi_12_SPI_0_IO1_O),
+        .SPI_io1_t(axi_quad_spi_12_SPI_0_IO1_T),
+        .SPI_sck_i(axi_quad_spi_12_SPI_0_SCK_I),
+        .SPI_sck_o(axi_quad_spi_12_SPI_0_SCK_O),
+        .SPI_sck_t(axi_quad_spi_12_SPI_0_SCK_T),
+        .SPI_ss_i(axi_quad_spi_12_SPI_0_SS_I),
+        .SPI_ss_o(axi_quad_spi_12_SPI_0_SS_O),
+        .SPI_ss_t(axi_quad_spi_12_SPI_0_SS_T));
+  minimal_spi2ili_12_0 spi2ili_13
+       (.ILI_scl_o(ILI_D_sck_o),
+        .ILI_sda_o(ILI_D_sda_o),
+        .ILI_ss_o(ILI_D_ss_o),
+        .SPI_io0_i(axi_quad_spi_13_SPI_0_IO0_I),
+        .SPI_io0_o(axi_quad_spi_13_SPI_0_IO0_O),
+        .SPI_io0_t(axi_quad_spi_13_SPI_0_IO0_T),
+        .SPI_io1_i(axi_quad_spi_13_SPI_0_IO1_I),
+        .SPI_io1_o(axi_quad_spi_13_SPI_0_IO1_O),
+        .SPI_io1_t(axi_quad_spi_13_SPI_0_IO1_T),
+        .SPI_sck_i(axi_quad_spi_13_SPI_0_SCK_I),
+        .SPI_sck_o(axi_quad_spi_13_SPI_0_SCK_O),
+        .SPI_sck_t(axi_quad_spi_13_SPI_0_SCK_T),
+        .SPI_ss_i(axi_quad_spi_13_SPI_0_SS_I),
+        .SPI_ss_o(axi_quad_spi_13_SPI_0_SS_O),
+        .SPI_ss_t(axi_quad_spi_13_SPI_0_SS_T));
   minimal_spi2ili_1_0 spi2ili_2
        (.ILI_scl_o(ILI_2_sck_o),
         .ILI_sda_o(ILI_2_sda_o),
         .ILI_ss_o(ILI_2_ss_o),
-        .SPI_io0_i(1'b0),
+        .SPI_io0_i(axi_quad_spi_2_SPI_0_IO0_I),
         .SPI_io0_o(axi_quad_spi_2_SPI_0_IO0_O),
         .SPI_io0_t(axi_quad_spi_2_SPI_0_IO0_T),
-        .SPI_io1_i(1'b0),
+        .SPI_io1_i(axi_quad_spi_2_SPI_0_IO1_I),
         .SPI_io1_o(axi_quad_spi_2_SPI_0_IO1_O),
         .SPI_io1_t(axi_quad_spi_2_SPI_0_IO1_T),
-        .SPI_sck_i(1'b0),
+        .SPI_sck_i(axi_quad_spi_2_SPI_0_SCK_I),
         .SPI_sck_o(axi_quad_spi_2_SPI_0_SCK_O),
         .SPI_sck_t(axi_quad_spi_2_SPI_0_SCK_T),
-        .SPI_ss_i(1'b0),
+        .SPI_ss_i(axi_quad_spi_2_SPI_0_SS_I),
         .SPI_ss_o(axi_quad_spi_2_SPI_0_SS_O),
         .SPI_ss_t(axi_quad_spi_2_SPI_0_SS_T));
   minimal_spi2ili_2_0 spi2ili_3
        (.ILI_scl_o(ILI_3_sck_o),
         .ILI_sda_o(ILI_3_sda_o),
         .ILI_ss_o(ILI_3_ss_o),
-        .SPI_io0_i(1'b0),
+        .SPI_io0_i(axi_quad_spi_3_SPI_0_IO0_I),
         .SPI_io0_o(axi_quad_spi_3_SPI_0_IO0_O),
         .SPI_io0_t(axi_quad_spi_3_SPI_0_IO0_T),
-        .SPI_io1_i(1'b0),
+        .SPI_io1_i(axi_quad_spi_3_SPI_0_IO1_I),
         .SPI_io1_o(axi_quad_spi_3_SPI_0_IO1_O),
         .SPI_io1_t(axi_quad_spi_3_SPI_0_IO1_T),
-        .SPI_sck_i(1'b0),
+        .SPI_sck_i(axi_quad_spi_3_SPI_0_SCK_I),
         .SPI_sck_o(axi_quad_spi_3_SPI_0_SCK_O),
         .SPI_sck_t(axi_quad_spi_3_SPI_0_SCK_T),
-        .SPI_ss_i(1'b0),
+        .SPI_ss_i(axi_quad_spi_3_SPI_0_SS_I),
         .SPI_ss_o(axi_quad_spi_3_SPI_0_SS_O),
         .SPI_ss_t(axi_quad_spi_3_SPI_0_SS_T));
   minimal_spi2ili_3_0 spi2ili_4
        (.ILI_scl_o(ILI_4_sck_o),
         .ILI_sda_o(ILI_4_sda_o),
         .ILI_ss_o(ILI_4_ss_o),
-        .SPI_io0_i(1'b0),
+        .SPI_io0_i(axi_quad_spi_4_SPI_0_IO0_I),
         .SPI_io0_o(axi_quad_spi_4_SPI_0_IO0_O),
         .SPI_io0_t(axi_quad_spi_4_SPI_0_IO0_T),
-        .SPI_io1_i(1'b0),
+        .SPI_io1_i(axi_quad_spi_4_SPI_0_IO1_I),
         .SPI_io1_o(axi_quad_spi_4_SPI_0_IO1_O),
         .SPI_io1_t(axi_quad_spi_4_SPI_0_IO1_T),
-        .SPI_sck_i(1'b0),
+        .SPI_sck_i(axi_quad_spi_4_SPI_0_SCK_I),
         .SPI_sck_o(axi_quad_spi_4_SPI_0_SCK_O),
         .SPI_sck_t(axi_quad_spi_4_SPI_0_SCK_T),
-        .SPI_ss_i(1'b0),
+        .SPI_ss_i(axi_quad_spi_4_SPI_0_SS_I),
         .SPI_ss_o(axi_quad_spi_4_SPI_0_SS_O),
         .SPI_ss_t(axi_quad_spi_4_SPI_0_SS_T));
   minimal_spi2ili_4_0 spi2ili_5
        (.ILI_scl_o(ILI_5_sck_o),
         .ILI_sda_o(ILI_5_sda_o),
         .ILI_ss_o(ILI_5_ss_o),
-        .SPI_io0_i(1'b0),
+        .SPI_io0_i(axi_quad_spi_5_SPI_0_IO0_I),
         .SPI_io0_o(axi_quad_spi_5_SPI_0_IO0_O),
         .SPI_io0_t(axi_quad_spi_5_SPI_0_IO0_T),
-        .SPI_io1_i(1'b0),
+        .SPI_io1_i(axi_quad_spi_5_SPI_0_IO1_I),
         .SPI_io1_o(axi_quad_spi_5_SPI_0_IO1_O),
         .SPI_io1_t(axi_quad_spi_5_SPI_0_IO1_T),
-        .SPI_sck_i(1'b0),
+        .SPI_sck_i(axi_quad_spi_5_SPI_0_SCK_I),
         .SPI_sck_o(axi_quad_spi_5_SPI_0_SCK_O),
         .SPI_sck_t(axi_quad_spi_5_SPI_0_SCK_T),
-        .SPI_ss_i(1'b0),
+        .SPI_ss_i(axi_quad_spi_5_SPI_0_SS_I),
         .SPI_ss_o(axi_quad_spi_5_SPI_0_SS_O),
         .SPI_ss_t(axi_quad_spi_5_SPI_0_SS_T));
   minimal_spi2ili_5_0 spi2ili_6
        (.ILI_scl_o(ILI_6_sck_o),
         .ILI_sda_o(ILI_6_sda_o),
         .ILI_ss_o(ILI_6_ss_o),
-        .SPI_io0_i(1'b0),
+        .SPI_io0_i(axi_quad_spi_6_SPI_0_IO0_I),
         .SPI_io0_o(axi_quad_spi_6_SPI_0_IO0_O),
         .SPI_io0_t(axi_quad_spi_6_SPI_0_IO0_T),
-        .SPI_io1_i(1'b0),
+        .SPI_io1_i(axi_quad_spi_6_SPI_0_IO1_I),
         .SPI_io1_o(axi_quad_spi_6_SPI_0_IO1_O),
         .SPI_io1_t(axi_quad_spi_6_SPI_0_IO1_T),
-        .SPI_sck_i(1'b0),
+        .SPI_sck_i(axi_quad_spi_6_SPI_0_SCK_I),
         .SPI_sck_o(axi_quad_spi_6_SPI_0_SCK_O),
         .SPI_sck_t(axi_quad_spi_6_SPI_0_SCK_T),
-        .SPI_ss_i(1'b0),
+        .SPI_ss_i(axi_quad_spi_6_SPI_0_SS_I),
         .SPI_ss_o(axi_quad_spi_6_SPI_0_SS_O),
         .SPI_ss_t(axi_quad_spi_6_SPI_0_SS_T));
   minimal_spi2ili_6_0 spi2ili_7
        (.ILI_scl_o(ILI_7_sck_o),
         .ILI_sda_o(ILI_7_sda_o),
         .ILI_ss_o(ILI_7_ss_o),
-        .SPI_io0_i(1'b0),
+        .SPI_io0_i(axi_quad_spi_7_SPI_0_IO0_I),
         .SPI_io0_o(axi_quad_spi_7_SPI_0_IO0_O),
         .SPI_io0_t(axi_quad_spi_7_SPI_0_IO0_T),
-        .SPI_io1_i(1'b0),
+        .SPI_io1_i(axi_quad_spi_7_SPI_0_IO1_I),
         .SPI_io1_o(axi_quad_spi_7_SPI_0_IO1_O),
         .SPI_io1_t(axi_quad_spi_7_SPI_0_IO1_T),
-        .SPI_sck_i(1'b0),
+        .SPI_sck_i(axi_quad_spi_7_SPI_0_SCK_I),
         .SPI_sck_o(axi_quad_spi_7_SPI_0_SCK_O),
         .SPI_sck_t(axi_quad_spi_7_SPI_0_SCK_T),
-        .SPI_ss_i(1'b0),
+        .SPI_ss_i(axi_quad_spi_7_SPI_0_SS_I),
         .SPI_ss_o(axi_quad_spi_7_SPI_0_SS_O),
         .SPI_ss_t(axi_quad_spi_7_SPI_0_SS_T));
+  minimal_spi2ili_7_0 spi2ili_8
+       (.ILI_scl_o(ILI_8_sck_o),
+        .ILI_sda_o(ILI_8_sda_o),
+        .ILI_ss_o(ILI_8_ss_o),
+        .SPI_io0_i(axi_quad_spi_8_SPI_1_IO0_I),
+        .SPI_io0_o(axi_quad_spi_8_SPI_1_IO0_O),
+        .SPI_io0_t(axi_quad_spi_8_SPI_1_IO0_T),
+        .SPI_io1_i(axi_quad_spi_8_SPI_1_IO1_I),
+        .SPI_io1_o(axi_quad_spi_8_SPI_1_IO1_O),
+        .SPI_io1_t(axi_quad_spi_8_SPI_1_IO1_T),
+        .SPI_sck_i(axi_quad_spi_8_SPI_1_SCK_I),
+        .SPI_sck_o(axi_quad_spi_8_SPI_1_SCK_O),
+        .SPI_sck_t(axi_quad_spi_8_SPI_1_SCK_T),
+        .SPI_ss_i(axi_quad_spi_8_SPI_1_SS_I),
+        .SPI_ss_o(axi_quad_spi_8_SPI_1_SS_O),
+        .SPI_ss_t(axi_quad_spi_8_SPI_1_SS_T));
+  minimal_spi2ili_8_0 spi2ili_9
+       (.ILI_scl_o(ILI_9_sck_o),
+        .ILI_sda_o(ILI_9_sda_o),
+        .ILI_ss_o(ILI_9_ss_o),
+        .SPI_io0_i(axi_quad_spi_9_SPI_0_IO0_I),
+        .SPI_io0_o(axi_quad_spi_9_SPI_0_IO0_O),
+        .SPI_io0_t(axi_quad_spi_9_SPI_0_IO0_T),
+        .SPI_io1_i(axi_quad_spi_9_SPI_0_IO1_I),
+        .SPI_io1_o(axi_quad_spi_9_SPI_0_IO1_O),
+        .SPI_io1_t(axi_quad_spi_9_SPI_0_IO1_T),
+        .SPI_sck_i(axi_quad_spi_9_SPI_0_SCK_I),
+        .SPI_sck_o(axi_quad_spi_9_SPI_0_SCK_O),
+        .SPI_sck_t(axi_quad_spi_9_SPI_0_SCK_T),
+        .SPI_ss_i(axi_quad_spi_9_SPI_0_SS_I),
+        .SPI_ss_o(axi_quad_spi_9_SPI_0_SS_O),
+        .SPI_ss_t(axi_quad_spi_9_SPI_0_SS_T));
 endmodule
