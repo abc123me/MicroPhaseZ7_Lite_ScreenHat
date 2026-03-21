@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Sat Mar 21 01:50:22 2026
+//Date        : Sat Mar 21 02:38:47 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal_wrapper.bd
 //Design      : minimal_wrapper
@@ -127,7 +127,7 @@ module minimal_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  output [11:0]GPIO_0_tri_o;
+  output [13:0]GPIO_0_tri_o;
   output ILI_0_sck_o;
   output ILI_0_sda_o;
   output ILI_0_ss_o;
@@ -214,7 +214,7 @@ module minimal_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire [11:0]GPIO_0_tri_o;
+  wire [13:0]GPIO_0_tri_o;
   wire ILI_0_sck_o;
   wire ILI_0_sda_o;
   wire ILI_0_ss_o;

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xD6A639687B89A1EB",
+      "boundary_crc": "0x62BB4AF53BBF2BC6",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal",
       "name": "minimal",
@@ -339,7 +339,7 @@
           "TRI_O": {
             "physical_name": "GPIO_0_tri_o",
             "direction": "O",
-            "left": "11",
+            "left": "13",
             "right": "0"
           }
         }
@@ -2022,7 +2022,7 @@
             "value": "0x00000000"
           },
           "C_GPIO_WIDTH": {
-            "value": "12"
+            "value": "14"
           }
         }
       },

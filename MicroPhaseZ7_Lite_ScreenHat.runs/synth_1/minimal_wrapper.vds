@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Sat Mar 21 01:54:45 2026
-# Process ID         : 1161373
+# Start of session at: Sat Mar 21 02:38:54 2026
+# Process ID         : 1271381
 # Current directory  : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.runs/synth_1
 # Command line       : vivado -log minimal_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source minimal_wrapper.tcl
 # Log file           : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.runs/synth_1/minimal_wrapper.vds
@@ -13,13 +13,13 @@
 # Platform           : Arch
 # Operating System   : Arch Linux
 # Processor Detail   : AMD Ryzen 9 7950X3D 16-Core Processor
-# CPU Frequency      : 4852.629 MHz
+# CPU Frequency      : 4913.932 MHz
 # CPU Physical cores : 16
 # CPU Logical cores  : 32
 # Host memory        : 66310 MB
 # Swap memory        : 25741 MB
 # Total Virtual      : 92051 MB
-# Available Virtual  : 69129 MB
+# Available Virtual  : 69118 MB
 #-----------------------------------------------------------
 source minimal_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -35,9 +35,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1161458
+INFO: [Synth 8-7075] Helper process launched with PID 1271473
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2319.340 ; gain = 329.609 ; free physical = 23032 ; free virtual = 64551
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2327.324 ; gain = 337.609 ; free physical = 22883 ; free virtual = 64465
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'minimal_wrapper' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/hdl/minimal_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
@@ -393,7 +393,7 @@ INFO: [Synth 8-638] synthesizing module 'minimal_axi_gpio_0_0' [/home/jeremiah/P
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_GPIO_WIDTH bound to: 12 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 14 - type: integer 
 	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
 	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
 	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
@@ -427,7 +427,7 @@ INFO: [Synth 8-226] default block is never used [/home/jeremiah/Programming/FPGA
 	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
 	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
-	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter WIDTH bound to: 14 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized1' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized1' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
 INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:182]
@@ -1770,6 +1770,8 @@ INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[8
 INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[9].GPIO_DBus_i_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
 INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[10].GPIO_DBus_i_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
 INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[11].GPIO_DBus_i_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[12].GPIO_DBus_i_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
+INFO: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[13].GPIO_DBus_i_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:323]
 INFO: [Synth 8-6014] Unused sequential element Not_Dual.gpio_Data_In_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:485]
 WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/opt/Xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3087]
 WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
@@ -1975,18 +1977,18 @@ WARNING: [Synth 8-7129] Port b[29] in module c_addsub_v12_0_21_lut6_legacy is ei
 WARNING: [Synth 8-7129] Port b[28] in module c_addsub_v12_0_21_lut6_legacy is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2860.270 ; gain = 870.539 ; free physical = 22462 ; free virtual = 63990
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2860.254 ; gain = 870.539 ; free physical = 22302 ; free virtual = 63893
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2860.270 ; gain = 870.539 ; free physical = 22462 ; free virtual = 63991
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2860.254 ; gain = 870.539 ; free physical = 22311 ; free virtual = 63902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2860.270 ; gain = 870.539 ; free physical = 22462 ; free virtual = 63991
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2860.254 ; gain = 870.539 ; free physical = 22311 ; free virtual = 63902
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3304.137 ; gain = 11.000 ; free physical = 22114 ; free virtual = 63644
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3305.121 ; gain = 12.000 ; free physical = 21945 ; free virtual = 63536
 INFO: [Netlist 29-17] Analyzing 826 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -2102,8 +2104,6 @@ Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_L
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_quad_spi_12_0/minimal_axi_quad_spi_12_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc]
-WARNING: [Vivado 12-584] No ports matched 'GPIO_0_tri_o[12]'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:103]
-WARNING: [Vivado 12-584] No ports matched 'GPIO_0_tri_o[13]'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:104]
 WARNING: [Vivado 12-584] No ports matched 'GPIO_0_tri_o[14]'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:108]
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/minimal_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
@@ -2905,7 +2905,7 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrap
 INFO: [Project 1-1714] 991 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3631.094 ; gain = 0.000 ; free physical = 21901 ; free virtual = 63443
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3632.078 ; gain = 0.000 ; free physical = 21686 ; free virtual = 63277
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 636 instances were transformed.
   FD => FDRE: 165 instances
@@ -2917,92 +2917,373 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM16X1S => RAM32X1S (RAMS32): 4 instances
   SRL16 => SRL16E: 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.31 . Memory (MB): peak = 3631.129 ; gain = 0.000 ; free physical = 21920 ; free virtual = 63465
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.3 . Memory (MB): peak = 3632.113 ; gain = 0.000 ; free physical = 21681 ; free virtual = 63272
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 3631.129 ; gain = 1641.398 ; free physical = 21844 ; free virtual = 63378
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 3632.113 ; gain = 1642.398 ; free physical = 21763 ; free virtual = 63356
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 3639.098 ; gain = 1649.367 ; free physical = 21844 ; free virtual = 63378
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 3640.082 ; gain = 1650.367 ; free physical = 21763 ; free virtual = 63356
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 3639.098 ; gain = 1649.367 ; free physical = 21833 ; free virtual = 63382
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 3640.082 ; gain = 1650.367 ; free physical = 21770 ; free virtual = 63364
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Preparing Guide Design
 ---------------------------------------------------------------------------------
+got a mismatch minimal
+Is not a child genome
+got a mismatch minimal_axi_gpio_0_0
+got a mismatch axi_gpio
+got a mismatch GPIO_Core
+got a mismatch xpm_cdc_array_single__parameterized1
+WARNING: [Synth 8-6702] IncrSynth : Design change found in an area of the design that prevents previous synthesis information being used, Reverting to default synthesis
 ---------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 3639.098 ; gain = 1649.367 ; free physical = 21755 ; free virtual = 63334
----------------------------------------------------------------------------------
-minimal__GCB2minimal__GCB1minimal__GCB0bd_1c4e__GC0s00_entry_pipeline_imp_1N15GZJ__GC0sc_mmu_v1_0_16_top__GB1sc_mmu_v1_0_16_top__GB0axi_ethernetlite__GC0---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 3757.098 ; gain = 1767.367 ; free physical = 21573 ; free virtual = 63148
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 3757.098 ; gain = 1767.367 ; free physical = 21562 ; free virtual = 63131
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Mimic Skeleton from Reference
+Finished Doing Graph Differ : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 3648.082 ; gain = 1658.367 ; free physical = 21646 ; free virtual = 63255
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Mimic Skeleton from Reference : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 3757.098 ; gain = 1767.367 ; free physical = 21565 ; free virtual = 63118
+Finished Preparing Guide Design : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 3648.082 ; gain = 1658.367 ; free physical = 21646 ; free virtual = 63255
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rdDestAddrNib_D_t_q_reg' in module 'rx_statemachine'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'thisState_reg' in module 'defer_state'
+INFO: [Synth 8-802] inferred FSM for state register 'mdio_state_reg' in module 'mdio_if'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module__xdcDup__11'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module__xdcDup__12'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module__xdcDup__13'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module__xdcDup__4'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module__xdcDup__5'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module__xdcDup__6'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module__xdcDup__7'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module__xdcDup__8'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module__xdcDup__9'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module__xdcDup__10'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_16_decerr_slave'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.w_state_reg' in module 'sc_mmu_v1_0_16_top'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.r_state_reg' in module 'sc_mmu_v1_0_16_top'
+INFO: [Synth 8-802] inferred FSM for state register 'w_state_reg' in module 'sc_si_converter_v1_0_16_axilite_conv'
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'sc_si_converter_v1_0_16_axilite_conv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  "0000" |                    0000000000001 |                             0000
+                  "0001" |                    0000000000010 |                             0001
+                  "0010" |                    0000000000100 |                             0010
+                  "0011" |                    0000000001000 |                             0011
+                  "0100" |                    0000000010000 |                             0100
+                  "0101" |                    0000000100000 |                             0101
+                  "0110" |                    0000001000000 |                             0110
+                  "0111" |                    0000010000000 |                             0111
+                  "1000" |                    0000100000000 |                             1000
+                  "1001" |                    0001000000000 |                             1001
+                  "1010" |                    0010000000000 |                             1010
+                  "1011" |                    0100000000000 |                             1011
+                  "1100" |                    1000000000000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rdDestAddrNib_D_t_q_reg' using encoding 'one-hot' in module 'rx_statemachine'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                loadcntr |                               01 |                               00
+           startifgp1cnt |                               11 |                               01
+           startifgp2cnt |                               10 |                               10
+                 cntdone |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'thisState_reg' using encoding 'sequential' in module 'defer_state'
+INFO: [Synth 8-3971] The signal "xpm_memory_base__parameterized0:/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                    0000000000001 |                             0000
+                preamble |                    0000000000010 |                             0001
+                     st1 |                    0000000000100 |                             0010
+                     st2 |                    0000000001000 |                             0011
+                     op1 |                    0000000010000 |                             0100
+                     op2 |                    0000000100000 |                             0101
+                phy_addr |                    0000001000000 |                             1000
+                reg_addr |                    0000010000000 |                             1001
+                     ta1 |                    0000100000000 |                             0110
+                     ta2 |                    0001000000000 |                             0111
+                   write |                    0010000000000 |                             1010
+                    read |                    0100000000000 |                             1011
+                    done |                    1000000000000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mdio_state_reg' using encoding 'one-hot' in module 'mdio_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module__xdcDup__11'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module__xdcDup__12'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module__xdcDup__13'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module__xdcDup__4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module__xdcDup__5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module__xdcDup__6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module__xdcDup__7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module__xdcDup__8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module__xdcDup__9'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module__xdcDup__10'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_16_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 | 00000000000000000000000000000000
+*
+                 W_STALL |                               01 | 00000000000000000000000000000001
+               W_PENDING |                               10 | 00000000000000000000000000000010
+                W_DECERR |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.w_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_16_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 | 00000000000000000000000000000000
+*
+                 R_STALL |                               01 | 00000000000000000000000000000001
+               R_PENDING |                               10 | 00000000000000000000000000000010
+                R_DECERR |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.r_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_16_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  W_IDLE |                              000 | 00000000000000000000000000000000
+                    W_RX |                              001 | 00000000000000000000000000000001
+                    W_TX |                              010 | 00000000000000000000000000000010
+              W_COMPLETE |                              011 | 00000000000000000000000000000100
+               W_RECOVER |                              100 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'w_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_16_axilite_conv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  R_IDLE |                             0001 | 00000000000000000000000000000000
+               R_PENDING |                             0010 | 00000000000000000000000000000001
+                    R_RX |                             0100 | 00000000000000000000000000000010
+                    R_TX |                             1000 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'one-hot' in module 'sc_si_converter_v1_0_16_axilite_conv'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 3648.082 ; gain = 1658.367 ; free physical = 21638 ; free virtual = 63246
 ---------------------------------------------------------------------------------
 
 
 Incremental Synthesis Report Summary:
 
-1. Incremental synthesis run: yes
+1. Incremental synthesis run: no
 
-   Stitch points used : changed
-
-
-2. Change Summary
-
-Report Incremental Modules: 
-+-+----------------+------------+----------+----------+
-| |Changed Modules |Replication |Instances |Changed % |
-+-+----------------+------------+----------+----------+
-+-+----------------+------------+----------+----------+
+   Reason for not running incremental synthesis : Design change found in an area of the design that prevents previous synthesis information being used
 
 
-   Full Design Size (number of cells) : 147820
-   Resynthesis Design Size (number of cells) : 7
-   Resynth % : 0.0047,  Reuse % : 99.9953
-
-3. Reference Checkpoint Information
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-| DCP Location:  | /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/utils_1/imports/synth_1/ios.dcp |
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+--------------------------------+------------------------------+
-|         DCP Information        |             Value            |
-+--------------------------------+------------------------------+
-| Vivado Version                 |                    v2025.2 |
-| DCP State                      |                              |
-+--------------------------------+------------------------------+
-
-
-
-Report RTL Partitions: 
-+------+--------------------------------------------+------------+----------+
-|      |RTL Partition                               |Replication |Instances |
-+------+--------------------------------------------+------------+----------+
-|1     |axi_ethernetlite__GC0_#REUSE#               |           1|         0|
-|2     |sc_mmu_v1_0_16_top__GB0_#REUSE#             |           1|         0|
-|3     |sc_mmu_v1_0_16_top__GB1_#REUSE#             |           1|         0|
-|4     |s00_entry_pipeline_imp_1N15GZJ__GC0_#REUSE# |           1|         0|
-|5     |bd_1c4e__GC0_#REUSE#                        |           1|         0|
-|6     |minimal__GCB0_#REUSE#                       |           1|         0|
-|7     |minimal__GCB1_#REUSE#                       |           1|         0|
-|8     |minimal__GCB2_#REUSE#                       |           1|         0|
-+------+--------------------------------------------+------------+----------+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -3021,40 +3302,482 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+INFO: [Synth 8-3971] The signal "minimal_i/axi_ethernetlite_0/U0/i_0/\XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_1 /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "minimal_i/axi_ethernetlite_0/U0/i_0/\XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_2 /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "minimal_i/axi_ethernetlite_0/U0/i_0/\XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst_1 /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "minimal_i/axi_ethernetlite_0/U0/i_0/\XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst_2 /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "minimal_i/axi_ethernetlite_0/U0/i_0/\XEMAC_I/TX_PONG_GEN.TX_PONG_I/xpm_mem_gen.xpm_memory_inst_1 /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "minimal_i/axi_ethernetlite_0/U0/i_0/\XEMAC_I/TX_PONG_GEN.TX_PONG_I/xpm_mem_gen.xpm_memory_inst_2 /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "minimal_i/axi_ethernetlite_0/U0/i_0/\XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst_1 /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "minimal_i/axi_ethernetlite_0/U0/i_0/\XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst_2 /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'gen_endpoint.w_enable_reg' (FDRE) to 'gen_endpoint.w_cnt_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_endpoint.w_cnt_reg[1]' (FDRE) to 'gen_endpoint.w_cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_endpoint.w_cnt_reg[2]' (FDRE) to 'gen_endpoint.w_cnt_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_endpoint.w_cnt_reg[3]' (FDRE) to 'gen_endpoint.w_cnt_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_endpoint.w_cnt_reg[4]' (FDRE) to 'gen_endpoint.b_cnt_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_endpoint.b_cnt_reg[1]' (FDRE) to 'gen_endpoint.b_cnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_endpoint.b_cnt_reg[2]' (FDRE) to 'gen_endpoint.b_cnt_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_endpoint.b_cnt_reg[3]' (FDRE) to 'gen_endpoint.b_cnt_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_endpoint.b_cnt_reg[4] )
+INFO: [Synth 8-3886] merging instance 'gen_endpoint.r_cnt_reg[3]' (FDRE) to 'gen_endpoint.r_cnt_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_endpoint.r_cnt_reg[4]' (FDRE) to 'gen_endpoint.r_cnt_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_endpoint.r_cnt_reg[2]' (FDRE) to 'gen_endpoint.r_cnt_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_endpoint.r_cnt_reg[1] )
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[12]' (FDE) to 'ar_reg_stall/skid_buffer_reg[13]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[13]' (FDE) to 'ar_reg_stall/skid_buffer_reg[14]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[14]' (FDE) to 'ar_reg_stall/skid_buffer_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[15]' (FDE) to 'ar_reg_stall/skid_buffer_reg[16]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[16]' (FDE) to 'ar_reg_stall/skid_buffer_reg[17]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[17]' (FDE) to 'ar_reg_stall/skid_buffer_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[18]' (FDE) to 'ar_reg_stall/skid_buffer_reg[19]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[19]' (FDE) to 'ar_reg_stall/skid_buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[20]' (FDE) to 'ar_reg_stall/skid_buffer_reg[21]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[21]' (FDE) to 'ar_reg_stall/skid_buffer_reg[22]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[22]' (FDE) to 'ar_reg_stall/skid_buffer_reg[23]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[23]' (FDE) to 'ar_reg_stall/skid_buffer_reg[24]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[24]' (FDE) to 'ar_reg_stall/skid_buffer_reg[25]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[25]' (FDE) to 'ar_reg_stall/skid_buffer_reg[26]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[26]' (FDE) to 'ar_reg_stall/skid_buffer_reg[27]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[27]' (FDE) to 'ar_reg_stall/skid_buffer_reg[28]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[28]' (FDE) to 'ar_reg_stall/skid_buffer_reg[29]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[29]' (FDE) to 'ar_reg_stall/skid_buffer_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[30]' (FDE) to 'ar_reg_stall/skid_buffer_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[31]' (FDE) to 'ar_reg_stall/skid_buffer_reg[32]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[32]' (FDE) to 'ar_reg_stall/skid_buffer_reg[33]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[33]' (FDE) to 'ar_reg_stall/skid_buffer_reg[34]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[34]' (FDE) to 'ar_reg_stall/skid_buffer_reg[35]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[35]' (FDE) to 'ar_reg_stall/skid_buffer_reg[36]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[36]' (FDE) to 'ar_reg_stall/skid_buffer_reg[37]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[37]' (FDE) to 'ar_reg_stall/skid_buffer_reg[38]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[38]' (FDE) to 'ar_reg_stall/skid_buffer_reg[39]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[39]' (FDE) to 'ar_reg_stall/skid_buffer_reg[40]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[40]' (FDE) to 'ar_reg_stall/skid_buffer_reg[41]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[41]' (FDE) to 'ar_reg_stall/skid_buffer_reg[42]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[42]' (FDE) to 'ar_reg_stall/skid_buffer_reg[43]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[43]' (FDE) to 'ar_reg_stall/skid_buffer_reg[44]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[44]' (FDE) to 'ar_reg_stall/skid_buffer_reg[45]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[45]' (FDE) to 'ar_reg_stall/skid_buffer_reg[46]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[46]' (FDE) to 'ar_reg_stall/skid_buffer_reg[47]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[47]' (FDE) to 'ar_reg_stall/skid_buffer_reg[48]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[48]' (FDE) to 'ar_reg_stall/skid_buffer_reg[49]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[49]' (FDE) to 'ar_reg_stall/skid_buffer_reg[50]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[50]' (FDE) to 'ar_reg_stall/skid_buffer_reg[51]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[51]' (FDE) to 'ar_reg_stall/skid_buffer_reg[52]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[52]' (FDE) to 'ar_reg_stall/skid_buffer_reg[53]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[53]' (FDE) to 'ar_reg_stall/skid_buffer_reg[54]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[54]' (FDE) to 'ar_reg_stall/skid_buffer_reg[55]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[55]' (FDE) to 'ar_reg_stall/skid_buffer_reg[56]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[56]' (FDE) to 'ar_reg_stall/skid_buffer_reg[57]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[57]' (FDE) to 'ar_reg_stall/skid_buffer_reg[58]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[58]' (FDE) to 'ar_reg_stall/skid_buffer_reg[59]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[59]' (FDE) to 'ar_reg_stall/skid_buffer_reg[60]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[60]' (FDE) to 'ar_reg_stall/skid_buffer_reg[61]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[61]' (FDE) to 'ar_reg_stall/skid_buffer_reg[62]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[62]' (FDE) to 'ar_reg_stall/skid_buffer_reg[63]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[63]' (FDE) to 'ar_reg_stall/skid_buffer_reg[68]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[68]' (FDE) to 'ar_reg_stall/skid_buffer_reg[69]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[69]' (FDE) to 'ar_reg_stall/skid_buffer_reg[70]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[70]' (FDE) to 'ar_reg_stall/skid_buffer_reg[71]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[71]' (FDE) to 'ar_reg_stall/skid_buffer_reg[77]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[77]' (FDE) to 'ar_reg_stall/skid_buffer_reg[78]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[78]' (FDE) to 'ar_reg_stall/skid_buffer_reg[79]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[79]' (FDE) to 'ar_reg_stall/skid_buffer_reg[80]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[80]' (FDE) to 'ar_reg_stall/skid_buffer_reg[81]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[81]' (FDE) to 'ar_reg_stall/skid_buffer_reg[82]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[82]' (FDE) to 'ar_reg_stall/skid_buffer_reg[83]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[83]' (FDE) to 'ar_reg_stall/skid_buffer_reg[84]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[84]' (FDE) to 'ar_reg_stall/skid_buffer_reg[85]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[85]' (FDE) to 'ar_reg_stall/skid_buffer_reg[86]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[86]' (FDE) to 'ar_reg_stall/skid_buffer_reg[87]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[87]' (FDE) to 'ar_reg_stall/skid_buffer_reg[88]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[88]' (FDE) to 'ar_reg_stall/skid_buffer_reg[89]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[89]' (FDE) to 'ar_reg_stall/skid_buffer_reg[90]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[90]' (FDE) to 'ar_reg_stall/skid_buffer_reg[91]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[91]' (FDE) to 'ar_reg_stall/skid_buffer_reg[92]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[92]' (FDE) to 'ar_reg_stall/skid_buffer_reg[93]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[93]' (FDE) to 'ar_reg_stall/skid_buffer_reg[94]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[94]' (FDE) to 'ar_reg_stall/skid_buffer_reg[95]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[95]' (FDE) to 'ar_reg_stall/skid_buffer_reg[96]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[96]' (FDE) to 'ar_reg_stall/skid_buffer_reg[97]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[97]' (FDE) to 'ar_reg_stall/skid_buffer_reg[98]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[98]' (FDE) to 'ar_reg_stall/skid_buffer_reg[99]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[99]' (FDE) to 'ar_reg_stall/skid_buffer_reg[100]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[100]' (FDE) to 'ar_reg_stall/skid_buffer_reg[101]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[101]' (FDE) to 'ar_reg_stall/skid_buffer_reg[102]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[102]' (FDE) to 'ar_reg_stall/skid_buffer_reg[103]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[103]' (FDE) to 'ar_reg_stall/skid_buffer_reg[104]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[104]' (FDE) to 'ar_reg_stall/skid_buffer_reg[105]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[105]' (FDE) to 'ar_reg_stall/skid_buffer_reg[106]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[106]' (FDE) to 'ar_reg_stall/skid_buffer_reg[107]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[107]' (FDE) to 'ar_reg_stall/skid_buffer_reg[108]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[108]' (FDE) to 'ar_reg_stall/skid_buffer_reg[109]'
+INFO: [Synth 8-3886] merging instance 'ar_reg_stall/skid_buffer_reg[109]' (FDE) to 'ar_reg_stall/skid_buffer_reg[110]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (aw_reg_stall/\skid_buffer_reg[1132] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ar_reg_stall/\skid_buffer_reg[1132] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (aw_reg_stall/\m_vector_i_reg[1132] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ar_reg_stall/\m_vector_i_reg[1132] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (ar_reg_stall/\skid_buffer_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (ar_reg_stall/\m_vector_i_reg[11] )
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '33' to '4' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4205]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '47' to '18' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg' and it is trimmed from '32' to '1' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/e44a/hdl/sc_exit_v1_0_vl_rfs.sv:4134]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '173' to '157' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '173' to '157' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '28' to '9' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '74' to '56' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '83' to '67' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '172' to '156' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '172' to '156' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '27' to '9' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '73' to '56' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '82' to '66' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '172' to '156' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '172' to '156' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '27' to '9' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '73' to '56' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '82' to '66' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '172' to '156' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '172' to '156' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '27' to '9' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '73' to '56' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '82' to '66' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '172' to '156' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '172' to '156' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '27' to '9' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '73' to '56' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '82' to '66' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '172' to '156' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '172' to '156' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '27' to '9' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '73' to '56' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '82' to '66' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '172' to '156' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo.inst_reg_fifo/gen_single_rank.data_reg' and it is trimmed from '172' to '156' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/00fe/hdl/sc_node_v1_0_vl_rfs.sv:615]
+INFO: [Common 17-14] Message 'Synth 8-3936' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3936' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_7/i_r_node_7/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_7/i_r_node_7/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_7/i_r_node_7/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_7/i_r_node_7/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_7/i_r_node_7/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_7/i_b_node_7/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_7/i_b_node_7/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_7/i_b_node_7/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_7/i_b_node_7/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_7/i_b_node_7/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_6/i_r_node_6/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_6/i_r_node_6/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_6/i_r_node_6/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_6/i_r_node_6/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_6/i_r_node_6/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_6/i_b_node_6/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_6/i_b_node_6/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_6/i_b_node_6/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_6/i_b_node_6/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_6/i_b_node_6/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_5/i_r_node_5/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_5/i_r_node_5/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_5/i_r_node_5/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_5/i_r_node_5/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_5/i_r_node_5/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_5/i_b_node_5/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_5/i_b_node_5/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_5/i_b_node_5/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_5/i_b_node_5/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_5/i_b_node_5/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_4/i_r_node_4/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_4/i_r_node_4/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_4/i_r_node_4/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_4/i_r_node_4/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_4/i_r_node_4/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_4/i_b_node_4/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_4/i_b_node_4/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_4/i_b_node_4/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_4/i_b_node_4/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_4/i_b_node_4/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_3/i_r_node_3/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_3/i_r_node_3/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_3/i_r_node_3/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_3/i_r_node_3/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_3/i_r_node_3/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_3/i_b_node_3/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_3/i_b_node_3/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_3/i_b_node_3/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_3/i_b_node_3/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_3/i_b_node_3/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_2/i_r_node_2/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_2/i_r_node_2/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_2/i_r_node_2/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_2/i_r_node_2/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_2/i_r_node_2/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_2/i_b_node_2/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_2/i_b_node_2/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_2/i_b_node_2/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_2/i_b_node_2/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_2/i_b_node_2/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_1/i_r_node_1/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_1/i_r_node_1/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_1/i_r_node_1/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_1/i_r_node_1/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_1/i_r_node_1/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_1/i_b_node_1/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_1/i_b_node_1/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_1/i_b_node_1/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_1/i_b_node_1/inst /p_0_out_inferred__2/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_1/i_b_node_1/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_0/i_r_node_0/inst /p_0_out_inferred__3/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_0/i_r_node_0/inst /p_0_out_inferred__3/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_0/i_r_node_0/inst /p_0_out_inferred__3/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_0/i_r_node_0/inst /p_0_out_inferred__3/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_0/i_r_node_0/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_0/i_b_node_0/inst /p_0_out_inferred__3/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_0/i_b_node_0/inst /p_0_out_inferred__3/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_0/i_b_node_0/inst /p_0_out_inferred__3/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switchboards/i_nodes_0/i_b_node_0/inst /p_0_out_inferred__3/\inst_mi_handler/inst_ingress/inst_incoming_count/count_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switchboards/i_nodes_0/i_b_node_0/inst /\inst_mi_handler/inst_ingress/inst_incoming_count/is_zero_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m16_exit_pipeline/m16_exit/inst /\exit_inst/first_r_beat_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m15_exit_pipeline/m15_exit/inst /\exit_inst/first_r_beat_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m14_exit_pipeline/m14_exit/inst /\exit_inst/first_r_beat_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m13_exit_pipeline/m13_exit/inst /\exit_inst/first_r_beat_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m12_exit_pipeline/m12_exit/inst /\exit_inst/first_r_beat_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m11_exit_pipeline/m11_exit/inst /\exit_inst/first_r_beat_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m10_exit_pipeline/m10_exit/inst /\exit_inst/first_r_beat_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m09_exit_pipeline/m09_exit/inst /\exit_inst/first_r_beat_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m08_exit_pipeline/m08_exit/inst /\exit_inst/first_r_beat_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m07_exit_pipeline/m07_exit/inst /\exit_inst/first_r_beat_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m06_exit_pipeline/m06_exit/inst /\exit_inst/first_r_beat_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m05_exit_pipeline/m05_exit/inst /\exit_inst/first_r_beat_n_reg )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'bus2ip_reset_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:1667]
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi__xdcDup__9.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SCK_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__9.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__9.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__9.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__9.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi__xdcDup__8.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SCK_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__8.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__8.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__8.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__8.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi__xdcDup__12.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SCK_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__12.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__12.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__12.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__12.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi__xdcDup__13.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SCK_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__13.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__13.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__13.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__13.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SCK_I_REG) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi__xdcDup__7.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SCK_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__7.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__7.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__7.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__7.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi__xdcDup__4.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SCK_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__4.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__4.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__4.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__4.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi__xdcDup__5.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SCK_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__5.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__5.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__5.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__5.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi__xdcDup__6.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SCK_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__6.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__6.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__6.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__6.
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi__parameterized2.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi__parameterized2.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi__parameterized2.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi__xdcDup__3.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SCK_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__3.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__3.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__3.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__3.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi__xdcDup__10.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SCK_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__10.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__10.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__10.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__10.
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Synth 8-4471] merging register 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.bus2ip_reset_ipif_inverted_reg' into 'NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9bdf/hdl/axi_quad_spi_v3_2_rfs.vhd:34835]
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM gen_wr_a.gen_word_narrow.mem_reg to conserve power
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset__parameterized1.
+WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset__parameterized1.
+WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__parameterized1.
+WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__parameterized1.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi__xdcDup__11.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SCK_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__11.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__11.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__11.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__11.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi__xdcDup__2.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SCK_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__2.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__2.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__2.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__2.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi__xdcDup__1.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SCK_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__1.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__1.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__1.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi__xdcDup__1.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 3757.098 ; gain = 1767.367 ; free physical = 21362 ; free virtual = 63104
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Stitch Unchanged AreaOpt Partitions
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 3757.098 ; gain = 1767.367 ; free physical = 21343 ; free virtual = 63072
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:23 . Memory (MB): peak = 3676.016 ; gain = 1686.301 ; free physical = 15456 ; free virtual = 57258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 3757.098 ; gain = 1767.367 ; free physical = 21331 ; free virtual = 63125
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:28 . Memory (MB): peak = 3676.016 ; gain = 1686.301 ; free physical = 16034 ; free virtual = 57893
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg) is unused and will be removed from module sc_exit_v1_0_18_top.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 3757.098 ; gain = 1767.367 ; free physical = 21331 ; free virtual = 63124
+Finished Timing Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:01:33 . Memory (MB): peak = 3676.016 ; gain = 1686.301 ; free physical = 16083 ; free virtual = 57944
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/i_0/XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/i_0/XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/i_0/XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/i_0/XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/i_0/XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/i_0/XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/i_0/XEMAC_I/TX_PONG_GEN.TX_PONG_I/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/i_0/XEMAC_I/TX_PONG_GEN.TX_PONG_I/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/i_0/XEMAC_I/TX_PONG_GEN.TX_PONG_I/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/i_0/XEMAC_I/TX_PONG_GEN.TX_PONG_I/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/i_0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/i_0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 3757.098 ; gain = 1767.367 ; free physical = 21327 ; free virtual = 63121
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Stitch Unchanged Partitions
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Stitch Unchanged Partitions : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 3757.098 ; gain = 1767.367 ; free physical = 21328 ; free virtual = 63122
+Finished Technology Mapping : Time (s): cpu = 00:01:41 ; elapsed = 00:01:40 . Memory (MB): peak = 3684.020 ; gain = 1694.305 ; free physical = 15672 ; free virtual = 57543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -3084,37 +3807,37 @@ INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 3757.098 ; gain = 1767.367 ; free physical = 21326 ; free virtual = 63175
+Finished IO Insertion : Time (s): cpu = 00:01:46 ; elapsed = 00:01:45 . Memory (MB): peak = 3684.020 ; gain = 1694.305 ; free physical = 15602 ; free virtual = 57526
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 3757.098 ; gain = 1767.367 ; free physical = 21326 ; free virtual = 63175
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:46 ; elapsed = 00:01:45 . Memory (MB): peak = 3684.020 ; gain = 1694.305 ; free physical = 15605 ; free virtual = 57529
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 3773.105 ; gain = 1783.375 ; free physical = 21314 ; free virtual = 63163
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:47 ; elapsed = 00:01:47 . Memory (MB): peak = 3684.020 ; gain = 1694.305 ; free physical = 15615 ; free virtual = 57538
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 3773.105 ; gain = 1783.375 ; free physical = 21314 ; free virtual = 63163
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:47 ; elapsed = 00:01:47 . Memory (MB): peak = 3684.020 ; gain = 1694.305 ; free physical = 15618 ; free virtual = 57540
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 3773.105 ; gain = 1783.375 ; free physical = 21316 ; free virtual = 63165
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:48 ; elapsed = 00:01:47 . Memory (MB): peak = 3684.020 ; gain = 1694.305 ; free physical = 15618 ; free virtual = 57540
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 3773.105 ; gain = 1783.375 ; free physical = 21318 ; free virtual = 63166
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:48 ; elapsed = 00:01:47 . Memory (MB): peak = 3684.020 ; gain = 1694.305 ; free physical = 15618 ; free virtual = 57540
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -3136,9 +3859,9 @@ Report Cell Usage:
 |4     |LUT1     |  1267|
 |5     |LUT2     |  3616|
 |6     |LUT3     |  1980|
-|7     |LUT4     |  2293|
+|7     |LUT4     |  2295|
 |8     |LUT5     |  2659|
-|9     |LUT6     |  3457|
+|9     |LUT6     |  3459|
 |10    |MULT_AND |    17|
 |11    |MUXCY    |    75|
 |12    |MUXF7    |    38|
@@ -3147,31 +3870,31 @@ Report Cell Usage:
 |15    |RAM32M   |     4|
 |16    |RAM32X1D |     4|
 |17    |RAMB18E1 |    36|
-|18    |SRL16    |     2|
-|19    |XORCY    |    72|
-|20    |FD       |    92|
-|21    |FDCE     |   840|
-|22    |FDR      |   168|
-|23    |FDRE     | 15682|
-|24    |FDS      |     2|
-|25    |FDSE     |   740|
-|26    |IBUF     |    11|
-|27    |IOBUF    |     5|
-|28    |OBUF     |    63|
+|19    |SRL16    |     2|
+|20    |XORCY    |    72|
+|21    |FD       |    92|
+|22    |FDCE     |   840|
+|23    |FDR      |   168|
+|24    |FDRE     | 15698|
+|25    |FDS      |     2|
+|26    |FDSE     |   740|
+|27    |IBUF     |    11|
+|28    |IOBUF    |     5|
+|29    |OBUF     |    65|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 3773.105 ; gain = 1783.375 ; free physical = 21318 ; free virtual = 63166
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:48 ; elapsed = 00:01:48 . Memory (MB): peak = 3684.020 ; gain = 1694.305 ; free physical = 15618 ; free virtual = 57540
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2062 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 3773.105 ; gain = 1012.516 ; free physical = 21318 ; free virtual = 63166
-Synthesis Optimization Complete : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 3773.113 ; gain = 1783.375 ; free physical = 21318 ; free virtual = 63167
+Synthesis finished with 0 errors, 0 critical warnings and 2497 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 3684.020 ; gain = 922.445 ; free physical = 21417 ; free virtual = 63333
+Synthesis Optimization Complete : Time (s): cpu = 00:01:48 ; elapsed = 00:01:48 . Memory (MB): peak = 3684.020 ; gain = 1694.305 ; free physical = 21433 ; free virtual = 63330
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.45 . Memory (MB): peak = 3773.113 ; gain = 0.000 ; free physical = 21499 ; free virtual = 63355
+Netlist sorting complete. Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.44 . Memory (MB): peak = 3684.020 ; gain = 0.000 ; free physical = 21472 ; free virtual = 63368
 INFO: [Netlist 29-17] Analyzing 847 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3829.133 ; gain = 0.000 ; free physical = 21471 ; free virtual = 63342
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3745.934 ; gain = 0.000 ; free physical = 21483 ; free virtual = 63380
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 321 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 23 instances
@@ -3185,15 +3908,15 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
   SRL16 => SRL16E: 2 instances
 
-Synth Design complete | Checksum: 3692c3d9
+Synth Design complete | Checksum: 511c3030
 INFO: [Common 17-83] Releasing license: Synthesis
-896 Infos, 295 Warnings, 0 Critical Warnings and 0 Errors encountered.
+1384 Infos, 328 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 3829.168 ; gain = 2179.570 ; free physical = 21458 ; free virtual = 63323
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3237.027; main = 3003.666; forked = 323.943
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4745.398; main = 3829.137; forked = 988.297
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3853.145 ; gain = 0.000 ; free physical = 21454 ; free virtual = 63319
+synth_design: Time (s): cpu = 00:01:57 ; elapsed = 00:01:57 . Memory (MB): peak = 3745.969 ; gain = 2096.387 ; free physical = 21619 ; free virtual = 63515
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 9138.205; main = 2892.372; forked = 6525.377
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 16925.215; main = 3745.938; forked = 13253.113
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3769.945 ; gain = 0.000 ; free physical = 21615 ; free virtual = 63515
 INFO: [Common 17-1381] The checkpoint '/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.runs/synth_1/minimal_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3853.145 ; gain = 23.977 ; free physical = 21435 ; free virtual = 63342
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3769.945 ; gain = 23.977 ; free physical = 21556 ; free virtual = 63510
 INFO: [Vivado 12-24828] Executing command : report_utilization -file minimal_wrapper_utilization_synth.rpt -pb minimal_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 21 01:56:16 2026...
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 21 02:41:03 2026...

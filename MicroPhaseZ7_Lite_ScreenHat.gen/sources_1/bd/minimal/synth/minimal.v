@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Sat Mar 21 01:50:22 2026
+//Date        : Sat Mar 21 02:38:47 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal.bd
 //Design      : minimal
@@ -140,7 +140,7 @@ module minimal
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O" *) (* X_INTERFACE_MODE = "Master" *) output [11:0]GPIO_0_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O" *) (* X_INTERFACE_MODE = "Master" *) output [13:0]GPIO_0_tri_o;
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_0 SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_0_sck_o;
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_0 SDA_O" *) output ILI_0_sda_o;
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_0 SS_O" *) output ILI_0_ss_o;
@@ -234,7 +234,7 @@ module minimal
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire [11:0]GPIO_0_tri_o;
+  wire [13:0]GPIO_0_tri_o;
   wire ILI_0_sck_o;
   wire ILI_0_sda_o;
   wire ILI_0_ss_o;

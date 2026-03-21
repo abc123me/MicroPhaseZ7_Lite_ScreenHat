@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date                      : Sat Mar 21 01:57:02 2026
+| Date                      : Sat Mar 21 02:41:51 2026
 | Host                      : npc running 64-bit Arch Linux
 | Command                   : report_io -file minimal_wrapper_io_placed.rpt
 | Design                    : minimal_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           209 |
+|           211 |
 +---------------+
 
 
@@ -133,7 +133,7 @@ Table of Contents
 | E16        | FIXED_IO_mio[31]  |            | PS_MIO31_501            | BIDIR         | LVCMOS18*          |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | E17        | ILI_9_ss_o        | High Range | IO_L3P_T0_DQS_AD1P_35   | OUTPUT        | LVCMOS33           |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | E18        | ILI_C_ss_o        | High Range | IO_L5P_T0_AD9P_35       | OUTPUT        | LVCMOS33           |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| E19        |                   | High Range | IO_L5N_T0_AD9N_35       | User IO       |                    |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| E19        | GPIO_0_tri_o[12]  | High Range | IO_L5N_T0_AD9N_35       | OUTPUT        | LVCMOS33           |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | E20        |                   |            | GND                     | GND           |                    |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | F1         | DDR_dm[1]         |            | PS_DDR_DM1_502          | INOUT         | SSTL135_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |              |                   |              |
 | F2         | DDR_dqs_n[1]      |            | PS_DDR_DQS_N1_502       | INOUT         | DIFF_SSTL135_T_DCI |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |              |                   |              |
@@ -151,7 +151,7 @@ Table of Contents
 | F14        | FIXED_IO_mio[21]  |            | PS_MIO21_501            | BIDIR         | LVCMOS18*          |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | F15        | FIXED_IO_mio[25]  |            | PS_MIO25_501            | BIDIR         | LVCMOS18*          |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | F16        | ILI_D_ss_o        | High Range | IO_L6P_T0_35            | OUTPUT        | LVCMOS33           |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| F17        |                   | High Range | IO_L6N_T0_VREF_35       | User IO       |                    |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| F17        | GPIO_0_tri_o[13]  | High Range | IO_L6N_T0_VREF_35       | OUTPUT        | LVCMOS33           |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | F18        |                   | High Range | VCCO_35                 | VCCO          |                    |      35 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | F19        | ILI_1_ss_o        | High Range | IO_L15P_T2_DQS_AD12P_35 | OUTPUT        | LVCMOS33           |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | F20        | GPIO_0_tri_o[1]   | High Range | IO_L15N_T2_DQS_AD12N_35 | OUTPUT        | LVCMOS33           |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
