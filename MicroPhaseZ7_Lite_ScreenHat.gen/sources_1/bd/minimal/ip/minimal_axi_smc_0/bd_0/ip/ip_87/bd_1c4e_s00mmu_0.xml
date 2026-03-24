@@ -406,7 +406,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ">200000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ">100000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1032,7 +1032,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.FREQ_HZ">200000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.FREQ_HZ">100000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1322,7 +1322,7 @@
           <spirit:name>FREQ_HZ</spirit:name>
           <spirit:displayName>aclk frequency</spirit:displayName>
           <spirit:description>aclk frequency</spirit:description>
-          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_HZ" spirit:minimum="1" spirit:maximum="1000000000" spirit:rangeType="long">200000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_HZ" spirit:minimum="1" spirit:maximum="1000000000" spirit:rangeType="long">100000000</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
@@ -1427,7 +1427,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e863651b</spirit:value>
+            <spirit:value>9:dcb31164</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1450,7 +1450,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8745af23</spirit:value>
+            <spirit:value>9:988e8e52</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1466,11 +1466,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 21 07:54:10 UTC 2026</spirit:value>
+            <spirit:value>Tue Mar 24 05:33:33 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8745af23</spirit:value>
+            <spirit:value>9:988e8e52</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1493,7 +1493,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e863651b</spirit:value>
+            <spirit:value>9:dcb31164</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1509,11 +1509,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 21 07:54:10 UTC 2026</spirit:value>
+            <spirit:value>Tue Mar 24 05:33:33 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e863651b</spirit:value>
+            <spirit:value>9:dcb31164</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3663,47 +3663,47 @@
       <spirit:modelParameter spirit:dataType="long">
         <spirit:name>C_NUM_SEG</spirit:name>
         <spirit:displayName>C_NUM_SEG</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_SEG" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">17</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_SEG" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">19</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_SEG_BASE_ADDR_ARRAY</spirit:name>
         <spirit:displayName>C_SEG_BASE_ADDR_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_BASE_ADDR_ARRAY" spirit:bitStringLength="1088">0x0000000041ed00000000000041ec00000000000041eb00000000000041ea00000000000041e900000000000041e800000000000041e700000000000041e600000000000041e500000000000041e400000000000041e300000000000041e200000000000041e100000000000041e000000000000041df000000000000412000000000000040e00000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_BASE_ADDR_ARRAY" spirit:bitStringLength="1216">0x0000000041ed00000000000041ec00000000000041eb00000000000041ea00000000000041e900000000000041e800000000000041e700000000000041e600000000000041e500000000000041e400000000000041e300000000000041e200000000000041e100000000000041e000000000000041df00000000000041de0000000000004180000000000000412000000000000040e00000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_SEG_SIZE_ARRAY</spirit:name>
         <spirit:displayName>C_SEG_SIZE_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SIZE_ARRAY" spirit:bitStringLength="544">0x0000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SIZE_ARRAY" spirit:bitStringLength="608">0x00000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_SEG_SEP_ROUTE_ARRAY</spirit:name>
         <spirit:displayName>C_SEG_SEP_ROUTE_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SEP_ROUTE_ARRAY" spirit:bitStringLength="1088">0x000000000000000d000000000000000c000000000000000b000000000000000a00000000000000090000000000000008000000000000000700000000000000060000000000000005000000000000000400000000000000030000000000000002000000000000000100000000000000000000000000000010000000000000000e000000000000000f</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SEP_ROUTE_ARRAY" spirit:bitStringLength="1216">0x000000000000000d000000000000000c000000000000000b000000000000000a0000000000000009000000000000000800000000000000070000000000000006000000000000000500000000000000040000000000000003000000000000000200000000000000010000000000000000000000000000001000000000000000110000000000000012000000000000000e000000000000000f</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_SEG_SUPPORTS_READ_ARRAY</spirit:name>
         <spirit:displayName>C_SEG_SUPPORTS_READ_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SUPPORTS_READ_ARRAY" spirit:bitStringLength="17">0b11111111111111111</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SUPPORTS_READ_ARRAY" spirit:bitStringLength="19">0b1111111111111111111</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_SEG_SUPPORTS_WRITE_ARRAY</spirit:name>
         <spirit:displayName>C_SEG_SUPPORTS_WRITE_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SUPPORTS_WRITE_ARRAY" spirit:bitStringLength="17">0b11111111111111111</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SUPPORTS_WRITE_ARRAY" spirit:bitStringLength="19">0b1111111111111111111</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_SEG_SECURE_READ_ARRAY</spirit:name>
         <spirit:displayName>C_SEG_SECURE_READ_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SECURE_READ_ARRAY" spirit:bitStringLength="17">0b00000000000000000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SECURE_READ_ARRAY" spirit:bitStringLength="19">0b0000000000000000000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_SEG_SECURE_WRITE_ARRAY</spirit:name>
         <spirit:displayName>C_SEG_SECURE_WRITE_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SECURE_WRITE_ARRAY" spirit:bitStringLength="17">0b00000000000000000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SECURE_WRITE_ARRAY" spirit:bitStringLength="19">0b0000000000000000000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="long">
         <spirit:name>C_NUM_MSC</spirit:name>
         <spirit:displayName>C_NUM_MSC</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_MSC" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">17</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_MSC" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">19</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="long">
         <spirit:name>C_MSC_ROUTE_WIDTH</spirit:name>
@@ -3713,7 +3713,7 @@
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_MSC_ROUTE_ARRAY</spirit:name>
         <spirit:displayName>C_MSC_ROUTE_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MSC_ROUTE_ARRAY" spirit:bitStringLength="204">0b101010000000100110000000101001000000100101000000101000100000100100100000101000010000100100010000101000001000100100001000101000000100100100000100101000000010100100000010110000000001101000000001100100000001</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MSC_ROUTE_ARRAY" spirit:bitStringLength="228">0b101010000000100110000000101001000000100101000000101000100000100100100000101000010000100100010000101000001000100100001000110000000100101000000100100100000100110000000010101000000010100100000010110000000001101000000001100100000001</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="long">
         <spirit:name>C_ADDR_WIDTH</spirit:name>
@@ -3975,7 +3975,7 @@
     <spirit:parameter>
       <spirit:name>NUM_SEG</spirit:name>
       <spirit:displayName>NUM_SEG</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_SEG" spirit:order="7" spirit:minimum="0" spirit:maximum="256" spirit:rangeType="long">17</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_SEG" spirit:order="7" spirit:minimum="0" spirit:maximum="256" spirit:rangeType="long">19</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC_ROUTE_WIDTH</spirit:name>
@@ -3985,7 +3985,7 @@
     <spirit:parameter>
       <spirit:name>NUM_MSC</spirit:name>
       <spirit:displayName>NUM_MSC</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_MSC" spirit:order="9" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">17</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_MSC" spirit:order="9" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">19</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>ADDR_WIDTH</spirit:name>
@@ -4150,7 +4150,7 @@
     <spirit:parameter>
       <spirit:name>SEG002_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG002_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG002_BASE_ADDR" spirit:bitStringLength="64">0x0000000041DF0000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG002_BASE_ADDR" spirit:bitStringLength="64">0x0000000041800000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG002_SIZE</spirit:name>
@@ -4160,7 +4160,7 @@
     <spirit:parameter>
       <spirit:name>SEG002_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG002_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG002_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000010000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG002_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000010010</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG002_SUPPORTS_READ</spirit:name>
@@ -4185,7 +4185,7 @@
     <spirit:parameter>
       <spirit:name>SEG003_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG003_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG003_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E00000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG003_BASE_ADDR" spirit:bitStringLength="64">0x0000000041DE0000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG003_SIZE</spirit:name>
@@ -4195,7 +4195,7 @@
     <spirit:parameter>
       <spirit:name>SEG003_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG003_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG003_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG003_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000010001</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG003_SUPPORTS_READ</spirit:name>
@@ -4220,7 +4220,7 @@
     <spirit:parameter>
       <spirit:name>SEG004_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG004_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG004_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E10000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG004_BASE_ADDR" spirit:bitStringLength="64">0x0000000041DF0000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG004_SIZE</spirit:name>
@@ -4230,7 +4230,7 @@
     <spirit:parameter>
       <spirit:name>SEG004_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG004_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG004_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000001</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG004_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000010000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG004_SUPPORTS_READ</spirit:name>
@@ -4255,7 +4255,7 @@
     <spirit:parameter>
       <spirit:name>SEG005_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG005_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG005_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E20000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG005_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E00000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG005_SIZE</spirit:name>
@@ -4265,7 +4265,7 @@
     <spirit:parameter>
       <spirit:name>SEG005_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG005_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG005_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000010</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG005_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG005_SUPPORTS_READ</spirit:name>
@@ -4290,7 +4290,7 @@
     <spirit:parameter>
       <spirit:name>SEG006_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG006_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG006_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E30000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG006_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E10000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG006_SIZE</spirit:name>
@@ -4300,7 +4300,7 @@
     <spirit:parameter>
       <spirit:name>SEG006_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG006_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG006_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000011</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG006_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000001</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG006_SUPPORTS_READ</spirit:name>
@@ -4325,7 +4325,7 @@
     <spirit:parameter>
       <spirit:name>SEG007_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG007_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG007_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E40000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG007_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E20000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG007_SIZE</spirit:name>
@@ -4335,7 +4335,7 @@
     <spirit:parameter>
       <spirit:name>SEG007_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG007_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG007_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000100</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG007_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000010</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG007_SUPPORTS_READ</spirit:name>
@@ -4360,7 +4360,7 @@
     <spirit:parameter>
       <spirit:name>SEG008_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG008_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG008_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E50000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG008_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E30000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG008_SIZE</spirit:name>
@@ -4370,7 +4370,7 @@
     <spirit:parameter>
       <spirit:name>SEG008_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG008_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG008_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000101</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG008_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000011</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG008_SUPPORTS_READ</spirit:name>
@@ -4395,7 +4395,7 @@
     <spirit:parameter>
       <spirit:name>SEG009_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG009_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG009_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E60000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG009_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E40000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG009_SIZE</spirit:name>
@@ -4405,7 +4405,7 @@
     <spirit:parameter>
       <spirit:name>SEG009_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG009_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG009_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000110</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG009_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000100</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG009_SUPPORTS_READ</spirit:name>
@@ -4430,7 +4430,7 @@
     <spirit:parameter>
       <spirit:name>SEG010_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG010_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG010_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E70000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG010_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E50000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG010_SIZE</spirit:name>
@@ -4440,7 +4440,7 @@
     <spirit:parameter>
       <spirit:name>SEG010_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG010_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG010_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000111</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG010_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000101</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG010_SUPPORTS_READ</spirit:name>
@@ -4465,7 +4465,7 @@
     <spirit:parameter>
       <spirit:name>SEG011_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG011_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG011_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E80000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG011_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E60000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG011_SIZE</spirit:name>
@@ -4475,7 +4475,7 @@
     <spirit:parameter>
       <spirit:name>SEG011_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG011_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG011_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000001000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG011_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000110</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG011_SUPPORTS_READ</spirit:name>
@@ -4500,7 +4500,7 @@
     <spirit:parameter>
       <spirit:name>SEG012_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG012_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG012_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E90000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG012_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E70000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG012_SIZE</spirit:name>
@@ -4510,7 +4510,7 @@
     <spirit:parameter>
       <spirit:name>SEG012_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG012_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG012_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000001001</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG012_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000000111</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG012_SUPPORTS_READ</spirit:name>
@@ -4535,7 +4535,7 @@
     <spirit:parameter>
       <spirit:name>SEG013_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG013_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG013_BASE_ADDR" spirit:bitStringLength="64">0x0000000041EA0000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG013_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E80000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG013_SIZE</spirit:name>
@@ -4545,7 +4545,7 @@
     <spirit:parameter>
       <spirit:name>SEG013_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG013_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG013_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000001010</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG013_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000001000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG013_SUPPORTS_READ</spirit:name>
@@ -4570,7 +4570,7 @@
     <spirit:parameter>
       <spirit:name>SEG014_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG014_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG014_BASE_ADDR" spirit:bitStringLength="64">0x0000000041EB0000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG014_BASE_ADDR" spirit:bitStringLength="64">0x0000000041E90000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG014_SIZE</spirit:name>
@@ -4580,7 +4580,7 @@
     <spirit:parameter>
       <spirit:name>SEG014_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG014_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG014_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000001011</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG014_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000001001</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG014_SUPPORTS_READ</spirit:name>
@@ -4605,7 +4605,7 @@
     <spirit:parameter>
       <spirit:name>SEG015_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG015_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG015_BASE_ADDR" spirit:bitStringLength="64">0x0000000041EC0000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG015_BASE_ADDR" spirit:bitStringLength="64">0x0000000041EA0000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG015_SIZE</spirit:name>
@@ -4615,7 +4615,7 @@
     <spirit:parameter>
       <spirit:name>SEG015_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG015_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG015_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000001100</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG015_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000001010</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG015_SUPPORTS_READ</spirit:name>
@@ -4640,7 +4640,7 @@
     <spirit:parameter>
       <spirit:name>SEG016_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG016_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG016_BASE_ADDR" spirit:bitStringLength="64">0x0000000041ED0000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG016_BASE_ADDR" spirit:bitStringLength="64">0x0000000041EB0000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG016_SIZE</spirit:name>
@@ -4650,7 +4650,7 @@
     <spirit:parameter>
       <spirit:name>SEG016_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG016_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG016_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000001101</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG016_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000001011</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG016_SUPPORTS_READ</spirit:name>
@@ -4675,17 +4675,17 @@
     <spirit:parameter>
       <spirit:name>SEG017_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG017_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG017_BASE_ADDR" spirit:bitStringLength="64">0x0000000001100000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG017_BASE_ADDR" spirit:bitStringLength="64">0x0000000041EC0000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG017_SIZE</spirit:name>
       <spirit:displayName>SEG017_SIZE</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG017_SIZE">12</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG017_SIZE">16</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG017_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG017_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG017_SEP_ROUTE" spirit:bitStringLength="64">0x0000000000000000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG017_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000001100</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG017_SUPPORTS_READ</spirit:name>
@@ -4710,17 +4710,17 @@
     <spirit:parameter>
       <spirit:name>SEG018_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG018_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG018_BASE_ADDR" spirit:bitStringLength="64">0x0000000001200000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG018_BASE_ADDR" spirit:bitStringLength="64">0x0000000041ED0000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG018_SIZE</spirit:name>
       <spirit:displayName>SEG018_SIZE</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG018_SIZE">12</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG018_SIZE">16</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG018_SEP_ROUTE</spirit:name>
       <spirit:displayName>SEG018_SEP_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG018_SEP_ROUTE" spirit:bitStringLength="64">0x0000000000000000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG018_SEP_ROUTE" spirit:bitStringLength="64">0b0000000000000000000000000000000000000000000000000000000000001101</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG018_SUPPORTS_READ</spirit:name>
@@ -13065,72 +13065,72 @@
     <spirit:parameter>
       <spirit:name>MSC005_ROUTE</spirit:name>
       <spirit:displayName>MSC005_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC005_ROUTE" spirit:bitStringLength="12">0b100100000100</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC005_ROUTE" spirit:bitStringLength="12">0b110000000010</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC006_ROUTE</spirit:name>
       <spirit:displayName>MSC006_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC006_ROUTE" spirit:bitStringLength="12">0b101000000100</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC006_ROUTE" spirit:bitStringLength="12">0b100100000100</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC007_ROUTE</spirit:name>
       <spirit:displayName>MSC007_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC007_ROUTE" spirit:bitStringLength="12">0b100100001000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC007_ROUTE" spirit:bitStringLength="12">0b101000000100</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC008_ROUTE</spirit:name>
       <spirit:displayName>MSC008_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC008_ROUTE" spirit:bitStringLength="12">0b101000001000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC008_ROUTE" spirit:bitStringLength="12">0b110000000100</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC009_ROUTE</spirit:name>
       <spirit:displayName>MSC009_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC009_ROUTE" spirit:bitStringLength="12">0b100100010000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC009_ROUTE" spirit:bitStringLength="12">0b100100001000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC010_ROUTE</spirit:name>
       <spirit:displayName>MSC010_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC010_ROUTE" spirit:bitStringLength="12">0b101000010000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC010_ROUTE" spirit:bitStringLength="12">0b101000001000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC011_ROUTE</spirit:name>
       <spirit:displayName>MSC011_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC011_ROUTE" spirit:bitStringLength="12">0b100100100000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC011_ROUTE" spirit:bitStringLength="12">0b100100010000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC012_ROUTE</spirit:name>
       <spirit:displayName>MSC012_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC012_ROUTE" spirit:bitStringLength="12">0b101000100000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC012_ROUTE" spirit:bitStringLength="12">0b101000010000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC013_ROUTE</spirit:name>
       <spirit:displayName>MSC013_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC013_ROUTE" spirit:bitStringLength="12">0b100101000000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC013_ROUTE" spirit:bitStringLength="12">0b100100100000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC014_ROUTE</spirit:name>
       <spirit:displayName>MSC014_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC014_ROUTE" spirit:bitStringLength="12">0b101001000000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC014_ROUTE" spirit:bitStringLength="12">0b101000100000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC015_ROUTE</spirit:name>
       <spirit:displayName>MSC015_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC015_ROUTE" spirit:bitStringLength="12">0b100110000000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC015_ROUTE" spirit:bitStringLength="12">0b100101000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC016_ROUTE</spirit:name>
       <spirit:displayName>MSC016_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC016_ROUTE" spirit:bitStringLength="12">0b101010000000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC016_ROUTE" spirit:bitStringLength="12">0b101001000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC017_ROUTE</spirit:name>
       <spirit:displayName>MSC017_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC017_ROUTE" spirit:bitStringLength="12">000000000001</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC017_ROUTE" spirit:bitStringLength="12">0b100110000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC018_ROUTE</spirit:name>
       <spirit:displayName>MSC018_ROUTE</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC018_ROUTE" spirit:bitStringLength="12">000000000001</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC018_ROUTE" spirit:bitStringLength="12">0b101010000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC019_ROUTE</spirit:name>
@@ -14387,7 +14387,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.HAS_RRESP" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.HAS_WSTRB" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.ID_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.MAX_BURST_LENGTH" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.MAX_BURST_LENGTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.NUM_READ_THREADS" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
@@ -14421,6 +14421,8 @@
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.MSC014_ROUTE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.MSC015_ROUTE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.MSC016_ROUTE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.MSC017_ROUTE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.MSC018_ROUTE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.MSC_ROUTE_WIDTH" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.NUM_MSC" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.NUM_READ_OUTSTANDING" xilinx:valueSource="user"/>
@@ -14547,6 +14549,20 @@
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG016_SIZE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG016_SUPPORTS_READ" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG016_SUPPORTS_WRITE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG017_BASE_ADDR" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG017_SECURE_READ" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG017_SECURE_WRITE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG017_SEP_ROUTE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG017_SIZE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG017_SUPPORTS_READ" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG017_SUPPORTS_WRITE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG018_BASE_ADDR" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG018_SECURE_READ" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG018_SECURE_WRITE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG018_SEP_ROUTE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG018_SIZE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG018_SUPPORTS_READ" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SEG018_SUPPORTS_WRITE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SINGLE_ISSUING" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SUPPORTS_NARROW" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S_ARUSER_WIDTH" xilinx:valueSource="user"/>

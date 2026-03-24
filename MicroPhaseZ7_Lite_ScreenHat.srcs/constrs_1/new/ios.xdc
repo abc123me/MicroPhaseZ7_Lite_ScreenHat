@@ -31,10 +31,6 @@ set_property -dict {PACKAGE_PIN H20 IOSTANDARD LVCMOS33} [get_ports ETH_MII_rst_
 set_property -dict {PACKAGE_PIN J15 IOSTANDARD LVCMOS33} [get_ports ETH_MDIO_mdio_io]
 set_property -dict {PACKAGE_PIN G14 IOSTANDARD LVCMOS33} [get_ports ETH_MDIO_mdc]
 
-# Stupid unused IO lines
-###################################################################
-set_property -dict {PACKAGE_PIN J19 IOSTANDARD LVCMOS33} [get_ports SPI_595_io1_io]
-
 # ILI9341 Display SDA lines
 ###################################################################
 set_property -dict {PACKAGE_PIN N17 IOSTANDARD LVCMOS33} [get_ports ILI_0_sda_o]
@@ -103,26 +99,13 @@ set_property -dict {PACKAGE_PIN A20 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o
 set_property -dict {PACKAGE_PIN E19 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[12]]
 set_property -dict {PACKAGE_PIN F17 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[13]]
 
-# 74HC595 shift register driver
+# 74HC595 shift register drivers
 ###################################################################
 set_property -dict {PACKAGE_PIN G15 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[14]]
-set_property -dict {PACKAGE_PIN H15 IOSTANDARD LVCMOS33} [get_ports SPI_595_ss_io[0]]
-set_property -dict {PACKAGE_PIN L17 IOSTANDARD LVCMOS33} [get_ports SPI_595_io0_io]
-set_property -dict {PACKAGE_PIN L16 IOSTANDARD LVCMOS33} [get_ports SPI_595_sck_io]
-
-# Fix some BS warnings
-###################################################################
-set_property IOB FALSE [get_ports axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
-set_property IOB FALSE [get_ports axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
-set_property IOB FALSE [get_ports axi_quad_spi_2/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
-set_property IOB FALSE [get_ports axi_quad_spi_3/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
-set_property IOB FALSE [get_ports axi_quad_spi_4/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
-set_property IOB FALSE [get_ports axi_quad_spi_5/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
-set_property IOB FALSE [get_ports axi_quad_spi_6/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
-set_property IOB FALSE [get_ports axi_quad_spi_7/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
-set_property IOB FALSE [get_ports axi_quad_spi_8/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
-set_property IOB FALSE [get_ports axi_quad_spi_9/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
-set_property IOB FALSE [get_ports axi_quad_spi_10/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
-set_property IOB FALSE [get_ports axi_quad_spi_11/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
-set_property IOB FALSE [get_ports axi_quad_spi_12/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
-set_property IOB FALSE [get_ports axi_quad_spi_13/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG]
+set_property -dict {PACKAGE_PIN H15 IOSTANDARD LVCMOS33} [get_ports SPI_595_0_ss_o]
+set_property -dict {PACKAGE_PIN L16 IOSTANDARD LVCMOS33} [get_ports SPI_595_0_sck_o]
+set_property -dict {PACKAGE_PIN L17 IOSTANDARD LVCMOS33} [get_ports SPI_595_0_sda_o]
+set_property -dict {PACKAGE_PIN U15 IOSTANDARD LVCMOS33} [get_ports GPIO_0_tri_o[15]]
+set_property -dict {PACKAGE_PIN U14 IOSTANDARD LVCMOS33} [get_ports SPI_595_1_ss_o]
+set_property -dict {PACKAGE_PIN P14 IOSTANDARD LVCMOS33} [get_ports SPI_595_1_sck_o]
+set_property -dict {PACKAGE_PIN R14 IOSTANDARD LVCMOS33} [get_ports SPI_595_1_sda_o]

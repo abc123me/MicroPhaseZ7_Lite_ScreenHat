@@ -57,8 +57,10 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 8
+set_param tcl.statsThreshold 360
 set_param general.usePosixSpawnForFork 1
 set_param bd.open.in_stealth_mode 1
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
@@ -80,6 +82,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/sources_1/new/spi2ili.v
+  /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/sources_1/new/spi595.v
   /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/hdl/minimal_wrapper.v
 }
 add_files /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/sources_1/bd/minimal/minimal.bd
@@ -282,6 +285,18 @@ set_property used_in_implementation false [get_files -all /home/jeremiah/Program
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_211/bd_1c4e_m16awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_212/bd_1c4e_m16wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_213/bd_1c4e_m16bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_215/bd_1c4e_m17s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_216/bd_1c4e_m17arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_217/bd_1c4e_m17rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_218/bd_1c4e_m17awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_219/bd_1c4e_m17wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_220/bd_1c4e_m17bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_222/bd_1c4e_m18s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_223/bd_1c4e_m18arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_224/bd_1c4e_m18rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_225/bd_1c4e_m18awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_226/bd_1c4e_m18wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_227/bd_1c4e_m18bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/smartconnect.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0/minimal_rst_ps7_0_50M_0_board.xdc]
@@ -347,6 +362,13 @@ set_property used_in_implementation false [get_files -all /home/jeremiah/Program
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_quad_spi_12_0/minimal_axi_quad_spi_12_0.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_quad_spi_12_0/minimal_axi_quad_spi_12_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_quad_spi_12_0/minimal_axi_quad_spi_12_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_quad_spi_595_0_0/minimal_axi_quad_spi_595_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_quad_spi_595_0_0/minimal_axi_quad_spi_595_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_quad_spi_595_0_0/minimal_axi_quad_spi_595_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_quad_spi_595_0_0/minimal_axi_quad_spi_595_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_intc_0_0/minimal_axi_intc_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_intc_0_0/minimal_axi_intc_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_intc_0_0/minimal_axi_intc_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/minimal_ooc.xdc]
 
 OPTRACE "Adding files" END { }

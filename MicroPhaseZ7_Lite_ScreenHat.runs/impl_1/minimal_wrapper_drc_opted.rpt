@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Sat Mar 21 03:08:54 2026
+| Date         : Tue Mar 24 00:36:39 2026
 | Host         : npc running 64-bit Arch Linux
 | Command      : report_drc -file minimal_wrapper_drc_opted.rpt -pb minimal_wrapper_drc_opted.pb -rpx minimal_wrapper_drc_opted.rpx
 | Design       : minimal_wrapper
@@ -24,13 +24,13 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 29
+             Checks found: 37
 +-----------+----------+------------------------------------------------+--------+
 | Rule      | Severity | Description                                    | Checks |
 +-----------+----------+------------------------------------------------+--------+
 | PLCK-12   | Warning  | Clock Placer Checks                            | 1      |
-| PLIO-6    | Warning  | Placement Constraints Check for IO constraints | 14     |
-| REQP-1617 | Warning  | use_IOB_register                               | 14     |
+| PLIO-6    | Warning  | Placement Constraints Check for IO constraints | 18     |
+| REQP-1617 | Warning  | use_IOB_register                               | 18     |
 +-----------+----------+------------------------------------------------+--------+
 
 2. REPORT DETAILS
@@ -98,20 +98,40 @@ Related violations: <none>
 
 PLIO-6#11 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_6/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_595_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 PLIO-6#12 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_7/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_595_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 PLIO-6#13 Warning
 Placement Constraints Check for IO constraints  
-Invalid constraint on register minimal_i/axi_quad_spi_8/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Invalid constraint on register minimal_i/axi_quad_spi_595_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
 
 PLIO-6#14 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register minimal_i/axi_quad_spi_595_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#15 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register minimal_i/axi_quad_spi_6/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#16 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register minimal_i/axi_quad_spi_7/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#17 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register minimal_i/axi_quad_spi_8/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#18 Warning
 Placement Constraints Check for IO constraints  
 Invalid constraint on register minimal_i/axi_quad_spi_9/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
 Related violations: <none>
@@ -168,20 +188,40 @@ Related violations: <none>
 
 REQP-1617#11 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_6/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_595_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 REQP-1617#12 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_7/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_595_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 REQP-1617#13 Warning
 use_IOB_register  
-The FDRE cell minimal_i/axi_quad_spi_8/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+The FDRE cell minimal_i/axi_quad_spi_595_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>
 
 REQP-1617#14 Warning
+use_IOB_register  
+The FDRE cell minimal_i/axi_quad_spi_595_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#15 Warning
+use_IOB_register  
+The FDRE cell minimal_i/axi_quad_spi_6/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#16 Warning
+use_IOB_register  
+The FDRE cell minimal_i/axi_quad_spi_7/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#17 Warning
+use_IOB_register  
+The FDRE cell minimal_i/axi_quad_spi_8/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+REQP-1617#18 Warning
 use_IOB_register  
 The FDRE cell minimal_i/axi_quad_spi_9/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
 Related violations: <none>

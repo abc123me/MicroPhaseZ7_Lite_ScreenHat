@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Sat Mar 21 02:54:01 2026
+//Date        : Tue Mar 24 00:33:31 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal_wrapper.bd
 //Design      : minimal_wrapper
@@ -90,10 +90,12 @@ module minimal_wrapper
     PL_CLK_50M,
     PL_LED_1,
     PL_LED_2,
-    SPI_595_io0_io,
-    SPI_595_io1_io,
-    SPI_595_sck_io,
-    SPI_595_ss_io);
+    SPI_595_0_sck_o,
+    SPI_595_0_sda_o,
+    SPI_595_0_ss_o,
+    SPI_595_1_sck_o,
+    SPI_595_1_sda_o,
+    SPI_595_1_ss_o);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -127,7 +129,7 @@ module minimal_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  output [13:0]GPIO_0_tri_o;
+  output [15:0]GPIO_0_tri_o;
   output ILI_0_sck_o;
   output ILI_0_sda_o;
   output ILI_0_ss_o;
@@ -173,10 +175,12 @@ module minimal_wrapper
   input PL_CLK_50M;
   output [0:0]PL_LED_1;
   output [0:0]PL_LED_2;
-  inout SPI_595_io0_io;
-  inout SPI_595_io1_io;
-  inout SPI_595_sck_io;
-  inout [0:0]SPI_595_ss_io;
+  output SPI_595_0_sck_o;
+  output SPI_595_0_sda_o;
+  output SPI_595_0_ss_o;
+  output SPI_595_1_sck_o;
+  output SPI_595_1_sda_o;
+  output SPI_595_1_ss_o;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -214,7 +218,7 @@ module minimal_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire [13:0]GPIO_0_tri_o;
+  wire [15:0]GPIO_0_tri_o;
   wire ILI_0_sck_o;
   wire ILI_0_sda_o;
   wire ILI_0_ss_o;
@@ -260,48 +264,18 @@ module minimal_wrapper
   wire PL_CLK_50M;
   wire [0:0]PL_LED_1;
   wire [0:0]PL_LED_2;
-  wire SPI_595_io0_i;
-  wire SPI_595_io0_io;
-  wire SPI_595_io0_o;
-  wire SPI_595_io0_t;
-  wire SPI_595_io1_i;
-  wire SPI_595_io1_io;
-  wire SPI_595_io1_o;
-  wire SPI_595_io1_t;
-  wire SPI_595_sck_i;
-  wire SPI_595_sck_io;
-  wire SPI_595_sck_o;
-  wire SPI_595_sck_t;
-  wire [0:0]SPI_595_ss_i_0;
-  wire [0:0]SPI_595_ss_io_0;
-  wire [0:0]SPI_595_ss_o_0;
-  wire SPI_595_ss_t;
+  wire SPI_595_0_sck_o;
+  wire SPI_595_0_sda_o;
+  wire SPI_595_0_ss_o;
+  wire SPI_595_1_sck_o;
+  wire SPI_595_1_sda_o;
+  wire SPI_595_1_ss_o;
 
   IOBUF ETH_MDIO_mdio_iobuf
        (.I(ETH_MDIO_mdio_o),
         .IO(ETH_MDIO_mdio_io),
         .O(ETH_MDIO_mdio_i),
         .T(ETH_MDIO_mdio_t));
-  IOBUF SPI_595_io0_iobuf
-       (.I(SPI_595_io0_o),
-        .IO(SPI_595_io0_io),
-        .O(SPI_595_io0_i),
-        .T(SPI_595_io0_t));
-  IOBUF SPI_595_io1_iobuf
-       (.I(SPI_595_io1_o),
-        .IO(SPI_595_io1_io),
-        .O(SPI_595_io1_i),
-        .T(SPI_595_io1_t));
-  IOBUF SPI_595_sck_iobuf
-       (.I(SPI_595_sck_o),
-        .IO(SPI_595_sck_io),
-        .O(SPI_595_sck_i),
-        .T(SPI_595_sck_t));
-  IOBUF SPI_595_ss_iobuf_0
-       (.I(SPI_595_ss_o_0),
-        .IO(SPI_595_ss_io[0]),
-        .O(SPI_595_ss_i_0),
-        .T(SPI_595_ss_t));
   minimal minimal_i
        (.DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
@@ -384,16 +358,10 @@ module minimal_wrapper
         .PL_CLK_50M(PL_CLK_50M),
         .PL_LED_1(PL_LED_1),
         .PL_LED_2(PL_LED_2),
-        .SPI_595_io0_i(SPI_595_io0_i),
-        .SPI_595_io0_o(SPI_595_io0_o),
-        .SPI_595_io0_t(SPI_595_io0_t),
-        .SPI_595_io1_i(SPI_595_io1_i),
-        .SPI_595_io1_o(SPI_595_io1_o),
-        .SPI_595_io1_t(SPI_595_io1_t),
-        .SPI_595_sck_i(SPI_595_sck_i),
-        .SPI_595_sck_o(SPI_595_sck_o),
-        .SPI_595_sck_t(SPI_595_sck_t),
-        .SPI_595_ss_i(SPI_595_ss_i_0),
-        .SPI_595_ss_o(SPI_595_ss_o_0),
-        .SPI_595_ss_t(SPI_595_ss_t));
+        .SPI_595_0_sck_o(SPI_595_0_sck_o),
+        .SPI_595_0_sda_o(SPI_595_0_sda_o),
+        .SPI_595_0_ss_o(SPI_595_0_ss_o),
+        .SPI_595_1_sck_o(SPI_595_1_sck_o),
+        .SPI_595_1_sda_o(SPI_595_1_sda_o),
+        .SPI_595_1_ss_o(SPI_595_1_ss_o));
 endmodule
