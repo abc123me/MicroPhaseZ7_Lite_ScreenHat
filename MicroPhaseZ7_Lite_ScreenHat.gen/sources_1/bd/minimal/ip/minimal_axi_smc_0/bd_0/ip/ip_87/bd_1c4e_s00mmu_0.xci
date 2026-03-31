@@ -15,7 +15,7 @@
         "ENABLE_PIPELINING": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
         "NUM_SEG": [ { "value": "19", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "MSC_ROUTE_WIDTH": [ { "value": "12", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "NUM_MSC": [ { "value": "19", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "NUM_MSC": [ { "value": "20", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "ADDR_WIDTH": [ { "value": "32", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "ID_WIDTH": [ { "value": "12", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "RDATA_WIDTH": [ { "value": "32", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -1837,15 +1837,15 @@
         "MSC008_ROUTE": [ { "value": "0b110000000100", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
         "MSC009_ROUTE": [ { "value": "0b100100001000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
         "MSC010_ROUTE": [ { "value": "0b101000001000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
-        "MSC011_ROUTE": [ { "value": "0b100100010000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
-        "MSC012_ROUTE": [ { "value": "0b101000010000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
-        "MSC013_ROUTE": [ { "value": "0b100100100000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
-        "MSC014_ROUTE": [ { "value": "0b101000100000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
-        "MSC015_ROUTE": [ { "value": "0b100101000000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
-        "MSC016_ROUTE": [ { "value": "0b101001000000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
-        "MSC017_ROUTE": [ { "value": "0b100110000000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
-        "MSC018_ROUTE": [ { "value": "0b101010000000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
-        "MSC019_ROUTE": [ { "value": "000000000001", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "MSC011_ROUTE": [ { "value": "0b110000001000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "MSC012_ROUTE": [ { "value": "0b100100010000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "MSC013_ROUTE": [ { "value": "0b101000010000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "MSC014_ROUTE": [ { "value": "0b100100100000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "MSC015_ROUTE": [ { "value": "0b101000100000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "MSC016_ROUTE": [ { "value": "0b100101000000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "MSC017_ROUTE": [ { "value": "0b101001000000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "MSC018_ROUTE": [ { "value": "0b100110000000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "MSC019_ROUTE": [ { "value": "0b101010000000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
         "MSC020_ROUTE": [ { "value": "000000000001", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
         "MSC021_ROUTE": [ { "value": "000000000001", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
         "MSC022_ROUTE": [ { "value": "000000000001", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
@@ -2096,9 +2096,9 @@
         "C_SEG_SUPPORTS_WRITE_ARRAY": [ { "value": "0b1111111111111111111", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_SEG_SECURE_READ_ARRAY": [ { "value": "0b0000000000000000000", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_SEG_SECURE_WRITE_ARRAY": [ { "value": "0b0000000000000000000", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
-        "C_NUM_MSC": [ { "value": "19", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_NUM_MSC": [ { "value": "20", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_MSC_ROUTE_WIDTH": [ { "value": "12", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_MSC_ROUTE_ARRAY": [ { "value": "0b101010000000100110000000101001000000100101000000101000100000100100100000101000010000100100010000101000001000100100001000110000000100101000000100100100000100110000000010101000000010100100000010110000000001101000000001100100000001", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "C_MSC_ROUTE_ARRAY": [ { "value": "0b101010000000100110000000101001000000100101000000101000100000100100100000101000010000100100010000110000001000101000001000100100001000110000000100101000000100100100000100110000000010101000000010100100000010110000000001101000000001100100000001", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_ADDR_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_ID_WIDTH": [ { "value": "12", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_RDATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -2244,7 +2244,7 @@
           "parameters": {
             "DATA_WIDTH": [ { "value": "32", "value_src": "auto_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PROTOCOL": [ { "value": "AXI3", "value_src": "auto_prop", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "FREQ_HZ": [ { "value": "100000000", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_HZ": [ { "value": "200000000", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "ID_WIDTH": [ { "value": "12", "value_src": "auto_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "ADDR_WIDTH": [ { "value": "32", "value_src": "auto_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "AWUSER_WIDTH": [ { "value": "0", "value_src": "constant_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
@@ -2265,7 +2265,7 @@
             "SUPPORTS_NARROW_BURST": [ { "value": "0", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "NUM_READ_OUTSTANDING": [ { "value": "8", "value_src": "user", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "NUM_WRITE_OUTSTANDING": [ { "value": "8", "value_src": "user", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "MAX_BURST_LENGTH": [ { "value": "16", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "MAX_BURST_LENGTH": [ { "value": "16", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "minimal_processing_system7_0_0_FCLK_CLK0", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "NUM_READ_THREADS": [ { "value": "4", "value_src": "constant_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
@@ -2322,7 +2322,7 @@
           "parameters": {
             "DATA_WIDTH": [ { "value": "32", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PROTOCOL": [ { "value": "AXI4", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "FREQ_HZ": [ { "value": "100000000", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_HZ": [ { "value": "200000000", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "ID_WIDTH": [ { "value": "12", "value_src": "propagated", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "ADDR_WIDTH": [ { "value": "32", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "AWUSER_WIDTH": [ { "value": "1024", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
@@ -2404,12 +2404,13 @@
           "parameters": {
             "ASSOCIATED_BUSIF": [ { "value": "S_AXI:M_AXI", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
             "ASSOCIATED_RESET": [ { "value": "aresetn", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
-            "FREQ_HZ": [ { "value": "100000000", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "user", "format": "long", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "200000000", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "user", "format": "long", "usage": "all" } ],
             "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "minimal_processing_system7_0_0_FCLK_CLK0", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "ASSOCIATED_PORT": [ { "value": "", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ],
+            "PortWidth": [ { "value": "1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
           },
           "port_maps": {
             "CLK": [ { "physical_name": "aclk" } ]
@@ -2431,5 +2432,5 @@
       }
     }
   },
-  "checksum": "4c0c4758"
+  "checksum": "ab2f1678"
 }

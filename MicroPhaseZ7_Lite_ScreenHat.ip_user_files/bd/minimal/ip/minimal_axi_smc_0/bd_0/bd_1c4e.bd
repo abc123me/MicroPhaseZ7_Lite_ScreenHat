@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x85828DB76E450194",
+      "boundary_crc": "0x56366D251AF74184",
       "design_src": "SBD",
       "device": "xc7z010clg400-1",
       "name": "bd_1c4e",
@@ -389,7 +389,7 @@
             "value_src": "auto_prop"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -438,7 +438,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "16",
-            "value_src": "default"
+            "value_src": "default_prop"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -536,7 +536,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -668,7 +668,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -800,7 +800,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -932,7 +932,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1064,7 +1064,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1196,7 +1196,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1328,7 +1328,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1460,7 +1460,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1592,7 +1592,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1724,7 +1724,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1856,7 +1856,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -1988,7 +1988,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -2120,7 +2120,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -2252,7 +2252,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -2384,7 +2384,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -2516,7 +2516,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -2648,7 +2648,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -2780,7 +2780,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -2912,7 +2912,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -3013,6 +3013,138 @@
             "value_src": "default"
           }
         }
+      },
+      "M19_AXI": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "4",
+            "value_src": "default"
+          },
+          "ARUSER_WIDTH": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "AWUSER_WIDTH": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "BUSER_WIDTH": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "minimal_processing_system7_0_0_FCLK_CLK0",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "200000000",
+            "value_src": "user_prop"
+          },
+          "HAS_BRESP": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "HAS_BURST": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "HAS_CACHE": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "HAS_LOCK": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "HAS_PROT": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "HAS_QOS": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "HAS_REGION": {
+            "value": "0",
+            "value_src": "constant"
+          },
+          "HAS_RRESP": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "HAS_WSTRB": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "ID_WIDTH": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "MAX_BURST_LENGTH": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "NUM_READ_OUTSTANDING": {
+            "value": "8"
+          },
+          "NUM_READ_THREADS": {
+            "value": "1"
+          },
+          "NUM_WRITE_OUTSTANDING": {
+            "value": "8"
+          },
+          "NUM_WRITE_THREADS": {
+            "value": "1"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "PROTOCOL": {
+            "value": "AXI4LITE",
+            "value_src": "default"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE",
+            "value_src": "default"
+          },
+          "RUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "RUSER_WIDTH": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "SUPPORTS_NARROW_BURST": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "WUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "WUSER_WIDTH": {
+            "value": "0",
+            "value_src": "default"
+          }
+        },
+        "memory_map_ref": "M19_AXI",
+        "hdl_attributes": {
+          "LOCKED": {
+            "value": "FALSE",
+            "value_src": "default"
+          }
+        }
       }
     },
     "ports": {
@@ -3021,7 +3153,7 @@
         "direction": "I",
         "parameters": {
           "ASSOCIATED_BUSIF": {
-            "value": "M00_AXI:M01_AXI:M02_AXI:M03_AXI:M04_AXI:M05_AXI:M06_AXI:M07_AXI:M08_AXI:M09_AXI:M10_AXI:M11_AXI:M12_AXI:M13_AXI:M14_AXI:M15_AXI:M16_AXI:M17_AXI:M18_AXI:S00_AXI"
+            "value": "M00_AXI:M01_AXI:M02_AXI:M03_AXI:M04_AXI:M05_AXI:M06_AXI:M07_AXI:M08_AXI:M09_AXI:M10_AXI:M11_AXI:M12_AXI:M13_AXI:M14_AXI:M15_AXI:M16_AXI:M17_AXI:M18_AXI:M19_AXI:S00_AXI"
           },
           "ASSOCIATED_CLKEN": {
             "value": "s_sc_aclken",
@@ -3032,7 +3164,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "200000000",
             "value_src": "user_prop"
           },
           "FREQ_TOLERANCE_HZ": {
@@ -3046,6 +3178,10 @@
           "PHASE": {
             "value": "0.0",
             "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
           }
         }
       },
@@ -3266,6 +3402,16 @@
             "left": "0",
             "right": "0"
           },
+          "M19_ACLK": {
+            "type": "clk",
+            "direction": "O"
+          },
+          "M19_ARESETN": {
+            "type": "rst",
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
           "swbd_aclk": {
             "type": "clk",
             "direction": "O"
@@ -3334,6 +3480,7 @@
               "M16_ACLK",
               "M17_ACLK",
               "M18_ACLK",
+              "M19_ACLK",
               "swbd_aclk",
               "psr_aclk/slowest_sync_clk"
             ]
@@ -3373,6 +3520,7 @@
               "M16_ARESETN",
               "M17_ARESETN",
               "M18_ARESETN",
+              "M19_ARESETN",
               "swbd_aresetn"
             ]
           }
@@ -3996,6 +4144,39 @@
               }
             }
           },
+          "M11_SC_AR": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
+            "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+            "hdl_attributes": {
+              "LOCKED": {
+                "value": "FALSE",
+                "value_src": "default"
+              }
+            }
+          },
+          "M11_SC_AW": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
+            "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+            "hdl_attributes": {
+              "LOCKED": {
+                "value": "FALSE",
+                "value_src": "default"
+              }
+            }
+          },
+          "M11_SC_W": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
+            "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+            "hdl_attributes": {
+              "LOCKED": {
+                "value": "FALSE",
+                "value_src": "default"
+              }
+            }
+          },
           "S09_SC_B": {
             "mode": "Slave",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
@@ -4040,8 +4221,8 @@
               }
             }
           },
-          "M11_SC_AR": {
-            "mode": "Master",
+          "S11_SC_B": {
+            "mode": "Slave",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4051,19 +4232,8 @@
               }
             }
           },
-          "M11_SC_AW": {
-            "mode": "Master",
-            "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
-            "vlnv": "xilinx.com:interface:sc_rtl:1.0",
-            "hdl_attributes": {
-              "LOCKED": {
-                "value": "FALSE",
-                "value_src": "default"
-              }
-            }
-          },
-          "M11_SC_W": {
-            "mode": "Master",
+          "S11_SC_R": {
+            "mode": "Slave",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4106,8 +4276,8 @@
               }
             }
           },
-          "S11_SC_B": {
-            "mode": "Slave",
+          "M13_SC_AR": {
+            "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4117,8 +4287,19 @@
               }
             }
           },
-          "S11_SC_R": {
-            "mode": "Slave",
+          "M13_SC_AW": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
+            "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+            "hdl_attributes": {
+              "LOCKED": {
+                "value": "FALSE",
+                "value_src": "default"
+              }
+            }
+          },
+          "M13_SC_W": {
+            "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4150,8 +4331,8 @@
               }
             }
           },
-          "M13_SC_AR": {
-            "mode": "Master",
+          "S13_SC_B": {
+            "mode": "Slave",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4161,19 +4342,8 @@
               }
             }
           },
-          "M13_SC_AW": {
-            "mode": "Master",
-            "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
-            "vlnv": "xilinx.com:interface:sc_rtl:1.0",
-            "hdl_attributes": {
-              "LOCKED": {
-                "value": "FALSE",
-                "value_src": "default"
-              }
-            }
-          },
-          "M13_SC_W": {
-            "mode": "Master",
+          "S13_SC_R": {
+            "mode": "Slave",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4216,8 +4386,8 @@
               }
             }
           },
-          "S13_SC_B": {
-            "mode": "Slave",
+          "M15_SC_AR": {
+            "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4227,8 +4397,19 @@
               }
             }
           },
-          "S13_SC_R": {
-            "mode": "Slave",
+          "M15_SC_AW": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
+            "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+            "hdl_attributes": {
+              "LOCKED": {
+                "value": "FALSE",
+                "value_src": "default"
+              }
+            }
+          },
+          "M15_SC_W": {
+            "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4260,8 +4441,8 @@
               }
             }
           },
-          "M15_SC_AR": {
-            "mode": "Master",
+          "S15_SC_B": {
+            "mode": "Slave",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4271,19 +4452,8 @@
               }
             }
           },
-          "M15_SC_AW": {
-            "mode": "Master",
-            "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
-            "vlnv": "xilinx.com:interface:sc_rtl:1.0",
-            "hdl_attributes": {
-              "LOCKED": {
-                "value": "FALSE",
-                "value_src": "default"
-              }
-            }
-          },
-          "M15_SC_W": {
-            "mode": "Master",
+          "S15_SC_R": {
+            "mode": "Slave",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4326,8 +4496,8 @@
               }
             }
           },
-          "S15_SC_B": {
-            "mode": "Slave",
+          "M17_SC_AR": {
+            "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4337,8 +4507,19 @@
               }
             }
           },
-          "S15_SC_R": {
-            "mode": "Slave",
+          "M17_SC_AW": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
+            "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+            "hdl_attributes": {
+              "LOCKED": {
+                "value": "FALSE",
+                "value_src": "default"
+              }
+            }
+          },
+          "M17_SC_W": {
+            "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4370,8 +4551,8 @@
               }
             }
           },
-          "M17_SC_AR": {
-            "mode": "Master",
+          "S17_SC_B": {
+            "mode": "Slave",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4381,19 +4562,8 @@
               }
             }
           },
-          "M17_SC_AW": {
-            "mode": "Master",
-            "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
-            "vlnv": "xilinx.com:interface:sc_rtl:1.0",
-            "hdl_attributes": {
-              "LOCKED": {
-                "value": "FALSE",
-                "value_src": "default"
-              }
-            }
-          },
-          "M17_SC_W": {
-            "mode": "Master",
+          "S17_SC_R": {
+            "mode": "Slave",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4436,8 +4606,8 @@
               }
             }
           },
-          "S17_SC_B": {
-            "mode": "Slave",
+          "M19_SC_AR": {
+            "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4447,8 +4617,19 @@
               }
             }
           },
-          "S17_SC_R": {
-            "mode": "Slave",
+          "M19_SC_AW": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
+            "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+            "hdl_attributes": {
+              "LOCKED": {
+                "value": "FALSE",
+                "value_src": "default"
+              }
+            }
+          },
+          "M19_SC_W": {
+            "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
             "hdl_attributes": {
@@ -4470,6 +4651,28 @@
             }
           },
           "S18_SC_R": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
+            "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+            "hdl_attributes": {
+              "LOCKED": {
+                "value": "FALSE",
+                "value_src": "default"
+              }
+            }
+          },
+          "S19_SC_B": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
+            "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+            "hdl_attributes": {
+              "LOCKED": {
+                "value": "FALSE",
+                "value_src": "default"
+              }
+            }
+          },
+          "S19_SC_R": {
             "mode": "Slave",
             "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
             "vlnv": "xilinx.com:interface:sc_rtl:1.0",
@@ -8739,7 +8942,7 @@
                     "value": "0"
                   },
                   "NUM_MI": {
-                    "value": "2"
+                    "value": "3"
                   },
                   "NUM_OUTSTANDING": {
                     "value": "8"
@@ -8923,7 +9126,7 @@
                     "value": "8"
                   },
                   "NUM_SI": {
-                    "value": "2"
+                    "value": "3"
                   },
                   "PAYLD_WIDTH": {
                     "value": "55"
@@ -9092,7 +9295,7 @@
                     "value": "0"
                   },
                   "NUM_MI": {
-                    "value": "2"
+                    "value": "3"
                   },
                   "NUM_OUTSTANDING": {
                     "value": "8"
@@ -9270,7 +9473,7 @@
                     "value": "0"
                   },
                   "NUM_MI": {
-                    "value": "2"
+                    "value": "3"
                   },
                   "NUM_OUTSTANDING": {
                     "value": "8"
@@ -9451,7 +9654,7 @@
                     "value": "8"
                   },
                   "NUM_SI": {
-                    "value": "2"
+                    "value": "3"
                   },
                   "PAYLD_WIDTH": {
                     "value": "9"
@@ -16311,6 +16514,17 @@
                   }
                 }
               },
+              "M02_SC_AR": {
+                "mode": "Master",
+                "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
+                "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+                "hdl_attributes": {
+                  "LOCKED": {
+                    "value": "FALSE",
+                    "value_src": "default"
+                  }
+                }
+              },
               "S00_SC_AR": {
                 "mode": "Slave",
                 "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
@@ -16355,6 +16569,17 @@
                   }
                 }
               },
+              "S02_SC_R": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
+                "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+                "hdl_attributes": {
+                  "LOCKED": {
+                    "value": "FALSE",
+                    "value_src": "default"
+                  }
+                }
+              },
               "M00_SC_AW": {
                 "mode": "Master",
                 "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
@@ -16367,6 +16592,17 @@
                 }
               },
               "M01_SC_AW": {
+                "mode": "Master",
+                "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
+                "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+                "hdl_attributes": {
+                  "LOCKED": {
+                    "value": "FALSE",
+                    "value_src": "default"
+                  }
+                }
+              },
+              "M02_SC_AW": {
                 "mode": "Master",
                 "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
                 "vlnv": "xilinx.com:interface:sc_rtl:1.0",
@@ -16400,6 +16636,17 @@
                 }
               },
               "M01_SC_W": {
+                "mode": "Master",
+                "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
+                "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+                "hdl_attributes": {
+                  "LOCKED": {
+                    "value": "FALSE",
+                    "value_src": "default"
+                  }
+                }
+              },
+              "M02_SC_W": {
                 "mode": "Master",
                 "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
                 "vlnv": "xilinx.com:interface:sc_rtl:1.0",
@@ -16453,6 +16700,17 @@
                     "value_src": "default"
                   }
                 }
+              },
+              "S02_SC_B": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:sc:1.0",
+                "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+                "hdl_attributes": {
+                  "LOCKED": {
+                    "value": "FALSE",
+                    "value_src": "default"
+                  }
+                }
               }
             },
             "ports": {
@@ -16471,7 +16729,7 @@
                 "has_run_ip_tcl": "true",
                 "parameters": {
                   "NUM_MI": {
-                    "value": "2"
+                    "value": "3"
                   },
                   "NUM_SI": {
                     "value": "1"
@@ -16484,7 +16742,7 @@
                   "S00_SC": {
                     "bd_attributes": {
                       "BRIDGES": {
-                        "value": "M00_SC:M01_SC",
+                        "value": "M00_SC:M01_SC:M02_SC",
                         "value_src": "auto"
                       },
                       "TYPE": {
@@ -16496,7 +16754,8 @@
                     "mode": "Slave",
                     "bridges": [
                       "M00_SC",
-                      "M01_SC"
+                      "M01_SC",
+                      "M02_SC"
                     ]
                   },
                   "M00_SC": {
@@ -16508,6 +16767,14 @@
                     }
                   },
                   "M01_SC": {
+                    "bd_attributes": {
+                      "TYPE": {
+                        "value": "interior",
+                        "value_src": "default"
+                      }
+                    }
+                  },
+                  "M02_SC": {
                     "bd_attributes": {
                       "TYPE": {
                         "value": "interior",
@@ -16529,7 +16796,7 @@
                     "value": "1"
                   },
                   "NUM_SI": {
-                    "value": "2"
+                    "value": "3"
                   },
                   "PAYLD_WIDTH": {
                     "value": "55"
@@ -16577,6 +16844,23 @@
                     "bridges": [
                       "M00_SC"
                     ]
+                  },
+                  "S02_SC": {
+                    "bd_attributes": {
+                      "BRIDGES": {
+                        "value": "M00_SC",
+                        "value_src": "auto"
+                      },
+                      "TYPE": {
+                        "value": "interior",
+                        "value_src": "default"
+                      }
+                    },
+                    "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+                    "mode": "Slave",
+                    "bridges": [
+                      "M00_SC"
+                    ]
                   }
                 }
               },
@@ -16589,7 +16873,7 @@
                 "has_run_ip_tcl": "true",
                 "parameters": {
                   "NUM_MI": {
-                    "value": "2"
+                    "value": "3"
                   },
                   "NUM_SI": {
                     "value": "1"
@@ -16602,7 +16886,7 @@
                   "S00_SC": {
                     "bd_attributes": {
                       "BRIDGES": {
-                        "value": "M00_SC:M01_SC",
+                        "value": "M00_SC:M01_SC:M02_SC",
                         "value_src": "auto"
                       },
                       "TYPE": {
@@ -16614,7 +16898,8 @@
                     "mode": "Slave",
                     "bridges": [
                       "M00_SC",
-                      "M01_SC"
+                      "M01_SC",
+                      "M02_SC"
                     ]
                   },
                   "M00_SC": {
@@ -16626,6 +16911,14 @@
                     }
                   },
                   "M01_SC": {
+                    "bd_attributes": {
+                      "TYPE": {
+                        "value": "interior",
+                        "value_src": "default"
+                      }
+                    }
+                  },
+                  "M02_SC": {
                     "bd_attributes": {
                       "TYPE": {
                         "value": "interior",
@@ -16644,7 +16937,7 @@
                 "has_run_ip_tcl": "true",
                 "parameters": {
                   "NUM_MI": {
-                    "value": "2"
+                    "value": "3"
                   },
                   "NUM_SI": {
                     "value": "1"
@@ -16657,7 +16950,7 @@
                   "S00_SC": {
                     "bd_attributes": {
                       "BRIDGES": {
-                        "value": "M00_SC:M01_SC",
+                        "value": "M00_SC:M01_SC:M02_SC",
                         "value_src": "auto"
                       },
                       "TYPE": {
@@ -16669,7 +16962,8 @@
                     "mode": "Slave",
                     "bridges": [
                       "M00_SC",
-                      "M01_SC"
+                      "M01_SC",
+                      "M02_SC"
                     ]
                   },
                   "M00_SC": {
@@ -16681,6 +16975,14 @@
                     }
                   },
                   "M01_SC": {
+                    "bd_attributes": {
+                      "TYPE": {
+                        "value": "interior",
+                        "value_src": "default"
+                      }
+                    }
+                  },
+                  "M02_SC": {
                     "bd_attributes": {
                       "TYPE": {
                         "value": "interior",
@@ -16702,7 +17004,7 @@
                     "value": "1"
                   },
                   "NUM_SI": {
-                    "value": "2"
+                    "value": "3"
                   },
                   "PAYLD_WIDTH": {
                     "value": "9"
@@ -16735,6 +17037,23 @@
                     }
                   },
                   "S01_SC": {
+                    "bd_attributes": {
+                      "BRIDGES": {
+                        "value": "M00_SC",
+                        "value_src": "auto"
+                      },
+                      "TYPE": {
+                        "value": "interior",
+                        "value_src": "default"
+                      }
+                    },
+                    "vlnv": "xilinx.com:interface:sc_rtl:1.0",
+                    "mode": "Slave",
+                    "bridges": [
+                      "M00_SC"
+                    ]
+                  },
+                  "S02_SC": {
                     "bd_attributes": {
                       "BRIDGES": {
                         "value": "M00_SC",
@@ -16797,6 +17116,18 @@
                   "r_la_out_swbd_3/S01_SC"
                 ]
               },
+              "S02_SC_B_1": {
+                "interface_ports": [
+                  "S02_SC_B",
+                  "b_la_out_swbd_3/S02_SC"
+                ]
+              },
+              "S02_SC_R_1": {
+                "interface_ports": [
+                  "S02_SC_R",
+                  "r_la_out_swbd_3/S02_SC"
+                ]
+              },
               "ar_la_out_swbd_3_M00_SC": {
                 "interface_ports": [
                   "M00_SC_AR",
@@ -16809,6 +17140,12 @@
                   "ar_la_out_swbd_3/M01_SC"
                 ]
               },
+              "ar_la_out_swbd_3_M02_SC": {
+                "interface_ports": [
+                  "M02_SC_AR",
+                  "ar_la_out_swbd_3/M02_SC"
+                ]
+              },
               "aw_la_out_swbd_3_M00_SC": {
                 "interface_ports": [
                   "M00_SC_AW",
@@ -16819,6 +17156,12 @@
                 "interface_ports": [
                   "M01_SC_AW",
                   "aw_la_out_swbd_3/M01_SC"
+                ]
+              },
+              "aw_la_out_swbd_3_M02_SC": {
+                "interface_ports": [
+                  "M02_SC_AW",
+                  "aw_la_out_swbd_3/M02_SC"
                 ]
               },
               "b_la_out_swbd_3_M00_SC": {
@@ -16843,6 +17186,12 @@
                 "interface_ports": [
                   "M01_SC_W",
                   "w_la_out_swbd_3/M01_SC"
+                ]
+              },
+              "w_la_out_swbd_3_M02_SC": {
+                "interface_ports": [
+                  "M02_SC_W",
+                  "w_la_out_swbd_3/M02_SC"
                 ]
               }
             },
@@ -19446,96 +19795,108 @@
           "S11_SC_B_1": {
             "interface_ports": [
               "S11_SC_B",
-              "out_swbd_4/S00_SC_B"
+              "out_swbd_3/S02_SC_B"
             ]
           },
           "S11_SC_R_1": {
             "interface_ports": [
               "S11_SC_R",
-              "out_swbd_4/S00_SC_R"
+              "out_swbd_3/S02_SC_R"
             ]
           },
           "S12_SC_B_1": {
             "interface_ports": [
               "S12_SC_B",
-              "out_swbd_4/S01_SC_B"
+              "out_swbd_4/S00_SC_B"
             ]
           },
           "S12_SC_R_1": {
             "interface_ports": [
               "S12_SC_R",
-              "out_swbd_4/S01_SC_R"
+              "out_swbd_4/S00_SC_R"
             ]
           },
           "S13_SC_B_1": {
             "interface_ports": [
               "S13_SC_B",
-              "out_swbd_5/S00_SC_B"
+              "out_swbd_4/S01_SC_B"
             ]
           },
           "S13_SC_R_1": {
             "interface_ports": [
               "S13_SC_R",
-              "out_swbd_5/S00_SC_R"
+              "out_swbd_4/S01_SC_R"
             ]
           },
           "S14_SC_B_1": {
             "interface_ports": [
               "S14_SC_B",
-              "out_swbd_5/S01_SC_B"
+              "out_swbd_5/S00_SC_B"
             ]
           },
           "S14_SC_R_1": {
             "interface_ports": [
               "S14_SC_R",
-              "out_swbd_5/S01_SC_R"
+              "out_swbd_5/S00_SC_R"
             ]
           },
           "S15_SC_B_1": {
             "interface_ports": [
               "S15_SC_B",
-              "out_swbd_6/S00_SC_B"
+              "out_swbd_5/S01_SC_B"
             ]
           },
           "S15_SC_R_1": {
             "interface_ports": [
               "S15_SC_R",
-              "out_swbd_6/S00_SC_R"
+              "out_swbd_5/S01_SC_R"
             ]
           },
           "S16_SC_B_1": {
             "interface_ports": [
               "S16_SC_B",
-              "out_swbd_6/S01_SC_B"
+              "out_swbd_6/S00_SC_B"
             ]
           },
           "S16_SC_R_1": {
             "interface_ports": [
               "S16_SC_R",
-              "out_swbd_6/S01_SC_R"
+              "out_swbd_6/S00_SC_R"
             ]
           },
           "S17_SC_B_1": {
             "interface_ports": [
               "S17_SC_B",
-              "out_swbd_7/S00_SC_B"
+              "out_swbd_6/S01_SC_B"
             ]
           },
           "S17_SC_R_1": {
             "interface_ports": [
               "S17_SC_R",
-              "out_swbd_7/S00_SC_R"
+              "out_swbd_6/S01_SC_R"
             ]
           },
           "S18_SC_B_1": {
             "interface_ports": [
               "S18_SC_B",
-              "out_swbd_7/S01_SC_B"
+              "out_swbd_7/S00_SC_B"
             ]
           },
           "S18_SC_R_1": {
             "interface_ports": [
               "S18_SC_R",
+              "out_swbd_7/S00_SC_R"
+            ]
+          },
+          "S19_SC_B_1": {
+            "interface_ports": [
+              "S19_SC_B",
+              "out_swbd_7/S01_SC_B"
+            ]
+          },
+          "S19_SC_R_1": {
+            "interface_ports": [
+              "S19_SC_R",
               "out_swbd_7/S01_SC_R"
             ]
           },
@@ -19983,15 +20344,33 @@
               "out_swbd_3/M01_SC_W"
             ]
           },
-          "out_swbd_4_M00_SC_AR": {
+          "out_swbd_3_M02_SC_AR": {
             "interface_ports": [
               "M11_SC_AR",
+              "out_swbd_3/M02_SC_AR"
+            ]
+          },
+          "out_swbd_3_M02_SC_AW": {
+            "interface_ports": [
+              "M11_SC_AW",
+              "out_swbd_3/M02_SC_AW"
+            ]
+          },
+          "out_swbd_3_M02_SC_W": {
+            "interface_ports": [
+              "M11_SC_W",
+              "out_swbd_3/M02_SC_W"
+            ]
+          },
+          "out_swbd_4_M00_SC_AR": {
+            "interface_ports": [
+              "M12_SC_AR",
               "out_swbd_4/M00_SC_AR"
             ]
           },
           "out_swbd_4_M00_SC_AW": {
             "interface_ports": [
-              "M11_SC_AW",
+              "M12_SC_AW",
               "out_swbd_4/M00_SC_AW"
             ]
           },
@@ -20009,37 +20388,37 @@
           },
           "out_swbd_4_M00_SC_W": {
             "interface_ports": [
-              "M11_SC_W",
+              "M12_SC_W",
               "out_swbd_4/M00_SC_W"
             ]
           },
           "out_swbd_4_M01_SC_AR": {
             "interface_ports": [
-              "M12_SC_AR",
+              "M13_SC_AR",
               "out_swbd_4/M01_SC_AR"
             ]
           },
           "out_swbd_4_M01_SC_AW": {
             "interface_ports": [
-              "M12_SC_AW",
+              "M13_SC_AW",
               "out_swbd_4/M01_SC_AW"
             ]
           },
           "out_swbd_4_M01_SC_W": {
             "interface_ports": [
-              "M12_SC_W",
+              "M13_SC_W",
               "out_swbd_4/M01_SC_W"
             ]
           },
           "out_swbd_5_M00_SC_AR": {
             "interface_ports": [
-              "M13_SC_AR",
+              "M14_SC_AR",
               "out_swbd_5/M00_SC_AR"
             ]
           },
           "out_swbd_5_M00_SC_AW": {
             "interface_ports": [
-              "M13_SC_AW",
+              "M14_SC_AW",
               "out_swbd_5/M00_SC_AW"
             ]
           },
@@ -20057,37 +20436,37 @@
           },
           "out_swbd_5_M00_SC_W": {
             "interface_ports": [
-              "M13_SC_W",
+              "M14_SC_W",
               "out_swbd_5/M00_SC_W"
             ]
           },
           "out_swbd_5_M01_SC_AR": {
             "interface_ports": [
-              "M14_SC_AR",
+              "M15_SC_AR",
               "out_swbd_5/M01_SC_AR"
             ]
           },
           "out_swbd_5_M01_SC_AW": {
             "interface_ports": [
-              "M14_SC_AW",
+              "M15_SC_AW",
               "out_swbd_5/M01_SC_AW"
             ]
           },
           "out_swbd_5_M01_SC_W": {
             "interface_ports": [
-              "M14_SC_W",
+              "M15_SC_W",
               "out_swbd_5/M01_SC_W"
             ]
           },
           "out_swbd_6_M00_SC_AR": {
             "interface_ports": [
-              "M15_SC_AR",
+              "M16_SC_AR",
               "out_swbd_6/M00_SC_AR"
             ]
           },
           "out_swbd_6_M00_SC_AW": {
             "interface_ports": [
-              "M15_SC_AW",
+              "M16_SC_AW",
               "out_swbd_6/M00_SC_AW"
             ]
           },
@@ -20105,37 +20484,37 @@
           },
           "out_swbd_6_M00_SC_W": {
             "interface_ports": [
-              "M15_SC_W",
+              "M16_SC_W",
               "out_swbd_6/M00_SC_W"
             ]
           },
           "out_swbd_6_M01_SC_AR": {
             "interface_ports": [
-              "M16_SC_AR",
+              "M17_SC_AR",
               "out_swbd_6/M01_SC_AR"
             ]
           },
           "out_swbd_6_M01_SC_AW": {
             "interface_ports": [
-              "M16_SC_AW",
+              "M17_SC_AW",
               "out_swbd_6/M01_SC_AW"
             ]
           },
           "out_swbd_6_M01_SC_W": {
             "interface_ports": [
-              "M16_SC_W",
+              "M17_SC_W",
               "out_swbd_6/M01_SC_W"
             ]
           },
           "out_swbd_7_M00_SC_AR": {
             "interface_ports": [
-              "M17_SC_AR",
+              "M18_SC_AR",
               "out_swbd_7/M00_SC_AR"
             ]
           },
           "out_swbd_7_M00_SC_AW": {
             "interface_ports": [
-              "M17_SC_AW",
+              "M18_SC_AW",
               "out_swbd_7/M00_SC_AW"
             ]
           },
@@ -20153,25 +20532,25 @@
           },
           "out_swbd_7_M00_SC_W": {
             "interface_ports": [
-              "M17_SC_W",
+              "M18_SC_W",
               "out_swbd_7/M00_SC_W"
             ]
           },
           "out_swbd_7_M01_SC_AR": {
             "interface_ports": [
-              "M18_SC_AR",
+              "M19_SC_AR",
               "out_swbd_7/M01_SC_AR"
             ]
           },
           "out_swbd_7_M01_SC_AW": {
             "interface_ports": [
-              "M18_SC_AW",
+              "M19_SC_AW",
               "out_swbd_7/M01_SC_AW"
             ]
           },
           "out_swbd_7_M01_SC_W": {
             "interface_ports": [
-              "M18_SC_W",
+              "M19_SC_W",
               "out_swbd_7/M01_SC_W"
             ]
           },
@@ -20388,34 +20767,37 @@
                 "value": "0b101000001000"
               },
               "MSC011_ROUTE": {
-                "value": "0b100100010000"
+                "value": "0b110000001000"
               },
               "MSC012_ROUTE": {
-                "value": "0b101000010000"
+                "value": "0b100100010000"
               },
               "MSC013_ROUTE": {
-                "value": "0b100100100000"
+                "value": "0b101000010000"
               },
               "MSC014_ROUTE": {
-                "value": "0b101000100000"
+                "value": "0b100100100000"
               },
               "MSC015_ROUTE": {
-                "value": "0b100101000000"
+                "value": "0b101000100000"
               },
               "MSC016_ROUTE": {
-                "value": "0b101001000000"
+                "value": "0b100101000000"
               },
               "MSC017_ROUTE": {
-                "value": "0b100110000000"
+                "value": "0b101001000000"
               },
               "MSC018_ROUTE": {
+                "value": "0b100110000000"
+              },
+              "MSC019_ROUTE": {
                 "value": "0b101010000000"
               },
               "MSC_ROUTE_WIDTH": {
                 "value": "12"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -20496,7 +20878,7 @@
                 "value": "1"
               },
               "SEG003_BASE_ADDR": {
-                "value": "0x0000000041E00000"
+                "value": "0x0000000041DE0000"
               },
               "SEG003_SECURE_READ": {
                 "value": "0"
@@ -20505,7 +20887,7 @@
                 "value": "0"
               },
               "SEG003_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000000000"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000010001"
               },
               "SEG003_SIZE": {
                 "value": "16"
@@ -20517,7 +20899,7 @@
                 "value": "1"
               },
               "SEG004_BASE_ADDR": {
-                "value": "0x0000000041E10000"
+                "value": "0x0000000041DF0000"
               },
               "SEG004_SECURE_READ": {
                 "value": "0"
@@ -20526,7 +20908,7 @@
                 "value": "0"
               },
               "SEG004_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000000001"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000010000"
               },
               "SEG004_SIZE": {
                 "value": "16"
@@ -20538,7 +20920,7 @@
                 "value": "1"
               },
               "SEG005_BASE_ADDR": {
-                "value": "0x0000000041E20000"
+                "value": "0x0000000041E00000"
               },
               "SEG005_SECURE_READ": {
                 "value": "0"
@@ -20547,7 +20929,7 @@
                 "value": "0"
               },
               "SEG005_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000000010"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000000000"
               },
               "SEG005_SIZE": {
                 "value": "16"
@@ -20559,7 +20941,7 @@
                 "value": "1"
               },
               "SEG006_BASE_ADDR": {
-                "value": "0x0000000041E30000"
+                "value": "0x0000000041E10000"
               },
               "SEG006_SECURE_READ": {
                 "value": "0"
@@ -20568,7 +20950,7 @@
                 "value": "0"
               },
               "SEG006_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000000011"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000000001"
               },
               "SEG006_SIZE": {
                 "value": "16"
@@ -20580,7 +20962,7 @@
                 "value": "1"
               },
               "SEG007_BASE_ADDR": {
-                "value": "0x0000000041E40000"
+                "value": "0x0000000041E20000"
               },
               "SEG007_SECURE_READ": {
                 "value": "0"
@@ -20589,7 +20971,7 @@
                 "value": "0"
               },
               "SEG007_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000000100"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000000010"
               },
               "SEG007_SIZE": {
                 "value": "16"
@@ -20601,7 +20983,7 @@
                 "value": "1"
               },
               "SEG008_BASE_ADDR": {
-                "value": "0x0000000041E50000"
+                "value": "0x0000000041E30000"
               },
               "SEG008_SECURE_READ": {
                 "value": "0"
@@ -20610,7 +20992,7 @@
                 "value": "0"
               },
               "SEG008_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000000101"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000000011"
               },
               "SEG008_SIZE": {
                 "value": "16"
@@ -20622,7 +21004,7 @@
                 "value": "1"
               },
               "SEG009_BASE_ADDR": {
-                "value": "0x0000000041E60000"
+                "value": "0x0000000041E40000"
               },
               "SEG009_SECURE_READ": {
                 "value": "0"
@@ -20631,7 +21013,7 @@
                 "value": "0"
               },
               "SEG009_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000000110"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000000100"
               },
               "SEG009_SIZE": {
                 "value": "16"
@@ -20643,7 +21025,7 @@
                 "value": "1"
               },
               "SEG010_BASE_ADDR": {
-                "value": "0x0000000041E70000"
+                "value": "0x0000000041E50000"
               },
               "SEG010_SECURE_READ": {
                 "value": "0"
@@ -20652,7 +21034,7 @@
                 "value": "0"
               },
               "SEG010_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000000111"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000000101"
               },
               "SEG010_SIZE": {
                 "value": "16"
@@ -20664,7 +21046,7 @@
                 "value": "1"
               },
               "SEG011_BASE_ADDR": {
-                "value": "0x0000000041E80000"
+                "value": "0x0000000041E60000"
               },
               "SEG011_SECURE_READ": {
                 "value": "0"
@@ -20673,7 +21055,7 @@
                 "value": "0"
               },
               "SEG011_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000001000"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000000110"
               },
               "SEG011_SIZE": {
                 "value": "16"
@@ -20685,7 +21067,7 @@
                 "value": "1"
               },
               "SEG012_BASE_ADDR": {
-                "value": "0x0000000041E90000"
+                "value": "0x0000000041E70000"
               },
               "SEG012_SECURE_READ": {
                 "value": "0"
@@ -20694,7 +21076,7 @@
                 "value": "0"
               },
               "SEG012_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000001001"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000000111"
               },
               "SEG012_SIZE": {
                 "value": "16"
@@ -20706,7 +21088,7 @@
                 "value": "1"
               },
               "SEG013_BASE_ADDR": {
-                "value": "0x0000000041EA0000"
+                "value": "0x0000000041E80000"
               },
               "SEG013_SECURE_READ": {
                 "value": "0"
@@ -20715,7 +21097,7 @@
                 "value": "0"
               },
               "SEG013_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000001010"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000001000"
               },
               "SEG013_SIZE": {
                 "value": "16"
@@ -20727,7 +21109,7 @@
                 "value": "1"
               },
               "SEG014_BASE_ADDR": {
-                "value": "0x0000000041EB0000"
+                "value": "0x0000000041E90000"
               },
               "SEG014_SECURE_READ": {
                 "value": "0"
@@ -20736,7 +21118,7 @@
                 "value": "0"
               },
               "SEG014_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000001011"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000001001"
               },
               "SEG014_SIZE": {
                 "value": "16"
@@ -20748,7 +21130,7 @@
                 "value": "1"
               },
               "SEG015_BASE_ADDR": {
-                "value": "0x0000000041EC0000"
+                "value": "0x0000000041EA0000"
               },
               "SEG015_SECURE_READ": {
                 "value": "0"
@@ -20757,7 +21139,7 @@
                 "value": "0"
               },
               "SEG015_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000001100"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000001010"
               },
               "SEG015_SIZE": {
                 "value": "16"
@@ -20769,7 +21151,7 @@
                 "value": "1"
               },
               "SEG016_BASE_ADDR": {
-                "value": "0x0000000041ED0000"
+                "value": "0x0000000041EB0000"
               },
               "SEG016_SECURE_READ": {
                 "value": "0"
@@ -20778,7 +21160,7 @@
                 "value": "0"
               },
               "SEG016_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000001101"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000001011"
               },
               "SEG016_SIZE": {
                 "value": "16"
@@ -20790,7 +21172,7 @@
                 "value": "1"
               },
               "SEG017_BASE_ADDR": {
-                "value": "0x0000000042000000"
+                "value": "0x0000000041EC0000"
               },
               "SEG017_SECURE_READ": {
                 "value": "0"
@@ -20799,7 +21181,7 @@
                 "value": "0"
               },
               "SEG017_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000010000"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000001100"
               },
               "SEG017_SIZE": {
                 "value": "16"
@@ -20811,7 +21193,7 @@
                 "value": "1"
               },
               "SEG018_BASE_ADDR": {
-                "value": "0x0000000042010000"
+                "value": "0x0000000041ED0000"
               },
               "SEG018_SECURE_READ": {
                 "value": "0"
@@ -20820,7 +21202,7 @@
                 "value": "0"
               },
               "SEG018_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000010001"
+                "value": "0b0000000000000000000000000000000000000000000000000000000000001101"
               },
               "SEG018_SIZE": {
                 "value": "16"
@@ -21125,7 +21507,7 @@
                 "value": "32"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -23918,7 +24300,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -25290,7 +25672,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -26662,7 +27044,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -28034,7 +28416,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -29406,7 +29788,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -30778,7 +31160,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -32150,7 +32532,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -33522,7 +33904,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -34894,7 +35276,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -36266,7 +36648,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -37638,7 +38020,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -39010,7 +39392,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -40382,7 +40764,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -41754,7 +42136,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -43126,7 +43508,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -44498,7 +44880,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -45870,7 +46252,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -47242,7 +47624,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -48614,7 +48996,7 @@
                 "value": "AXI4LITE"
               },
               "NUM_MSC": {
-                "value": "19"
+                "value": "20"
               },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
@@ -50711,6 +51093,16 @@
             }
           },
           "M18_AXI": {
+            "address_blocks": {
+              "Reg": {
+                "base_address": "0",
+                "range": "64K",
+                "width": "16",
+                "usage": "register"
+              }
+            }
+          },
+          "M19_AXI": {
             "address_blocks": {
               "Reg": {
                 "base_address": "0",

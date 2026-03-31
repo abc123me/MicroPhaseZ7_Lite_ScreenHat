@@ -711,9 +711,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi
 # IP: bd/minimal/ip/minimal_axi_gpio_0_0/minimal_axi_gpio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_gpio_0_0 || ORIG_REF_NAME==minimal_axi_gpio_0_0} -quiet] -quiet
 
-# IP: bd/minimal/ip/minimal_c_counter_binary_0_0/minimal_c_counter_binary_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_c_counter_binary_0_0 || ORIG_REF_NAME==minimal_c_counter_binary_0_0} -quiet] -quiet
-
 # IP: bd/minimal/ip/minimal_axi_quad_spi_0_1/minimal_axi_quad_spi_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_quad_spi_0_1 || ORIG_REF_NAME==minimal_axi_quad_spi_0_1} -quiet] -quiet
 
@@ -722,9 +719,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi
 
 # IP: bd/minimal/ip/minimal_axi_quad_spi_2_0/minimal_axi_quad_spi_2_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_quad_spi_2_0 || ORIG_REF_NAME==minimal_axi_quad_spi_2_0} -quiet] -quiet
-
-# IP: bd/minimal/ip/minimal_c_counter_binary_0_1/minimal_c_counter_binary_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_c_counter_binary_0_1 || ORIG_REF_NAME==minimal_c_counter_binary_0_1} -quiet] -quiet
 
 # IP: bd/minimal/ip/minimal_axi_quad_spi_3_0/minimal_axi_quad_spi_3_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_quad_spi_3_0 || ORIG_REF_NAME==minimal_axi_quad_spi_3_0} -quiet] -quiet
@@ -755,9 +749,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_spi
 
 # IP: bd/minimal/ip/minimal_spi2ili_4_0/minimal_spi2ili_4_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_spi2ili_4_0 || ORIG_REF_NAME==minimal_spi2ili_4_0} -quiet] -quiet
-
-# IP: bd/minimal/ip/minimal_spi2ili_5_0/minimal_spi2ili_5_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_spi2ili_5_0 || ORIG_REF_NAME==minimal_spi2ili_5_0} -quiet] -quiet
 
 # IP: bd/minimal/ip/minimal_spi2ili_6_0/minimal_spi2ili_6_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_spi2ili_6_0 || ORIG_REF_NAME==minimal_spi2ili_6_0} -quiet] -quiet
@@ -806,6 +797,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi
 
 # IP: bd/minimal/ip/minimal_axi_intc_0_0/minimal_axi_intc_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_intc_0_0 || ORIG_REF_NAME==minimal_axi_intc_0_0} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_spi2ili_5_0/minimal_spi2ili_5_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_spi2ili_5_0 || ORIG_REF_NAME==minimal_spi2ili_5_0} -quiet] -quiet
 
 # IP: bd/minimal/ip/minimal_spi595_0_0/minimal_spi595_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_spi595_0_0 || ORIG_REF_NAME==minimal_spi595_0_0} -quiet] -quiet

@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Tue Mar 24 00:33:31 2026
+//Date        : Sun Mar 29 22:40:47 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal_wrapper.bd
 //Design      : minimal_wrapper
@@ -87,9 +87,6 @@ module minimal_wrapper
     ILI_D_sck_o,
     ILI_D_sda_o,
     ILI_D_ss_o,
-    PL_CLK_50M,
-    PL_LED_1,
-    PL_LED_2,
     SPI_595_0_sck_o,
     SPI_595_0_sda_o,
     SPI_595_0_ss_o,
@@ -172,9 +169,6 @@ module minimal_wrapper
   output ILI_D_sck_o;
   output ILI_D_sda_o;
   output ILI_D_ss_o;
-  input PL_CLK_50M;
-  output [0:0]PL_LED_1;
-  output [0:0]PL_LED_2;
   output SPI_595_0_sck_o;
   output SPI_595_0_sda_o;
   output SPI_595_0_ss_o;
@@ -261,9 +255,6 @@ module minimal_wrapper
   wire ILI_D_sck_o;
   wire ILI_D_sda_o;
   wire ILI_D_ss_o;
-  wire PL_CLK_50M;
-  wire [0:0]PL_LED_1;
-  wire [0:0]PL_LED_2;
   wire SPI_595_0_sck_o;
   wire SPI_595_0_sda_o;
   wire SPI_595_0_ss_o;
@@ -355,9 +346,6 @@ module minimal_wrapper
         .ILI_D_sck_o(ILI_D_sck_o),
         .ILI_D_sda_o(ILI_D_sda_o),
         .ILI_D_ss_o(ILI_D_ss_o),
-        .PL_CLK_50M(PL_CLK_50M),
-        .PL_LED_1(PL_LED_1),
-        .PL_LED_2(PL_LED_2),
         .SPI_595_0_sck_o(SPI_595_0_sck_o),
         .SPI_595_0_sda_o(SPI_595_0_sda_o),
         .SPI_595_0_ss_o(SPI_595_0_ss_o),

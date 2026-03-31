@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Tue Mar 24 00:33:31 2026
+//Date        : Sun Mar 29 22:40:47 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal.bd
 //Design      : minimal
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "minimal,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=minimal,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=44,numReposBlks=44,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=16,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_ps7_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "minimal.hwdef" *) 
+(* CORE_GENERATION_INFO = "minimal,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=minimal,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=40,numReposBlks=40,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=16,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_ps7_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "minimal.hwdef" *) 
 module minimal
    (DDR_addr,
     DDR_ba,
@@ -90,9 +90,6 @@ module minimal
     ILI_D_sck_o,
     ILI_D_sda_o,
     ILI_D_ss_o,
-    PL_CLK_50M,
-    PL_LED_1,
-    PL_LED_2,
     SPI_595_0_sck_o,
     SPI_595_0_sda_o,
     SPI_595_0_ss_o,
@@ -177,9 +174,6 @@ module minimal
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_D SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output ILI_D_sck_o;
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_D SDA_O" *) output ILI_D_sda_o;
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 ILI_D SS_O" *) output ILI_D_ss_o;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.PL_CLK_50M CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.PL_CLK_50M, CLK_DOMAIN minimal_PL_CLK_50M, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0, PortWidth 1" *) input PL_CLK_50M;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 INTR.PL_LED_1 INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME INTR.PL_LED_1, PortWidth 1, SENSITIVITY LEVEL_HIGH" *) output [0:0]PL_LED_1;
-  output [0:0]PL_LED_2;
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 SPI_595_0 SCK_O" *) (* X_INTERFACE_MODE = "Master" *) output SPI_595_0_sck_o;
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 SPI_595_0 SDA_O" *) output SPI_595_0_sda_o;
   (* X_INTERFACE_INFO = "kn4hji.ddns.net:user:ilispi:1.0 SPI_595_0 SS_O" *) output SPI_595_0_ss_o;
@@ -265,9 +259,6 @@ module minimal
   wire ILI_D_sck_o;
   wire ILI_D_sda_o;
   wire ILI_D_ss_o;
-  wire PL_CLK_50M;
-  wire [0:0]PL_LED_1;
-  wire [0:0]PL_LED_2;
   wire SPI_595_0_sck_o;
   wire SPI_595_0_sda_o;
   wire SPI_595_0_ss_o;
@@ -807,8 +798,6 @@ module minimal
   wire axi_smc_M18_AXI_WREADY;
   wire [3:0]axi_smc_M18_AXI_WSTRB;
   wire axi_smc_M18_AXI_WVALID;
-  wire [31:0]c_counter_binary_0_Q;
-  wire [31:0]c_counter_binary_1_Q;
   wire [3:0]ilconcat_0_dout;
   wire [13:0]ilconcat_1_dout;
   wire processing_system7_0_FCLK_CLK0;
@@ -932,7 +921,7 @@ module minimal
         .s_axi_wstrb(axi_smc_M18_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M18_AXI_WVALID));
   minimal_axi_quad_spi_0_0 axi_quad_spi_0
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_0_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_0_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_0_SPI_0_IO0_T),
@@ -966,7 +955,7 @@ module minimal
         .ss_o(axi_quad_spi_0_SPI_0_SS_O),
         .ss_t(axi_quad_spi_0_SPI_0_SS_T));
   minimal_axi_quad_spi_0_1 axi_quad_spi_1
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_1_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_1_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_1_SPI_0_IO0_T),
@@ -1000,7 +989,7 @@ module minimal
         .ss_o(axi_quad_spi_1_SPI_0_SS_O),
         .ss_t(axi_quad_spi_1_SPI_0_SS_T));
   minimal_axi_quad_spi_9_0 axi_quad_spi_10
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_10_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_10_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_10_SPI_0_IO0_T),
@@ -1034,7 +1023,7 @@ module minimal
         .ss_o(axi_quad_spi_10_SPI_0_SS_O),
         .ss_t(axi_quad_spi_10_SPI_0_SS_T));
   minimal_axi_quad_spi_10_0 axi_quad_spi_11
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_11_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_11_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_11_SPI_0_IO0_T),
@@ -1068,7 +1057,7 @@ module minimal
         .ss_o(axi_quad_spi_11_SPI_0_SS_O),
         .ss_t(axi_quad_spi_11_SPI_0_SS_T));
   minimal_axi_quad_spi_10_1 axi_quad_spi_12
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_12_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_12_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_12_SPI_0_IO0_T),
@@ -1102,7 +1091,7 @@ module minimal
         .ss_o(axi_quad_spi_12_SPI_0_SS_O),
         .ss_t(axi_quad_spi_12_SPI_0_SS_T));
   minimal_axi_quad_spi_12_0 axi_quad_spi_13
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_13_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_13_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_13_SPI_0_IO0_T),
@@ -1136,7 +1125,7 @@ module minimal
         .ss_o(axi_quad_spi_13_SPI_0_SS_O),
         .ss_t(axi_quad_spi_13_SPI_0_SS_T));
   minimal_axi_quad_spi_1_0 axi_quad_spi_2
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_2_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_2_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_2_SPI_0_IO0_T),
@@ -1170,7 +1159,7 @@ module minimal
         .ss_o(axi_quad_spi_2_SPI_0_SS_O),
         .ss_t(axi_quad_spi_2_SPI_0_SS_T));
   minimal_axi_quad_spi_2_0 axi_quad_spi_3
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_3_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_3_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_3_SPI_0_IO0_T),
@@ -1204,7 +1193,7 @@ module minimal
         .ss_o(axi_quad_spi_3_SPI_0_SS_O),
         .ss_t(axi_quad_spi_3_SPI_0_SS_T));
   minimal_axi_quad_spi_3_0 axi_quad_spi_4
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_4_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_4_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_4_SPI_0_IO0_T),
@@ -1238,7 +1227,7 @@ module minimal
         .ss_o(axi_quad_spi_4_SPI_0_SS_O),
         .ss_t(axi_quad_spi_4_SPI_0_SS_T));
   minimal_axi_quad_spi_4_0 axi_quad_spi_5
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_5_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_5_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_5_SPI_0_IO0_T),
@@ -1272,7 +1261,7 @@ module minimal
         .ss_o(axi_quad_spi_5_SPI_0_SS_O),
         .ss_t(axi_quad_spi_5_SPI_0_SS_T));
   minimal_axi_quad_spi_0_2 axi_quad_spi_595_0
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_595_0_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_595_0_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_595_0_SPI_0_IO0_T),
@@ -1306,7 +1295,7 @@ module minimal
         .ss_o(axi_quad_spi_595_0_SPI_0_SS_O),
         .ss_t(axi_quad_spi_595_0_SPI_0_SS_T));
   minimal_axi_quad_spi_595_0_0 axi_quad_spi_595_1
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_595_1_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_595_1_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_595_1_SPI_0_IO0_T),
@@ -1340,7 +1329,7 @@ module minimal
         .ss_o(axi_quad_spi_595_1_SPI_0_SS_O),
         .ss_t(axi_quad_spi_595_1_SPI_0_SS_T));
   minimal_axi_quad_spi_5_0 axi_quad_spi_6
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_6_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_6_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_6_SPI_0_IO0_T),
@@ -1374,7 +1363,7 @@ module minimal
         .ss_o(axi_quad_spi_6_SPI_0_SS_O),
         .ss_t(axi_quad_spi_6_SPI_0_SS_T));
   minimal_axi_quad_spi_6_0 axi_quad_spi_7
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_7_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_7_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_7_SPI_0_IO0_T),
@@ -1408,7 +1397,7 @@ module minimal
         .ss_o(axi_quad_spi_7_SPI_0_SS_O),
         .ss_t(axi_quad_spi_7_SPI_0_SS_T));
   minimal_axi_quad_spi_7_1 axi_quad_spi_8
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_8_SPI_1_IO0_I),
         .io0_o(axi_quad_spi_8_SPI_1_IO0_O),
         .io0_t(axi_quad_spi_8_SPI_1_IO0_T),
@@ -1442,7 +1431,7 @@ module minimal
         .ss_o(axi_quad_spi_8_SPI_1_SS_O),
         .ss_t(axi_quad_spi_8_SPI_1_SS_T));
   minimal_axi_quad_spi_8_0 axi_quad_spi_9
-       (.ext_spi_clk(PL_CLK_50M),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(axi_quad_spi_9_SPI_0_IO0_I),
         .io0_o(axi_quad_spi_9_SPI_0_IO0_O),
         .io0_t(axi_quad_spi_9_SPI_0_IO0_T),
@@ -1799,6 +1788,14 @@ module minimal
         .M18_AXI_wready(axi_smc_M18_AXI_WREADY),
         .M18_AXI_wstrb(axi_smc_M18_AXI_WSTRB),
         .M18_AXI_wvalid(axi_smc_M18_AXI_WVALID),
+        .M19_AXI_arready(1'b0),
+        .M19_AXI_awready(1'b0),
+        .M19_AXI_bresp({1'b0,1'b0}),
+        .M19_AXI_bvalid(1'b0),
+        .M19_AXI_rdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .M19_AXI_rresp({1'b0,1'b0}),
+        .M19_AXI_rvalid(1'b0),
+        .M19_AXI_wready(1'b0),
         .S00_AXI_araddr(processing_system7_0_M_AXI_GP0_ARADDR),
         .S00_AXI_arburst(processing_system7_0_M_AXI_GP0_ARBURST),
         .S00_AXI_arcache(processing_system7_0_M_AXI_GP0_ARCACHE),
@@ -1839,16 +1836,8 @@ module minimal
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID),
         .aclk(processing_system7_0_FCLK_CLK0),
         .aresetn(rst_ps7_0_50M_peripheral_aresetn));
-  minimal_c_counter_binary_0_0 c_counter_binary_0
-       (.CLK(processing_system7_0_FCLK_CLK0),
-        .Q(c_counter_binary_0_Q));
-  minimal_c_counter_binary_0_1 c_counter_binary_1
-       (.CLK(PL_CLK_50M),
-        .Q(c_counter_binary_1_Q));
   assign ilconcat_0_dout = {axi_quad_spi_595_1_ip2intc_irpt, axi_quad_spi_595_0_ip2intc_irpt, axi_ethernetlite_0_ip2intc_irpt, axi_intc_0_irq};
   assign ilconcat_1_dout = {axi_quad_spi_13_ip2intc_irpt, axi_quad_spi_12_ip2intc_irpt, axi_quad_spi_11_ip2intc_irpt, axi_quad_spi_10_ip2intc_irpt, axi_quad_spi_9_ip2intc_irpt, axi_quad_spi_8_ip2intc_irpt1, axi_quad_spi_7_ip2intc_irpt, axi_quad_spi_6_ip2intc_irpt, axi_quad_spi_5_ip2intc_irpt, axi_quad_spi_4_ip2intc_irpt, axi_quad_spi_3_ip2intc_irpt, axi_quad_spi_2_ip2intc_irpt, axi_quad_spi_1_ip2intc_irpt, axi_quad_spi_0_ip2intc_irpt};
-  assign PL_LED_1 = c_counter_binary_0_Q[25:25];
-  assign PL_LED_2 = c_counter_binary_1_Q[25:25];
   minimal_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr),
         .DDR_BankAddr(DDR_ba),
