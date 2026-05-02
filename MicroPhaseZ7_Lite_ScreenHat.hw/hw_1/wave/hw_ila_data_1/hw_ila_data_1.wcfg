@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="2,955"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="array" fp_name="minimal_i/ilconcat_1_dout">
+      <obj_property name="ElementShortName">minimal_i/ilconcat_1_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ilconcat_1_dout[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="minimal_i/ilconcat_2_dout">
+      <obj_property name="ElementShortName">minimal_i/ilconcat_2_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ilconcat_2_dout[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/led595_clock">
+      <obj_property name="ElementShortName">minimal_i/led595_clock</obj_property>
+      <obj_property name="ObjectShortName">led595_clock</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/led595_data">
+      <obj_property name="ElementShortName">minimal_i/led595_data</obj_property>
+      <obj_property name="ObjectShortName">led595_data</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/led595_latch">
+      <obj_property name="ElementShortName">minimal_i/led595_latch</obj_property>
+      <obj_property name="ObjectShortName">led595_latch</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/led595_resetn">
+      <obj_property name="ElementShortName">minimal_i/led595_resetn</obj_property>
+      <obj_property name="ObjectShortName">led595_resetn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/rst595_clock">
+      <obj_property name="ElementShortName">minimal_i/rst595_clock</obj_property>
+      <obj_property name="ObjectShortName">rst595_clock</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/rst595_data">
+      <obj_property name="ElementShortName">minimal_i/rst595_data</obj_property>
+      <obj_property name="ObjectShortName">rst595_data</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/rst595_latch">
+      <obj_property name="ElementShortName">minimal_i/rst595_latch</obj_property>
+      <obj_property name="ObjectShortName">rst595_latch</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/rst595_resetn">
+      <obj_property name="ElementShortName">minimal_i/rst595_resetn</obj_property>
+      <obj_property name="ObjectShortName">rst595_resetn</obj_property>
+   </wvobject>
+</wave_config>

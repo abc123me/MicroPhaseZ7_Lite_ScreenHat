@@ -110,33 +110,25 @@
       </spirit:portMaps>
     </spirit:busInterface>
     <spirit:busInterface>
-      <spirit:name>ILI</spirit:name>
-      <spirit:busType spirit:vendor="kn4hji.ddns.net" spirit:library="user" spirit:name="ilispi" spirit:version="1.0"/>
-      <spirit:abstractionType spirit:vendor="kn4hji.ddns.net" spirit:library="user" spirit:name="ilispi_rtl" spirit:version="1.0"/>
-      <spirit:master/>
+      <spirit:name>ILI_o</spirit:name>
+      <spirit:busType spirit:vendor="kn4hji.ddns.net" spirit:library="interfaces" spirit:name="ilispi" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="kn4hji.ddns.net" spirit:library="interfaces" spirit:name="ilispi_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
       <spirit:portMaps>
         <spirit:portMap>
           <spirit:logicalPort>
-            <spirit:name>SS_O</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>ILI_ss_o</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>SCK_O</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>ILI_scl_o</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>SDA_O</spirit:name>
+            <spirit:name>sda</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
             <spirit:name>ILI_sda_o</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>scl</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>ILI_scl_o</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
@@ -418,7 +410,7 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-03-24T03:13:13Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2026-04-20T03:05:08Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.2</xilinx:xilinxVersion>

@@ -1,0 +1,29 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-578,-348",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port s_pixel_fifo_ctrl -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
+preplace port s_axis -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port ILI_0 -pg 1 -lvl 3 -x 720 -y 60 -defaultsOSRD
+preplace port port-id_s_axis_aresetn -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace port port-id_s_axis_clock -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port port-id_tft_reset -pg 1 -lvl 3 -x 720 -y 80 -defaultsOSRD
+preplace port port-id_tft_backlight -pg 1 -lvl 3 -x 720 -y 100 -defaultsOSRD
+preplace inst axi_pixel_fifo_0 -pg 1 -lvl 1 -x 200 -y 80 -defaultsOSRD
+preplace inst display_driver_0 -pg 1 -lvl 2 -x 540 -y 80 -defaultsOSRD
+preplace netloc s_axis_aresetn_1 1 0 1 NJ 110
+preplace netloc s_axis_clock_1 1 0 1 NJ 90
+preplace netloc display_driver_0_tft_reset 1 2 1 NJ 80
+preplace netloc display_driver_0_tft_backlight 1 2 1 NJ 100
+preplace netloc Conn1 1 0 1 NJ 50
+preplace netloc Conn2 1 0 1 NJ 70
+preplace netloc Conn3 1 2 1 NJ 60
+preplace netloc axi_pixel_fifo_0_m_pixel_stream 1 1 1 N 80
+levelinfo -pg 1 0 200 540 720
+pagesize -pg 1 -db -bbox -sgen -180 0 870 160
+"
+}
+
