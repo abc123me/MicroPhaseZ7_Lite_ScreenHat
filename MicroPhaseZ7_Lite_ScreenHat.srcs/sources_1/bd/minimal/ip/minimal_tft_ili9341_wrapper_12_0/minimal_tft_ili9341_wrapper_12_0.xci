@@ -2,20 +2,20 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "minimal_tft_ili9341_wrapper_12_0",
-    "cell_name": "displays/tft_ili9341_wrapper_13",
+    "cell_name": "tft_ili9341_wrapper_13",
     "component_reference": "xilinx.com:module_ref:tft_ili9341_wrapper:1.0",
     "ip_revision": "1",
     "gen_directory": "../../../../../../MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_12_0",
     "parameters": {
       "component_parameters": {
-        "INPUT_CLK_MHZ": [ { "value": "100", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "INPUT_CLK_MHZ": [ { "value": "60", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "WIDTH": [ { "value": "320", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "HEIGHT": [ { "value": "240", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PIXEL_WIDTH": [ { "value": "16", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "Component_Name": [ { "value": "minimal_tft_ili9341_wrapper_12_0", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
-        "INPUT_CLK_MHZ": [ { "value": "100", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "INPUT_CLK_MHZ": [ { "value": "60", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "WIDTH": [ { "value": "320", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "HEIGHT": [ { "value": "240", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "PIXEL_WIDTH": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ]
@@ -56,7 +56,11 @@
         "core_clock": [ { "direction": "in" } ],
         "core_clock_en": [ { "direction": "in" } ],
         "pixel_ready": [ { "direction": "out" } ],
-        "pixel_sync": [ { "direction": "out" } ]
+        "pixel_sync": [ { "direction": "out" } ],
+        "io_ready": [ { "direction": "in" } ],
+        "io_wait": [ { "direction": "out" } ],
+        "aresetn": [ { "direction": "in" } ],
+        "ready": [ { "direction": "out" } ]
       },
       "interfaces": {
         "m_tftspi": {
@@ -83,9 +87,21 @@
             "pixel_ready": [ { "physical_name": "pixel_ready" } ],
             "core_clock_en": [ { "physical_name": "core_clock_en" } ]
           }
+        },
+        "aresetn": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_LOW", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "aresetn" } ]
+          }
         }
       }
     }
   },
-  "checksum": "61639c35"
+  "checksum": "01e0cf00"
 }

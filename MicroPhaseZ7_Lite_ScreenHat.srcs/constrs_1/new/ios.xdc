@@ -8,7 +8,7 @@
 
 # Vivado told me to do it, otherwise fails to implement
 ###################################################################
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets minimal_i/axi_ethernetlite_0/U0/o]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets minimal_i/ps/axi_ethernetlite_0/U0/o]
 
 # Ethernet
 ###################################################################

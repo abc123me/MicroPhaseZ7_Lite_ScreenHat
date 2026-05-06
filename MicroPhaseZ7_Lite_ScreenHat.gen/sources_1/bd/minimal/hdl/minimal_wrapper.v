@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Tue Apr 21 09:48:07 2026
+//Date        : Wed May  6 00:39:38 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal_wrapper.bd
 //Design      : minimal_wrapper
@@ -100,7 +100,6 @@ module minimal_wrapper
     ILI_D_dc,
     ILI_D_scl,
     ILI_D_sda,
-    PL_LED_1,
     led595_clock,
     led595_data,
     led595_latch,
@@ -198,7 +197,6 @@ module minimal_wrapper
   output ILI_D_dc;
   output ILI_D_scl;
   output ILI_D_sda;
-  output [0:0]PL_LED_1;
   output led595_clock;
   output led595_data;
   output led595_latch;
@@ -300,7 +298,6 @@ module minimal_wrapper
   wire ILI_D_dc;
   wire ILI_D_scl;
   wire ILI_D_sda;
-  wire [0:0]PL_LED_1;
   wire led595_clock;
   wire led595_data;
   wire led595_latch;
@@ -407,7 +404,6 @@ module minimal_wrapper
         .ILI_D_dc(ILI_D_dc),
         .ILI_D_scl(ILI_D_scl),
         .ILI_D_sda(ILI_D_sda),
-        .PL_LED_1(PL_LED_1),
         .led595_clock(led595_clock),
         .led595_data(led595_data),
         .led595_latch(led595_latch),
