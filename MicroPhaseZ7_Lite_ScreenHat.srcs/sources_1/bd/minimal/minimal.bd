@@ -7,8 +7,7 @@
       "name": "minimal",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "None",
-      "tool_version": "2025.2",
-      "validated": "true"
+      "tool_version": "2025.2"
     },
     "design_tree": {
       "sregs": {
@@ -783,24 +782,8 @@
           "ASSOCIATED_RESET": {
             "value": "rst595_resetn"
           },
-          "CLK_DOMAIN": {
-            "value": "minimal_gpio74hc595_0_1_driver_clock",
-            "value_src": "default_prop"
-          },
           "FREQ_HZ": {
             "value": "25000000"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
           }
         }
       },
@@ -809,17 +792,7 @@
       },
       "rst595_resetn": {
         "type": "rst",
-        "direction": "O",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "const_prop"
-          }
-        }
+        "direction": "O"
       },
       "rst595_data": {
         "direction": "O"
@@ -831,24 +804,8 @@
           "ASSOCIATED_RESET": {
             "value": "led595_resetn"
           },
-          "CLK_DOMAIN": {
-            "value": "minimal_gpio74hc595_0_0_driver_clock",
-            "value_src": "default_prop"
-          },
           "FREQ_HZ": {
             "value": "25000000"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
           }
         }
       },
@@ -857,17 +814,7 @@
       },
       "led595_resetn": {
         "type": "rst",
-        "direction": "O",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "const_prop"
-          }
-        }
+        "direction": "O"
       },
       "led595_data": {
         "direction": "O"
@@ -7205,17 +7152,7 @@
                 }
               },
               "ready": {
-                "direction": "O",
-                "parameters": {
-                  "PortType": {
-                    "value": "undef",
-                    "value_src": "ip_prop"
-                  },
-                  "PortType.PROP_SRC": {
-                    "value": "false",
-                    "value_src": "ip_prop"
-                  }
-                }
+                "direction": "O"
               }
             }
           },
