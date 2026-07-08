@@ -1,84 +1,84 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.852736",
-   "Default View_TopLeft":"-106,-46",
+   "Default View_TopLeft":"-218,4",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port S_AXI -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
-preplace port S_AXI1 -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
-preplace port port-id_led595_clock -pg 1 -lvl 7 -x 1660 -y 130 -defaultsOSRD
-preplace port port-id_led595_latch -pg 1 -lvl 7 -x 1660 -y 190 -defaultsOSRD
-preplace port port-id_led595_resetn -pg 1 -lvl 7 -x 1660 -y 160 -defaultsOSRD
-preplace port port-id_led595_data -pg 1 -lvl 7 -x 1660 -y 220 -defaultsOSRD
-preplace port port-id_rst595_clock -pg 1 -lvl 7 -x 1660 -y 480 -defaultsOSRD
-preplace port port-id_rst595_latch -pg 1 -lvl 7 -x 1660 -y 540 -defaultsOSRD
-preplace port port-id_rst595_resetn -pg 1 -lvl 7 -x 1660 -y 510 -defaultsOSRD
-preplace port port-id_rst595_data -pg 1 -lvl 7 -x 1660 -y 570 -defaultsOSRD
-preplace port port-id_resetn -pg 1 -lvl 0 -x 0 -y 350 -defaultsOSRD
-preplace port port-id_clk_in1 -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
-preplace port port-id_io_ready -pg 1 -lvl 7 -x 1660 -y 700 -defaultsOSRD
-preplace portBus io_wait -pg 1 -lvl 0 -x 0 -y 730 -defaultsOSRD
-preplace portBus led_inps -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
-preplace portBus rst_inps -pg 1 -lvl 0 -x 0 -y 430 -defaultsOSRD
-preplace inst ilconcat_4 -pg 1 -lvl 4 -x 960 -y 150 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 4 -x 960 -y 270 -defaultsOSRD
-preplace inst ilconstant_3 -pg 1 -lvl 3 -x 690 -y 370 -defaultsOSRD
-preplace inst gpio74hc595_0 -pg 1 -lvl 6 -x 1470 -y 170 -defaultsOSRD
-preplace inst gpio74hc595_1 -pg 1 -lvl 6 -x 1470 -y 520 -defaultsOSRD
-preplace inst ilconcat_0 -pg 1 -lvl 5 -x 1200 -y 700 -defaultsOSRD
-preplace inst util_reduced_logic_0 -pg 1 -lvl 6 -x 1470 -y 700 -defaultsOSRD
-preplace inst oneshot_0 -pg 1 -lvl 4 -x 960 -y 800 -defaultsOSRD
-preplace inst oneshot_1 -pg 1 -lvl 4 -x 960 -y 940 -defaultsOSRD -resize 160 96
-preplace inst ilvector_logic_0 -pg 1 -lvl 3 -x 690 -y 790 -defaultsOSRD
-preplace inst mux2_1 -pg 1 -lvl 3 -x 690 -y 140 -defaultsOSRD
-preplace inst mux2_0 -pg 1 -lvl 3 -x 690 -y 490 -defaultsOSRD
-preplace inst ilslice_1 -pg 1 -lvl 2 -x 420 -y 490 -defaultsOSRD
-preplace inst ilslice_0 -pg 1 -lvl 2 -x 420 -y 590 -defaultsOSRD
-preplace inst ilslice_2 -pg 1 -lvl 2 -x 420 -y 60 -defaultsOSRD
-preplace inst ilslice_3 -pg 1 -lvl 2 -x 420 -y 160 -defaultsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x -10 -y 120 -defaultsOSRD
+preplace port S_AXI1 -pg 1 -lvl 0 -x -10 -y 320 -defaultsOSRD
+preplace port port-id_led595_clock -pg 1 -lvl 7 -x 1670 -y 130 -defaultsOSRD
+preplace port port-id_led595_latch -pg 1 -lvl 7 -x 1670 -y 190 -defaultsOSRD
+preplace port port-id_led595_resetn -pg 1 -lvl 7 -x 1670 -y 160 -defaultsOSRD
+preplace port port-id_led595_data -pg 1 -lvl 7 -x 1670 -y 220 -defaultsOSRD
+preplace port port-id_rst595_clock -pg 1 -lvl 7 -x 1670 -y 480 -defaultsOSRD
+preplace port port-id_rst595_latch -pg 1 -lvl 7 -x 1670 -y 540 -defaultsOSRD
+preplace port port-id_rst595_resetn -pg 1 -lvl 7 -x 1670 -y 510 -defaultsOSRD
+preplace port port-id_rst595_data -pg 1 -lvl 7 -x 1670 -y 570 -defaultsOSRD
+preplace port port-id_resetn -pg 1 -lvl 0 -x -10 -y 350 -defaultsOSRD
+preplace port port-id_clk_in1 -pg 1 -lvl 0 -x -10 -y 150 -defaultsOSRD
+preplace port port-id_io_ready -pg 1 -lvl 7 -x 1670 -y 700 -defaultsOSRD
+preplace portBus io_wait -pg 1 -lvl 0 -x -10 -y 730 -defaultsOSRD
+preplace portBus led_inps -pg 1 -lvl 0 -x -10 -y 220 -defaultsOSRD
+preplace portBus rst_inps -pg 1 -lvl 0 -x -10 -y 430 -defaultsOSRD
+preplace inst ilconcat_4 -pg 1 -lvl 4 -x 970 -y 150 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 4 -x 970 -y 270 -defaultsOSRD
+preplace inst ilconstant_3 -pg 1 -lvl 3 -x 700 -y 370 -defaultsOSRD
+preplace inst gpio74hc595_0 -pg 1 -lvl 6 -x 1480 -y 170 -defaultsOSRD
+preplace inst gpio74hc595_1 -pg 1 -lvl 6 -x 1480 -y 520 -defaultsOSRD
+preplace inst ilconcat_0 -pg 1 -lvl 5 -x 1210 -y 700 -defaultsOSRD
+preplace inst util_reduced_logic_0 -pg 1 -lvl 6 -x 1480 -y 700 -defaultsOSRD
+preplace inst oneshot_0 -pg 1 -lvl 4 -x 970 -y 800 -defaultsOSRD
+preplace inst oneshot_1 -pg 1 -lvl 4 -x 970 -y 940 -defaultsOSRD -resize 160 96
+preplace inst ilvector_logic_0 -pg 1 -lvl 3 -x 700 -y 790 -defaultsOSRD
+preplace inst mux2_1 -pg 1 -lvl 3 -x 700 -y 140 -defaultsOSRD
+preplace inst mux2_0 -pg 1 -lvl 3 -x 700 -y 490 -defaultsOSRD
+preplace inst ilslice_1 -pg 1 -lvl 2 -x 430 -y 490 -defaultsOSRD
+preplace inst ilslice_0 -pg 1 -lvl 2 -x 430 -y 590 -defaultsOSRD
+preplace inst ilslice_2 -pg 1 -lvl 2 -x 430 -y 60 -defaultsOSRD
+preplace inst ilslice_3 -pg 1 -lvl 2 -x 430 -y 160 -defaultsOSRD
 preplace inst axi_gpio_led -pg 1 -lvl 1 -x 170 -y 140 -defaultsOSRD
 preplace inst axi_gpio_rst -pg 1 -lvl 1 -x 170 -y 340 -defaultsOSRD
-preplace inst bit_reverser_0 -pg 1 -lvl 5 -x 1200 -y 500 -defaultsOSRD
-preplace inst bit_reverser_1 -pg 1 -lvl 5 -x 1200 -y 150 -defaultsOSRD -resize 200 88
-preplace inst ilconcat_5 -pg 1 -lvl 4 -x 960 -y 500 -defaultsOSRD -resize 180 96
-preplace netloc Din1_1 1 1 1 310 60n
-preplace netloc Din_1 1 1 1 310 350n
-preplace netloc In3_0_1 1 0 5 NJ 730 NJ 730 530 730 NJ 730 NJ
-preplace netloc clk_in1_1 1 0 4 20 420 NJ 420 540J 280 NJ
-preplace netloc clk_wiz_0_clk_out1 1 4 2 NJ 260 1320
-preplace netloc clk_wiz_0_locked 1 4 2 1080 280 1330
-preplace netloc gpio74hc595_0_driver_clock 1 6 1 1640J 130n
-preplace netloc gpio74hc595_0_driver_data 1 6 1 1640J 200n
-preplace netloc gpio74hc595_0_driver_latch 1 3 4 850 610 NJ 610 NJ 610 1630
+preplace inst bit_reverser_0 -pg 1 -lvl 5 -x 1210 -y 500 -defaultsOSRD
+preplace inst bit_reverser_1 -pg 1 -lvl 5 -x 1210 -y 150 -defaultsOSRD -resize 200 88
+preplace inst ilconcat_5 -pg 1 -lvl 4 -x 970 -y 500 -defaultsOSRD -resize 180 96
+preplace netloc Din1_1 1 1 1 320 60n
+preplace netloc Din_1 1 1 1 320 350n
+preplace netloc In3_0_1 1 0 5 NJ 730 NJ 730 540 730 NJ 730 NJ
+preplace netloc bit_reverser_0_outp 1 5 1 NJ 500
+preplace netloc bit_reverser_1_outp 1 5 1 N 150
+preplace netloc clk_in1_1 1 0 4 10 420 NJ 420 550J 280 NJ
+preplace netloc clk_wiz_0_clk_out1 1 4 2 NJ 260 1330
+preplace netloc clk_wiz_0_locked 1 4 2 1090 280 1340
+preplace netloc gpio74hc595_0_driver_clock 1 6 1 1650J 130n
+preplace netloc gpio74hc595_0_driver_data 1 6 1 1650J 200n
+preplace netloc gpio74hc595_0_driver_latch 1 3 4 860 610 NJ 610 NJ 610 1640
 preplace netloc gpio74hc595_0_driver_resetn 1 6 1 NJ 160
-preplace netloc gpio74hc595_1_driver_clock 1 6 1 1640J 480n
-preplace netloc gpio74hc595_1_driver_data 1 6 1 1610J 550n
-preplace netloc gpio74hc595_1_driver_latch 1 3 4 850 870 NJ 870 NJ 870 1620
+preplace netloc gpio74hc595_1_driver_clock 1 6 1 1650J 480n
+preplace netloc gpio74hc595_1_driver_data 1 6 1 1620J 550n
+preplace netloc gpio74hc595_1_driver_latch 1 3 4 860 870 NJ 870 NJ 870 1630
 preplace netloc gpio74hc595_1_driver_resetn 1 6 1 NJ 510
 preplace netloc ilconcat_0_dout 1 5 1 NJ 700
-preplace netloc ilconstant_3_dout 1 3 1 850 160n
-preplace netloc ilslice_0_Dout 1 2 1 540J 510n
-preplace netloc ilslice_1_Dout 1 2 1 NJ 490
-preplace netloc ilslice_2_Dout 1 2 1 540 60n
-preplace netloc ilslice_3_Dout 1 2 1 N 160
-preplace netloc ilvector_logic_0_Res 1 3 1 840 790n
-preplace netloc inp0_1 1 0 3 NJ 220 NJ 220 530J
-preplace netloc inp2_1 1 0 3 NJ 430 NJ 430 530J
-preplace netloc oneshot_0_outp 1 4 1 1070 670n
-preplace netloc oneshot_1_outp 1 4 1 1080 710n
-preplace netloc resetn_1 1 0 4 30 260 NJ 260 NJ 260 N
-preplace netloc util_reduced_logic_0_Res 1 6 1 NJ 700
-preplace netloc bit_reverser_0_outp 1 5 1 NJ 500
 preplace netloc ilconcat_4_dout 1 4 1 NJ 150
-preplace netloc bit_reverser_1_outp 1 5 1 N 150
-preplace netloc mux2_1_outp 1 3 1 N 140
 preplace netloc ilconcat_5_dout 1 4 1 N 500
+preplace netloc ilconstant_3_dout 1 3 1 860 160n
+preplace netloc ilslice_0_Dout 1 2 1 550J 510n
+preplace netloc ilslice_1_Dout 1 2 1 NJ 490
+preplace netloc ilslice_2_Dout 1 2 1 550 60n
+preplace netloc ilslice_3_Dout 1 2 1 N 160
+preplace netloc ilvector_logic_0_Res 1 3 1 850 790n
+preplace netloc inp0_1 1 0 3 NJ 220 NJ 220 540J
+preplace netloc inp2_1 1 0 3 NJ 430 NJ 430 540J
 preplace netloc mux2_0_outp 1 3 1 N 490
+preplace netloc mux2_1_outp 1 3 1 N 140
+preplace netloc oneshot_0_outp 1 4 1 1080 670n
+preplace netloc oneshot_1_outp 1 4 1 1090 710n
+preplace netloc resetn_1 1 0 4 20 260 NJ 260 NJ 260 N
+preplace netloc util_reduced_logic_0_Res 1 6 1 NJ 700
 preplace netloc Conn1 1 0 1 NJ 120
 preplace netloc Conn2 1 0 1 NJ 320
-levelinfo -pg 1 0 170 420 690 960 1200 1470 1660
-pagesize -pg 1 -db -bbox -sgen -150 0 1810 1010
+levelinfo -pg 1 -10 170 430 700 970 1210 1480 1670
+pagesize -pg 1 -db -bbox -sgen -160 0 1820 1010
 "
 }
 0

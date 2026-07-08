@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Wed May  6 00:42:12 2026
+| Date         : Tue Jun 23 02:16:50 2026
 | Host         : npc running 64-bit Arch Linux
 | Command      : report_methodology -file minimal_wrapper_methodology_drc_routed.rpt -pb minimal_wrapper_methodology_drc_routed.pb -rpx minimal_wrapper_methodology_drc_routed.rpx
 | Design       : minimal_wrapper
@@ -574,142 +574,142 @@ Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -3.229 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[10]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[19]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.069 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[16]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -3.337 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[14]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.238 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[22]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -3.429 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[7]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[16]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.238 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[14]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[23]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -3.441 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[12]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[21]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.253 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[11]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[20]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -3.447 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[23]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.266 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[12]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[21]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -3.453 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[13]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.307 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[8]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[17]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -3.459 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[6]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[15]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.387 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[18]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -3.463 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[22]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.419 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[10]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[19]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -3.466 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[11]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.492 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[15]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
-There is a large setup violation of -3.472 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[9]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[18]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.510 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[14]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
-There is a large setup violation of -3.473 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[12]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.620 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[13]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
-There is a large setup violation of -3.484 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[10]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.622 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[11]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
-There is a large setup violation of -3.489 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[8]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[17]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.638 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[10]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
-There is a large setup violation of -3.619 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[11]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[20]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.638 ns between minimal_i/sregs/axi_gpio_led/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[0]/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_0/inst/outputs_reg[12]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#15 Warning
 Large setup violation  
-There is a large setup violation of -4.622 ns between minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[17]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.161 ns between minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[15]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#16 Warning
 Large setup violation  
-There is a large setup violation of -5.023 ns between minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[16]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.224 ns between minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[16]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#17 Warning
 Large setup violation  
-There is a large setup violation of -5.054 ns between minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[19]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.257 ns between minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[19]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#18 Warning
 Large setup violation  
-There is a large setup violation of -5.255 ns between minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[18]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.405 ns between minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[18]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#19 Warning
 Large setup violation  
-There is a large setup violation of -5.321 ns between minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[15]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.431 ns between minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[14]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#20 Warning
 Large setup violation  
-There is a large setup violation of -5.374 ns between minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[14]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.476 ns between minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[17]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#21 Warning
 Large setup violation  
-There is a large setup violation of -6.013 ns between minimal_i/displays/tft_ili9341_wrapper_10/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[13]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.867 ns between minimal_i/displays/tft_ili9341_wrapper_13/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[10]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#22 Warning
 Large setup violation  
-There is a large setup violation of -6.198 ns between minimal_i/displays/tft_ili9341_wrapper_12/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[11]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.868 ns between minimal_i/displays/tft_ili9341_wrapper_1/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[22]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#23 Warning
 Large setup violation  
-There is a large setup violation of -6.279 ns between minimal_i/displays/tft_ili9341_wrapper_11/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[12]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.996 ns between minimal_i/displays/tft_ili9341_wrapper_12/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[11]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#24 Warning
 Large setup violation  
-There is a large setup violation of -6.355 ns between minimal_i/displays/tft_ili9341_wrapper_1/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[22]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.114 ns between minimal_i/displays/tft_ili9341_wrapper_0/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[23]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#25 Warning
 Large setup violation  
-There is a large setup violation of -6.443 ns between minimal_i/displays/tft_ili9341_wrapper_2/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[21]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.136 ns between minimal_i/displays/tft_ili9341_wrapper_2/inst/tft/tft_reset_reg_replica/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[21]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#26 Warning
 Large setup violation  
-There is a large setup violation of -6.461 ns between minimal_i/displays/tft_ili9341_wrapper_13/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[10]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.152 ns between minimal_i/displays/tft_ili9341_wrapper_10/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[13]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#27 Warning
 Large setup violation  
-There is a large setup violation of -6.478 ns between minimal_i/displays/tft_ili9341_wrapper_0/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[23]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.354 ns between minimal_i/displays/tft_ili9341_wrapper_3/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[20]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#28 Warning
 Large setup violation  
-There is a large setup violation of -6.588 ns between minimal_i/displays/tft_ili9341_wrapper_3/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[20]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.415 ns between minimal_i/displays/tft_ili9341_wrapper_11/inst/tft/tft_reset_reg/C (clocked by clk_fpga_0) and minimal_i/sregs/gpio74hc595_1/inst/outputs_reg[12]/D (clocked by clk_out1_minimal_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning
@@ -1064,7 +1064,7 @@ Related violations: <none>
 
 ULMTCS-1#1 Warning
 Control Sets use limits recommend reduction  
-This design uses 453 control sets (vs. available limit of 4400, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
+This design uses 481 control sets (vs. available limit of 4400, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
 Related violations: <none>
 
 

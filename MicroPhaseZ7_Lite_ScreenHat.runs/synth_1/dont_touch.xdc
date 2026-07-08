@@ -36,6 +36,12 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi
 # IP: bd/minimal/ip/minimal_axi_gpio_0_1/minimal_axi_gpio_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_gpio_0_1 || ORIG_REF_NAME==minimal_axi_gpio_0_1} -quiet] -quiet
 
+# IP: bd/minimal/ip/minimal_bit_reverser_0_0/minimal_bit_reverser_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_bit_reverser_0_0 || ORIG_REF_NAME==minimal_bit_reverser_0_0} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_bit_reverser_0_1/minimal_bit_reverser_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_bit_reverser_0_1 || ORIG_REF_NAME==minimal_bit_reverser_0_1} -quiet] -quiet
+
 # IP: bd/minimal/ip/minimal_tft_ili9341_wrapper_0_0/minimal_tft_ili9341_wrapper_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_tft_ili9341_wrapper_0_0 || ORIG_REF_NAME==minimal_tft_ili9341_wrapper_0_0} -quiet] -quiet
 
@@ -332,12 +338,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi
 
 # IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_1/bd_0/ip/ip_9/bd_dc8f_m00e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: bd/minimal/ip/minimal_bit_reverser_0_0/minimal_bit_reverser_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_bit_reverser_0_0 || ORIG_REF_NAME==minimal_bit_reverser_0_0} -quiet] -quiet
-
-# IP: bd/minimal/ip/minimal_bit_reverser_0_1/minimal_bit_reverser_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_bit_reverser_0_1 || ORIG_REF_NAME==minimal_bit_reverser_0_1} -quiet] -quiet
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_clk_wiz_0_0/minimal_clk_wiz_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_clk_wiz_0_0 || ORIG_REF_NAME==minimal_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet

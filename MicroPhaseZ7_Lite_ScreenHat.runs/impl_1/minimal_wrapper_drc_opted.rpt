@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Wed May  6 00:41:29 2026
+| Date         : Tue Jun 23 02:16:16 2026
 | Host         : npc running 64-bit Arch Linux
 | Command      : report_drc -file minimal_wrapper_drc_opted.rpt -pb minimal_wrapper_drc_opted.pb -rpx minimal_wrapper_drc_opted.rpx
 | Design       : minimal_wrapper
@@ -48,10 +48,11 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/spi/tft_sdi_i_3 is driving clock pin of 75 cells. This could lead to large hold time violations. Involved cells are:
+A LUT minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/spi/tft_sdi_i_3 is driving clock pin of 76 cells. This could lead to large hold time violations. Involved cells are:
 minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/FSM_sequential_state_reg[0],
 minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/FSM_sequential_state_reg[1],
 minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/FSM_sequential_state_reg[2],
+minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/FSM_sequential_state_reg[3],
 minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/delay_counter_reg[0],
 minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/delay_counter_reg[10],
 minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/delay_counter_reg[11],
@@ -62,17 +63,17 @@ minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/delay_counter_reg[15],
 minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/delay_counter_reg[16],
 minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/delay_counter_reg[17],
 minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/delay_counter_reg[18],
-minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/delay_counter_reg[19],
-minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/delay_counter_reg[1]
- (the first 15 of 75 listed)
+minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/delay_counter_reg[19]
+ (the first 15 of 76 listed)
 Related violations: <none>
 
 PLHOLDVIO-2#2 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/spi/tft_sdi_i_3 is driving clock pin of 75 cells. This could lead to large hold time violations. Involved cells are:
+A LUT minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/spi/tft_sdi_i_3 is driving clock pin of 76 cells. This could lead to large hold time violations. Involved cells are:
 minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/FSM_sequential_state_reg[0],
 minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/FSM_sequential_state_reg[1],
 minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/FSM_sequential_state_reg[2],
+minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/FSM_sequential_state_reg[3],
 minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/delay_counter_reg[0],
 minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/delay_counter_reg[10],
 minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/delay_counter_reg[11],
@@ -83,17 +84,17 @@ minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/delay_counter_reg[15],
 minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/delay_counter_reg[16],
 minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/delay_counter_reg[17],
 minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/delay_counter_reg[18],
-minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/delay_counter_reg[19],
-minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/delay_counter_reg[1]
- (the first 15 of 75 listed)
+minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/delay_counter_reg[19]
+ (the first 15 of 76 listed)
 Related violations: <none>
 
 PLHOLDVIO-2#3 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/spi/tft_sdi_i_3 is driving clock pin of 75 cells. This could lead to large hold time violations. Involved cells are:
+A LUT minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/spi/tft_sdi_i_3 is driving clock pin of 76 cells. This could lead to large hold time violations. Involved cells are:
 minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/FSM_sequential_state_reg[0],
 minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/FSM_sequential_state_reg[1],
 minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/FSM_sequential_state_reg[2],
+minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/FSM_sequential_state_reg[3],
 minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/delay_counter_reg[0],
 minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/delay_counter_reg[10],
 minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/delay_counter_reg[11],
@@ -104,17 +105,17 @@ minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/delay_counter_reg[15],
 minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/delay_counter_reg[16],
 minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/delay_counter_reg[17],
 minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/delay_counter_reg[18],
-minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/delay_counter_reg[19],
-minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/delay_counter_reg[1]
- (the first 15 of 75 listed)
+minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/delay_counter_reg[19]
+ (the first 15 of 76 listed)
 Related violations: <none>
 
 PLHOLDVIO-2#4 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/spi/tft_sdi_i_3 is driving clock pin of 75 cells. This could lead to large hold time violations. Involved cells are:
+A LUT minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/spi/tft_sdi_i_3 is driving clock pin of 76 cells. This could lead to large hold time violations. Involved cells are:
 minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/FSM_sequential_state_reg[0],
 minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/FSM_sequential_state_reg[1],
 minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/FSM_sequential_state_reg[2],
+minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/FSM_sequential_state_reg[3],
 minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/delay_counter_reg[0],
 minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/delay_counter_reg[10],
 minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/delay_counter_reg[11],
@@ -125,17 +126,17 @@ minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/delay_counter_reg[15],
 minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/delay_counter_reg[16],
 minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/delay_counter_reg[17],
 minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/delay_counter_reg[18],
-minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/delay_counter_reg[19],
-minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/delay_counter_reg[1]
- (the first 15 of 75 listed)
+minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/delay_counter_reg[19]
+ (the first 15 of 76 listed)
 Related violations: <none>
 
 PLHOLDVIO-2#5 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/spi/tft_sdi_i_3 is driving clock pin of 75 cells. This could lead to large hold time violations. Involved cells are:
+A LUT minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/spi/tft_sdi_i_3 is driving clock pin of 76 cells. This could lead to large hold time violations. Involved cells are:
 minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/FSM_sequential_state_reg[0],
 minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/FSM_sequential_state_reg[1],
 minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/FSM_sequential_state_reg[2],
+minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/FSM_sequential_state_reg[3],
 minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/delay_counter_reg[0],
 minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/delay_counter_reg[10],
 minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/delay_counter_reg[11],
@@ -146,17 +147,17 @@ minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/delay_counter_reg[15],
 minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/delay_counter_reg[16],
 minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/delay_counter_reg[17],
 minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/delay_counter_reg[18],
-minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/delay_counter_reg[19],
-minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/delay_counter_reg[1]
- (the first 15 of 75 listed)
+minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/delay_counter_reg[19]
+ (the first 15 of 76 listed)
 Related violations: <none>
 
 PLHOLDVIO-2#6 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/spi/tft_sdi_i_3 is driving clock pin of 75 cells. This could lead to large hold time violations. Involved cells are:
+A LUT minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/spi/tft_sdi_i_3 is driving clock pin of 76 cells. This could lead to large hold time violations. Involved cells are:
 minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/FSM_sequential_state_reg[0],
 minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/FSM_sequential_state_reg[1],
 minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/FSM_sequential_state_reg[2],
+minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/FSM_sequential_state_reg[3],
 minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/delay_counter_reg[0],
 minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/delay_counter_reg[10],
 minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/delay_counter_reg[11],
@@ -167,9 +168,8 @@ minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/delay_counter_reg[15],
 minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/delay_counter_reg[16],
 minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/delay_counter_reg[17],
 minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/delay_counter_reg[18],
-minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/delay_counter_reg[19],
-minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/delay_counter_reg[1]
- (the first 15 of 75 listed)
+minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/delay_counter_reg[19]
+ (the first 15 of 76 listed)
 Related violations: <none>
 
 PLHOLDVIO-2#7 Warning
