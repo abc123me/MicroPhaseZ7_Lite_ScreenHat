@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Tue Jun 23 02:16:00 2026
-# Process ID         : 2770489
+# Start of session at: Fri Jul 24 02:36:16 2026
+# Process ID         : 2221518
 # Current directory  : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.runs/impl_1
 # Command line       : vivado -log minimal_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source minimal_wrapper.tcl -notrace
 # Log file           : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.runs/impl_1/minimal_wrapper.vdi
@@ -13,13 +13,13 @@
 # Platform           : Arch
 # Operating System   : Arch Linux
 # Processor Detail   : AMD Ryzen 9 7950X3D 16-Core Processor
-# CPU Frequency      : 4768.669 MHz
+# CPU Frequency      : 4181.722 MHz
 # CPU Physical cores : 16
 # CPU Logical cores  : 32
 # Host memory        : 66310 MB
 # Swap memory        : 25741 MB
 # Total Virtual      : 92051 MB
-# Available Virtual  : 59298 MB
+# Available Virtual  : 56493 MB
 #-----------------------------------------------------------
 source minimal_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -29,8 +29,8 @@ Command: link_design -top minimal_wrapper -part xc7z010clg400-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7z010clg400-1
-Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1831.355 ; gain = 0.000 ; free physical = 3631 ; free virtual = 55886
-INFO: [Netlist 29-17] Analyzing 631 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1876.141 ; gain = 0.000 ; free physical = 12977 ; free virtual = 53136
+INFO: [Netlist 29-17] Analyzing 840 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2025.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -44,6 +44,12 @@ Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Scree
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_gpio_0_0/minimal_axi_gpio_0_0_board.xdc] for cell 'minimal_i/sregs/axi_gpio_led/U0'
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_gpio_0_1/minimal_axi_gpio_0_1_board.xdc] for cell 'minimal_i/sregs/axi_gpio_rst/U0'
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_gpio_0_1/minimal_axi_gpio_0_1_board.xdc] for cell 'minimal_i/sregs/axi_gpio_rst/U0'
+Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'minimal_i/displays/ila_0/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/ila_v6_2/constraints/ila_impl.xdc:31]
+Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'minimal_i/displays/ila_0/inst'
+Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'minimal_i/displays/ila_0/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/ila_v6_2/constraints/ila.xdc:108]
+Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'minimal_i/displays/ila_0/inst'
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0/minimal_rst_ps7_0_50M_0_board.xdc] for cell 'minimal_i/ps/rst_ps7_0_50M/U0'
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0/minimal_rst_ps7_0_50M_0_board.xdc] for cell 'minimal_i/ps/rst_ps7_0_50M/U0'
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_1/bd_1c4e_psr_aclk_0_board.xdc] for cell 'minimal_i/ps/axi_smc/inst/clk_map/psr_aclk/U0'
@@ -51,7 +57,7 @@ Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_L
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/smartconnect.xdc] for cell 'minimal_i/ps/axi_smc/inst'
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/smartconnect.xdc] for cell 'minimal_i/ps/axi_smc/inst'
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc] for cell 'minimal_i/ps/processing_system7_0/inst'
-WARNING: [Vivado 12-2489] -input_jitter contains time 0.499980 which will be rounded to 0.500 to ensure it is an integer multiple of 1 picosecond [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc:21]
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.499980 which will be rounded to 0.500 to ensure it is an integer multiple of 1 picosecond [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc:24]
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc] for cell 'minimal_i/ps/processing_system7_0/inst'
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0_board.xdc] for cell 'minimal_i/ps/axi_ethernetlite_0/U0'
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0_board.xdc] for cell 'minimal_i/ps/axi_ethernetlite_0/U0'
@@ -66,6 +72,334 @@ Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_L
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_1/smartconnect.xdc] for cell 'minimal_i/ps/axi_smc1/inst'
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_1/smartconnect.xdc] for cell 'minimal_i/ps/axi_smc1/inst'
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:119]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:119]
+WARNING: [Vivado 12-646] clock 'RST_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:120]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock RST_SREG_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:120]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'RST_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:121]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock RST_SREG_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:121]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'RST_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:122]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock RST_SREG_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:122]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'RST_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:123]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock RST_SREG_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:123]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'RST_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:124]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock RST_SREG_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:124]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'RST_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:125]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock RST_SREG_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:125]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:127]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:127]
+WARNING: [Vivado 12-646] clock 'LED_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:128]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock LED_SREG_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:128]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'LED_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:129]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock LED_SREG_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:129]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'LED_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:130]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock LED_SREG_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:130]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'LED_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:131]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock LED_SREG_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:131]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'LED_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:132]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock LED_SREG_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:132]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'LED_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:133]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock LED_SREG_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:133]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:144]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:144]
+WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:145]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_0_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:145]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:146]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_0_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:146]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:147]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_0_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:147]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:148]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_0_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:148]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:149]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_0_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:149]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:150]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_0_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:150]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:152]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:152]
+WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:153]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_1_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:153]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:154]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_1_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:154]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:155]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_1_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:155]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:156]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_1_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:156]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:157]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_1_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:157]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:158]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_1_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:158]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:160]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:160]
+WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:161]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_2_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:161]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:162]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_2_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:162]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:163]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_2_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:163]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:164]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_2_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:164]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:165]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_2_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:165]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:166]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_2_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:166]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:168]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:168]
+WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:169]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_3_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:169]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:170]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_3_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:170]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:171]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_3_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:171]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:172]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_3_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:172]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:173]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_3_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:173]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:174]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_3_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:174]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:176]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:176]
+WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:177]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_4_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:177]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:178]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_4_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:178]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:179]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_4_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:179]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:180]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_4_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:180]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:181]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_4_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:181]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:182]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_4_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:182]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:184]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:184]
+WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:185]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_5_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:185]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:186]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_5_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:186]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:187]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_5_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:187]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:188]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_5_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:188]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:189]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_5_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:189]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:190]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_5_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:190]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:192]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:192]
+WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:193]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_6_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:193]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:194]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_6_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:194]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:195]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_6_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:195]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:196]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_6_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:196]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:197]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_6_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:197]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:198]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_6_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:198]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:200]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:200]
+WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:201]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_7_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:201]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:202]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_7_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:202]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:203]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_7_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:203]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:204]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_7_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:204]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:205]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_7_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:205]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:206]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_7_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:206]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:208]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:208]
+WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:209]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_8_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:209]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:210]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_8_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:210]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:211]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_8_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:211]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:212]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_8_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:212]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:213]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_8_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:213]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:214]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_8_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:214]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:216]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:216]
+WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:217]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_9_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:217]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:218]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_9_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:218]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:219]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_9_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:219]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:220]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_9_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:220]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:221]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_9_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:221]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:222]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_9_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:222]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:224]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:224]
+WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:225]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_A_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:225]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:226]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_A_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:226]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:227]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_A_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:227]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:228]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_A_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:228]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:229]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_A_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:229]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:230]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_A_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:230]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:232]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:232]
+WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:233]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_B_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:233]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:234]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_B_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:234]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:235]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_B_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:235]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:236]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_B_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:236]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:237]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_B_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:237]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:238]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_B_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:238]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:240]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:240]
+WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:241]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_C_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:241]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:242]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_C_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:242]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:243]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_C_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:243]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:244]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_C_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:244]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:245]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_C_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:245]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:246]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_C_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:246]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:248]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:248]
+WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:249]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_D_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:249]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:250]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_D_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:250]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:251]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_D_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:251]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:252]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_D_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:252]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:253]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_D_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:253]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:254]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock ILI_D_CLK'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:254]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-602] set_output_delay: list contains '1' objects of types '(port)' other than the types '(output port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:261]
+CRITICAL WARNING: [Constraints 18-472] set_output_delay: list does not contain any object of type(s) '(output port,internal pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:261]
+CRITICAL WARNING: [Constraints 18-602] set_output_delay: list contains '1' objects of types '(port)' other than the types '(output port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:267]
+CRITICAL WARNING: [Constraints 18-472] set_output_delay: list does not contain any object of type(s) '(output port,internal pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:267]
+CRITICAL WARNING: [Constraints 18-602] set_output_delay: list contains '1' objects of types '(port)' other than the types '(output port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:273]
+CRITICAL WARNING: [Constraints 18-472] set_output_delay: list does not contain any object of type(s) '(output port,internal pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:273]
+CRITICAL WARNING: [Constraints 18-602] set_output_delay: list contains '1' objects of types '(port)' other than the types '(output port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:279]
+CRITICAL WARNING: [Constraints 18-472] set_output_delay: list does not contain any object of type(s) '(output port,internal pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:279]
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc]
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_clk_wiz_0_0/minimal_clk_wiz_0_0_late.xdc] for cell 'minimal_i/sregs/clk_wiz_0/inst'
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_clk_wiz_0_0/minimal_clk_wiz_0_0_late.xdc] for cell 'minimal_i/sregs/clk_wiz_0/inst'
@@ -73,21 +407,23 @@ Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Scree
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0_clocks.xdc] for cell 'minimal_i/ps/axi_ethernetlite_0/U0'
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_0/minimal_axi_dma_0_0_clocks.xdc] for cell 'minimal_i/ps/axi_dma_0/U0'
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_0/minimal_axi_dma_0_0_clocks.xdc] for cell 'minimal_i/ps/axi_dma_0/U0'
-INFO: [Project 1-1714] 119 XPM XDC files have been applied to the design.
+INFO: [Project 1-1714] 127 XPM XDC files have been applied to the design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-1687] 6 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2583.383 ; gain = 0.000 ; free physical = 3047 ; free virtual = 55312
+INFO: [Project 1-1687] 8 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2636.137 ; gain = 0.000 ; free physical = 12390 ; free virtual = 52549
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 368 instances were transformed.
+  A total of 440 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 68 instances
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
   RAM16X1S => RAM32X1S (RAMS32): 4 instances
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 27 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 30 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
   RAM64M => RAM64M (RAMD64E(x4)): 280 instances
   RAM64X1D => RAM64X1D (RAMD64E(x2)): 56 instances
 
-14 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+14 Infos, 101 Warnings, 136 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2583.418 ; gain = 967.188 ; free physical = 3042 ; free virtual = 55311
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2636.172 ; gain = 1009.320 ; free physical = 12390 ; free virtual = 52548
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
@@ -98,50 +434,60 @@ INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.49 . Memory (MB): peak = 2583.418 ; gain = 0.000 ; free physical = 3047 ; free virtual = 55317
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.43 . Memory (MB): peak = 2636.172 ; gain = 0.000 ; free physical = 12389 ; free virtual = 52548
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 2581a133c
+Ending Cache Timing Information Task | Checksum: 1c8ea0c7e
 
-Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2583.418 ; gain = 0.000 ; free physical = 3057 ; free virtual = 55320
+Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.31 . Memory (MB): peak = 2636.172 ; gain = 0.000 ; free physical = 12383 ; free virtual = 52541
 
 Starting Logic Optimization Task
 
 Phase 1 Initialization
 
 Phase 1.1 Core Generation And Design Setup
-Phase 1.1 Core Generation And Design Setup | Checksum: 2581a133c
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2934.195 ; gain = 0.000 ; free physical = 2779 ; free virtual = 55041
+Phase 1.1.1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = 9b5cfb2f2b076e55.
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3000.762 ; gain = 0.000 ; free physical = 11727 ; free virtual = 51888
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3003.730 ; gain = 0.000 ; free physical = 11733 ; free virtual = 51895
+Phase 1.1.1 Generate And Synthesize Debug Cores | Checksum: 198ea7bfc
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3003.730 ; gain = 23.781 ; free physical = 11733 ; free virtual = 51895
+Phase 1.1 Core Generation And Design Setup | Checksum: 198ea7bfc
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3003.730 ; gain = 23.781 ; free physical = 11729 ; free virtual = 51891
 
 Phase 1.2 Setup Constraints And Sort Netlist
-Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 2581a133c
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 198ea7bfc
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2934.195 ; gain = 0.000 ; free physical = 2779 ; free virtual = 55042
-Phase 1 Initialization | Checksum: 2581a133c
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3003.730 ; gain = 23.781 ; free physical = 11726 ; free virtual = 51888
+Phase 1 Initialization | Checksum: 198ea7bfc
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2934.195 ; gain = 0.000 ; free physical = 2779 ; free virtual = 55043
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3003.730 ; gain = 23.781 ; free physical = 11726 ; free virtual = 51888
 
 Phase 2 Timer Update And Timing Data Collection
 
 Phase 2.1 Detect if minReqCache needed
-Phase 2.1 Detect if minReqCache needed | Checksum: 2581a133c
+Phase 2.1 Detect if minReqCache needed | Checksum: 198ea7bfc
 
-Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2934.195 ; gain = 0.000 ; free physical = 2774 ; free virtual = 55038
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3003.730 ; gain = 23.781 ; free physical = 11740 ; free virtual = 51901
 
 Phase 2.2 Timer Update
-Phase 2.2 Timer Update | Checksum: 2581a133c
+Phase 2.2 Timer Update | Checksum: 198ea7bfc
 
-Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2934.195 ; gain = 0.000 ; free physical = 2757 ; free virtual = 55021
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 3003.730 ; gain = 23.781 ; free physical = 11725 ; free virtual = 51887
 
 Phase 2.3 Timing Data Collection
-Phase 2.3 Timing Data Collection | Checksum: 2581a133c
+Phase 2.3 Timing Data Collection | Checksum: 198ea7bfc
 
-Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2934.195 ; gain = 0.000 ; free physical = 2757 ; free virtual = 55021
-Phase 2 Timer Update And Timing Data Collection | Checksum: 2581a133c
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 3003.730 ; gain = 23.781 ; free physical = 11724 ; free virtual = 51886
+Phase 2 Timer Update And Timing Data Collection | Checksum: 198ea7bfc
 
-Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2934.195 ; gain = 0.000 ; free physical = 2757 ; free virtual = 55021
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 3003.730 ; gain = 23.781 ; free physical = 11724 ; free virtual = 51886
 
 Phase 3 Retarget
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. ETH_MII_col_IBUF_inst 
@@ -153,77 +499,77 @@ Resolution: The tool has removed redundant IBUF. To resolve this warning, check 
 INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
 INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
 INFO: [Opt 31-1566] Pulled 3 inverters resulting in an inversion of 7 pins
-INFO: [Opt 31-138] Pushed 11 inverter(s) to 53 load pin(s).
+INFO: [Opt 31-138] Pushed 14 inverter(s) to 61 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 3 Retarget | Checksum: 1de9a391b
+Phase 3 Retarget | Checksum: 20aebee4b
 
-Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2934.195 ; gain = 0.000 ; free physical = 2749 ; free virtual = 55021
-Retarget | Checksum: 1de9a391b
-INFO: [Opt 31-389] Phase Retarget created 2 cells and removed 44 cells
-INFO: [Opt 31-1021] In phase Retarget, 128 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 3003.730 ; gain = 23.781 ; free physical = 11717 ; free virtual = 51879
+Retarget | Checksum: 20aebee4b
+INFO: [Opt 31-389] Phase Retarget created 9 cells and removed 62 cells
+INFO: [Opt 31-1021] In phase Retarget, 193 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 4 Constant propagation | Checksum: 153b3a473
+Phase 4 Constant propagation | Checksum: 1ff8c8eff
 
-Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.27 . Memory (MB): peak = 2934.195 ; gain = 0.000 ; free physical = 2746 ; free virtual = 55016
-Constant propagation | Checksum: 153b3a473
-INFO: [Opt 31-389] Phase Constant propagation created 1 cells and removed 6 cells
-INFO: [Opt 31-1021] In phase Constant propagation, 128 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 3003.730 ; gain = 23.781 ; free physical = 11717 ; free virtual = 51879
+Constant propagation | Checksum: 1ff8c8eff
+INFO: [Opt 31-389] Phase Constant propagation created 1 cells and removed 22 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 175 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 5 Sweep
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2934.195 ; gain = 0.000 ; free physical = 2751 ; free virtual = 55018
+Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3003.730 ; gain = 0.000 ; free physical = 11725 ; free virtual = 51887
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2934.195 ; gain = 0.000 ; free physical = 2751 ; free virtual = 55020
-Phase 5 Sweep | Checksum: 15c5c2bb1
+Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3003.730 ; gain = 0.000 ; free physical = 11725 ; free virtual = 51887
+Phase 5 Sweep | Checksum: 2a53442c3
 
-Time (s): cpu = 00:00:00.96 ; elapsed = 00:00:00.67 . Memory (MB): peak = 2934.195 ; gain = 0.000 ; free physical = 2751 ; free virtual = 55021
-Sweep | Checksum: 15c5c2bb1
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 333 cells
-INFO: [Opt 31-1021] In phase Sweep, 162 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 3003.730 ; gain = 23.781 ; free physical = 11726 ; free virtual = 51888
+Sweep | Checksum: 2a53442c3
+INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 449 cells
+INFO: [Opt 31-1021] In phase Sweep, 1081 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 6 BUFG optimization
-Phase 6 BUFG optimization | Checksum: 15c5c2bb1
+Phase 6 BUFG optimization | Checksum: 222ba67b8
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.73 . Memory (MB): peak = 2966.211 ; gain = 32.016 ; free physical = 2751 ; free virtual = 55018
-BUFG optimization | Checksum: 15c5c2bb1
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 3035.746 ; gain = 55.797 ; free physical = 11725 ; free virtual = 51887
+BUFG optimization | Checksum: 222ba67b8
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 7 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 7 Shift Register Optimization | Checksum: 15c5c2bb1
+Phase 7 Shift Register Optimization | Checksum: 222ba67b8
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.73 . Memory (MB): peak = 2966.211 ; gain = 32.016 ; free physical = 2751 ; free virtual = 55019
-Shift Register Optimization | Checksum: 15c5c2bb1
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 3035.746 ; gain = 55.797 ; free physical = 11725 ; free virtual = 51887
+Shift Register Optimization | Checksum: 222ba67b8
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 8 Post Processing Netlist
-Phase 8 Post Processing Netlist | Checksum: 15c5c2bb1
+Phase 8 Post Processing Netlist | Checksum: 279c28918
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.75 . Memory (MB): peak = 2966.211 ; gain = 32.016 ; free physical = 2751 ; free virtual = 55019
-Post Processing Netlist | Checksum: 15c5c2bb1
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 3035.746 ; gain = 55.797 ; free physical = 11725 ; free virtual = 51887
+Post Processing Netlist | Checksum: 279c28918
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
-INFO: [Opt 31-1021] In phase Post Processing Netlist, 153 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 210 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 9 Finalization
 
 Phase 9.1 Finalizing Design Cores and Updating Shapes
-Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1d02f6eea
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1dffd69c4
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.86 . Memory (MB): peak = 2966.211 ; gain = 32.016 ; free physical = 2764 ; free virtual = 55033
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 3035.746 ; gain = 55.797 ; free physical = 11715 ; free virtual = 51877
 
 Phase 9.2 Verifying Netlist Connectivity
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2966.211 ; gain = 0.000 ; free physical = 2765 ; free virtual = 55033
-Phase 9.2 Verifying Netlist Connectivity | Checksum: 1d02f6eea
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3035.746 ; gain = 0.000 ; free physical = 11715 ; free virtual = 51877
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1dffd69c4
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.88 . Memory (MB): peak = 2966.211 ; gain = 32.016 ; free physical = 2765 ; free virtual = 55033
-Phase 9 Finalization | Checksum: 1d02f6eea
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 3035.746 ; gain = 55.797 ; free physical = 11715 ; free virtual = 51877
+Phase 9 Finalization | Checksum: 1dffd69c4
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.88 . Memory (MB): peak = 2966.211 ; gain = 32.016 ; free physical = 2765 ; free virtual = 55033
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 3035.746 ; gain = 55.797 ; free physical = 11715 ; free virtual = 51877
 Opt_design Change Summary
 =========================
 
@@ -231,48 +577,55 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |               2  |              44  |                                            128  |
-|  Constant propagation         |               1  |               6  |                                            128  |
-|  Sweep                        |               0  |             333  |                                            162  |
+|  Retarget                     |               9  |              62  |                                            193  |
+|  Constant propagation         |               1  |              22  |                                            175  |
+|  Sweep                        |               1  |             449  |                                           1081  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
 |  Shift Register Optimization  |               0  |               0  |                                              0  |
-|  Post Processing Netlist      |               0  |               0  |                                            153  |
+|  Post Processing Netlist      |               0  |               0  |                                            210  |
 -------------------------------------------------------------------------------------------------------------------------
 
 
-Ending Logic Optimization Task | Checksum: 1d02f6eea
+Ending Logic Optimization Task | Checksum: 1dffd69c4
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.88 . Memory (MB): peak = 2966.211 ; gain = 32.016 ; free physical = 2765 ; free virtual = 55033
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 3035.746 ; gain = 55.797 ; free physical = 11715 ; free virtual = 51877
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-INFO: [Pwropt 34-9] Applying IDT optimizations ...
-INFO: [Pwropt 34-10] Applying ODC optimizations ...
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
 
 
 Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 9 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 56 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 4 WE to EN ports
-Number of BRAM Ports augmented: 9 newly gated: 4 Total Ports: 18
-Ending PowerOpt Patch Enables Task | Checksum: 1e5e03fc1
+Number of BRAM Ports augmented: 88 newly gated: 4 Total Ports: 112
+Ending PowerOpt Patch Enables Task | Checksum: 1d879c1ff
 
-Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3134.262 ; gain = 0.000 ; free physical = 2906 ; free virtual = 55167
-Ending Power Optimization Task | Checksum: 1e5e03fc1
+Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.2 . Memory (MB): peak = 3235.797 ; gain = 0.000 ; free physical = 11825 ; free virtual = 51988
+Ending Power Optimization Task | Checksum: 1d879c1ff
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3134.262 ; gain = 168.051 ; free physical = 2911 ; free virtual = 55170
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3235.797 ; gain = 200.051 ; free physical = 11825 ; free virtual = 51988
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 1e5e03fc1
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3134.262 ; gain = 0.000 ; free physical = 2911 ; free virtual = 55170
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3134.262 ; gain = 0.000 ; free physical = 2911 ; free virtual = 55170
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 131b3821e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.64 . Memory (MB): peak = 3235.797 ; gain = 0.000 ; free physical = 11853 ; free virtual = 52015
+Ending Final Cleanup Task | Checksum: 131b3821e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3235.797 ; gain = 0.000 ; free physical = 11862 ; free virtual = 52025
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3235.797 ; gain = 0.000 ; free physical = 11862 ; free virtual = 52025
 INFO: [Common 17-83] Releasing license: Implementation
-45 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+53 Infos, 104 Warnings, 136 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 3235.797 ; gain = 599.625 ; free physical = 11862 ; free virtual = 52025
 INFO: [Vivado 12-24828] Executing command : report_drc -file minimal_wrapper_drc_opted.rpt -pb minimal_wrapper_drc_opted.pb -rpx minimal_wrapper_drc_opted.rpx
 Command: report_drc -file minimal_wrapper_drc_opted.rpt -pb minimal_wrapper_drc_opted.pb -rpx minimal_wrapper_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -280,18 +633,19 @@ INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.runs/impl_1/minimal_wrapper_drc_opted.rpt.
 report_drc completed successfully
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3134.262 ; gain = 0.000 ; free physical = 2874 ; free virtual = 55128
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3134.262 ; gain = 0.000 ; free physical = 2873 ; free virtual = 55127
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3235.797 ; gain = 0.000 ; free physical = 11874 ; free virtual = 52038
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3235.797 ; gain = 0.000 ; free physical = 11874 ; free virtual = 52038
 Writing XDEF routing.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3134.262 ; gain = 0.000 ; free physical = 2871 ; free virtual = 55126
 Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3235.797 ; gain = 0.000 ; free physical = 11877 ; free virtual = 52042
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3134.262 ; gain = 0.000 ; free physical = 2870 ; free virtual = 55125
-Wrote PlaceStorage: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3134.262 ; gain = 0.000 ; free physical = 2868 ; free virtual = 55122
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3134.262 ; gain = 0.000 ; free physical = 2868 ; free virtual = 55122
-Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 3134.262 ; gain = 0.000 ; free physical = 2865 ; free virtual = 55120
-Write Physdb Complete: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3134.262 ; gain = 0.000 ; free physical = 2864 ; free virtual = 55119
+Wrote RouteStorage: Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3235.797 ; gain = 0.000 ; free physical = 11878 ; free virtual = 52043
+Wrote PlaceStorage: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3235.797 ; gain = 0.000 ; free physical = 11876 ; free virtual = 52041
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3235.797 ; gain = 0.000 ; free physical = 11876 ; free virtual = 52041
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3235.797 ; gain = 0.000 ; free physical = 11875 ; free virtual = 52041
+Write Physdb Complete: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3235.797 ; gain = 0.000 ; free physical = 11875 ; free virtual = 52041
 INFO: [Common 17-1381] The checkpoint '/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.runs/impl_1/minimal_wrapper_opt.dcp' has been generated.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
@@ -311,49 +665,13 @@ Starting Placer Task
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2781 ; free virtual = 55005
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 11b81daf2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11865 ; free virtual = 52032
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 117453583
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2781 ; free virtual = 55005
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2780 ; free virtual = 55004
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11865 ; free virtual = 52032
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11865 ; free virtual = 52032
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-WARNING: [Place 30-568] A LUT 'minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/spi/tft_sdi_i_3' is driving clock pin of 76 registers. This could lead to large hold time violations. First few involved registers are:
-	minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/spi/counter_reg[2] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/spi/counter_reg[0] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/spi/counter_reg[1] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/spi/cs_reg {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_4/inst/tft/spi/idata_reg[0] {FDRE}
-WARNING: [Place 30-568] A LUT 'minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/spi/tft_sdi_i_3' is driving clock pin of 76 registers. This could lead to large hold time violations. First few involved registers are:
-	minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/spi/counter_reg[2] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/spi/counter_reg[0] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/spi/counter_reg[1] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/spi/cs_reg {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_5/inst/tft/spi/idata_reg[0] {FDRE}
-WARNING: [Place 30-568] A LUT 'minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/spi/tft_sdi_i_3' is driving clock pin of 76 registers. This could lead to large hold time violations. First few involved registers are:
-	minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/init_clock_reg {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/spi/counter_reg[2] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/spi/counter_reg[0] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/spi/counter_reg[1] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_6/inst/tft/spi/cs_reg {FDRE}
-WARNING: [Place 30-568] A LUT 'minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/spi/tft_sdi_i_3' is driving clock pin of 76 registers. This could lead to large hold time violations. First few involved registers are:
-	minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/init_clock_reg {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/spi/counter_reg[2] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/spi/counter_reg[0] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/spi/counter_reg[1] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_7/inst/tft/spi/cs_reg {FDRE}
-WARNING: [Place 30-568] A LUT 'minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/spi/tft_sdi_i_3' is driving clock pin of 76 registers. This could lead to large hold time violations. First few involved registers are:
-	minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/spi/counter_reg[2] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/spi/counter_reg[0] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/spi/counter_reg[1] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/spi/cs_reg {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_8/inst/tft/spi/idata_reg[0] {FDRE}
-WARNING: [Place 30-568] A LUT 'minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/spi/tft_sdi_i_3' is driving clock pin of 76 registers. This could lead to large hold time violations. First few involved registers are:
-	minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/spi/counter_reg[2] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/spi/counter_reg[0] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/spi/counter_reg[1] {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/spi/cs_reg {FDRE}
-	minimal_i/displays/tft_ili9341_wrapper_9/inst/tft/spi/idata_reg[0] {FDRE}
 WARNING: [Place 30-568] A LUT 'minimal_i/sregs/oneshot_0/inst/outp_i_2' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
 	minimal_i/sregs/oneshot_0/inst/outp_reg {FDRE}
 WARNING: [Place 30-568] A LUT 'minimal_i/sregs/oneshot_1/inst/outp_i_2' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
@@ -361,58 +679,58 @@ WARNING: [Place 30-568] A LUT 'minimal_i/sregs/oneshot_1/inst/outp_i_2' is drivi
 WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
 
 	minimal_i/ps/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST (IBUF.O) is locked to IOB_X0Y56
-	minimal_i/ps/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
+	minimal_i/ps/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y3
 Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: cbfe3c79
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: bff39411
 
-Time (s): cpu = 00:00:00.77 ; elapsed = 00:00:00.46 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2835 ; free virtual = 55066
+Time (s): cpu = 00:00:00.95 ; elapsed = 00:00:00.56 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11861 ; free virtual = 52028
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 1a69301ea
+Phase 1.3 Build Placer Netlist Model | Checksum: 128e43061
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2786 ; free virtual = 55041
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11839 ; free virtual = 52006
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 1a69301ea
+Phase 1.4 Constrain Clocks/Macros | Checksum: 128e43061
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2786 ; free virtual = 55038
-Phase 1 Placer Initialization | Checksum: 1a69301ea
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11838 ; free virtual = 52006
+Phase 1 Placer Initialization | Checksum: 128e43061
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2786 ; free virtual = 55038
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11839 ; free virtual = 52006
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 2115965df
+Phase 2.1 Floorplanning | Checksum: 141f3ff3f
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2790 ; free virtual = 55047
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11906 ; free virtual = 52073
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1b66a22c6
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1e3187f60
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2751 ; free virtual = 55000
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11887 ; free virtual = 52054
 
 Phase 2.3 Post-Processing in Floorplanning
-Phase 2.3 Post-Processing in Floorplanning | Checksum: 22d0e467c
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1e5c114ac
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2752 ; free virtual = 54999
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11891 ; free virtual = 52059
 
 Phase 2.4 Global Place Phase1
-Phase 2.4 Global Place Phase1 | Checksum: 18ff23cc1
+Phase 2.4 Global Place Phase1 | Checksum: 1c2271363
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2736 ; free virtual = 54993
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11767 ; free virtual = 51934
 
 Phase 2.5 Global Place Phase2
 
 Phase 2.5.1 UpdateTiming Before Physical Synthesis
-Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 1d450a4a0
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 21326523b
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2757 ; free virtual = 55011
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11769 ; free virtual = 51936
 
 Phase 2.5.2 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 380 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 674 LUT instances to create LUTNM shape
 INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
-INFO: [Physopt 32-1138] End 1 Pass. Optimized 163 nets or LUTs. Breaked 0 LUT, combined 163 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 285 nets or LUTs. Breaked 0 LUT, combined 285 existing LUTs and moved 0 existing LUT
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
@@ -431,7 +749,7 @@ INFO: [Physopt 32-846] No candidate cells for URAM register optimization found i
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2754 ; free virtual = 55015
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11787 ; free virtual = 51954
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -440,7 +758,7 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |            0  |            163  |                   163  |           0  |           1  |  00:00:00  |
+|  LUT Combining                                    |            0  |            285  |                   285  |           0  |           1  |  00:00:00  |
 |  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
@@ -449,69 +767,69 @@ Summary of Physical Synthesis Optimizations
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |            0  |            163  |                   163  |           0  |           9  |  00:00:00  |
+|  Total                                            |            0  |            285  |                   285  |           0  |           9  |  00:00:00  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.5.2 Physical Synthesis In Placer | Checksum: fc6f0175
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 2113d2bad
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2741 ; free virtual = 55019
-Phase 2.5 Global Place Phase2 | Checksum: 124443ecd
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11801 ; free virtual = 51969
+Phase 2.5 Global Place Phase2 | Checksum: 1c8132425
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2738 ; free virtual = 55020
-Phase 2 Global Placement | Checksum: 124443ecd
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11786 ; free virtual = 51953
+Phase 2 Global Placement | Checksum: 1c8132425
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2736 ; free virtual = 55018
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11786 ; free virtual = 51953
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 19065373f
+Phase 3.1 Commit Multi Column Macros | Checksum: 1ea7f91a8
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2717 ; free virtual = 54990
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11785 ; free virtual = 51952
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 15358ea80
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 278d4ced6
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2717 ; free virtual = 54986
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:10 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11749 ; free virtual = 51917
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 147992e7d
+Phase 3.3 Area Swap Optimization | Checksum: 1fe0f2f56
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2717 ; free virtual = 54985
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:10 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11749 ; free virtual = 51916
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: ef091c9c
+Phase 3.4 Pipeline Register Optimization | Checksum: 1f486cc7d
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2717 ; free virtual = 54985
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:10 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11749 ; free virtual = 51916
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 1866ad8a6
+Phase 3.5 Fast Optimization | Checksum: 220a852b8
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:08 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2700 ; free virtual = 54955
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:11 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11760 ; free virtual = 51928
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 10ab6145d
+Phase 3.6 Small Shape Detail Placement | Checksum: 21edf0184
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2707 ; free virtual = 54965
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11776 ; free virtual = 51943
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 1cf00b82a
+Phase 3.7 Re-assign LUT pins | Checksum: 1bf6d5eef
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2706 ; free virtual = 54966
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11766 ; free virtual = 51933
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 1b9bd12bf
+Phase 3.8 Pipeline Register Optimization | Checksum: 1d4b0dd3e
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2706 ; free virtual = 54963
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:14 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11772 ; free virtual = 51939
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: b652c3fe
+Phase 3.9 Fast Optimization | Checksum: 1f62f626d
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:10 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2716 ; free virtual = 54993
-Phase 3 Detail Placement | Checksum: b652c3fe
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:14 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11788 ; free virtual = 51955
+Phase 3 Detail Placement | Checksum: 1f62f626d
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:10 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2728 ; free virtual = 54994
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:14 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11787 ; free virtual = 51955
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -519,7 +837,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 1be91a905
+Post Placement Optimization Initialization | Checksum: 1c5c5bb1d
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -527,33 +845,33 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.249 | TNS=-125.879 |
-Phase 1 Physical Synthesis Initialization | Checksum: 1548476ec
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.907 | TNS=-14.900 |
+Phase 1 Physical Synthesis Initialization | Checksum: 112678724
 
-Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2781 ; free virtual = 55028
+Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11827 ; free virtual = 51994
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
-Ending Physical Synthesis Task | Checksum: 1745800fd
+Ending Physical Synthesis Task | Checksum: 14c198cfe
 
-Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2781 ; free virtual = 55041
-Phase 4.1.1.1 BUFG Insertion | Checksum: 1be91a905
+Time (s): cpu = 00:00:00.49 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11829 ; free virtual = 51996
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1c5c5bb1d
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:11 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2765 ; free virtual = 55033
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:16 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11829 ; free virtual = 51996
 
 Phase 4.1.1.2 Post Placement Timing Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-6.088. For the most accurate timing information please run report_timing.
-Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 19f6dbef8
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-3.718. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1318b4f14
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:15 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2802 ; free virtual = 55011
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:17 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11831 ; free virtual = 51998
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:15 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2803 ; free virtual = 55011
-Phase 4.1 Post Commit Optimization | Checksum: 19f6dbef8
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:17 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11831 ; free virtual = 51998
+Phase 4.1 Post Commit Optimization | Checksum: 1318b4f14
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:15 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2803 ; free virtual = 55011
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:17 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11831 ; free virtual = 51998
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 19f6dbef8
+Phase 4.2 Post Placement Cleanup | Checksum: 1318b4f14
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:15 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2805 ; free virtual = 55013
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:18 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11837 ; free virtual = 52005
 
 Phase 4.3 Placer Reporting
 
@@ -565,52 +883,52 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |___________|___________________|___________________|
 |      North|                1x1|                2x2|
 |___________|___________________|___________________|
-|      South|                1x1|                2x2|
+|      South|                1x1|                1x1|
 |___________|___________________|___________________|
 |       East|                1x1|                1x1|
 |___________|___________________|___________________|
 |       West|                1x1|                1x1|
 |___________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: 19f6dbef8
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1318b4f14
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:15 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2805 ; free virtual = 55013
-Phase 4.3 Placer Reporting | Checksum: 19f6dbef8
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:18 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11842 ; free virtual = 52010
+Phase 4.3 Placer Reporting | Checksum: 1318b4f14
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:15 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2805 ; free virtual = 55014
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:18 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11842 ; free virtual = 52010
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2805 ; free virtual = 55014
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11847 ; free virtual = 52015
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:15 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2805 ; free virtual = 55014
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 11868102e
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:18 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11847 ; free virtual = 52015
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 159403230
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:15 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2805 ; free virtual = 55014
-Ending Placer Task | Checksum: bd8efba4
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:18 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11843 ; free virtual = 52010
+Ending Placer Task | Checksum: 14fb25cee
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:15 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2805 ; free virtual = 55014
-88 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:18 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11854 ; free virtual = 52022
+97 Infos, 107 Warnings, 136 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:17 . Memory (MB): peak = 3493.543 ; gain = 359.281 ; free physical = 2808 ; free virtual = 55017
+place_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:19 . Memory (MB): peak = 3643.102 ; gain = 407.305 ; free physical = 11855 ; free virtual = 52023
 INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
 Running report generation with 3 threads.
-INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file minimal_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2799 ; free virtual = 55001
 INFO: [Vivado 12-24828] Executing command : report_utilization -file minimal_wrapper_utilization_placed.rpt -pb minimal_wrapper_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file minimal_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11829 ; free virtual = 51996
 INFO: [Vivado 12-24828] Executing command : report_io -file minimal_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2803 ; free virtual = 55002
+report_io: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.21 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11841 ; free virtual = 52009
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2803 ; free virtual = 54999
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2803 ; free virtual = 54999
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11837 ; free virtual = 52005
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11837 ; free virtual = 52005
 Writing XDEF routing.
 Writing XDEF routing logical nets.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2803 ; free virtual = 54999
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11835 ; free virtual = 52005
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2803 ; free virtual = 55000
-Wrote PlaceStorage: Time (s): cpu = 00:00:00.54 ; elapsed = 00:00:00.17 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2797 ; free virtual = 54994
-Wrote Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2796 ; free virtual = 54994
-Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2795 ; free virtual = 54993
-Write Physdb Complete: Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.21 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2795 ; free virtual = 54993
+Wrote RouteStorage: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11832 ; free virtual = 52003
+Wrote PlaceStorage: Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.26 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11794 ; free virtual = 51978
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11782 ; free virtual = 51967
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11788 ; free virtual = 51974
+Write Physdb Complete: Time (s): cpu = 00:00:00.98 ; elapsed = 00:00:00.33 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11747 ; free virtual = 51933
 INFO: [Common 17-1381] The checkpoint '/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.runs/impl_1/minimal_wrapper_placed.dcp' has been generated.
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
@@ -618,67 +936,40 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 
 Starting Initial Update Timing Task
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.55 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2719 ; free virtual = 54897
-INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 2.37s |  WALL: 0.60s
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2719 ; free virtual = 54896
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.92 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11823 ; free virtual = 51997
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 3.90s |  WALL: 0.98s
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11817 ; free virtual = 51991
 
 Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.088 | TNS=-123.411 |
-Phase 1 Physical Synthesis Initialization | Checksum: b8974813
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.718 | TNS=-13.719 |
+Phase 1 Physical Synthesis Initialization | Checksum: aa35c1c4
 
-Time (s): cpu = 00:00:00.9 ; elapsed = 00:00:00.55 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2719 ; free virtual = 54894
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.088 | TNS=-123.411 |
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.82 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11832 ; free virtual = 52007
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.718 | TNS=-13.719 |
 
 Phase 2 DSP Register Optimization
 INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Phase 2 DSP Register Optimization | Checksum: b8974813
+Phase 2 DSP Register Optimization | Checksum: aa35c1c4
 
-Time (s): cpu = 00:00:00.94 ; elapsed = 00:00:00.59 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2718 ; free virtual = 54894
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.88 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11833 ; free virtual = 52007
 
 Phase 3 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.088 | TNS=-123.411 |
-INFO: [Physopt 32-702] Processed net minimal_i/sregs/gpio74hc595_1/inst/outputs[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.718 | TNS=-13.719 |
+INFO: [Physopt 32-702] Processed net minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/phy_mdc. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net minimal_i/ps/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/sregs/mux2_0/inst/outp[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/displays/tft_ili9341_wrapper_2/tft_sdi_i_6_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-81] Processed net minimal_i/displays/tft_ili9341_wrapper_2/inst/tft/tft_nrst. Replicated 1 times.
-INFO: [Physopt 32-735] Processed net minimal_i/displays/tft_ili9341_wrapper_2/inst/tft/tft_nrst. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.077 | TNS=-123.400 |
-INFO: [Physopt 32-702] Processed net minimal_i/displays/tft_ili9341_wrapper_2/inst/tft/tft_nrst_repN. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/sregs/gpio74hc595_1/inst/outputs[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/phy_mdc. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net minimal_i/ps/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/sregs/mux2_0/inst/outp[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/displays/tft_ili9341_wrapper_2/tft_sdi_i_6_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/displays/tft_ili9341_wrapper_2/inst/tft/tft_nrst_repN. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.077 | TNS=-123.400 |
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2721 ; free virtual = 54897
-Phase 3 Critical Path Optimization | Checksum: b8974813
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.718 | TNS=-13.719 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11828 ; free virtual = 52002
+Phase 3 Critical Path Optimization | Checksum: aa35c1c4
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.85 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2721 ; free virtual = 54896
-
-Phase 4 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.077 | TNS=-123.400 |
-INFO: [Physopt 32-702] Processed net minimal_i/sregs/gpio74hc595_1/inst/outputs[21]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/ps/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/sregs/mux2_0/inst/outp[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/displays/tft_ili9341_wrapper_2/tft_sdi_i_6_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/displays/tft_ili9341_wrapper_2/inst/tft/tft_nrst_repN. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/sregs/gpio74hc595_1/inst/outputs[21]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/ps/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/sregs/mux2_0/inst/outp[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/displays/tft_ili9341_wrapper_2/tft_sdi_i_6_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net minimal_i/displays/tft_ili9341_wrapper_2/inst/tft/tft_nrst_repN. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.077 | TNS=-123.400 |
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2718 ; free virtual = 54894
-Phase 4 Critical Path Optimization | Checksum: b8974813
-
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2718 ; free virtual = 54894
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2718 ; free virtual = 54894
-INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-6.077 | TNS=-123.400 |
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11828 ; free virtual = 52002
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11828 ; free virtual = 52002
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-3.718 | TNS=-13.719 |
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -688,184 +979,203 @@ Summary of Physical Synthesis Optimizations
 |  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 |  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Critical Path  |          0.011  |          0.011  |            1  |              0  |                     1  |           0  |           2  |  00:00:00  |
-|  Total          |          0.011  |          0.011  |            1  |              0  |                     1  |           0  |           3  |  00:00:00  |
+|  Critical Path  |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total          |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2717 ; free virtual = 54893
-Ending Physical Synthesis Task | Checksum: 26d52f554
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11827 ; free virtual = 52002
+Ending Physical Synthesis Task | Checksum: 17a60f82e
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2717 ; free virtual = 54893
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11827 ; free virtual = 52002
 INFO: [Common 17-83] Releasing license: Implementation
-130 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+118 Infos, 107 Warnings, 136 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2717 ; free virtual = 54893
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2717 ; free virtual = 54893
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11827 ; free virtual = 52002
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11827 ; free virtual = 52002
 Writing XDEF routing.
 Writing XDEF routing logical nets.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2717 ; free virtual = 54895
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11827 ; free virtual = 52004
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2716 ; free virtual = 54894
-Wrote PlaceStorage: Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.17 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2710 ; free virtual = 54897
-Wrote Netlist Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2710 ; free virtual = 54898
-Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2710 ; free virtual = 54898
-Write Physdb Complete: Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.21 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2710 ; free virtual = 54898
+Wrote RouteStorage: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11827 ; free virtual = 52004
+Wrote PlaceStorage: Time (s): cpu = 00:00:00.75 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11819 ; free virtual = 52009
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11819 ; free virtual = 52010
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11811 ; free virtual = 52003
+Write Physdb Complete: Time (s): cpu = 00:00:00.91 ; elapsed = 00:00:00.26 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11811 ; free virtual = 52003
 INFO: [Common 17-1381] The checkpoint '/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.runs/impl_1/minimal_wrapper_physopt.dcp' has been generated.
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
-INFO: [DRC 23-27] Running DRC with 8 threads
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
 
 Phase 1 Build RT Design
-Checksum: PlaceDB: c46be383 ConstDB: 0 ShapeSum: 93da0de5 RouteDB: 6998572b
-Post Restoration Checksum: NetGraph: 915e24f0 | NumContArr: 33991e8a | Constraints: c2a8fa9d | Timing: c2a8fa9d
-Phase 1 Build RT Design | Checksum: 24a4938b4
+Checksum: PlaceDB: 5a8662d8 ConstDB: 0 ShapeSum: 9bd3f190 RouteDB: 6998572b
+Post Restoration Checksum: NetGraph: 9c6c40ab | NumContArr: ce16c337 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2efd4f91c
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2715 ; free virtual = 54894
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11872 ; free virtual = 52053
 
 Phase 2 Router Initialization
 
 Phase 2.1 Fix Topology Constraints
-Phase 2.1 Fix Topology Constraints | Checksum: 24a4938b4
+Phase 2.1 Fix Topology Constraints | Checksum: 2efd4f91c
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2715 ; free virtual = 54894
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11872 ; free virtual = 52053
 
 Phase 2.2 Pre Route Cleanup
-Phase 2.2 Pre Route Cleanup | Checksum: 24a4938b4
+Phase 2.2 Pre Route Cleanup | Checksum: 2efd4f91c
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2715 ; free virtual = 54893
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11872 ; free virtual = 52053
  Number of Nodes with overlaps = 0
 
 Phase 2.3 Update Timing
-Phase 2.3 Update Timing | Checksum: 22452bdd3
+Phase 2.3 Update Timing | Checksum: 2ad2e4fc1
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2713 ; free virtual = 54892
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.212 | TNS=-123.415| WHS=-1.428 | THS=-693.177|
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11830 ; free virtual = 52011
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.700 | TNS=-7.373 | WHS=-5.578 | THS=-544.347|
 
 
 Phase 2.4 Update Timing for Bus Skew
 
 Phase 2.4.1 Update Timing
-Phase 2.4.1 Update Timing | Checksum: 2fe5b2fdc
+Phase 2.4.1 Update Timing | Checksum: 1d199f2a4
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2725 ; free virtual = 54903
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.212 | TNS=-123.754| WHS=-2.536 | THS=-346.346|
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11856 ; free virtual = 52037
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.700 | TNS=-7.421 | WHS=-5.491 | THS=-32.085|
 
-Phase 2.4 Update Timing for Bus Skew | Checksum: 278a8c317
+Phase 2.4 Update Timing for Bus Skew | Checksum: 1cb6f7223
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2724 ; free virtual = 54903
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11856 ; free virtual = 52037
 
 Phase 2.5 Soft Constraint Pins - Fast Budgeting
-Phase 2.5 Soft Constraint Pins - Fast Budgeting | Checksum: 278a8c317
+Phase 2.5 Soft Constraint Pins - Fast Budgeting | Checksum: 1cb6f7223
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2723 ; free virtual = 54902
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11844 ; free virtual = 52024
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.0619369 %
-  Global Horizontal Routing Utilization  = 0.102711 %
+  Global Vertical Routing Utilization    = 0.00182995 %
+  Global Horizontal Routing Utilization  = 0.00735294 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 9724
+  Number of Failed Nets               = 13451
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 9707
-  Number of Partially Routed Nets     = 17
-  Number of Node Overlaps             = 7
+  Number of Unrouted Nets             = 13451
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
 
-Phase 2 Router Initialization | Checksum: 272618f96
+Phase 2 Router Initialization | Checksum: 2967251b4
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2720 ; free virtual = 54899
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11838 ; free virtual = 52019
 
 Phase 3 Global Routing
-Phase 3 Global Routing | Checksum: 272618f96
+Phase 3 Global Routing | Checksum: 2967251b4
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2720 ; free virtual = 54899
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11838 ; free virtual = 52019
 
 Phase 4 Initial Routing
 
 Phase 4.1 Initial Net Routing Pass
-Phase 4.1 Initial Net Routing Pass | Checksum: 180d1ab36
+Phase 4.1 Initial Net Routing Pass | Checksum: 1927d27da
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2731 ; free virtual = 54910
-Phase 4 Initial Routing | Checksum: 180d1ab36
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11875 ; free virtual = 52056
+Phase 4 Initial Routing | Checksum: 1927d27da
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2731 ; free virtual = 54910
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11874 ; free virtual = 52055
+INFO: [Route 35-580] Design has 1 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++====================+===================+==================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                              |
++====================+===================+==================================================================================+
+| clk_fpga_0         | clk_fpga_0        | minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/MDIO_GEN.MDIO_IF_I/mdio_in_reg1_reg/D |
++--------------------+-------------------+----------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
 
 Phase 5 Rip-up And Reroute
 
 Phase 5.1 Global Iteration 0
- Number of Nodes with overlaps = 724
- Number of Nodes with overlaps = 9
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.999 | TNS=-123.051| WHS=N/A    | THS=N/A    |
-
-Phase 5.1 Global Iteration 0 | Checksum: 1df3afe22
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2789 ; free virtual = 54968
-
-Phase 5.2 Global Iteration 1
- Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 1062
+ Number of Nodes with overlaps = 51
  Number of Nodes with overlaps = 10
  Number of Nodes with overlaps = 2
- Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.223 | TNS=-122.860| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.181| TNS=-26.673| WHS=N/A    | THS=N/A    |
 
-Phase 5.2 Global Iteration 1 | Checksum: 2bc2d35ad
+Phase 5.1 Global Iteration 0 | Checksum: 29437deab
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2761 ; free virtual = 54939
-Phase 5 Rip-up And Reroute | Checksum: 2bc2d35ad
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11901 ; free virtual = 52082
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2761 ; free virtual = 54939
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.181| TNS=-26.673| WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 1c434e021
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11869 ; free virtual = 52050
+Phase 5 Rip-up And Reroute | Checksum: 1c434e021
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11863 ; free virtual = 52044
 
 Phase 6 Delay and Skew Optimization
 
 Phase 6.1 Delay CleanUp
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 25261a891
+Phase 6.1.1 Update Timing | Checksum: 200053967
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2724 ; free virtual = 54914
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.999 | TNS=-123.051| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11852 ; free virtual = 52033
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.181| TNS=-26.673| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 6.1 Delay CleanUp | Checksum: 2c2f81d76
+Phase 6.1 Delay CleanUp | Checksum: 13f695ac2
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:10 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2749 ; free virtual = 54942
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11852 ; free virtual = 52033
 
 Phase 6.2 Clock Skew Optimization
-Phase 6.2 Clock Skew Optimization | Checksum: 2c2f81d76
+Phase 6.2 Clock Skew Optimization | Checksum: 13f695ac2
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:10 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2749 ; free virtual = 54942
-Phase 6 Delay and Skew Optimization | Checksum: 2c2f81d76
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11852 ; free virtual = 52033
+Phase 6 Delay and Skew Optimization | Checksum: 13f695ac2
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:10 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2749 ; free virtual = 54942
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11852 ; free virtual = 52033
 
 Phase 7 Post Hold Fix
 
 Phase 7.1 Hold Fix Iter
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.999 | TNS=-122.665| WHS=0.019  | THS=0.000  |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.181| TNS=-26.673| WHS=-5.492 | THS=-5.492 |
 
-Phase 7.1 Hold Fix Iter | Checksum: 2b06a0cf8
+Phase 7.1 Hold Fix Iter | Checksum: 23f0c8167
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:10 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2758 ; free virtual = 54970
-Phase 7 Post Hold Fix | Checksum: 2b06a0cf8
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11852 ; free virtual = 52033
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:10 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2758 ; free virtual = 54970
+Phase 7.2 Non Free Resource Hold Fix Iter
+Phase 7.2 Non Free Resource Hold Fix Iter | Checksum: 1fd6cefc1
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11852 ; free virtual = 52033
+WARNING: [Route 35-468] The router encountered 3 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	ETH_MDIO_mdc_OBUF_inst/I
+	ETH_MDIO_mdio_iobuf/OBUFT/I
+	ETH_MDIO_mdio_iobuf/OBUFT/T
+
+Phase 7 Post Hold Fix | Checksum: 1fd6cefc1
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11852 ; free virtual = 52033
 
 Phase 8 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 6.83925 %
-  Global Horizontal Routing Utilization  = 7.7778 %
+  Global Vertical Routing Utilization    = 7.69862 %
+  Global Horizontal Routing Utilization  = 9.15855 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -879,10 +1189,10 @@ Router Utilization Summary
 --GLOBAL Congestion:
 Utilization threshold used for congestion level computation: 0.85
 Congestion Report
-North Dir 1x1 Area, Max Cong = 54.0541%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 52.2523%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 58.8235%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 58.8235%, No Congested Regions.
+North Dir 1x1 Area, Max Cong = 58.5586%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 62.1622%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 55.8824%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 45.5882%, No Congested Regions.
 
 ------------------------------
 Reporting congestion hotspots
@@ -904,51 +1214,56 @@ Direction: West
 Congested clusters found at Level 0
 Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
 
-Phase 8 Route finalize | Checksum: 2b06a0cf8
+Phase 8 Route finalize | Checksum: 1fd6cefc1
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:10 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2758 ; free virtual = 54970
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11852 ; free virtual = 52033
 
 Phase 9 Verifying routed nets
 
  Verification completed successfully
-Phase 9 Verifying routed nets | Checksum: 2b06a0cf8
+Phase 9 Verifying routed nets | Checksum: 1fd6cefc1
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:10 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2758 ; free virtual = 54970
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11851 ; free virtual = 52033
 
 Phase 10 Depositing Routes
-Phase 10 Depositing Routes | Checksum: 2a973f3ec
+Phase 10 Depositing Routes | Checksum: 1a2ef9a0c
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2767 ; free virtual = 55008
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11882 ; free virtual = 52063
 
 Phase 11 Post Process Routing
-Phase 11 Post Process Routing | Checksum: 2a973f3ec
+Phase 11 Post Process Routing | Checksum: 1a2ef9a0c
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2767 ; free virtual = 55007
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11882 ; free virtual = 52063
 
 Phase 12 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-5.999 | TNS=-122.665| WHS=0.019  | THS=0.000  |
+
+Phase 12.1 Update Timing
+Phase 12.1 Update Timing | Checksum: 1a2ef9a0c
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11827 ; free virtual = 52008
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-10.181| TNS=-34.445| WHS=0.058  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 12 Post Router Timing | Checksum: 2a973f3ec
+Phase 12 Post Router Timing | Checksum: 1a2ef9a0c
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2769 ; free virtual = 55009
-Total Elapsed time in route_design: 10.6 secs
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11827 ; free virtual = 52008
+Total Elapsed time in route_design: 13.87 secs
 
 Phase 13 Post-Route Event Processing
-Phase 13 Post-Route Event Processing | Checksum: 1276b6c83
+Phase 13 Post-Route Event Processing | Checksum: 19b645cb2
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2769 ; free virtual = 55009
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11826 ; free virtual = 52007
 INFO: [Route 35-16] Router Completed Successfully
-Ending Routing Task | Checksum: 1276b6c83
+Ending Routing Task | Checksum: 19b645cb2
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2769 ; free virtual = 55009
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11826 ; free virtual = 52007
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-146 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+132 Infos, 109 Warnings, 136 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2766 ; free virtual = 55006
+route_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11824 ; free virtual = 52005
 INFO: [Vivado 12-24828] Executing command : report_drc -file minimal_wrapper_drc_routed.rpt -pb minimal_wrapper_drc_routed.pb -rpx minimal_wrapper_drc_routed.rpx
 Command: report_drc -file minimal_wrapper_drc_routed.rpt -pb minimal_wrapper_drc_routed.pb -rpx minimal_wrapper_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -971,31 +1286,31 @@ INFO: [Vivado 12-24838] Running report commands "report_bus_skew, report_increme
 Running report generation with 3 threads.
 INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file minimal_wrapper_incremental_reuse_routed.rpt
 INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
-INFO: [Vivado 12-24828] Executing command : report_route_status -file minimal_wrapper_route_status.rpt -pb minimal_wrapper_route_status.pb
 INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file minimal_wrapper_bus_skew_routed.rpt -pb minimal_wrapper_bus_skew_routed.pb -rpx minimal_wrapper_bus_skew_routed.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Vivado 12-24828] Executing command : report_route_status -file minimal_wrapper_route_status.rpt -pb minimal_wrapper_route_status.pb
 INFO: [Vivado 12-24828] Executing command : report_power -file minimal_wrapper_power_routed.rpt -pb minimal_wrapper_power_summary_routed.pb -rpx minimal_wrapper_power_routed.rpx
 Command: report_power -file minimal_wrapper_power_routed.rpt -pb minimal_wrapper_power_summary_routed.pb -rpx minimal_wrapper_power_routed.rpx
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-166 Infos, 17 Warnings, 1 Critical Warnings and 0 Errors encountered.
+152 Infos, 110 Warnings, 137 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file minimal_wrapper_clock_utilization_routed.rpt
-generate_parallel_reports: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2686 ; free virtual = 54981
+generate_parallel_reports: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11823 ; free virtual = 52018
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2683 ; free virtual = 54978
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2683 ; free virtual = 54978
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11829 ; free virtual = 52024
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11829 ; free virtual = 52024
 Writing XDEF routing.
 Writing XDEF routing logical nets.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2679 ; free virtual = 54975
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11829 ; free virtual = 52026
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2674 ; free virtual = 54973
-Wrote PlaceStorage: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.17 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2683 ; free virtual = 54987
-Wrote Netlist Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2681 ; free virtual = 54986
-Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2681 ; free virtual = 54987
-Write Physdb Complete: Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2681 ; free virtual = 54987
+Wrote RouteStorage: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11822 ; free virtual = 52025
+Wrote PlaceStorage: Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11759 ; free virtual = 51971
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11757 ; free virtual = 51970
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11757 ; free virtual = 51972
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.34 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11757 ; free virtual = 51972
 INFO: [Common 17-1381] The checkpoint '/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.runs/impl_1/minimal_wrapper_routed.dcp' has been generated.
 INFO: [Memdata 28-167] Found XPM memory block minimal_i/ps/axi_smc1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the minimal_i/ps/axi_smc1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
 INFO: [Memdata 28-167] Found XPM memory block minimal_i/ps/axi_smc1/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the minimal_i/ps/axi_smc1/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
@@ -1010,6 +1325,7 @@ INFO: [Memdata 28-208] The XPM instance: <minimal_i/ps/axi_ethernetlite_0/U0/XEM
 INFO: [Memdata 28-167] Found XPM memory block minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
 INFO: [Memdata 28-167] Found XPM memory block minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
 INFO: [Memdata 28-208] The XPM instance: <minimal_i/ps/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <minimal_i/ps/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block minimal_i/axis_clock_converter_0/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the minimal_i/axis_clock_converter_0/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
 Command: write_bitstream -force minimal_wrapper.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
@@ -1029,7 +1345,7 @@ Creating bitstream...
 Writing bitstream ./minimal_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Common 17-83] Releasing license: Implementation
-190 Infos, 17 Warnings, 1 Critical Warnings and 0 Errors encountered.
+177 Infos, 110 Warnings, 137 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 3493.543 ; gain = 0.000 ; free physical = 2363 ; free virtual = 54653
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 23 02:17:18 2026...
+write_bitstream: Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 3643.102 ; gain = 0.000 ; free physical = 11511 ; free virtual = 51715
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 24 02:37:56 2026...

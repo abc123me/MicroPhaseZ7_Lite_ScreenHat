@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "minimal_tft_ili9341_wrapper_5_0",
-    "cell_name": "tft_ili9341_wrapper_6",
+    "cell_name": "displays/tft_ili9341_wrapper_6",
     "component_reference": "xilinx.com:module_ref:tft_ili9341_wrapper:1.0",
     "ip_revision": "1",
     "gen_directory": "../../../../../../MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_5_0",
@@ -103,5 +103,5 @@
       }
     }
   },
-  "checksum": "2a21803d"
+  "checksum": "083d63cb"
 }

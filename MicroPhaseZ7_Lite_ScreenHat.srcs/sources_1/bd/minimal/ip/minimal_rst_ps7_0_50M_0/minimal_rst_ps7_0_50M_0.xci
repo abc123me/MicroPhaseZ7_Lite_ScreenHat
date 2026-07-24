@@ -8,7 +8,7 @@
     "gen_directory": "../../../../../../MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0",
     "parameters": {
       "component_parameters": {
-        "C_NUM_PERP_ARESETN": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "C_NUM_PERP_ARESETN": [ { "value": "2", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_NUM_INTERCONNECT_ARESETN": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_NUM_PERP_RST": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_NUM_BUS_RST": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -29,7 +29,7 @@
         "C_NUM_BUS_RST": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_NUM_PERP_RST": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_NUM_INTERCONNECT_ARESETN": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_NUM_PERP_ARESETN": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+        "C_NUM_PERP_ARESETN": [ { "value": "2", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq", "resolve_type": "generated", "usage": "all" } ],
@@ -66,7 +66,7 @@
         "bus_struct_reset": [ { "direction": "out", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
         "peripheral_reset": [ { "direction": "out", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
         "interconnect_aresetn": [ { "direction": "out", "size_left": "0", "size_right": "0", "driver_value": "1" } ],
-        "peripheral_aresetn": [ { "direction": "out", "size_left": "0", "size_right": "0", "driver_value": "1" } ]
+        "peripheral_aresetn": [ { "direction": "out", "size_left": "0", "size_right": "1", "driver_value": "1" } ]
       },
       "interfaces": {
         "clock": {
@@ -78,7 +78,7 @@
             "FREQ_HZ": [ { "value": "60000000", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "user", "format": "long", "usage": "all" } ],
             "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
-            "CLK_DOMAIN": [ { "value": "minimal_processing_system7_0_0_FCLK_CLK0", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "minimal_processing_system7_0_0_FCLK_CLK1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "ASSOCIATED_BUSIF": [ { "value": "", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "ASSOCIATED_PORT": [ { "value": "", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ],
@@ -193,5 +193,5 @@
       }
     }
   },
-  "checksum": "af021bce"
+  "checksum": "9b567e35"
 }

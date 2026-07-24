@@ -66,12 +66,12 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="350"/>
-    <Option Name="WTModelSimExportSim" Val="350"/>
-    <Option Name="WTQuestaExportSim" Val="350"/>
+    <Option Name="WTXSimExportSim" Val="699"/>
+    <Option Name="WTModelSimExportSim" Val="699"/>
+    <Option Name="WTQuestaExportSim" Val="699"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="350"/>
-    <Option Name="WTRivieraExportSim" Val="350"/>
+    <Option Name="WTVcsExportSim" Val="699"/>
+    <Option Name="WTRivieraExportSim" Val="699"/>
     <Option Name="WTActivehdlExportSim" Val="0"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
@@ -90,14 +90,6 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../VivadoIP/rtl/ili9341_display_driver.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PPRDIR/../../VivadoIP/rtl/gpio74hc595/gpio74hc595.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -162,6 +154,13 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../../VivadoIP/rtl/axi_fifo_sequencer/axi_fifo_sequencer.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../VivadoIP/rtl/discrete_clock_converter/discrete_clock_converter.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

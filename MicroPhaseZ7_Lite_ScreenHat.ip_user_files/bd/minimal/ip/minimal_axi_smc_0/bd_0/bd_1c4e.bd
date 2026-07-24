@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x2422C81BEA3E221",
+      "boundary_crc": "0x2422C81582AD2B1",
       "design_src": "SBD",
       "device": "xc7z010clg400-1",
       "name": "bd_1c4e",
@@ -124,7 +124,7 @@
             "value_src": "auto_prop"
           },
           "FREQ_HZ": {
-            "value": "60000000",
+            "value": "100000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -173,7 +173,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "16",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -271,7 +271,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "60000000",
+            "value": "100000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -403,7 +403,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "60000000",
+            "value": "100000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -535,7 +535,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "60000000",
+            "value": "100000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -667,7 +667,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "60000000",
+            "value": "100000000",
             "value_src": "user_prop"
           },
           "HAS_BRESP": {
@@ -787,7 +787,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "60000000",
+            "value": "100000000",
             "value_src": "user_prop"
           },
           "FREQ_TOLERANCE_HZ": {
@@ -818,6 +818,10 @@
           },
           "POLARITY": {
             "value": "ACTIVE_LOW"
+          },
+          "PortWidth": {
+            "value": "1",
+            "value_src": "user_prop"
           }
         }
       }

@@ -1,2 +1,2 @@
 
-2018.1’Bus skew results˜¥ÑÚxA
+2018.1’Bus skew results˜¥ögA
