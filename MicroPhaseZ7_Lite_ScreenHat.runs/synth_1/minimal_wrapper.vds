@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Fri Jul 24 02:34:13 2026
-# Process ID         : 2191391
+# Start of session at: Wed Jul 29 23:24:00 2026
+# Process ID         : 1176205
 # Current directory  : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.runs/synth_1
 # Command line       : vivado -log minimal_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source minimal_wrapper.tcl
 # Log file           : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.runs/synth_1/minimal_wrapper.vds
@@ -13,13 +13,13 @@
 # Platform           : Arch
 # Operating System   : Arch Linux
 # Processor Detail   : AMD Ryzen 9 7950X3D 16-Core Processor
-# CPU Frequency      : 4897.506 MHz
+# CPU Frequency      : 4089.985 MHz
 # CPU Physical cores : 16
 # CPU Logical cores  : 32
 # Host memory        : 66310 MB
 # Swap memory        : 25741 MB
 # Total Virtual      : 92051 MB
-# Available Virtual  : 56482 MB
+# Available Virtual  : 53414 MB
 #-----------------------------------------------------------
 source minimal_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -42,10 +42,11 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2193460
+INFO: [Synth 8-7075] Helper process launched with PID 1177988
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2297.590 ; gain = 190.543 ; free physical = 12396 ; free virtual = 52557
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2296.938 ; gain = 191.543 ; free physical = 8941 ; free virtual = 49498
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'display_tlast', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/VivadoIP/rtl/axi_fifo_sequencer/axi_fifo_sequencer.v:148]
 INFO: [Synth 8-11241] undeclared symbol 'clk_out1_minimal_clk_wiz_0_0_en_clk', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_clk_wiz_0_0/minimal_clk_wiz_0_0_clk_wiz.v:185]
 INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:30]
 INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:32]
@@ -145,12 +146,11 @@ INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wir
 INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:207]
 INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:240]
 INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:242]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:275]
 INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-6157] synthesizing module 'minimal_wrapper' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/hdl/minimal_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
-INFO: [Synth 8-6157] synthesizing module 'minimal' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:944]
+INFO: [Synth 8-6157] synthesizing module 'minimal' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:957]
 INFO: [Synth 8-6157] synthesizing module 'minimal_axis_clock_converter_0_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axis_clock_converter_0_1/synth/minimal_axis_clock_converter_0_1.v:53]
 INFO: [Synth 8-6157] synthesizing module 'axis_clock_converter_v1_1_36_axis_clock_converter' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/c5c7/hdl/axis_clock_converter_v1_1_vl_rfs.v:920]
 INFO: [Synth 8-6157] synthesizing module 'axis_clock_converter_v1_1_36_axisc_async_clock_converter' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/c5c7/hdl/axis_clock_converter_v1_1_vl_rfs.v:338]
@@ -196,8 +196,8 @@ INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_1_util_vector
 INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_1_util_vector2axis' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v:986]
 INFO: [Synth 8-6155] done synthesizing module 'axis_clock_converter_v1_1_36_axis_clock_converter' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/c5c7/hdl/axis_clock_converter_v1_1_vl_rfs.v:920]
 INFO: [Synth 8-6155] done synthesizing module 'minimal_axis_clock_converter_0_1' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axis_clock_converter_0_1/synth/minimal_axis_clock_converter_0_1.v:53]
-WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'minimal_axis_clock_converter_0_1' is unconnected for instance 'axis_clock_converter_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1300]
-WARNING: [Synth 8-7023] instance 'axis_clock_converter_0' of module 'minimal_axis_clock_converter_0_1' has 14 connections declared, but only 13 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1300]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'minimal_axis_clock_converter_0_1' is unconnected for instance 'axis_clock_converter_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1313]
+WARNING: [Synth 8-7023] instance 'axis_clock_converter_0' of module 'minimal_axis_clock_converter_0_1' has 14 connections declared, but only 13 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1313]
 INFO: [Synth 8-6157] synthesizing module 'minimal_discrete_clock_conve_0_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_discrete_clock_conve_0_0/synth/minimal_discrete_clock_conve_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'discrete_clock_converter' [/home/jeremiah/Programming/FPGA/VivadoIP/rtl/discrete_clock_converter/discrete_clock_converter.v:17]
 	Parameter DATA_WIDTH bound to: 14 - type: integer 
@@ -222,16 +222,19 @@ INFO: [Synth 8-6157] synthesizing module 'displays_imp_YBYF3X' [/home/jeremiah/P
 INFO: [Synth 8-6157] synthesizing module 'minimal_axi_fifo_sequencer_0_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_fifo_sequencer_0_0/synth/minimal_axi_fifo_sequencer_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'axi_fifo_sequencer' [/home/jeremiah/Programming/FPGA/VivadoIP/rtl/axi_fifo_sequencer/axi_fifo_sequencer.v:17]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
-	Parameter OUTPUT_CNT bound to: 14 - type: integer 
+	Parameter MAX_DISPLAYS bound to: 14 - type: integer 
+	Parameter LAST_DISPLAY bound to: 13 - type: integer 
+	Parameter DISPLAY_COLS bound to: 240 - type: integer 
+	Parameter DISPLAY_ROWS bound to: 320 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'axi_fifo_sequencer' (0#1) [/home/jeremiah/Programming/FPGA/VivadoIP/rtl/axi_fifo_sequencer/axi_fifo_sequencer.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'minimal_axi_fifo_sequencer_0_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_fifo_sequencer_0_0/synth/minimal_axi_fifo_sequencer_0_0.v:53]
-WARNING: [Synth 8-7071] port 'm14_axis_tlast' of module 'minimal_axi_fifo_sequencer_0_0' is unconnected for instance 'axi_fifo_sequencer_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:427]
-WARNING: [Synth 8-7071] port 'm14_axis_tvalid' of module 'minimal_axi_fifo_sequencer_0_0' is unconnected for instance 'axi_fifo_sequencer_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:427]
-WARNING: [Synth 8-7071] port 'm14_axis_tdata' of module 'minimal_axi_fifo_sequencer_0_0' is unconnected for instance 'axi_fifo_sequencer_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:427]
-WARNING: [Synth 8-7071] port 'm15_axis_tlast' of module 'minimal_axi_fifo_sequencer_0_0' is unconnected for instance 'axi_fifo_sequencer_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:427]
-WARNING: [Synth 8-7071] port 'm15_axis_tvalid' of module 'minimal_axi_fifo_sequencer_0_0' is unconnected for instance 'axi_fifo_sequencer_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:427]
-WARNING: [Synth 8-7071] port 'm15_axis_tdata' of module 'minimal_axi_fifo_sequencer_0_0' is unconnected for instance 'axi_fifo_sequencer_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:427]
-WARNING: [Synth 8-7023] instance 'axi_fifo_sequencer_0' of module 'minimal_axi_fifo_sequencer_0_0' has 73 connections declared, but only 67 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:427]
+WARNING: [Synth 8-7071] port 'm14_axis_tlast' of module 'minimal_axi_fifo_sequencer_0_0' is unconnected for instance 'axi_fifo_sequencer_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:432]
+WARNING: [Synth 8-7071] port 'm14_axis_tvalid' of module 'minimal_axi_fifo_sequencer_0_0' is unconnected for instance 'axi_fifo_sequencer_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:432]
+WARNING: [Synth 8-7071] port 'm14_axis_tdata' of module 'minimal_axi_fifo_sequencer_0_0' is unconnected for instance 'axi_fifo_sequencer_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:432]
+WARNING: [Synth 8-7071] port 'm15_axis_tlast' of module 'minimal_axi_fifo_sequencer_0_0' is unconnected for instance 'axi_fifo_sequencer_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:432]
+WARNING: [Synth 8-7071] port 'm15_axis_tvalid' of module 'minimal_axi_fifo_sequencer_0_0' is unconnected for instance 'axi_fifo_sequencer_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:432]
+WARNING: [Synth 8-7071] port 'm15_axis_tdata' of module 'minimal_axi_fifo_sequencer_0_0' is unconnected for instance 'axi_fifo_sequencer_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:432]
+WARNING: [Synth 8-7023] instance 'axi_fifo_sequencer_0' of module 'minimal_axi_fifo_sequencer_0_0' has 77 connections declared, but only 71 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:432]
 INFO: [Synth 8-6157] synthesizing module 'minimal_axi_pixel_fifo_0_23' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_pixel_fifo_0_23/synth/minimal_axi_pixel_fifo_0_23.v:53]
 INFO: [Synth 8-6157] synthesizing module 'axi_pixel_fifo' [/home/jeremiah/Programming/FPGA/VivadoIP/rtl/axi_pixel_fifo/axi_pixel_fifo.v:18]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
@@ -264,7 +267,7 @@ INFO: [Synth 8-6157] synthesizing module 'minimal_axi_pixel_fifo_7_0' [/home/jer
 INFO: [Synth 8-6155] done synthesizing module 'minimal_axi_pixel_fifo_7_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_pixel_fifo_7_0/synth/minimal_axi_pixel_fifo_7_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'minimal_axi_pixel_fifo_8_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_pixel_fifo_8_0/synth/minimal_axi_pixel_fifo_8_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'minimal_axi_pixel_fifo_8_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_pixel_fifo_8_0/synth/minimal_axi_pixel_fifo_8_0.v:53]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:691]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:700]
 INFO: [Synth 8-6157] synthesizing module 'minimal_ila_0_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:48]
 INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3131]
 INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3131]
@@ -278,13 +281,13 @@ INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [/opt/Xilinx/2025.2/Vivado/sc
 INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165423]
 INFO: [Synth 8-6157] synthesizing module 'FDRE' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396]
 INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396]
-INFO: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:3221]
-INFO: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:3221]
-INFO: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:3221]
-INFO: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:3221]
-INFO: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:3221]
-INFO: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:3221]
-INFO: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_19_ila' has 1033 connections declared, but only 1027 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:3221]
+INFO: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:3229]
+INFO: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:3229]
+INFO: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:3229]
+INFO: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:3229]
+INFO: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:3229]
+INFO: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:3229]
+INFO: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_19_ila' has 1033 connections declared, but only 1027 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:3229]
 INFO: [Synth 8-6155] done synthesizing module 'minimal_ila_0_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:48]
 INFO: [Synth 8-6157] synthesizing module 'minimal_tft_ili9341_wrapper_0_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_0_0/synth/minimal_tft_ili9341_wrapper_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'tft_ili9341_wrapper' [/home/jeremiah/Programming/FPGA/VivadoIP/rtl/tft_ili9341/tft_ili9341_wrapper.v:16]
@@ -314,8 +317,8 @@ INFO: [Synth 8-6157] synthesizing module 'minimal_tft_ili9341_wrapper_11_0' [/ho
 INFO: [Synth 8-6155] done synthesizing module 'minimal_tft_ili9341_wrapper_11_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_11_0/synth/minimal_tft_ili9341_wrapper_11_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'minimal_tft_ili9341_wrapper_12_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_12_0/synth/minimal_tft_ili9341_wrapper_12_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'minimal_tft_ili9341_wrapper_12_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_12_0/synth/minimal_tft_ili9341_wrapper_12_0.v:53]
-WARNING: [Synth 8-7071] port 'ready' of module 'minimal_tft_ili9341_wrapper_12_0' is unconnected for instance 'tft_ili9341_wrapper_13' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:799]
-WARNING: [Synth 8-7023] instance 'tft_ili9341_wrapper_13' of module 'minimal_tft_ili9341_wrapper_12_0' has 15 connections declared, but only 14 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:799]
+WARNING: [Synth 8-7071] port 'ready' of module 'minimal_tft_ili9341_wrapper_12_0' is unconnected for instance 'tft_ili9341_wrapper_13' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:812]
+WARNING: [Synth 8-7023] instance 'tft_ili9341_wrapper_13' of module 'minimal_tft_ili9341_wrapper_12_0' has 15 connections declared, but only 14 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:812]
 INFO: [Synth 8-6157] synthesizing module 'minimal_tft_ili9341_wrapper_1_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_1_0/synth/minimal_tft_ili9341_wrapper_1_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'minimal_tft_ili9341_wrapper_1_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_1_0/synth/minimal_tft_ili9341_wrapper_1_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'minimal_tft_ili9341_wrapper_1_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_1_1/synth/minimal_tft_ili9341_wrapper_1_1.v:53]
@@ -333,7 +336,7 @@ INFO: [Synth 8-6155] done synthesizing module 'minimal_tft_ili9341_wrapper_7_0' 
 INFO: [Synth 8-6157] synthesizing module 'minimal_tft_ili9341_wrapper_8_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_8_0/synth/minimal_tft_ili9341_wrapper_8_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'minimal_tft_ili9341_wrapper_8_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_8_0/synth/minimal_tft_ili9341_wrapper_8_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'displays_imp_YBYF3X' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:13]
-INFO: [Synth 8-6157] synthesizing module 'ps_imp_N0VO8P' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1539]
+INFO: [Synth 8-6157] synthesizing module 'ps_imp_N0VO8P' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1552]
 INFO: [Synth 8-638] synthesizing module 'minimal_axi_dma_0_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_0/synth/minimal_axi_dma_0_0.vhd:104]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 10 - type: integer 
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
@@ -485,9 +488,9 @@ INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_omit_wrap' (0#1
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:55430]
 INFO: [Synth 8-256] done synthesizing module 'axi_dma' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21979]
 INFO: [Synth 8-256] done synthesizing module 'minimal_axi_dma_0_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_0/synth/minimal_axi_dma_0_0.vhd:104]
-WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'minimal_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1880]
-WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'minimal_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1880]
-WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'minimal_axi_dma_0_0' has 40 connections declared, but only 38 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1880]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'minimal_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1893]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'minimal_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1893]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'minimal_axi_dma_0_0' has 40 connections declared, but only 38 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1893]
 INFO: [Synth 8-638] synthesizing module 'minimal_axi_ethernetlite_0_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/synth/minimal_axi_ethernetlite_0_0.vhd:98]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_SELECT_XPM bound to: 1 - type: integer 
@@ -841,16 +844,16 @@ WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_1c4e_psr_aclk_0' i
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_1c4e_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1931]
 WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_1c4e_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1931]
 WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_1c4e_psr_aclk_0' has 10 connections declared, but only 6 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1931]
-WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1954]
-WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1954]
-WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1954]
-WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1954]
-WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1954]
-WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1954]
-WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1954]
-WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1954]
-WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1954]
-WARNING: [Synth 8-7023] instance 'axi_smc' of module 'minimal_axi_smc_0' has 116 connections declared, but only 107 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1954]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1967]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1967]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1967]
+WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1967]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1967]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1967]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1967]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1967]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1967]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'minimal_axi_smc_0' has 116 connections declared, but only 107 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1967]
 INFO: [Synth 8-638] synthesizing module 'bd_dc8f_psr_aclk_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_smc_1/bd_0/ip/ip_1/synth/bd_dc8f_psr_aclk_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -883,17 +886,17 @@ INFO: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_process
 INFO: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:471]
 INFO: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:471]
 INFO: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:471]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_AWREADY' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2098]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BVALID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2098]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WREADY' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2098]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BRESP' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2098]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2098]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2098]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2098]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2098]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2098]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2098]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'minimal_processing_system7_0_0' has 109 connections declared, but only 99 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2098]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_AWREADY' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2111]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BVALID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2111]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WREADY' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2111]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BRESP' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2111]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2111]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2111]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2111]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2111]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2111]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2111]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'minimal_processing_system7_0_0' has 109 connections declared, but only 99 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2111]
 INFO: [Synth 8-638] synthesizing module 'minimal_rst_ps7_0_50M_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0/synth/minimal_rst_ps7_0_50M_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -929,11 +932,11 @@ INFO: [Synth 8-638] synthesizing module 'lpf__parameterized0' [/home/jeremiah/Pr
 INFO: [Synth 8-256] done synthesizing module 'lpf__parameterized0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized2' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
 INFO: [Synth 8-256] done synthesizing module 'minimal_rst_ps7_0_50M_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0/synth/minimal_rst_ps7_0_50M_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2198]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2198]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2198]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2198]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'minimal_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2198]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2211]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2211]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2211]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2211]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'minimal_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:2211]
 INFO: [Synth 8-638] synthesizing module 'minimal_axi_gpio_0_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_axi_gpio_0_0/synth/minimal_axi_gpio_0_0.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
@@ -996,14 +999,14 @@ INFO: [Synth 8-256] done synthesizing module 'minimal_axi_gpio_0_1' (0#1) [/home
 	Parameter WORD_SIZE bound to: 24 - type: integer 
 	Parameter WORD_COUNT bound to: 1 - type: integer 
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter CLKFBOUT_MULT bound to: 41 - type: integer 
+	Parameter CLKFBOUT_MULT bound to: 8 - type: integer 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000e+00 - type: double 
 	Parameter CLKIN1_PERIOD bound to: 1.000000e+01 - type: double 
-	Parameter CLKOUT0_DIVIDE bound to: 82 - type: integer 
+	Parameter CLKOUT0_DIVIDE bound to: 128 - type: integer 
 	Parameter CLKOUT0_DUTY_CYCLE bound to: 5.000000e-01 - type: double 
 	Parameter CLKOUT0_PHASE bound to: 0.000000e+00 - type: double 
 	Parameter COMPENSATION bound to: ZHOLD - type: string 
-	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
 	Parameter REGISTER_COUNT bound to: 3 - type: integer 
 	Parameter DATA_WIDTH bound to: 14 - type: integer 
@@ -1013,24 +1016,24 @@ WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was remove
 WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
 WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:550]
 WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
-INFO: [Synth 8-3848] Net sl_iport0 in module/entity minimal_ila_0_0 does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:110]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_fifo_sequencer_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:427]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:691]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'displays'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1342]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_9'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:677]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_8'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:663]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_7'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:649]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_6'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:635]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_5'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:621]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_4'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:607]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_3'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:593]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_2'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:579]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_13'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:565]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_12'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:551]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_11'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:537]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_10'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:523]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_1'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:509]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:495]
+INFO: [Synth 8-3848] Net sl_iport0 in module/entity minimal_ila_0_0 does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ip/minimal_ila_0_0/synth/minimal_ila_0_0.v:118]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'displays'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:1355]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:700]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_fifo_sequencer_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:432]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_9'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:686]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_8'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:672]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_7'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:658]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_6'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:644]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_5'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:630]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_4'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:616]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_3'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:602]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_2'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:588]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_13'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:574]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_12'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:560]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_11'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:546]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_10'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:532]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_1'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:518]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/synth/minimal.v:504]
 INFO: [Synth 8-6014] Unused sequential element awaddr_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2133]
 INFO: [Synth 8-6014] Unused sequential element wdata_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2135]
 INFO: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.axi2ip_wrdata_i_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2288]
@@ -1199,20 +1202,20 @@ WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[31] in module processing_system7_
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[30] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 3075.027 ; gain = 967.980 ; free physical = 11582 ; free virtual = 51758
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 3079.211 ; gain = 973.816 ; free physical = 7845 ; free virtual = 48400
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 3075.027 ; gain = 967.980 ; free physical = 11581 ; free virtual = 51757
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 3079.211 ; gain = 973.816 ; free physical = 7753 ; free virtual = 48307
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 3075.027 ; gain = 967.980 ; free physical = 11581 ; free virtual = 51757
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 3079.211 ; gain = 973.816 ; free physical = 7753 ; free virtual = 48307
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3075.027 ; gain = 0.000 ; free physical = 11610 ; free virtual = 51786
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3079.211 ; gain = 0.000 ; free physical = 7465 ; free virtual = 48024
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'minimal_i/sregs/clk_wiz_0/inst/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-INFO: [Netlist 29-17] Analyzing 313 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 360 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -1272,126 +1275,126 @@ WARNING: [Vivado 12-646] clock 'LED_SREG_CLK' not found. [/home/jeremiah/Program
 WARNING: [Vivado 12-646] clock 'LED_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:131]
 WARNING: [Vivado 12-646] clock 'LED_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:132]
 WARNING: [Vivado 12-646] clock 'LED_SREG_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:133]
-CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:144]
-CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:144]
-WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:145]
-WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:146]
-WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:147]
-WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:148]
-WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:149]
-WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:150]
-CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:152]
-CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:152]
-WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:153]
-WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:154]
-WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:155]
-WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:156]
-WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:157]
-WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:158]
-CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:160]
-CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:160]
-WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:161]
-WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:162]
-WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:163]
-WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:164]
-WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:165]
-WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:166]
-CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:168]
-CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:168]
-WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:169]
-WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:170]
-WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:171]
-WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:172]
-WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:173]
-WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:174]
-CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:176]
-CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:176]
-WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:177]
-WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:178]
-WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:179]
-WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:180]
-WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:181]
-WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:182]
-CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:184]
-CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:184]
-WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:185]
-WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:186]
-WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:187]
-WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:188]
-WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:189]
-WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:190]
-CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:192]
-CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:192]
-WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:193]
-WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:194]
-WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:195]
-WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:196]
-WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:197]
-WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:198]
-CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:200]
-CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:200]
-WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:201]
-WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:202]
-WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:203]
-WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:204]
-WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:205]
-WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:206]
-CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:208]
-CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:208]
-WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:209]
-WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:210]
-WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:211]
-WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:212]
-WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:213]
-WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:214]
-CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:216]
-CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:216]
-WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:217]
-WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:218]
-WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:219]
-WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:220]
-WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:221]
-WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:222]
-CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:224]
-CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:224]
-WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:225]
-WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:226]
-WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:227]
-WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:228]
-WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:229]
-WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:230]
-CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:232]
-CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:232]
-WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:233]
-WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:234]
-WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:235]
-WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:236]
-WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:237]
-WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:238]
-CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:240]
-CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:240]
-WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:241]
-WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:242]
-WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:243]
-WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:244]
-WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:245]
-WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:246]
-CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:248]
-CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:248]
-WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:249]
-WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:250]
-WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:251]
-WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:252]
-WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:253]
-WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:254]
-CRITICAL WARNING: [Constraints 18-602] set_output_delay: list contains '1' objects of types '(port)' other than the types '(output port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:261]
-CRITICAL WARNING: [Constraints 18-472] set_output_delay: list does not contain any object of type(s) '(output port,internal pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:261]
-CRITICAL WARNING: [Constraints 18-602] set_output_delay: list contains '1' objects of types '(port)' other than the types '(output port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:267]
-CRITICAL WARNING: [Constraints 18-472] set_output_delay: list does not contain any object of type(s) '(output port,internal pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:267]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:156]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:156]
+WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:157]
+WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:158]
+WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:159]
+WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:160]
+WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:161]
+WARNING: [Vivado 12-646] clock 'ILI_0_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:162]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:164]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:164]
+WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:165]
+WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:166]
+WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:167]
+WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:168]
+WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:169]
+WARNING: [Vivado 12-646] clock 'ILI_1_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:170]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:172]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:172]
+WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:173]
+WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:174]
+WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:175]
+WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:176]
+WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:177]
+WARNING: [Vivado 12-646] clock 'ILI_2_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:178]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:180]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:180]
+WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:181]
+WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:182]
+WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:183]
+WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:184]
+WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:185]
+WARNING: [Vivado 12-646] clock 'ILI_3_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:186]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:188]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:188]
+WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:189]
+WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:190]
+WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:191]
+WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:192]
+WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:193]
+WARNING: [Vivado 12-646] clock 'ILI_4_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:194]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:196]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:196]
+WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:197]
+WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:198]
+WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:199]
+WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:200]
+WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:201]
+WARNING: [Vivado 12-646] clock 'ILI_5_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:202]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:204]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:204]
+WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:205]
+WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:206]
+WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:207]
+WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:208]
+WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:209]
+WARNING: [Vivado 12-646] clock 'ILI_6_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:210]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:212]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:212]
+WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:213]
+WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:214]
+WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:215]
+WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:216]
+WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:217]
+WARNING: [Vivado 12-646] clock 'ILI_7_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:218]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:220]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:220]
+WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:221]
+WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:222]
+WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:223]
+WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:224]
+WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:225]
+WARNING: [Vivado 12-646] clock 'ILI_8_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:226]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:228]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:228]
+WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:229]
+WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:230]
+WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:231]
+WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:232]
+WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:233]
+WARNING: [Vivado 12-646] clock 'ILI_9_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:234]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:236]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:236]
+WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:237]
+WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:238]
+WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:239]
+WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:240]
+WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:241]
+WARNING: [Vivado 12-646] clock 'ILI_A_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:242]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:244]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:244]
+WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:245]
+WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:246]
+WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:247]
+WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:248]
+WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:249]
+WARNING: [Vivado 12-646] clock 'ILI_B_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:250]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:252]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:252]
+WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:253]
+WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:254]
+WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:255]
+WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:256]
+WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:257]
+WARNING: [Vivado 12-646] clock 'ILI_C_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:258]
+CRITICAL WARNING: [Constraints 18-611] create_generated_clock: list of objects specified for option 'source' contains '1' objects of types '(clock)' other than the types '(port,pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:260]
+CRITICAL WARNING: [Constraints 18-612] create_generated_clock: list of objects specified for option 'source' does not contain any object of type(s) '(port,pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:260]
+WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:261]
+WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:262]
+WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:263]
+WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:264]
+WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:265]
+WARNING: [Vivado 12-646] clock 'ILI_D_CLK' not found. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:266]
 CRITICAL WARNING: [Constraints 18-602] set_output_delay: list contains '1' objects of types '(port)' other than the types '(output port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:273]
 CRITICAL WARNING: [Constraints 18-472] set_output_delay: list does not contain any object of type(s) '(output port,internal pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:273]
 CRITICAL WARNING: [Constraints 18-602] set_output_delay: list contains '1' objects of types '(port)' other than the types '(output port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:279]
 CRITICAL WARNING: [Constraints 18-472] set_output_delay: list does not contain any object of type(s) '(output port,internal pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:279]
+CRITICAL WARNING: [Constraints 18-602] set_output_delay: list contains '1' objects of types '(port)' other than the types '(output port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:285]
+CRITICAL WARNING: [Constraints 18-472] set_output_delay: list does not contain any object of type(s) '(output port,internal pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:285]
+CRITICAL WARNING: [Constraints 18-602] set_output_delay: list contains '1' objects of types '(port)' other than the types '(output port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:291]
+CRITICAL WARNING: [Constraints 18-472] set_output_delay: list does not contain any object of type(s) '(output port,internal pin)' supported by the constraint. The constraint will not be applied. Please check to make sure that this is intended. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc:291]
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/minimal_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.srcs/constrs_1/new/ios.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
@@ -1423,12 +1426,12 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrap
 INFO: [Project 1-1714] 127 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3315.672 ; gain = 0.000 ; free physical = 11405 ; free virtual = 51581
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3326.887 ; gain = 0.000 ; free physical = 7667 ; free virtual = 48229
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 173 instances were transformed.
+  A total of 209 instances were transformed.
   BUFGCE => BUFGCTRL: 1 instance 
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 68 instances
-  CFGLUT5 => SRLC32E: 11 instances
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 100 instances
+  CFGLUT5 => SRLC32E: 15 instances
   FDR => FDRE: 55 instances
   FDS => FDSE: 2 instances
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
@@ -1436,28 +1439,29 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM16X1S => RAM32X1S (RAMS32): 4 instances
   SRL16 => SRL16E: 3 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.25 . Memory (MB): peak = 3315.707 ; gain = 0.000 ; free physical = 11429 ; free virtual = 51605
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.3 . Memory (MB): peak = 3326.922 ; gain = 0.000 ; free physical = 7729 ; free virtual = 48291
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 3315.707 ; gain = 1208.660 ; free physical = 11401 ; free virtual = 51578
+Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 3326.922 ; gain = 1221.527 ; free physical = 5963 ; free virtual = 46577
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 3323.676 ; gain = 1216.629 ; free physical = 11397 ; free virtual = 51574
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 3334.891 ; gain = 1229.496 ; free physical = 5962 ; free virtual = 46576
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 3323.676 ; gain = 1216.629 ; free physical = 11340 ; free virtual = 51517
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 3334.891 ; gain = 1229.496 ; free physical = 5937 ; free virtual = 46554
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
 INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
 INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_fifo_sequencer'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized1'
@@ -1467,6 +1471,10 @@ INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in modul
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized5'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized6'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized7'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized8'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized9'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized10'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized11'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_3_generic_memrd'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tft_ili9341'
 INFO: [Synth 8-802] inferred FSM for state register 'smpl_cs_reg' in module 'axi_dma_smple_sm'
@@ -1528,6 +1536,15 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state
             stage2_valid |                               11 |                               01
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+      STATE_SENDING_DATA |                             0001 |                               00
+      STATE_NEXT_DISPLAY |                             0010 |                               01
+     STATE_WAIT_COMPLETE |                             0100 |                               10
+       STATE_WAIT_TVALID |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_fifo_sequencer'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1609,6 +1626,42 @@ INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using e
                      S2P |                             1000 |                             1000
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized9'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized10'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized11'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1796,7 +1849,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'gpio74hc595'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 3323.676 ; gain = 1216.629 ; free physical = 11405 ; free virtual = 51592
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 3334.891 ; gain = 1229.496 ; free physical = 7587 ; free virtual = 48215
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
@@ -1849,7 +1902,7 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__parameterized2.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__parameterized2.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:32 . Memory (MB): peak = 3323.676 ; gain = 1216.629 ; free physical = 11359 ; free virtual = 51632
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:31 . Memory (MB): peak = 3334.891 ; gain = 1229.496 ; free physical = 7743 ; free virtual = 48465
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1859,7 +1912,7 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'minimal_i/sregs/clk_wiz_0/inst/clk_in1' to pin 'processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:36 . Memory (MB): peak = 3323.676 ; gain = 1216.629 ; free physical = 11365 ; free virtual = 51634
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:29 ; elapsed = 00:01:34 . Memory (MB): peak = 3334.891 ; gain = 1229.496 ; free physical = 7677 ; free virtual = 48398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1867,7 +1920,7 @@ Start Timing Optimization
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:39 . Memory (MB): peak = 3323.676 ; gain = 1216.629 ; free physical = 11318 ; free virtual = 51588
+Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:37 . Memory (MB): peak = 3334.891 ; gain = 1229.496 ; free physical = 7629 ; free virtual = 48350
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -1885,7 +1938,7 @@ INFO: [Synth 8-7052] The timing for the instance minimal_i/ps/axi_ethernetlite_0
 INFO: [Synth 8-7052] The timing for the instance minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:36 ; elapsed = 00:01:45 . Memory (MB): peak = 3323.676 ; gain = 1216.629 ; free physical = 11341 ; free virtual = 51610
+Finished Technology Mapping : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 3334.891 ; gain = 1229.496 ; free physical = 7712 ; free virtual = 48433
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1903,37 +1956,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:47 . Memory (MB): peak = 3323.676 ; gain = 1216.629 ; free physical = 11344 ; free virtual = 51613
+Finished IO Insertion : Time (s): cpu = 00:01:39 ; elapsed = 00:01:44 . Memory (MB): peak = 3334.891 ; gain = 1229.496 ; free physical = 7686 ; free virtual = 48399
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:47 . Memory (MB): peak = 3323.676 ; gain = 1216.629 ; free physical = 11344 ; free virtual = 51614
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:39 ; elapsed = 00:01:44 . Memory (MB): peak = 3334.891 ; gain = 1229.496 ; free physical = 7687 ; free virtual = 48400
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:01:48 . Memory (MB): peak = 3323.676 ; gain = 1216.629 ; free physical = 11366 ; free virtual = 51636
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:40 ; elapsed = 00:01:45 . Memory (MB): peak = 3334.891 ; gain = 1229.496 ; free physical = 7669 ; free virtual = 48383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:01:48 . Memory (MB): peak = 3323.676 ; gain = 1216.629 ; free physical = 11366 ; free virtual = 51636
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:40 ; elapsed = 00:01:45 . Memory (MB): peak = 3334.891 ; gain = 1229.496 ; free physical = 7670 ; free virtual = 48383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:01:48 . Memory (MB): peak = 3323.676 ; gain = 1216.629 ; free physical = 11377 ; free virtual = 51646
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:40 ; elapsed = 00:01:46 . Memory (MB): peak = 3334.891 ; gain = 1229.496 ; free physical = 7651 ; free virtual = 48365
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:01:48 . Memory (MB): peak = 3323.676 ; gain = 1216.629 ; free physical = 11377 ; free virtual = 51646
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:40 ; elapsed = 00:01:46 . Memory (MB): peak = 3334.891 ; gain = 1229.496 ; free physical = 7641 ; free virtual = 48355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1953,17 +2006,17 @@ Report Cell Usage:
 |2     |BUFG      |     5|
 |3     |BUFGCE    |     1|
 |4     |BUFH      |     1|
-|5     |CARRY4    |   264|
-|6     |CFGLUT5   |    79|
-|7     |LUT1      |   411|
-|8     |LUT2      |   870|
-|9     |LUT3      |   997|
-|10    |LUT4      |  1558|
-|11    |LUT5      |   993|
-|12    |LUT6      |  2403|
+|5     |CARRY4    |   280|
+|6     |CFGLUT5   |   115|
+|7     |LUT1      |   415|
+|8     |LUT2      |  1009|
+|9     |LUT3      |  1067|
+|10    |LUT4      |  1600|
+|11    |LUT5      |  1012|
+|12    |LUT6      |  2545|
 |13    |MULT_AND  |    17|
 |14    |MUXCY     |    25|
-|15    |MUXF7     |    69|
+|15    |MUXF7     |    24|
 |16    |MUXF8     |     1|
 |17    |PLLE2_ADV |     1|
 |18    |PS7       |     1|
@@ -1972,45 +2025,45 @@ Report Cell Usage:
 |21    |RAM32X1D  |     1|
 |22    |RAM64M    |   280|
 |23    |RAM64X1D  |    56|
-|24    |RAMB18E1  |     8|
-|25    |RAMB36E1  |    48|
-|28    |SRL16     |     3|
-|29    |SRL16E    |   117|
-|30    |SRLC16E   |     2|
-|31    |SRLC32E   |    17|
-|32    |XORCY     |    20|
-|33    |FDCE      |   233|
-|34    |FDR       |    48|
-|35    |FDRE      |  6676|
-|36    |FDS       |     2|
-|37    |FDSE      |   195|
-|38    |IBUF      |    11|
-|39    |IOBUF     |     1|
-|40    |OBUF      |    71|
+|24    |RAMB18E1  |     9|
+|26    |RAMB36E1  |    46|
+|29    |SRL16     |     3|
+|30    |SRL16E    |   167|
+|31    |SRLC16E   |     2|
+|32    |SRLC32E   |    17|
+|33    |XORCY     |    20|
+|34    |FDCE      |   233|
+|35    |FDR       |    48|
+|36    |FDRE      |  7077|
+|37    |FDS       |     2|
+|38    |FDSE      |   197|
+|39    |IBUF      |    11|
+|40    |IOBUF     |     1|
+|41    |OBUF      |    71|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:48 . Memory (MB): peak = 3323.676 ; gain = 1216.629 ; free physical = 11377 ; free virtual = 51646
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:40 ; elapsed = 00:01:46 . Memory (MB): peak = 3334.891 ; gain = 1229.496 ; free physical = 7640 ; free virtual = 48353
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2068 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:25 ; elapsed = 00:01:34 . Memory (MB): peak = 3323.676 ; gain = 975.949 ; free physical = 11375 ; free virtual = 51644
-Synthesis Optimization Complete : Time (s): cpu = 00:01:40 ; elapsed = 00:01:48 . Memory (MB): peak = 3323.684 ; gain = 1216.629 ; free physical = 11376 ; free virtual = 51646
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:23 ; elapsed = 00:01:30 . Memory (MB): peak = 3334.891 ; gain = 981.785 ; free physical = 7654 ; free virtual = 48367
+Synthesis Optimization Complete : Time (s): cpu = 00:01:40 ; elapsed = 00:01:46 . Memory (MB): peak = 3334.898 ; gain = 1229.496 ; free physical = 7654 ; free virtual = 48367
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3339.551 ; gain = 0.000 ; free physical = 11463 ; free virtual = 51732
+Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3344.797 ; gain = 0.000 ; free physical = 7779 ; free virtual = 48492
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'minimal_i/sregs/clk_wiz_0/inst/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-INFO: [Netlist 29-17] Analyzing 958 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 964 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. minimal_i/sregs/clk_wiz_0/inst/clkin1_ibufg 
 Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
 INFO: [Chipscope 16-324] Core: minimal_i/displays/ila_0 UUID: 9a06effd-ef20-5aed-b1f4-b87908d55250 
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3412.422 ; gain = 0.000 ; free physical = 11477 ; free virtual = 51746
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3420.637 ; gain = 0.000 ; free physical = 7798 ; free virtual = 48511
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 531 instances were transformed.
+  A total of 567 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 9 instances
   BUFGCE => BUFGCTRL: 1 instance 
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 68 instances
-  CFGLUT5 => SRLC32E: 11 instances
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 100 instances
+  CFGLUT5 => SRLC32E: 15 instances
   FDR => FDRE: 48 instances
   FDS => FDSE: 2 instances
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
@@ -2022,15 +2075,15 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64X1D => RAM64X1D (RAMD64E(x2)): 56 instances
   SRL16 => SRL16E: 3 instances
 
-Synth Design complete | Checksum: 44cb6768
+Synth Design complete | Checksum: 78876250
 INFO: [Common 17-83] Releasing license: Synthesis
-838 Infos, 278 Warnings, 40 Critical Warnings and 0 Errors encountered.
+848 Infos, 278 Warnings, 40 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:48 ; elapsed = 00:01:56 . Memory (MB): peak = 3412.457 ; gain = 1786.547 ; free physical = 11473 ; free virtual = 51743
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2784.399; main = 2582.344; forked = 322.812
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4312.680; main = 3412.426; forked = 989.000
+synth_design: Time (s): cpu = 00:01:49 ; elapsed = 00:01:53 . Memory (MB): peak = 3420.672 ; gain = 1794.445 ; free physical = 7795 ; free virtual = 48509
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2754.134; main = 2573.830; forked = 312.708
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4323.895; main = 3420.641; forked = 989.000
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3436.434 ; gain = 0.000 ; free physical = 11464 ; free virtual = 51735
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3444.648 ; gain = 0.000 ; free physical = 7795 ; free virtual = 48509
 INFO: [Common 17-1381] The checkpoint '/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_ScreenHat/MicroPhaseZ7_Lite_ScreenHat.runs/synth_1/minimal_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file minimal_wrapper_utilization_synth.rpt -pb minimal_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jul 24 02:36:15 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 29 23:25:59 2026...

@@ -127,7 +127,11 @@ module minimal_axi_fifo_sequencer_0_0 (
   s_axis_tvalid,
   s_axis_tdata,
   s_axis_tready,
-  state
+  state,
+  display,
+  col_counter,
+  row_counter,
+  tlasts
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 axis_clock CLK" *)
@@ -310,11 +314,18 @@ input wire s_axis_tvalid;
 input wire [15 : 0] s_axis_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TREADY" *)
 output wire s_axis_tready;
-output wire [3 : 0] state;
+output wire [1 : 0] state;
+output wire [3 : 0] display;
+output wire [15 : 0] col_counter;
+output wire [15 : 0] row_counter;
+output wire [15 : 0] tlasts;
 
   axi_fifo_sequencer #(
     .DATA_WIDTH(16),
-    .OUTPUT_CNT(14)
+    .MAX_DISPLAYS(14),
+    .LAST_DISPLAY(13),
+    .DISPLAY_COLS(240),
+    .DISPLAY_ROWS(320)
   ) inst (
     .axis_clock(axis_clock),
     .axis_aresetn(axis_aresetn),
@@ -388,6 +399,10 @@ output wire [3 : 0] state;
     .s_axis_tvalid(s_axis_tvalid),
     .s_axis_tdata(s_axis_tdata),
     .s_axis_tready(s_axis_tready),
-    .state(state)
+    .state(state),
+    .display(display),
+    .col_counter(col_counter),
+    .row_counter(row_counter),
+    .tlasts(tlasts)
   );
 endmodule

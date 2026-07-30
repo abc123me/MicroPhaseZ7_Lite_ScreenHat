@@ -10,16 +10,86 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="16"></ZoomEndTime>
-      <Cursor1Time time="0"></Cursor1Time>
+      <ZoomEndTime time="16,385"></ZoomEndTime>
+      <Cursor1Time time="1,021"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="276"></NameColumnWidth>
-      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+      <NameColumnWidth column_width="184"></NameColumnWidth>
+      <ValueColumnWidth column_width="60"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="8" />
-   <wave_markers>
-   </wave_markers>
+   <WVObjectSize size="12" />
+   <wvobject type="logic" fp_name="minimal_i/displays/s_axis_tlast">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/displays/s_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tlast</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="label">tlast</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/displays/s_axis_tvalid">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">minimal_i/displays/s_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="label">tvalid</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="minimal_i/displays/s_axis_tdata">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">minimal_i/displays/s_axis_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tdata[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="label">tdata</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/displays/^s_axis_tready">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/displays/^s_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">^s_axis_tready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="label">tready</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider594" type="divider">
+      <obj_property name="label">AXI</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="minimal_i/displays/col_counter">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/displays/col_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">col_counter[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="label">col_counter</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="minimal_i/displays/row_counter">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">minimal_i/displays/row_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">row_counter[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="label">row_counter</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="minimal_i/displays/display">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">minimal_i/displays/display[3:0]</obj_property>
+      <obj_property name="ObjectShortName">display[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="label">display_num</obj_property>
+   </wvobject>
    <wvobject type="array" fp_name="minimal_i/displays/read_completes">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">minimal_i/displays/read_completes[13:0]</obj_property>
@@ -27,55 +97,33 @@
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="label">read_complets</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="minimal_i/displays/read_enables">
-      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">minimal_i/displays/read_enables[13:0]</obj_property>
       <obj_property name="ObjectShortName">read_enables[13:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="minimal_i/displays/s_axis_tdata">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">minimal_i/displays/s_axis_tdata[15:0]</obj_property>
-      <obj_property name="ObjectShortName">s_axis_tdata[15:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="minimal_i/displays/s_axis_tlast">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">minimal_i/displays/s_axis_tlast</obj_property>
-      <obj_property name="ObjectShortName">s_axis_tlast</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="minimal_i/displays/s_axis_tready">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">minimal_i/displays/s_axis_tready</obj_property>
-      <obj_property name="ObjectShortName">s_axis_tready</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="minimal_i/displays/s_axis_tvalid">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">minimal_i/displays/s_axis_tvalid</obj_property>
-      <obj_property name="ObjectShortName">s_axis_tvalid</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="label">read_enables</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="minimal_i/displays/state">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">minimal_i/displays/state[3:0]</obj_property>
-      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      <obj_property name="ElementShortName">minimal_i/displays/state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="label">state</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="minimal_i/displays/axi_fifo_sequencer_0_tready_delay">
-      <obj_property name="ElementShortName">minimal_i/displays/axi_fifo_sequencer_0_tready_delay[7:0]</obj_property>
-      <obj_property name="ObjectShortName">axi_fifo_sequencer_0_tready_delay[7:0]</obj_property>
+   <wvobject type="array" fp_name="minimal_i/displays/tlasts">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/displays/tlasts[15:0]</obj_property>
+      <obj_property name="ObjectShortName">tlasts[15:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="label">tlasts</obj_property>
    </wvobject>
 </wave_config>

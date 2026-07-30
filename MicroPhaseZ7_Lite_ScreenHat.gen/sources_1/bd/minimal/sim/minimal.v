@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Fri Jul 24 02:23:38 2026
+//Date        : Wed Jul 29 03:51:42 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal.bd
 //Design      : minimal
@@ -141,7 +141,7 @@ module displays_imp_YBYF3X
   input s_axis_clock;
   input [15:0]s_axis_tdata;
   input s_axis_tlast;
-  output s_axis_tready;
+  output [0:0]s_axis_tready;
   input s_axis_tvalid;
 
   wire [15:0]axi_fifo_sequencer_0_M00_AXIS_TDATA;
@@ -200,12 +200,7 @@ module displays_imp_YBYF3X
   wire axi_fifo_sequencer_0_M13_AXIS_TLAST;
   wire axi_fifo_sequencer_0_M13_AXIS_TREADY;
   wire axi_fifo_sequencer_0_M13_AXIS_TVALID;
-  wire axi_pixel_fifo_0_m_pixel_stream_core_clock;
-  wire axi_pixel_fifo_0_m_pixel_stream_core_clock_en;
-  wire [15:0]axi_pixel_fifo_0_m_pixel_stream_pixel_data;
-  wire axi_pixel_fifo_0_m_pixel_stream_pixel_ready;
-  wire axi_pixel_fifo_0_m_pixel_stream_pixel_sync;
-  wire axi_pixel_fifo_0_read_complete;
+  wire axi_pixel_fifo_0_core_clock;
   wire axi_pixel_fifo_10_m_pixel_stream_core_clock;
   wire axi_pixel_fifo_10_m_pixel_stream_core_clock_en;
   wire [15:0]axi_pixel_fifo_10_m_pixel_stream_pixel_data;
@@ -229,7 +224,6 @@ module displays_imp_YBYF3X
   wire [15:0]axi_pixel_fifo_13_m_pixel_stream_pixel_data;
   wire axi_pixel_fifo_13_m_pixel_stream_pixel_ready;
   wire axi_pixel_fifo_13_m_pixel_stream_pixel_sync;
-  wire axi_pixel_fifo_13_read_complete;
   wire axi_pixel_fifo_1_m_pixel_stream_core_clock;
   wire axi_pixel_fifo_1_m_pixel_stream_core_clock_en;
   wire [15:0]axi_pixel_fifo_1_m_pixel_stream_pixel_data;
@@ -285,11 +279,19 @@ module displays_imp_YBYF3X
   wire axi_pixel_fifo_9_m_pixel_stream_pixel_sync;
   wire axi_pixel_fifo_9_read_complete;
   wire axis_aresetn;
-  wire [0:0]ilslice_0_Dout;
+  wire [15:0]col_counter;
+  wire [3:0]display;
+  wire display_0_core_clock_en;
+  wire [15:0]display_0_pixel_data;
+  wire display_0_pixel_ready;
+  wire display_0_pixel_sync;
+  wire display_0_read_complete;
+  wire [0:0]display_0_read_enable;
+  wire display_13_read_complete;
+  wire [0:0]display_13_read_enable;
   wire [0:0]ilslice_10_Dout;
   wire [0:0]ilslice_11_Dout;
   wire [0:0]ilslice_12_Dout;
-  wire [0:0]ilslice_13_Dout;
   wire [0:0]ilslice_1_Dout;
   wire [0:0]ilslice_2_Dout;
   wire [0:0]ilslice_3_Dout;
@@ -361,13 +363,14 @@ module displays_imp_YBYF3X
   wire m_tftspi_9_sda;
   wire [13:0]read_completes;
   wire [13:0]read_enables;
+  wire [15:0]row_counter;
   wire [13:0]rst_outp;
   wire s_axis_clock;
   wire [15:0]s_axis_tdata;
   wire s_axis_tlast;
-  wire s_axis_tready;
+  wire \^s_axis_tready ;
   wire s_axis_tvalid;
-  wire [3:0]state;
+  wire [1:0]state;
   wire tft_ili9341_wrapper_0_io_wait;
   wire tft_ili9341_wrapper_0_ready;
   wire tft_ili9341_wrapper_0_tft_led;
@@ -423,10 +426,14 @@ module displays_imp_YBYF3X
   wire tft_ili9341_wrapper_9_ready;
   wire tft_ili9341_wrapper_9_tft_led;
   wire tft_ili9341_wrapper_9_tft_nrst;
+  wire [15:0]tlasts;
 
+  assign s_axis_tready[0] = \^s_axis_tready ;
   minimal_axi_fifo_sequencer_0_0 axi_fifo_sequencer_0
        (.axis_aresetn(axis_aresetn),
         .axis_clock(s_axis_clock),
+        .col_counter(col_counter),
+        .display(display),
         .m00_axis_tdata(axi_fifo_sequencer_0_M00_AXIS_TDATA),
         .m00_axis_tlast(axi_fifo_sequencer_0_M00_AXIS_TLAST),
         .m00_axis_tready(axi_fifo_sequencer_0_M00_AXIS_TREADY),
@@ -487,19 +494,21 @@ module displays_imp_YBYF3X
         .m15_axis_tready(1'b1),
         .read_completes(read_completes),
         .read_enables(read_enables),
+        .row_counter(row_counter),
         .s_axis_tdata(s_axis_tdata),
         .s_axis_tlast(s_axis_tlast),
-        .s_axis_tready(s_axis_tready),
+        .s_axis_tready(\^s_axis_tready ),
         .s_axis_tvalid(s_axis_tvalid),
-        .state(state));
+        .state(state),
+        .tlasts(tlasts));
   minimal_axi_pixel_fifo_0_23 axi_pixel_fifo_0
-       (.core_clock(axi_pixel_fifo_0_m_pixel_stream_core_clock),
-        .core_clock_en(axi_pixel_fifo_0_m_pixel_stream_core_clock_en),
-        .pixel_data(axi_pixel_fifo_0_m_pixel_stream_pixel_data),
-        .pixel_ready(axi_pixel_fifo_0_m_pixel_stream_pixel_ready),
-        .pixel_sync(axi_pixel_fifo_0_m_pixel_stream_pixel_sync),
-        .read_complete(axi_pixel_fifo_0_read_complete),
-        .read_enable(ilslice_0_Dout),
+       (.core_clock(axi_pixel_fifo_0_core_clock),
+        .core_clock_en(display_0_core_clock_en),
+        .pixel_data(display_0_pixel_data),
+        .pixel_ready(display_0_pixel_ready),
+        .pixel_sync(display_0_pixel_sync),
+        .read_complete(display_0_read_complete),
+        .read_enable(display_0_read_enable),
         .s_axis_aresetn(axis_aresetn),
         .s_axis_clock(s_axis_clock),
         .s_axis_tdata(axi_fifo_sequencer_0_M00_AXIS_TDATA),
@@ -568,8 +577,8 @@ module displays_imp_YBYF3X
         .pixel_data(axi_pixel_fifo_13_m_pixel_stream_pixel_data),
         .pixel_ready(axi_pixel_fifo_13_m_pixel_stream_pixel_ready),
         .pixel_sync(axi_pixel_fifo_13_m_pixel_stream_pixel_sync),
-        .read_complete(axi_pixel_fifo_13_read_complete),
-        .read_enable(ilslice_13_Dout),
+        .read_complete(display_13_read_complete),
+        .read_enable(display_13_read_enable),
         .s_axis_aresetn(axis_aresetn),
         .s_axis_clock(s_axis_clock),
         .s_axis_tdata(axi_fifo_sequencer_0_M13_AXIS_TDATA),
@@ -690,23 +699,27 @@ module displays_imp_YBYF3X
         .s_axis_tvalid(axi_fifo_sequencer_0_M09_AXIS_TVALID));
   minimal_ila_0_0 ila_0
        (.clk(s_axis_clock),
-        .probe0(state),
-        .probe1(s_axis_tdata),
-        .probe2(s_axis_tlast),
-        .probe3(s_axis_tvalid),
-        .probe4(s_axis_tready),
+        .probe0(s_axis_tdata),
+        .probe1(s_axis_tlast),
+        .probe10(tlasts),
+        .probe2(s_axis_tvalid),
+        .probe3(\^s_axis_tready ),
+        .probe4(display),
         .probe5(read_completes),
-        .probe6(read_enables));
-  assign read_completes = {axi_pixel_fifo_13_read_complete, axi_pixel_fifo_12_read_complete, axi_pixel_fifo_11_read_complete, axi_pixel_fifo_10_read_complete, axi_pixel_fifo_9_read_complete, axi_pixel_fifo_8_read_complete, axi_pixel_fifo_7_read_complete, axi_pixel_fifo_6_read_complete, axi_pixel_fifo_5_read_complete, axi_pixel_fifo_4_read_complete, axi_pixel_fifo_3_read_complete, axi_pixel_fifo_2_read_complete, axi_pixel_fifo_1_read_complete, axi_pixel_fifo_0_read_complete};
+        .probe6(read_enables),
+        .probe7(state),
+        .probe8(row_counter),
+        .probe9(col_counter));
+  assign read_completes = {display_13_read_complete, axi_pixel_fifo_12_read_complete, axi_pixel_fifo_11_read_complete, axi_pixel_fifo_10_read_complete, axi_pixel_fifo_9_read_complete, axi_pixel_fifo_8_read_complete, axi_pixel_fifo_7_read_complete, axi_pixel_fifo_6_read_complete, axi_pixel_fifo_5_read_complete, axi_pixel_fifo_4_read_complete, axi_pixel_fifo_3_read_complete, axi_pixel_fifo_2_read_complete, axi_pixel_fifo_1_read_complete, display_0_read_complete};
   assign led_outps = {tft_ili9341_wrapper_13_tft_led, tft_ili9341_wrapper_12_tft_led, tft_ili9341_wrapper_11_tft_led, tft_ili9341_wrapper_10_tft_led, tft_ili9341_wrapper_9_tft_led, tft_ili9341_wrapper_8_tft_led, tft_ili9341_wrapper_7_tft_led, tft_ili9341_wrapper_6_tft_led, tft_ili9341_wrapper_5_tft_led, tft_ili9341_wrapper_4_tft_led, tft_ili9341_wrapper_3_tft_led, tft_ili9341_wrapper_2_tft_led, tft_ili9341_wrapper_1_tft_led, tft_ili9341_wrapper_0_tft_led};
   assign rst_outp = {tft_ili9341_wrapper_13_tft_nrst, tft_ili9341_wrapper_12_tft_nrst, tft_ili9341_wrapper_11_tft_nrst, tft_ili9341_wrapper_10_tft_nrst, tft_ili9341_wrapper_9_tft_nrst, tft_ili9341_wrapper_8_tft_nrst, tft_ili9341_wrapper_7_tft_nrst, tft_ili9341_wrapper_6_tft_nrst, tft_ili9341_wrapper_5_tft_nrst, tft_ili9341_wrapper_4_tft_nrst, tft_ili9341_wrapper_3_tft_nrst, tft_ili9341_wrapper_2_tft_nrst, tft_ili9341_wrapper_1_tft_nrst, tft_ili9341_wrapper_0_tft_nrst};
   assign io_wait = | io_waits1_dout;
-  assign ilslice_0_Dout = read_enables[0:0];
+  assign display_0_read_enable = read_enables[0:0];
   assign ilslice_1_Dout = read_enables[1:1];
   assign ilslice_10_Dout = read_enables[10:10];
   assign ilslice_11_Dout = read_enables[11:11];
   assign ilslice_12_Dout = read_enables[12:12];
-  assign ilslice_13_Dout = read_enables[13:13];
+  assign display_13_read_enable = read_enables[13:13];
   assign ilslice_2_Dout = read_enables[2:2];
   assign ilslice_3_Dout = read_enables[3:3];
   assign ilslice_4_Dout = read_enables[4:4];
@@ -718,13 +731,13 @@ module displays_imp_YBYF3X
   assign io_waits1_dout = {tft_ili9341_wrapper_13_io_wait, tft_ili9341_wrapper_12_io_wait, tft_ili9341_wrapper_11_io_wait, tft_ili9341_wrapper_10_io_wait, tft_ili9341_wrapper_9_io_wait, tft_ili9341_wrapper_8_io_wait, tft_ili9341_wrapper_7_io_wait, tft_ili9341_wrapper_6_io_wait, tft_ili9341_wrapper_5_io_wait, tft_ili9341_wrapper_4_io_wait, tft_ili9341_wrapper_3_io_wait, tft_ili9341_wrapper_2_io_wait, tft_ili9341_wrapper_1_io_wait, tft_ili9341_wrapper_0_io_wait};
   minimal_tft_ili9341_wrapper_0_0 tft_ili9341_wrapper_0
        (.aresetn(axis_aresetn),
-        .core_clock(axi_pixel_fifo_0_m_pixel_stream_core_clock),
-        .core_clock_en(axi_pixel_fifo_0_m_pixel_stream_core_clock_en),
+        .core_clock(axi_pixel_fifo_0_core_clock),
+        .core_clock_en(display_0_core_clock_en),
         .io_ready(io_ready),
         .io_wait(tft_ili9341_wrapper_0_io_wait),
-        .pixel_data(axi_pixel_fifo_0_m_pixel_stream_pixel_data),
-        .pixel_ready(axi_pixel_fifo_0_m_pixel_stream_pixel_ready),
-        .pixel_sync(axi_pixel_fifo_0_m_pixel_stream_pixel_sync),
+        .pixel_data(display_0_pixel_data),
+        .pixel_ready(display_0_pixel_ready),
+        .pixel_sync(display_0_pixel_sync),
         .ready(tft_ili9341_wrapper_0_ready),
         .tft_cs(m_tftspi_0_cs),
         .tft_dc(m_tftspi_0_dc),
@@ -1243,7 +1256,7 @@ module minimal
   wire displays_io_wait;
   wire [13:0]displays_led_outps;
   wire [13:0]displays_rst_outp;
-  wire displays_s_axis_tready;
+  wire [0:0]displays_s_axis_tready;
   wire led595_clock;
   wire led595_data;
   wire led595_latch;

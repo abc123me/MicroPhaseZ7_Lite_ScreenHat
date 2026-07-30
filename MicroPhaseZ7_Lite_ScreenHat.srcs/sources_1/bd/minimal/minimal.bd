@@ -999,13 +999,13 @@
                 "value": "BUFGCE"
               },
               "CLKOUT1_JITTER": {
-                "value": "446.763"
+                "value": "251.196"
               },
               "CLKOUT1_PHASE_ERROR": {
-                "value": "313.282"
+                "value": "114.212"
               },
               "CLKOUT1_REQUESTED_OUT_FREQ": {
-                "value": "10"
+                "value": "6.25"
               },
               "CLKOUT2_DRIVES": {
                 "value": "BUFGCE"
@@ -1035,19 +1035,22 @@
                 "value": "OPTIMIZED"
               },
               "MMCM_CLKFBOUT_MULT_F": {
-                "value": "41"
+                "value": "8"
               },
               "MMCM_CLKIN1_PERIOD": {
-                "value": "10.000"
+                "value": "10.0"
+              },
+              "MMCM_CLKIN2_PERIOD": {
+                "value": "10.0"
               },
               "MMCM_CLKOUT0_DIVIDE_F": {
-                "value": "82"
+                "value": "128"
               },
               "MMCM_COMPENSATION": {
                 "value": "ZHOLD"
               },
               "MMCM_DIVCLK_DIVIDE": {
-                "value": "5"
+                "value": "1"
               },
               "PRIMITIVE": {
                 "value": "PLL"
@@ -1124,7 +1127,7 @@
                     "value_src": "constant"
                   },
                   "FREQ_HZ": {
-                    "value": "10000000",
+                    "value": "6250000",
                     "value_src": "ip_prop"
                   },
                   "PHASE": {
@@ -1225,7 +1228,7 @@
                     "value_src": "constant"
                   },
                   "FREQ_HZ": {
-                    "value": "10000000",
+                    "value": "6250000",
                     "value_src": "ip_prop"
                   },
                   "PHASE": {
@@ -2136,7 +2139,9 @@
             "direction": "I"
           },
           "s_axis_tready": {
-            "direction": "O"
+            "direction": "O",
+            "left": "0",
+            "right": "0"
           },
           "s_axis_tdata": {
             "direction": "I",
@@ -2426,7 +2431,10 @@
             "inst_hier_path": "displays/axi_fifo_sequencer_0",
             "has_run_ip_tcl": "true",
             "parameters": {
-              "OUTPUT_CNT": {
+              "LAST_DISPLAY": {
+                "value": "13"
+              },
+              "MAX_DISPLAYS": {
                 "value": "14"
               }
             },
@@ -3620,7 +3628,21 @@
               "read_enables": {
                 "direction": "O",
                 "left": "13",
-                "right": "0"
+                "right": "0",
+                "parameters": {
+                  "PortWidth": {
+                    "value": "14",
+                    "value_src": "ip_prop"
+                  },
+                  "PortType": {
+                    "value": "undef",
+                    "value_src": "ip_prop"
+                  },
+                  "PortType.PROP_SRC": {
+                    "value": "false",
+                    "value_src": "ip_prop"
+                  }
+                }
               },
               "read_completes": {
                 "direction": "I",
@@ -3635,7 +3657,27 @@
               },
               "state": {
                 "direction": "O",
+                "left": "1",
+                "right": "0"
+              },
+              "display": {
+                "direction": "O",
                 "left": "3",
+                "right": "0"
+              },
+              "col_counter": {
+                "direction": "O",
+                "left": "15",
+                "right": "0"
+              },
+              "row_counter": {
+                "direction": "O",
+                "left": "15",
+                "right": "0"
+              },
+              "tlasts": {
+                "direction": "O",
+                "left": "15",
                 "right": "0"
               }
             }
@@ -7620,19 +7662,22 @@
             "has_run_ip_tcl": "true",
             "parameters": {
               "C_DATA_DEPTH": {
-                "value": "32768"
+                "value": "16384"
               },
               "C_MONITOR_TYPE": {
                 "value": "Native"
               },
               "C_NUM_OF_PROBES": {
-                "value": "7"
+                "value": "11"
               },
               "C_PROBE0_WIDTH": {
-                "value": "4"
-              },
-              "C_PROBE1_WIDTH": {
                 "value": "16"
+              },
+              "C_PROBE10_WIDTH": {
+                "value": "16"
+              },
+              "C_PROBE4_WIDTH": {
+                "value": "4"
               },
               "C_PROBE5_WIDTH": {
                 "value": "14"
@@ -7641,7 +7686,13 @@
                 "value": "14"
               },
               "C_PROBE7_WIDTH": {
-                "value": "1"
+                "value": "2"
+              },
+              "C_PROBE8_WIDTH": {
+                "value": "16"
+              },
+              "C_PROBE9_WIDTH": {
+                "value": "16"
               }
             }
           }
@@ -7775,20 +7826,20 @@
           },
           "axi_fifo_sequencer_0_M07_AXIS": {
             "interface_ports": [
-              "axi_pixel_fifo_7/s_axis",
-              "axi_fifo_sequencer_0/M07_AXIS"
+              "axi_fifo_sequencer_0/M07_AXIS",
+              "axi_pixel_fifo_7/s_axis"
             ]
           },
           "axi_fifo_sequencer_0_M08_AXIS": {
             "interface_ports": [
-              "axi_pixel_fifo_8/s_axis",
-              "axi_fifo_sequencer_0/M08_AXIS"
+              "axi_fifo_sequencer_0/M08_AXIS",
+              "axi_pixel_fifo_8/s_axis"
             ]
           },
           "axi_fifo_sequencer_0_M09_AXIS": {
             "interface_ports": [
-              "axi_fifo_sequencer_0/M09_AXIS",
-              "axi_pixel_fifo_9/s_axis"
+              "axi_pixel_fifo_9/s_axis",
+              "axi_fifo_sequencer_0/M09_AXIS"
             ]
           },
           "axi_fifo_sequencer_0_M10_AXIS": {
@@ -7799,26 +7850,20 @@
           },
           "axi_fifo_sequencer_0_M11_AXIS": {
             "interface_ports": [
-              "axi_pixel_fifo_11/s_axis",
-              "axi_fifo_sequencer_0/M11_AXIS"
+              "axi_fifo_sequencer_0/M11_AXIS",
+              "axi_pixel_fifo_11/s_axis"
             ]
           },
           "axi_fifo_sequencer_0_M12_AXIS": {
             "interface_ports": [
-              "axi_fifo_sequencer_0/M12_AXIS",
-              "axi_pixel_fifo_12/s_axis"
+              "axi_pixel_fifo_12/s_axis",
+              "axi_fifo_sequencer_0/M12_AXIS"
             ]
           },
           "axi_fifo_sequencer_0_M13_AXIS": {
             "interface_ports": [
-              "axi_pixel_fifo_13/s_axis",
-              "axi_fifo_sequencer_0/M13_AXIS"
-            ]
-          },
-          "axi_pixel_fifo_0_m_pixel_stream": {
-            "interface_ports": [
-              "tft_ili9341_wrapper_0/s_pixel_stream",
-              "axi_pixel_fifo_0/m_pixel_stream"
+              "axi_fifo_sequencer_0/M13_AXIS",
+              "axi_pixel_fifo_13/s_axis"
             ]
           },
           "axi_pixel_fifo_10_m_pixel_stream": {
@@ -7841,8 +7886,8 @@
           },
           "axi_pixel_fifo_13_m_pixel_stream": {
             "interface_ports": [
-              "tft_ili9341_wrapper_13/s_pixel_stream",
-              "axi_pixel_fifo_13/m_pixel_stream"
+              "axi_pixel_fifo_13/m_pixel_stream",
+              "tft_ili9341_wrapper_13/s_pixel_stream"
             ]
           },
           "axi_pixel_fifo_1_m_pixel_stream": {
@@ -7941,10 +7986,10 @@
               "tft_ili9341_wrapper_10/io_ready"
             ]
           },
-          "axi_pixel_fifo_0_read_complete": {
+          "axi_pixel_fifo_0_core_clock": {
             "ports": [
-              "axi_pixel_fifo_0/read_complete",
-              "ilconcat_0/In0"
+              "axi_pixel_fifo_0/core_clock",
+              "tft_ili9341_wrapper_0/core_clock"
             ]
           },
           "axi_pixel_fifo_10_read_complete": {
@@ -7963,12 +8008,6 @@
             "ports": [
               "axi_pixel_fifo_12/read_complete",
               "ilconcat_0/In12"
-            ]
-          },
-          "axi_pixel_fifo_13_read_complete": {
-            "ports": [
-              "axi_pixel_fifo_13/read_complete",
-              "ilconcat_0/In13"
             ]
           },
           "axi_pixel_fifo_1_read_complete": {
@@ -8046,6 +8085,66 @@
               "axi_fifo_sequencer_0/axis_aresetn"
             ]
           },
+          "col_counter": {
+            "ports": [
+              "axi_fifo_sequencer_0/col_counter",
+              "ila_0/probe9"
+            ]
+          },
+          "display": {
+            "ports": [
+              "axi_fifo_sequencer_0/display",
+              "ila_0/probe4"
+            ]
+          },
+          "display_0_core_clock_en": {
+            "ports": [
+              "axi_pixel_fifo_0/core_clock_en",
+              "tft_ili9341_wrapper_0/core_clock_en"
+            ]
+          },
+          "display_0_pixel_data": {
+            "ports": [
+              "axi_pixel_fifo_0/pixel_data",
+              "tft_ili9341_wrapper_0/pixel_data"
+            ]
+          },
+          "display_0_pixel_ready": {
+            "ports": [
+              "tft_ili9341_wrapper_0/pixel_ready",
+              "axi_pixel_fifo_0/pixel_ready"
+            ]
+          },
+          "display_0_pixel_sync": {
+            "ports": [
+              "tft_ili9341_wrapper_0/pixel_sync",
+              "axi_pixel_fifo_0/pixel_sync"
+            ]
+          },
+          "display_0_read_complete": {
+            "ports": [
+              "axi_pixel_fifo_0/read_complete",
+              "ilconcat_0/In0"
+            ]
+          },
+          "display_0_read_enable": {
+            "ports": [
+              "ilslice_0/Dout",
+              "axi_pixel_fifo_0/read_enable"
+            ]
+          },
+          "display_13_read_complete": {
+            "ports": [
+              "axi_pixel_fifo_13/read_complete",
+              "ilconcat_0/In13"
+            ]
+          },
+          "display_13_read_enable": {
+            "ports": [
+              "ilslice_13/Dout",
+              "axi_pixel_fifo_13/read_enable"
+            ]
+          },
           "ilconcat_leds_dout": {
             "ports": [
               "ilconcat_leds/dout",
@@ -8064,12 +8163,6 @@
               "io_wait"
             ]
           },
-          "ilslice_0_Dout": {
-            "ports": [
-              "ilslice_0/Dout",
-              "axi_pixel_fifo_0/read_enable"
-            ]
-          },
           "ilslice_10_Dout": {
             "ports": [
               "ilslice_10/Dout",
@@ -8086,12 +8179,6 @@
             "ports": [
               "ilslice_12/Dout",
               "axi_pixel_fifo_12/read_enable"
-            ]
-          },
-          "ilslice_13_Dout": {
-            "ports": [
-              "ilslice_13/Dout",
-              "axi_pixel_fifo_13/read_enable"
             ]
           },
           "ilslice_1_Dout": {
@@ -8181,16 +8268,22 @@
               "ila_0/probe6"
             ]
           },
+          "row_counter": {
+            "ports": [
+              "axi_fifo_sequencer_0/row_counter",
+              "ila_0/probe8"
+            ]
+          },
           "state": {
             "ports": [
               "axi_fifo_sequencer_0/state",
-              "ila_0/probe0"
+              "ila_0/probe7"
             ]
           },
           "tdata": {
             "ports": [
               "s_axis_tdata",
-              "ila_0/probe1",
+              "ila_0/probe0",
               "axi_fifo_sequencer_0/s_axis_tdata"
             ]
           },
@@ -8527,21 +8620,27 @@
           "tlast": {
             "ports": [
               "s_axis_tlast",
-              "ila_0/probe2",
+              "ila_0/probe1",
               "axi_fifo_sequencer_0/s_axis_tlast"
+            ]
+          },
+          "tlasts": {
+            "ports": [
+              "axi_fifo_sequencer_0/tlasts",
+              "ila_0/probe10"
             ]
           },
           "tready": {
             "ports": [
               "axi_fifo_sequencer_0/s_axis_tready",
-              "ila_0/probe4",
-              "s_axis_tready"
+              "s_axis_tready",
+              "ila_0/probe3"
             ]
           },
           "tvalid": {
             "ports": [
               "s_axis_tvalid",
-              "ila_0/probe3",
+              "ila_0/probe2",
               "axi_fifo_sequencer_0/s_axis_tvalid"
             ]
           }

@@ -4,7 +4,10 @@ proc init_gui { IPINST } {
   #Adding Page
   set Page_0 [ipgui::add_page $IPINST -name "Page 0"]
   ipgui::add_param $IPINST -name "DATA_WIDTH" -parent ${Page_0}
-  ipgui::add_param $IPINST -name "OUTPUT_CNT" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "DISPLAY_COLS" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "DISPLAY_ROWS" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "LAST_DISPLAY" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "MAX_DISPLAYS" -parent ${Page_0}
 
 
 }
@@ -18,12 +21,39 @@ proc validate_PARAM_VALUE.DATA_WIDTH { PARAM_VALUE.DATA_WIDTH } {
 	return true
 }
 
-proc update_PARAM_VALUE.OUTPUT_CNT { PARAM_VALUE.OUTPUT_CNT } {
-	# Procedure called to update OUTPUT_CNT when any of the dependent parameters in the arguments change
+proc update_PARAM_VALUE.DISPLAY_COLS { PARAM_VALUE.DISPLAY_COLS } {
+	# Procedure called to update DISPLAY_COLS when any of the dependent parameters in the arguments change
 }
 
-proc validate_PARAM_VALUE.OUTPUT_CNT { PARAM_VALUE.OUTPUT_CNT } {
-	# Procedure called to validate OUTPUT_CNT
+proc validate_PARAM_VALUE.DISPLAY_COLS { PARAM_VALUE.DISPLAY_COLS } {
+	# Procedure called to validate DISPLAY_COLS
+	return true
+}
+
+proc update_PARAM_VALUE.DISPLAY_ROWS { PARAM_VALUE.DISPLAY_ROWS } {
+	# Procedure called to update DISPLAY_ROWS when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.DISPLAY_ROWS { PARAM_VALUE.DISPLAY_ROWS } {
+	# Procedure called to validate DISPLAY_ROWS
+	return true
+}
+
+proc update_PARAM_VALUE.LAST_DISPLAY { PARAM_VALUE.LAST_DISPLAY } {
+	# Procedure called to update LAST_DISPLAY when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.LAST_DISPLAY { PARAM_VALUE.LAST_DISPLAY } {
+	# Procedure called to validate LAST_DISPLAY
+	return true
+}
+
+proc update_PARAM_VALUE.MAX_DISPLAYS { PARAM_VALUE.MAX_DISPLAYS } {
+	# Procedure called to update MAX_DISPLAYS when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.MAX_DISPLAYS { PARAM_VALUE.MAX_DISPLAYS } {
+	# Procedure called to validate MAX_DISPLAYS
 	return true
 }
 
@@ -33,8 +63,23 @@ proc update_MODELPARAM_VALUE.DATA_WIDTH { MODELPARAM_VALUE.DATA_WIDTH PARAM_VALU
 	set_property value [get_property value ${PARAM_VALUE.DATA_WIDTH}] ${MODELPARAM_VALUE.DATA_WIDTH}
 }
 
-proc update_MODELPARAM_VALUE.OUTPUT_CNT { MODELPARAM_VALUE.OUTPUT_CNT PARAM_VALUE.OUTPUT_CNT } {
+proc update_MODELPARAM_VALUE.MAX_DISPLAYS { MODELPARAM_VALUE.MAX_DISPLAYS PARAM_VALUE.MAX_DISPLAYS } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
-	set_property value [get_property value ${PARAM_VALUE.OUTPUT_CNT}] ${MODELPARAM_VALUE.OUTPUT_CNT}
+	set_property value [get_property value ${PARAM_VALUE.MAX_DISPLAYS}] ${MODELPARAM_VALUE.MAX_DISPLAYS}
+}
+
+proc update_MODELPARAM_VALUE.LAST_DISPLAY { MODELPARAM_VALUE.LAST_DISPLAY PARAM_VALUE.LAST_DISPLAY } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.LAST_DISPLAY}] ${MODELPARAM_VALUE.LAST_DISPLAY}
+}
+
+proc update_MODELPARAM_VALUE.DISPLAY_COLS { MODELPARAM_VALUE.DISPLAY_COLS PARAM_VALUE.DISPLAY_COLS } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.DISPLAY_COLS}] ${MODELPARAM_VALUE.DISPLAY_COLS}
+}
+
+proc update_MODELPARAM_VALUE.DISPLAY_ROWS { MODELPARAM_VALUE.DISPLAY_ROWS PARAM_VALUE.DISPLAY_ROWS } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.DISPLAY_ROWS}] ${MODELPARAM_VALUE.DISPLAY_ROWS}
 }
 

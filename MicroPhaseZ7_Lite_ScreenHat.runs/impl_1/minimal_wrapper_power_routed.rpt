@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date             : Fri Jul 24 02:37:30 2026
+| Date             : Wed Jul 29 23:27:12 2026
 | Host             : npc running 64-bit Arch Linux
 | Command          : report_power -file minimal_wrapper_power_routed.rpt -pb minimal_wrapper_power_summary_routed.pb -rpx minimal_wrapper_power_routed.rpx
 | Design           : minimal_wrapper
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.469        |
+| Total On-Chip Power (W)  | 1.467        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.346        |
-| Device Static (W)        | 0.123        |
+| Dynamic (W)              | 1.344        |
+| Device Static (W)        | 0.122        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 68.1         |
 | Junction Temperature (C) | 41.9         |
@@ -53,21 +53,21 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.025 |       10 |       --- |             --- |
-| Slice Logic              |     0.012 |    18625 |       --- |             --- |
-|   LUT as Logic           |     0.008 |     6125 |     17600 |           34.80 |
+| Slice Logic              |     0.012 |    19554 |       --- |             --- |
+|   LUT as Logic           |     0.008 |     6414 |     17600 |           36.44 |
 |   LUT as Distributed RAM |     0.003 |     1382 |      6000 |           23.03 |
-|   Register               |    <0.001 |     7565 |     35200 |           21.49 |
-|   CARRY4                 |    <0.001 |      283 |      4400 |            6.43 |
-|   LUT as Shift Register  |    <0.001 |      168 |      6000 |            2.80 |
-|   F7/F8 Muxes            |    <0.001 |       70 |     17600 |            0.40 |
-|   Others                 |     0.000 |     1222 |       --- |             --- |
-| Signals                  |     0.012 |    13320 |       --- |             --- |
-| Block RAM                |     0.005 |       52 |        60 |           86.67 |
+|   Register               |    <0.001 |     7966 |     35200 |           22.63 |
+|   CARRY4                 |    <0.001 |      299 |      4400 |            6.80 |
+|   LUT as Shift Register  |    <0.001 |      229 |      6000 |            3.82 |
+|   F7/F8 Muxes            |    <0.001 |       25 |     17600 |            0.14 |
+|   Others                 |     0.000 |     1268 |       --- |             --- |
+| Signals                  |     0.012 |    14002 |       --- |             --- |
+| Block RAM                |     0.005 |     50.5 |        60 |           84.17 |
 | PLL                      |     0.097 |        1 |         2 |           50.00 |
-| I/O                      |     0.016 |       79 |       100 |           79.00 |
+| I/O                      |     0.015 |       79 |       100 |           79.00 |
 | PS7                      |     1.179 |        1 |       --- |             --- |
-| Static Power             |     0.123 |          |           |                 |
-| Total                    |     1.469 |          |           |                 |
+| Static Power             |     0.122 |          |           |                 |
+| Total                    |     1.467 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -145,8 +145,8 @@ Table of Contents
 | clk_fpga_0                                                                                 | minimal_i/ps/processing_system7_0/inst/FCLK_CLK0                  |            10.0 |
 | clk_fpga_0                                                                                 | minimal_i/ps/processing_system7_0/inst/FCLK_CLK_unbuffered[0]     |            10.0 |
 | clk_fpga_1                                                                                 | minimal_i/ps/processing_system7_0/inst/FCLK_CLK_unbuffered[1]     |            16.7 |
-| clk_out1_minimal_clk_wiz_0_0                                                               | minimal_i/sregs/clk_wiz_0/inst/clk_out1_minimal_clk_wiz_0_0       |           100.0 |
-| clkfbout_minimal_clk_wiz_0_0                                                               | minimal_i/sregs/clk_wiz_0/inst/clkfbout_minimal_clk_wiz_0_0       |            50.0 |
+| clk_out1_minimal_clk_wiz_0_0                                                               | minimal_i/sregs/clk_wiz_0/inst/clk_out1_minimal_clk_wiz_0_0       |           160.0 |
+| clkfbout_minimal_clk_wiz_0_0                                                               | minimal_i/sregs/clk_wiz_0/inst/clkfbout_minimal_clk_wiz_0_0       |            10.0 |
 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TCK |            33.0 |
 +--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+-----------------+
 
@@ -160,7 +160,7 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| minimal_wrapper            |     1.346 |
+| minimal_wrapper            |     1.344 |
 |   dbg_hub                  |     0.002 |
 |     inst                   |     0.002 |
 |       BSCANID.u_xsdbm_id   |     0.002 |
@@ -168,9 +168,9 @@ Table of Contents
 |     axis_clock_converter_0 |     0.002 |
 |       inst                 |     0.002 |
 |     displays               |     0.023 |
-|       ila_0                |     0.009 |
-|     ps                     |     1.205 |
-|       axi_dma_0            |     0.004 |
+|       ila_0                |     0.010 |
+|     ps                     |     1.204 |
+|       axi_dma_0            |     0.003 |
 |       axi_ethernetlite_0   |     0.009 |
 |       axi_smc              |     0.008 |
 |       axi_smc1             |     0.004 |
