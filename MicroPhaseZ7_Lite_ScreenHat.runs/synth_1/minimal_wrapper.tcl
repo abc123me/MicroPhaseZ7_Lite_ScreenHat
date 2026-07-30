@@ -56,7 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 8
 set_param general.usePosixSpawnForFork 1
 set_param bd.open.in_stealth_mode 2
 set_msg_config -id {HDL-1065} -limit 10000

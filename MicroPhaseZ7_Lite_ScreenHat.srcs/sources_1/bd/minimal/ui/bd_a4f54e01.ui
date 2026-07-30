@@ -1,88 +1,88 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.681782",
-   "Default View_TopLeft":"-789,3",
+   "Default View_ScaleFactor":"0.688353",
+   "Default View_TopLeft":"-750,3",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 4 -x 990 -y 190 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 4 -x 990 -y 280 -defaultsOSRD
-preplace port ETH_MDIO -pg 1 -lvl 4 -x 990 -y 220 -defaultsOSRD
-preplace port ETH_MII -pg 1 -lvl 4 -x 990 -y 250 -defaultsOSRD
-preplace port ILI_1 -pg 1 -lvl 4 -x 990 -y 820 -defaultsOSRD
-preplace port ILI_5 -pg 1 -lvl 4 -x 990 -y 790 -defaultsOSRD
-preplace port ILI_D -pg 1 -lvl 4 -x 990 -y 760 -defaultsOSRD
-preplace port ILI_C -pg 1 -lvl 4 -x 990 -y 730 -defaultsOSRD
-preplace port ILI_B -pg 1 -lvl 4 -x 990 -y 700 -defaultsOSRD
-preplace port ILI_0 -pg 1 -lvl 4 -x 990 -y 430 -defaultsOSRD
-preplace port ILI_A -pg 1 -lvl 4 -x 990 -y 670 -defaultsOSRD
-preplace port ILI_2 -pg 1 -lvl 4 -x 990 -y 460 -defaultsOSRD
-preplace port ILI_3 -pg 1 -lvl 4 -x 990 -y 520 -defaultsOSRD
-preplace port ILI_4 -pg 1 -lvl 4 -x 990 -y 490 -defaultsOSRD
-preplace port ILI_6 -pg 1 -lvl 4 -x 990 -y 550 -defaultsOSRD
-preplace port ILI_7 -pg 1 -lvl 4 -x 990 -y 580 -defaultsOSRD
-preplace port ILI_8 -pg 1 -lvl 4 -x 990 -y 610 -defaultsOSRD
-preplace port ILI_9 -pg 1 -lvl 4 -x 990 -y 640 -defaultsOSRD
-preplace port port-id_rst595_clock -pg 1 -lvl 4 -x 990 -y 1120 -defaultsOSRD
-preplace port port-id_rst595_latch -pg 1 -lvl 4 -x 990 -y 1150 -defaultsOSRD
-preplace port port-id_rst595_resetn -pg 1 -lvl 4 -x 990 -y 1180 -defaultsOSRD
-preplace port port-id_rst595_data -pg 1 -lvl 4 -x 990 -y 1210 -defaultsOSRD
-preplace port port-id_led595_clock -pg 1 -lvl 4 -x 990 -y 1000 -defaultsOSRD
-preplace port port-id_led595_latch -pg 1 -lvl 4 -x 990 -y 1030 -defaultsOSRD
-preplace port port-id_led595_resetn -pg 1 -lvl 4 -x 990 -y 1060 -defaultsOSRD
-preplace port port-id_led595_data -pg 1 -lvl 4 -x 990 -y 1090 -defaultsOSRD
-preplace inst sregs -pg 1 -lvl 3 -x 760 -y 1120 -defaultsOSRD
-preplace inst displays -pg 1 -lvl 3 -x 760 -y 650 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1040 -y 190 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1040 -y 280 -defaultsOSRD
+preplace port ETH_MDIO -pg 1 -lvl 4 -x 1040 -y 220 -defaultsOSRD
+preplace port ETH_MII -pg 1 -lvl 4 -x 1040 -y 250 -defaultsOSRD
+preplace port ILI_1 -pg 1 -lvl 4 -x 1040 -y 820 -defaultsOSRD
+preplace port ILI_5 -pg 1 -lvl 4 -x 1040 -y 790 -defaultsOSRD
+preplace port ILI_D -pg 1 -lvl 4 -x 1040 -y 760 -defaultsOSRD
+preplace port ILI_C -pg 1 -lvl 4 -x 1040 -y 730 -defaultsOSRD
+preplace port ILI_B -pg 1 -lvl 4 -x 1040 -y 700 -defaultsOSRD
+preplace port ILI_0 -pg 1 -lvl 4 -x 1040 -y 430 -defaultsOSRD
+preplace port ILI_A -pg 1 -lvl 4 -x 1040 -y 670 -defaultsOSRD
+preplace port ILI_2 -pg 1 -lvl 4 -x 1040 -y 460 -defaultsOSRD
+preplace port ILI_3 -pg 1 -lvl 4 -x 1040 -y 520 -defaultsOSRD
+preplace port ILI_4 -pg 1 -lvl 4 -x 1040 -y 490 -defaultsOSRD
+preplace port ILI_6 -pg 1 -lvl 4 -x 1040 -y 550 -defaultsOSRD
+preplace port ILI_7 -pg 1 -lvl 4 -x 1040 -y 580 -defaultsOSRD
+preplace port ILI_8 -pg 1 -lvl 4 -x 1040 -y 610 -defaultsOSRD
+preplace port ILI_9 -pg 1 -lvl 4 -x 1040 -y 640 -defaultsOSRD
+preplace port port-id_rst595_clock -pg 1 -lvl 4 -x 1040 -y 1120 -defaultsOSRD
+preplace port port-id_rst595_latch -pg 1 -lvl 4 -x 1040 -y 1150 -defaultsOSRD
+preplace port port-id_rst595_resetn -pg 1 -lvl 4 -x 1040 -y 1180 -defaultsOSRD
+preplace port port-id_rst595_data -pg 1 -lvl 4 -x 1040 -y 1210 -defaultsOSRD
+preplace port port-id_led595_clock -pg 1 -lvl 4 -x 1040 -y 1000 -defaultsOSRD
+preplace port port-id_led595_latch -pg 1 -lvl 4 -x 1040 -y 1030 -defaultsOSRD
+preplace port port-id_led595_resetn -pg 1 -lvl 4 -x 1040 -y 1060 -defaultsOSRD
+preplace port port-id_led595_data -pg 1 -lvl 4 -x 1040 -y 1090 -defaultsOSRD
+preplace inst sregs -pg 1 -lvl 3 -x 810 -y 1120 -defaultsOSRD
+preplace inst displays -pg 1 -lvl 3 -x 810 -y 650 -defaultsOSRD
 preplace inst ps -pg 1 -lvl 1 -x 100 -y 270 -defaultsOSRD
-preplace inst axis_clock_converter_0 -pg 1 -lvl 2 -x 440 -y 360 -defaultsOSRD
-preplace inst discrete_clock_conve_0 -pg 1 -lvl 2 -x 440 -y 540 -defaultsOSRD
-preplace inst discrete_clock_conve_1 -pg 1 -lvl 2 -x 440 -y 960 -defaultsOSRD -resize 260 156
-preplace inst discrete_clock_conve_2 -pg 1 -lvl 2 -x 440 -y 100 -defaultsOSRD -resize 260 156
-preplace inst discrete_clock_conve_3 -pg 1 -lvl 2 -x 440 -y 760 -defaultsOSRD -resize 260 156
-preplace netloc discrete_clock_conve_0_data_out 1 2 1 600 540n
-preplace netloc discrete_clock_conve_1_data_out 1 2 1 590 960n
-preplace netloc discrete_clock_conve_2_data_out 1 2 1 620 100n
-preplace netloc discrete_clock_conve_3_data_out 1 2 1 630 680n
-preplace netloc displays_io_wait 1 1 3 290 200 NJ 200 900
-preplace netloc displays_led_outps 1 1 3 290 640 590J 430 890
-preplace netloc displays_rst_outp 1 1 3 290 860 NJ 860 910
-preplace netloc processing_system7_0_FCLK_CLK0 1 1 2 220 1120 NJ
-preplace netloc ps_Dout 1 1 2 230 1100 NJ
-preplace netloc ps_Dout1 1 1 2 270 660 NJ
-preplace netloc s_axis_clock_1 1 1 2 260 650 610J
+preplace inst axis_clock_converter_0 -pg 1 -lvl 2 -x 450 -y 360 -defaultsOSRD
+preplace inst discrete_clock_conve_0 -pg 1 -lvl 2 -x 450 -y 540 -defaultsOSRD
+preplace inst discrete_clock_conve_1 -pg 1 -lvl 2 -x 450 -y 960 -defaultsOSRD -resize 260 156
+preplace inst discrete_clock_conve_2 -pg 1 -lvl 2 -x 450 -y 100 -defaultsOSRD -resize 260 156
+preplace inst discrete_clock_conve_3 -pg 1 -lvl 2 -x 450 -y 760 -defaultsOSRD -resize 260 156
+preplace netloc discrete_clock_conve_0_data_out 1 2 1 610 540n
+preplace netloc discrete_clock_conve_1_data_out 1 2 1 600 960n
+preplace netloc discrete_clock_conve_2_data_out 1 2 1 670 100n
+preplace netloc discrete_clock_conve_3_data_out 1 2 1 620 680n
+preplace netloc displays_io_wait 1 1 3 290 660 630J 860 940
+preplace netloc displays_led_outps 1 1 3 300 650 640J 870 950
+preplace netloc displays_rst_outp 1 1 3 300 1070 680J 980 960
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 2 210 1120 NJ
+preplace netloc ps_Dout 1 1 2 270 1100 NJ
+preplace netloc ps_Dout1 1 1 2 230 1080 650J
+preplace netloc s_axis_clock_1 1 1 2 260 640 NJ
 preplace netloc shift_register_gpio_0_driver_clock 1 3 1 NJ 1120
-preplace netloc shift_register_gpio_0_driver_data 1 3 1 940J 1180n
-preplace netloc shift_register_gpio_0_driver_latch 1 3 1 970J 1140n
-preplace netloc shift_register_gpio_0_driver_reset 1 3 1 970J 1160n
-preplace netloc shift_register_gpio_1_driver_clock 1 3 1 890J 1000n
-preplace netloc shift_register_gpio_1_driver_data 1 3 1 910J 1090n
-preplace netloc shift_register_gpio_1_driver_latch 1 3 1 940J 1030n
-preplace netloc shift_register_gpio_1_driver_reset 1 3 1 970J 1060n
-preplace netloc sregs_io_ready 1 1 3 280 1250 NJ 1250 890
-preplace netloc displays_m_tftspi_0 1 3 1 930J 430n
-preplace netloc displays_m_tftspi_1 1 3 1 920J 750n
-preplace netloc displays_m_tftspi_2 1 3 1 940J 460n
-preplace netloc displays_m_tftspi_3 1 3 1 960J 520n
-preplace netloc displays_m_tftspi_4 1 3 1 950J 490n
-preplace netloc displays_m_tftspi_5 1 3 1 930J 730n
-preplace netloc displays_m_tftspi_6 1 3 1 970J 550n
-preplace netloc displays_m_tftspi_7 1 3 1 970J 580n
+preplace netloc shift_register_gpio_0_driver_data 1 3 1 980J 1180n
+preplace netloc shift_register_gpio_0_driver_latch 1 3 1 1020J 1140n
+preplace netloc shift_register_gpio_0_driver_reset 1 3 1 1020J 1160n
+preplace netloc shift_register_gpio_1_driver_clock 1 3 1 960J 1000n
+preplace netloc shift_register_gpio_1_driver_data 1 3 1 1020J 1090n
+preplace netloc shift_register_gpio_1_driver_latch 1 3 1 990J 1030n
+preplace netloc shift_register_gpio_1_driver_reset 1 3 1 1020J 1060n
+preplace netloc sregs_io_ready 1 1 3 300 860 600J 880 940
+preplace netloc axis_clock_converter_0_M_AXIS 1 2 1 680 360n
+preplace netloc displays_m_tftspi_0 1 3 1 980J 430n
+preplace netloc displays_m_tftspi_1 1 3 1 970J 750n
+preplace netloc displays_m_tftspi_2 1 3 1 990J 460n
+preplace netloc displays_m_tftspi_3 1 3 1 1010J 520n
+preplace netloc displays_m_tftspi_4 1 3 1 1000J 490n
+preplace netloc displays_m_tftspi_5 1 3 1 980J 730n
+preplace netloc displays_m_tftspi_6 1 3 1 1020J 550n
+preplace netloc displays_m_tftspi_7 1 3 1 980J 580n
 preplace netloc displays_m_tftspi_8 1 3 1 NJ 610
-preplace netloc displays_m_tftspi_9 1 3 1 970J 630n
-preplace netloc displays_m_tftspi_10 1 3 1 970J 650n
-preplace netloc displays_m_tftspi_11 1 3 1 960J 670n
-preplace netloc displays_m_tftspi_12 1 3 1 950J 690n
-preplace netloc displays_m_tftspi_13 1 3 1 940J 710n
-preplace netloc ps_DDR 1 1 3 NJ 210 NJ 210 930J
-preplace netloc ps_ETH_MDIO 1 1 3 NJ 230 NJ 230 930J
+preplace netloc displays_m_tftspi_9 1 3 1 1020J 630n
+preplace netloc displays_m_tftspi_10 1 3 1 1020J 650n
+preplace netloc displays_m_tftspi_11 1 3 1 1010J 670n
+preplace netloc displays_m_tftspi_12 1 3 1 1000J 690n
+preplace netloc displays_m_tftspi_13 1 3 1 990J 710n
+preplace netloc ps_DDR 1 1 3 NJ 210 610J 190 NJ
+preplace netloc ps_ETH_MDIO 1 1 3 220J 220 NJ 220 NJ
 preplace netloc ps_ETH_MII 1 1 3 NJ 250 NJ 250 NJ
-preplace netloc ps_FIXED_IO 1 1 3 240J 260 NJ 260 930J
-preplace netloc ps_M02_AXI 1 1 2 210 1060 NJ
-preplace netloc ps_M03_AXI 1 1 2 200 1080 NJ
+preplace netloc ps_FIXED_IO 1 1 3 240J 230 NJ 230 980J
+preplace netloc ps_M02_AXI 1 1 2 200 1060 NJ
+preplace netloc ps_M03_AXI 1 1 2 280 260 660J
 preplace netloc ps_M_AXIS_MM2S 1 1 1 250 170n
-preplace netloc axis_clock_converter_0_M_AXIS 1 2 1 610 360n
-levelinfo -pg 1 0 100 440 760 990
-pagesize -pg 1 -db -bbox -sgen 0 0 1140 1260
+levelinfo -pg 1 0 100 450 810 1040
+pagesize -pg 1 -db -bbox -sgen 0 0 1190 1260
 "
 }
 {

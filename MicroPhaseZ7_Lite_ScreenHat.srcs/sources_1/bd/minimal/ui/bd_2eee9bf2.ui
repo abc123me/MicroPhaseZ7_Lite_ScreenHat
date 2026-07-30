@@ -180,6 +180,7 @@ preplace netloc Conn11 1 4 3 NJ 2040 NJ 2040 NJ
 preplace netloc Conn12 1 4 3 NJ 2380 NJ 2380 NJ
 preplace netloc Conn13 1 4 3 NJ 2205 NJ 2205 NJ
 preplace netloc Conn14 1 4 3 NJ 890 2040J 970 NJ
+preplace netloc Conn15 1 0 2 NJ 1170 NJ
 preplace netloc axi_fifo_sequencer_0_M00_AXIS 1 2 1 720 420n
 preplace netloc axi_fifo_sequencer_0_M01_AXIS 1 2 1 780 1060n
 preplace netloc axi_fifo_sequencer_0_M02_AXIS 1 2 1 730 790n
@@ -194,6 +195,7 @@ preplace netloc axi_fifo_sequencer_0_M10_AXIS 1 2 1 760 1240n
 preplace netloc axi_fifo_sequencer_0_M11_AXIS 1 2 1 750 1260n
 preplace netloc axi_fifo_sequencer_0_M12_AXIS 1 2 1 740 1280n
 preplace netloc axi_fifo_sequencer_0_M13_AXIS 1 2 1 720 1300n
+preplace netloc axi_pixel_fifo_0_m_pixel_stream 1 3 1 1250 440n
 preplace netloc axi_pixel_fifo_10_m_pixel_stream 1 3 1 N 1880
 preplace netloc axi_pixel_fifo_11_m_pixel_stream 1 3 1 1210 2040n
 preplace netloc axi_pixel_fifo_12_m_pixel_stream 1 3 1 1220 2240n
@@ -207,8 +209,6 @@ preplace netloc axi_pixel_fifo_6_m_pixel_stream 1 3 1 1260 1190n
 preplace netloc axi_pixel_fifo_7_m_pixel_stream 1 3 1 1260 1419n
 preplace netloc axi_pixel_fifo_8_m_pixel_stream 1 3 1 1200 260n
 preplace netloc axi_pixel_fifo_9_m_pixel_stream 1 3 1 1230 1150n
-preplace netloc Conn15 1 0 2 NJ 1170 NJ
-preplace netloc axi_pixel_fifo_0_m_pixel_stream 1 3 1 1250 440n
 levelinfo -pg 1 0 200 530 1040 1440 1910 2280 2440
 pagesize -pg 1 -db -bbox -sgen -140 0 2600 2530
 "
