@@ -6,7 +6,7 @@
 # set_property -dict {PACKAGE_PIN P15 IOSTANDARD LVCMOS33} [get_ports PL_LED_1]
 # set_property -dict {PACKAGE_PIN U12 IOSTANDARD LVCMOS33} [get_ports PL_LED_2]
 
-# Vivado told me to do it, otherwise fails to implement
+# Vivado told me to do this, otherwise fails to implement
 ###################################################################
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets minimal_i/ps/axi_ethernetlite_0/U0/o]
 
@@ -113,7 +113,7 @@ set_property -dict {PACKAGE_PIN U14 IOSTANDARD LVCMOS33 DRIVE 8 SLEW FAST} [get_
 set_property -dict {PACKAGE_PIN P14 IOSTANDARD LVCMOS33 DRIVE 8 SLEW FAST} [get_ports led595_clock]
 set_property -dict {PACKAGE_PIN R14 IOSTANDARD LVCMOS33 DRIVE 8 SLEW FAST} [get_ports led595_data]
 
-# Timing
+# Timing (shift registers)
 ###################################################################
 
 create_generated_clock -name RST_SREG_CLK -source [get_clocks clk_out1_minimal_clk_wiz_0_0] -divide_by 1 [get_ports rst595_clock]
@@ -132,24 +132,28 @@ set_output_delay -clock LED_SREG_CLK -max 10   [get_ports led595_data]
 set_output_delay -clock LED_SREG_CLK -max 10   [get_ports led595_latch]
 set_output_delay -clock LED_SREG_CLK -max 10   [get_ports led595_resetn]
 
-set_clock_groups -asynchronous \
+# Timing (displays)
+###################################################################
+
+# ILI9341 displays are on a dedicated clock domain
+set_clock_groups -asynchronous     \
     -group [get_clocks clk_fpga_0] \
     -group [get_clocks clk_fpga_1]
 
-set board_skew_ns_0 2.0
-set board_skew_ns_1 2.0
-set board_skew_ns_2 3.0
-set board_skew_ns_3 4.0
-set board_skew_ns_4 5.0
-set board_skew_ns_5 6.0
-set board_skew_ns_6 6.0
-set board_skew_ns_7 6.0
-set board_skew_ns_8 6.0
-set board_skew_ns_9 6.0
-set board_skew_ns_a 5.0
-set board_skew_ns_b 4.0
-set board_skew_ns_c 3.0
-set board_skew_ns_d 2.0
+set board_skew_ns_0 0.0
+set board_skew_ns_1 0.0
+set board_skew_ns_2 0.0
+set board_skew_ns_3 0.0
+set board_skew_ns_4 0.0
+set board_skew_ns_5 0.0
+set board_skew_ns_6 0.0
+set board_skew_ns_7 0.0
+set board_skew_ns_8 0.0
+set board_skew_ns_9 0.0
+set board_skew_ns_a 0.0
+set board_skew_ns_b 0.0
+set board_skew_ns_c 0.0
+set board_skew_ns_d 0.0
 set lcd_setup_ns    10.0
 set lcd_hold_ns     10.0
 
@@ -265,37 +269,28 @@ set_output_delay -clock ILI_D_CLK -min [expr {-1 * ($lcd_hold_ns + $board_skew_n
 set_output_delay -clock ILI_D_CLK -max [expr {$lcd_setup_ns + $board_skew_ns_d}]       [get_ports ILI_D_dc]
 set_output_delay -clock ILI_D_CLK -min [expr {-1 * ($lcd_hold_ns + $board_skew_ns_d)}] [get_ports ILI_D_dc]
 
-set_input_delay  -clock clk_fpga_0 -min -0.5 [get_ports {ETH_MII_rxd[3]}]
-set_input_delay  -clock clk_fpga_0 -min -0.5 [get_ports {ETH_MII_rxd[2]}]
-set_input_delay  -clock clk_fpga_0 -min -0.5 [get_ports {ETH_MII_rxd[1]}]
-set_input_delay  -clock clk_fpga_0 -min -0.5 [get_ports {ETH_MII_rxd[0]}]
-set_input_delay  -clock clk_fpga_0 -min -0.5 [get_ports ETH_MII_rx_dv]
-set_output_delay -clock clk_fpga_0 -min -0.5 [get_ports ETH_MII_rx_clk]
-set_input_delay  -clock clk_fpga_0 -max 0.5  [get_ports {ETH_MII_rxd[3]}]
-set_input_delay  -clock clk_fpga_0 -max 0.5  [get_ports {ETH_MII_rxd[2]}]
-set_input_delay  -clock clk_fpga_0 -max 0.5  [get_ports {ETH_MII_rxd[1]}]
-set_input_delay  -clock clk_fpga_0 -max 0.5  [get_ports {ETH_MII_rxd[0]}]
-set_input_delay  -clock clk_fpga_0 -max 0.5  [get_ports ETH_MII_rx_dv]
-set_output_delay -clock clk_fpga_0 -max 0.5  [get_ports ETH_MII_rx_clk]
+# Timing (100Mbps ethernet)
+###################################################################
 
-set_output_delay -clock clk_fpga_0 -min -0.5 [get_ports {ETH_MII_txd[3]}]
-set_output_delay -clock clk_fpga_0 -min -0.5 [get_ports {ETH_MII_txd[2]}]
-set_output_delay -clock clk_fpga_0 -min -0.5 [get_ports {ETH_MII_txd[1]}]
-set_output_delay -clock clk_fpga_0 -min -0.5 [get_ports {ETH_MII_txd[0]}]
-set_output_delay -clock clk_fpga_0 -min -0.5 [get_ports ETH_MII_tx_clk]
-set_output_delay -clock clk_fpga_0 -min -0.5 [get_ports ETH_MII_tx_en]
-set_output_delay -clock clk_fpga_0 -max 0.5  [get_ports {ETH_MII_txd[3]}]
-set_output_delay -clock clk_fpga_0 -max 0.5  [get_ports {ETH_MII_txd[2]}]
-set_output_delay -clock clk_fpga_0 -max 0.5  [get_ports {ETH_MII_txd[1]}]
-set_output_delay -clock clk_fpga_0 -max 0.5  [get_ports {ETH_MII_txd[0]}]
-set_output_delay -clock clk_fpga_0 -max 0.5  [get_ports ETH_MII_tx_clk]
-set_output_delay -clock clk_fpga_0 -max 0.5  [get_ports ETH_MII_tx_en]
+# MII reference clocks from the PHY
+# RX clock (25 MHz for 100Mbps MII, PHY-generated)
+create_clock -name mii_rx_clk -period 40.000 [get_ports ETH_MII_rx_clk]
+set_input_delay -clock mii_rx_clk -max  8.000 [get_ports {ETH_MII_rxd[*] ETH_MII_rx_dv ETH_MII_rx_er}]
+set_input_delay -clock mii_rx_clk -min  2.000 [get_ports {ETH_MII_rxd[*] ETH_MII_rx_dv ETH_MII_rx_er}]
 
-set_output_delay -clock clk_fpga_0 -min -5.0 [get_ports ETH_MII_rst_n]
-set_output_delay -clock clk_fpga_0 -min -5.0 [get_ports ETH_MDIO_mdio_io]
-set_input_delay  -clock clk_fpga_0 -min -5.0 [get_ports ETH_MDIO_mdio_io]
-set_output_delay -clock clk_fpga_0 -min -5.0 [get_ports ETH_MDIO_mdc]
-set_output_delay -clock clk_fpga_0 -max 5.0  [get_ports ETH_MII_rst_n]
-set_output_delay -clock clk_fpga_0 -max 5.0  [get_ports ETH_MDIO_mdio_io]
-set_input_delay  -clock clk_fpga_0 -max 5.0  [get_ports ETH_MDIO_mdio_io]
-set_output_delay -clock clk_fpga_0 -max 5.0  [get_ports ETH_MDIO_mdc]
+# TX clock (25 MHz for 100Mbps MII, PHY-generated)
+create_clock -name mii_tx_clk -period 40.000 [get_ports ETH_MII_tx_clk]
+set_output_delay -clock mii_tx_clk -max  8.000 [get_ports {ETH_MII_txd[*] ETH_MII_tx_en ETH_MII_col}]
+set_output_delay -clock mii_tx_clk -min  2.000 [get_ports {ETH_MII_txd[*] ETH_MII_tx_en ETH_MII_col}]
+
+# PHY clocks are generated by the PHY and not associated with the AXI clock
+set_clock_groups -asynchronous     \
+    -group [get_clocks clk_fpga_0] \
+    -group [get_clocks mii_tx_clk] \
+    -group [get_clocks mii_rx_clk]
+
+# False paths where timing doesn't matter
+set_false_path -to   [get_ports ETH_MDIO_mdc]
+set_false_path -to   [get_ports ETH_MDIO_mdio_io]
+set_false_path -to   [get_ports ETH_MII_rst_n]
+set_false_path -from [get_ports ETH_MDIO_mdio_io]

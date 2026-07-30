@@ -82,8 +82,7 @@
         "ilconcat_resets": "",
         "ilconcat_leds": "",
         "io_waits1": "",
-        "ilreduced_logic_0": "",
-        "ila_0": ""
+        "ilreduced_logic_0": ""
       },
       "ps": {
         "rst_ps7_0_50M": "",
@@ -2107,6 +2106,17 @@
                 "value_src": "default"
               }
             }
+          },
+          "S_AXIS": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "hdl_attributes": {
+              "LOCKED": {
+                "value": "FALSE",
+                "value_src": "default"
+              }
+            }
           }
         },
         "ports": {
@@ -2134,22 +2144,6 @@
           },
           "io_wait": {
             "direction": "O"
-          },
-          "s_axis_tvalid": {
-            "direction": "I"
-          },
-          "s_axis_tready": {
-            "direction": "O",
-            "left": "0",
-            "right": "0"
-          },
-          "s_axis_tdata": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "s_axis_tlast": {
-            "direction": "I"
           }
         },
         "components": {
@@ -3628,21 +3622,7 @@
               "read_enables": {
                 "direction": "O",
                 "left": "13",
-                "right": "0",
-                "parameters": {
-                  "PortWidth": {
-                    "value": "14",
-                    "value_src": "ip_prop"
-                  },
-                  "PortType": {
-                    "value": "undef",
-                    "value_src": "ip_prop"
-                  },
-                  "PortType.PROP_SRC": {
-                    "value": "false",
-                    "value_src": "ip_prop"
-                  }
-                }
+                "right": "0"
               },
               "read_completes": {
                 "direction": "I",
@@ -3654,31 +3634,6 @@
                     "value_src": "ip_prop"
                   }
                 }
-              },
-              "state": {
-                "direction": "O",
-                "left": "1",
-                "right": "0"
-              },
-              "display": {
-                "direction": "O",
-                "left": "3",
-                "right": "0"
-              },
-              "col_counter": {
-                "direction": "O",
-                "left": "15",
-                "right": "0"
-              },
-              "row_counter": {
-                "direction": "O",
-                "left": "15",
-                "right": "0"
-              },
-              "tlasts": {
-                "direction": "O",
-                "left": "15",
-                "right": "0"
               }
             }
           },
@@ -7652,49 +7607,6 @@
                 "value": "14"
               }
             }
-          },
-          "ila_0": {
-            "vlnv": "xilinx.com:ip:ila:6.2",
-            "ip_revision": "19",
-            "xci_name": "minimal_ila_0_0",
-            "xci_path": "ip/minimal_ila_0_0/minimal_ila_0_0.xci",
-            "inst_hier_path": "displays/ila_0",
-            "has_run_ip_tcl": "true",
-            "parameters": {
-              "C_DATA_DEPTH": {
-                "value": "16384"
-              },
-              "C_MONITOR_TYPE": {
-                "value": "Native"
-              },
-              "C_NUM_OF_PROBES": {
-                "value": "11"
-              },
-              "C_PROBE0_WIDTH": {
-                "value": "16"
-              },
-              "C_PROBE10_WIDTH": {
-                "value": "16"
-              },
-              "C_PROBE4_WIDTH": {
-                "value": "4"
-              },
-              "C_PROBE5_WIDTH": {
-                "value": "14"
-              },
-              "C_PROBE6_WIDTH": {
-                "value": "14"
-              },
-              "C_PROBE7_WIDTH": {
-                "value": "2"
-              },
-              "C_PROBE8_WIDTH": {
-                "value": "16"
-              },
-              "C_PROBE9_WIDTH": {
-                "value": "16"
-              }
-            }
           }
         },
         "interface_nets": {
@@ -7782,6 +7694,12 @@
               "m_tftspi_5"
             ]
           },
+          "Conn15": {
+            "interface_ports": [
+              "axi_fifo_sequencer_0/S_AXIS",
+              "S_AXIS"
+            ]
+          },
           "axi_fifo_sequencer_0_M00_AXIS": {
             "interface_ports": [
               "axi_pixel_fifo_0/s_axis",
@@ -7864,6 +7782,12 @@
             "interface_ports": [
               "axi_fifo_sequencer_0/M13_AXIS",
               "axi_pixel_fifo_13/s_axis"
+            ]
+          },
+          "axi_pixel_fifo_0_m_pixel_stream": {
+            "interface_ports": [
+              "axi_pixel_fifo_0/m_pixel_stream",
+              "tft_ili9341_wrapper_0/s_pixel_stream"
             ]
           },
           "axi_pixel_fifo_10_m_pixel_stream": {
@@ -7963,7 +7887,6 @@
               "axi_pixel_fifo_8/s_axis_clock",
               "axi_pixel_fifo_9/s_axis_clock",
               "axi_pixel_fifo_10/s_axis_clock",
-              "ila_0/clk",
               "axi_fifo_sequencer_0/axis_clock"
             ]
           },
@@ -7984,12 +7907,6 @@
               "tft_ili9341_wrapper_8/io_ready",
               "tft_ili9341_wrapper_9/io_ready",
               "tft_ili9341_wrapper_10/io_ready"
-            ]
-          },
-          "axi_pixel_fifo_0_core_clock": {
-            "ports": [
-              "axi_pixel_fifo_0/core_clock",
-              "tft_ili9341_wrapper_0/core_clock"
             ]
           },
           "axi_pixel_fifo_10_read_complete": {
@@ -8083,42 +8000,6 @@
               "axi_pixel_fifo_10/s_axis_aresetn",
               "tft_ili9341_wrapper_0/aresetn",
               "axi_fifo_sequencer_0/axis_aresetn"
-            ]
-          },
-          "col_counter": {
-            "ports": [
-              "axi_fifo_sequencer_0/col_counter",
-              "ila_0/probe9"
-            ]
-          },
-          "display": {
-            "ports": [
-              "axi_fifo_sequencer_0/display",
-              "ila_0/probe4"
-            ]
-          },
-          "display_0_core_clock_en": {
-            "ports": [
-              "axi_pixel_fifo_0/core_clock_en",
-              "tft_ili9341_wrapper_0/core_clock_en"
-            ]
-          },
-          "display_0_pixel_data": {
-            "ports": [
-              "axi_pixel_fifo_0/pixel_data",
-              "tft_ili9341_wrapper_0/pixel_data"
-            ]
-          },
-          "display_0_pixel_ready": {
-            "ports": [
-              "tft_ili9341_wrapper_0/pixel_ready",
-              "axi_pixel_fifo_0/pixel_ready"
-            ]
-          },
-          "display_0_pixel_sync": {
-            "ports": [
-              "tft_ili9341_wrapper_0/pixel_sync",
-              "axi_pixel_fifo_0/pixel_sync"
             ]
           },
           "display_0_read_complete": {
@@ -8244,7 +8125,6 @@
           "read_completes": {
             "ports": [
               "ilconcat_0/dout",
-              "ila_0/probe5",
               "axi_fifo_sequencer_0/read_completes"
             ]
           },
@@ -8264,27 +8144,7 @@
               "ilslice_3/Din",
               "ilslice_2/Din",
               "ilslice_1/Din",
-              "ilslice_0/Din",
-              "ila_0/probe6"
-            ]
-          },
-          "row_counter": {
-            "ports": [
-              "axi_fifo_sequencer_0/row_counter",
-              "ila_0/probe8"
-            ]
-          },
-          "state": {
-            "ports": [
-              "axi_fifo_sequencer_0/state",
-              "ila_0/probe7"
-            ]
-          },
-          "tdata": {
-            "ports": [
-              "s_axis_tdata",
-              "ila_0/probe0",
-              "axi_fifo_sequencer_0/s_axis_tdata"
+              "ilslice_0/Din"
             ]
           },
           "tft_ili9341_wrapper_0_io_wait": {
@@ -8615,33 +8475,6 @@
             "ports": [
               "tft_ili9341_wrapper_9/tft_nrst",
               "ilconcat_resets/In9"
-            ]
-          },
-          "tlast": {
-            "ports": [
-              "s_axis_tlast",
-              "ila_0/probe1",
-              "axi_fifo_sequencer_0/s_axis_tlast"
-            ]
-          },
-          "tlasts": {
-            "ports": [
-              "axi_fifo_sequencer_0/tlasts",
-              "ila_0/probe10"
-            ]
-          },
-          "tready": {
-            "ports": [
-              "axi_fifo_sequencer_0/s_axis_tready",
-              "s_axis_tready",
-              "ila_0/probe3"
-            ]
-          },
-          "tvalid": {
-            "ports": [
-              "s_axis_tvalid",
-              "ila_0/probe2",
-              "axi_fifo_sequencer_0/s_axis_tvalid"
             ]
           }
         }
@@ -11134,6 +10967,12 @@
       }
     },
     "interface_nets": {
+      "axis_clock_converter_0_M_AXIS": {
+        "interface_ports": [
+          "axis_clock_converter_0/M_AXIS",
+          "displays/S_AXIS"
+        ]
+      },
       "displays_m_tftspi_0": {
         "interface_ports": [
           "ILI_0",
@@ -11262,24 +11101,6 @@
       }
     },
     "nets": {
-      "axis_clock_converter_0_m_axis_tdata": {
-        "ports": [
-          "axis_clock_converter_0/m_axis_tdata",
-          "displays/s_axis_tdata"
-        ]
-      },
-      "axis_clock_converter_0_m_axis_tlast": {
-        "ports": [
-          "axis_clock_converter_0/m_axis_tlast",
-          "displays/s_axis_tlast"
-        ]
-      },
-      "axis_clock_converter_0_m_axis_tvalid": {
-        "ports": [
-          "axis_clock_converter_0/m_axis_tvalid",
-          "displays/s_axis_tvalid"
-        ]
-      },
       "discrete_clock_conve_0_data_out": {
         "ports": [
           "discrete_clock_conve_0/data_out",
@@ -11320,12 +11141,6 @@
         "ports": [
           "displays/rst_outp",
           "discrete_clock_conve_1/data_inp"
-        ]
-      },
-      "displays_s_axis_tready": {
-        "ports": [
-          "displays/s_axis_tready",
-          "axis_clock_converter_0/m_axis_tready"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
